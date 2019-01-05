@@ -1,0 +1,253 @@
+# Logfile created on 2018-12-09 09:44:15 +0000 by logger.rb/47272
+[12/09/18 09:44:15 +0000 gejian-jian1209-6620872 (44516)] INFO : Starting the New Relic agent in "development" environment.
+[12/09/18 09:44:15 +0000 gejian-jian1209-6620872 (44516)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[12/09/18 09:44:15 +0000 gejian-jian1209-6620872 (44516)] INFO : Reading configuration from config/newrelic.yml (/home/ubuntu/workspace/codeknows)
+[12/09/18 09:44:15 +0000 gejian-jian1209-6620872 (44516)] INFO : New Relic Agent Developer Mode enabled.
+[12/09/18 09:44:15 +0000 gejian-jian1209-6620872 (44516)] ERROR : No application name configured.
+[12/09/18 09:44:15 +0000 gejian-jian1209-6620872 (44516)] ERROR : The Agent cannot start without at least one. Please check your 
+[12/09/18 09:44:15 +0000 gejian-jian1209-6620872 (44516)] ERROR : newrelic.yml and ensure that it is valid and has at least one 
+[12/09/18 09:44:15 +0000 gejian-jian1209-6620872 (44516)] ERROR : value set for app_name in the development 
+[12/09/18 09:44:15 +0000 gejian-jian1209-6620872 (44516)] ERROR : environment.
+[12/09/18 09:44:15 +0000 gejian-jian1209-6620872 (44516)] INFO : Installing deferred Rack instrumentation
+[12/09/18 09:44:15 +0000 gejian-jian1209-6620872 (44516)] INFO : Installing Rack::Builder middleware instrumentation
+[12/09/18 09:44:15 +0000 gejian-jian1209-6620872 (44516)] INFO : Installing middleware-based Excon instrumentation
+[12/09/18 09:44:15 +0000 gejian-jian1209-6620872 (44516)] INFO : Installing ActiveRecord instrumentation
+[12/09/18 09:44:15 +0000 gejian-jian1209-6620872 (44516)] INFO : Installing Sinatra instrumentation
+[12/09/18 09:44:15 +0000 gejian-jian1209-6620872 (44516)] INFO : Installing Sidekiq instrumentation
+[12/09/18 09:44:15 +0000 gejian-jian1209-6620872 (44516)] INFO : Installing Rails 3+ middleware instrumentation
+[12/09/18 09:44:15 +0000 gejian-jian1209-6620872 (44516)] INFO : Installing Net instrumentation
+[12/09/18 09:44:15 +0000 gejian-jian1209-6620872 (44516)] INFO : Installing Curb instrumentation
+[12/09/18 09:44:15 +0000 gejian-jian1209-6620872 (44516)] INFO : Installing Rails 3 Error instrumentation
+[12/09/18 09:44:15 +0000 gejian-jian1209-6620872 (44516)] INFO : Installing Rails 3 Controller instrumentation
+[12/09/18 09:44:15 +0000 gejian-jian1209-6620872 (44516)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[12/09/18 09:44:15 +0000 gejian-jian1209-6620872 (44516)] INFO : Finished instrumentation
+[12/09/18 09:44:16 +0000 gejian-jian1209-6620872 (44516)] INFO : Doing deferred dependency-detection before Rack startup
+[12/09/18 09:47:15 +0000 gejian-jian1209-6620872 (44537)] INFO : Starting the New Relic agent in "development" environment.
+[12/09/18 09:47:15 +0000 gejian-jian1209-6620872 (44537)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[12/09/18 09:47:15 +0000 gejian-jian1209-6620872 (44537)] INFO : Reading configuration from config/newrelic.yml (/home/ubuntu/workspace/codeknows)
+[12/09/18 09:47:15 +0000 gejian-jian1209-6620872 (44537)] INFO : New Relic Agent Developer Mode enabled.
+[12/09/18 09:47:15 +0000 gejian-jian1209-6620872 (44537)] ERROR : No application name configured.
+[12/09/18 09:47:15 +0000 gejian-jian1209-6620872 (44537)] ERROR : The Agent cannot start without at least one. Please check your 
+[12/09/18 09:47:15 +0000 gejian-jian1209-6620872 (44537)] ERROR : newrelic.yml and ensure that it is valid and has at least one 
+[12/09/18 09:47:15 +0000 gejian-jian1209-6620872 (44537)] ERROR : value set for app_name in the development 
+[12/09/18 09:47:15 +0000 gejian-jian1209-6620872 (44537)] ERROR : environment.
+[12/09/18 09:47:15 +0000 gejian-jian1209-6620872 (44537)] INFO : Installing deferred Rack instrumentation
+[12/09/18 09:47:15 +0000 gejian-jian1209-6620872 (44537)] INFO : Installing Rack::Builder middleware instrumentation
+[12/09/18 09:47:15 +0000 gejian-jian1209-6620872 (44537)] INFO : Installing middleware-based Excon instrumentation
+[12/09/18 09:47:15 +0000 gejian-jian1209-6620872 (44537)] INFO : Installing ActiveRecord instrumentation
+[12/09/18 09:47:15 +0000 gejian-jian1209-6620872 (44537)] INFO : Installing Sinatra instrumentation
+[12/09/18 09:47:15 +0000 gejian-jian1209-6620872 (44537)] INFO : Installing Sidekiq instrumentation
+[12/09/18 09:47:15 +0000 gejian-jian1209-6620872 (44537)] INFO : Installing Rails 3+ middleware instrumentation
+[12/09/18 09:47:15 +0000 gejian-jian1209-6620872 (44537)] INFO : Installing Net instrumentation
+[12/09/18 09:47:15 +0000 gejian-jian1209-6620872 (44537)] INFO : Installing Curb instrumentation
+[12/09/18 09:47:15 +0000 gejian-jian1209-6620872 (44537)] INFO : Installing Rails 3 Error instrumentation
+[12/09/18 09:47:15 +0000 gejian-jian1209-6620872 (44537)] INFO : Installing Rails 3 Controller instrumentation
+[12/09/18 09:47:15 +0000 gejian-jian1209-6620872 (44537)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[12/09/18 09:47:15 +0000 gejian-jian1209-6620872 (44537)] INFO : Finished instrumentation
+[12/09/18 09:47:16 +0000 gejian-jian1209-6620872 (44537)] INFO : Doing deferred dependency-detection before Rack startup
+[12/09/18 09:48:06 +0000 gejian-jian1209-6620872 (44570)] INFO : Starting the New Relic agent in "development" environment.
+[12/09/18 09:48:06 +0000 gejian-jian1209-6620872 (44570)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[12/09/18 09:48:06 +0000 gejian-jian1209-6620872 (44570)] INFO : Reading configuration from config/newrelic.yml (/home/ubuntu/workspace/codeknows)
+[12/09/18 09:48:06 +0000 gejian-jian1209-6620872 (44570)] INFO : New Relic Agent Developer Mode enabled.
+[12/09/18 09:48:06 +0000 gejian-jian1209-6620872 (44570)] ERROR : No application name configured.
+[12/09/18 09:48:06 +0000 gejian-jian1209-6620872 (44570)] ERROR : The Agent cannot start without at least one. Please check your 
+[12/09/18 09:48:06 +0000 gejian-jian1209-6620872 (44570)] ERROR : newrelic.yml and ensure that it is valid and has at least one 
+[12/09/18 09:48:06 +0000 gejian-jian1209-6620872 (44570)] ERROR : value set for app_name in the development 
+[12/09/18 09:48:06 +0000 gejian-jian1209-6620872 (44570)] ERROR : environment.
+[12/09/18 09:48:06 +0000 gejian-jian1209-6620872 (44570)] INFO : Installing deferred Rack instrumentation
+[12/09/18 09:48:06 +0000 gejian-jian1209-6620872 (44570)] INFO : Installing Rack::Builder middleware instrumentation
+[12/09/18 09:48:06 +0000 gejian-jian1209-6620872 (44570)] INFO : Installing middleware-based Excon instrumentation
+[12/09/18 09:48:06 +0000 gejian-jian1209-6620872 (44570)] INFO : Installing ActiveRecord instrumentation
+[12/09/18 09:48:06 +0000 gejian-jian1209-6620872 (44570)] INFO : Installing Sinatra instrumentation
+[12/09/18 09:48:06 +0000 gejian-jian1209-6620872 (44570)] INFO : Installing Sidekiq instrumentation
+[12/09/18 09:48:06 +0000 gejian-jian1209-6620872 (44570)] INFO : Installing Rails 3+ middleware instrumentation
+[12/09/18 09:48:06 +0000 gejian-jian1209-6620872 (44570)] INFO : Installing Net instrumentation
+[12/09/18 09:48:06 +0000 gejian-jian1209-6620872 (44570)] INFO : Installing Curb instrumentation
+[12/09/18 09:48:06 +0000 gejian-jian1209-6620872 (44570)] INFO : Installing Rails 3 Error instrumentation
+[12/09/18 09:48:06 +0000 gejian-jian1209-6620872 (44570)] INFO : Installing Rails 3 Controller instrumentation
+[12/09/18 09:48:06 +0000 gejian-jian1209-6620872 (44570)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[12/09/18 09:48:06 +0000 gejian-jian1209-6620872 (44570)] INFO : Finished instrumentation
+[12/09/18 09:48:07 +0000 gejian-jian1209-6620872 (44570)] INFO : Doing deferred dependency-detection before Rack startup
+[12/09/18 10:11:00 +0000 gejian-jian1209-6620872 (44898)] INFO : Starting the New Relic agent in "development" environment.
+[12/09/18 10:11:00 +0000 gejian-jian1209-6620872 (44898)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[12/09/18 10:11:00 +0000 gejian-jian1209-6620872 (44898)] INFO : Reading configuration from config/newrelic.yml (/home/ubuntu/workspace/codeknows)
+[12/09/18 10:11:00 +0000 gejian-jian1209-6620872 (44898)] INFO : New Relic Agent Developer Mode enabled.
+[12/09/18 10:11:00 +0000 gejian-jian1209-6620872 (44898)] ERROR : No application name configured.
+[12/09/18 10:11:00 +0000 gejian-jian1209-6620872 (44898)] ERROR : The Agent cannot start without at least one. Please check your 
+[12/09/18 10:11:00 +0000 gejian-jian1209-6620872 (44898)] ERROR : newrelic.yml and ensure that it is valid and has at least one 
+[12/09/18 10:11:00 +0000 gejian-jian1209-6620872 (44898)] ERROR : value set for app_name in the development 
+[12/09/18 10:11:00 +0000 gejian-jian1209-6620872 (44898)] ERROR : environment.
+[12/09/18 10:11:00 +0000 gejian-jian1209-6620872 (44898)] INFO : Installing deferred Rack instrumentation
+[12/09/18 10:11:00 +0000 gejian-jian1209-6620872 (44898)] INFO : Installing Rack::Builder middleware instrumentation
+[12/09/18 10:11:00 +0000 gejian-jian1209-6620872 (44898)] INFO : Installing middleware-based Excon instrumentation
+[12/09/18 10:11:00 +0000 gejian-jian1209-6620872 (44898)] INFO : Installing ActiveRecord instrumentation
+[12/09/18 10:11:00 +0000 gejian-jian1209-6620872 (44898)] INFO : Installing Sinatra instrumentation
+[12/09/18 10:11:00 +0000 gejian-jian1209-6620872 (44898)] INFO : Installing Sidekiq instrumentation
+[12/09/18 10:11:00 +0000 gejian-jian1209-6620872 (44898)] INFO : Installing Rails 3+ middleware instrumentation
+[12/09/18 10:11:00 +0000 gejian-jian1209-6620872 (44898)] INFO : Installing Net instrumentation
+[12/09/18 10:11:00 +0000 gejian-jian1209-6620872 (44898)] INFO : Installing Curb instrumentation
+[12/09/18 10:11:00 +0000 gejian-jian1209-6620872 (44898)] INFO : Installing Rails 3 Error instrumentation
+[12/09/18 10:11:00 +0000 gejian-jian1209-6620872 (44898)] INFO : Installing Rails 3 Controller instrumentation
+[12/09/18 10:11:00 +0000 gejian-jian1209-6620872 (44898)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[12/09/18 10:11:00 +0000 gejian-jian1209-6620872 (44898)] INFO : Finished instrumentation
+[12/09/18 10:11:01 +0000 gejian-jian1209-6620872 (44898)] INFO : Doing deferred dependency-detection before Rack startup
+[12/09/18 10:19:53 +0000 gejian-jian1209-6620872 (45319)] INFO : Starting the New Relic agent in "development" environment.
+[12/09/18 10:19:53 +0000 gejian-jian1209-6620872 (45319)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[12/09/18 10:19:53 +0000 gejian-jian1209-6620872 (45319)] INFO : Reading configuration from config/newrelic.yml (/home/ubuntu/workspace/codeknows)
+[12/09/18 10:19:53 +0000 gejian-jian1209-6620872 (45319)] INFO : New Relic Agent Developer Mode enabled.
+[12/09/18 10:19:53 +0000 gejian-jian1209-6620872 (45319)] ERROR : No application name configured.
+[12/09/18 10:19:53 +0000 gejian-jian1209-6620872 (45319)] ERROR : The Agent cannot start without at least one. Please check your 
+[12/09/18 10:19:53 +0000 gejian-jian1209-6620872 (45319)] ERROR : newrelic.yml and ensure that it is valid and has at least one 
+[12/09/18 10:19:53 +0000 gejian-jian1209-6620872 (45319)] ERROR : value set for app_name in the development 
+[12/09/18 10:19:53 +0000 gejian-jian1209-6620872 (45319)] ERROR : environment.
+[12/09/18 10:19:53 +0000 gejian-jian1209-6620872 (45319)] INFO : Installing deferred Rack instrumentation
+[12/09/18 10:19:53 +0000 gejian-jian1209-6620872 (45319)] INFO : Installing Rack::Builder middleware instrumentation
+[12/09/18 10:19:53 +0000 gejian-jian1209-6620872 (45319)] INFO : Installing middleware-based Excon instrumentation
+[12/09/18 10:19:53 +0000 gejian-jian1209-6620872 (45319)] INFO : Installing ActiveRecord instrumentation
+[12/09/18 10:19:53 +0000 gejian-jian1209-6620872 (45319)] INFO : Installing Sinatra instrumentation
+[12/09/18 10:19:53 +0000 gejian-jian1209-6620872 (45319)] INFO : Installing Sidekiq instrumentation
+[12/09/18 10:19:53 +0000 gejian-jian1209-6620872 (45319)] INFO : Installing Rails 3+ middleware instrumentation
+[12/09/18 10:19:53 +0000 gejian-jian1209-6620872 (45319)] INFO : Installing Net instrumentation
+[12/09/18 10:19:53 +0000 gejian-jian1209-6620872 (45319)] INFO : Installing Curb instrumentation
+[12/09/18 10:19:53 +0000 gejian-jian1209-6620872 (45319)] INFO : Installing Rails 3 Error instrumentation
+[12/09/18 10:19:53 +0000 gejian-jian1209-6620872 (45319)] INFO : Installing Rails 3 Controller instrumentation
+[12/09/18 10:19:53 +0000 gejian-jian1209-6620872 (45319)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[12/09/18 10:19:53 +0000 gejian-jian1209-6620872 (45319)] INFO : Finished instrumentation
+[12/09/18 10:19:54 +0000 gejian-jian1209-6620872 (45319)] INFO : Doing deferred dependency-detection before Rack startup
+[12/11/18 14:40:21 +0000 gejian-jian1209-6620872 (2350)] INFO : Starting the New Relic agent in "development" environment.
+[12/11/18 14:40:21 +0000 gejian-jian1209-6620872 (2350)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[12/11/18 14:40:21 +0000 gejian-jian1209-6620872 (2350)] INFO : Reading configuration from config/newrelic.yml (/home/ubuntu/workspace/codeknows)
+[12/11/18 14:40:21 +0000 gejian-jian1209-6620872 (2350)] INFO : New Relic Agent Developer Mode enabled.
+[12/11/18 14:40:21 +0000 gejian-jian1209-6620872 (2350)] ERROR : No application name configured.
+[12/11/18 14:40:21 +0000 gejian-jian1209-6620872 (2350)] ERROR : The Agent cannot start without at least one. Please check your 
+[12/11/18 14:40:21 +0000 gejian-jian1209-6620872 (2350)] ERROR : newrelic.yml and ensure that it is valid and has at least one 
+[12/11/18 14:40:21 +0000 gejian-jian1209-6620872 (2350)] ERROR : value set for app_name in the development 
+[12/11/18 14:40:21 +0000 gejian-jian1209-6620872 (2350)] ERROR : environment.
+[12/11/18 14:40:21 +0000 gejian-jian1209-6620872 (2350)] INFO : Installing deferred Rack instrumentation
+[12/11/18 14:40:21 +0000 gejian-jian1209-6620872 (2350)] INFO : Installing Rack::Builder middleware instrumentation
+[12/11/18 14:40:22 +0000 gejian-jian1209-6620872 (2350)] INFO : Installing middleware-based Excon instrumentation
+[12/11/18 14:40:22 +0000 gejian-jian1209-6620872 (2350)] INFO : Installing ActiveRecord instrumentation
+[12/11/18 14:40:22 +0000 gejian-jian1209-6620872 (2350)] INFO : Installing Sinatra instrumentation
+[12/11/18 14:40:22 +0000 gejian-jian1209-6620872 (2350)] INFO : Installing Sidekiq instrumentation
+[12/11/18 14:40:22 +0000 gejian-jian1209-6620872 (2350)] INFO : Installing Rails 3+ middleware instrumentation
+[12/11/18 14:40:22 +0000 gejian-jian1209-6620872 (2350)] INFO : Installing Net instrumentation
+[12/11/18 14:40:22 +0000 gejian-jian1209-6620872 (2350)] INFO : Installing Curb instrumentation
+[12/11/18 14:40:22 +0000 gejian-jian1209-6620872 (2350)] INFO : Installing Rails 3 Error instrumentation
+[12/11/18 14:40:22 +0000 gejian-jian1209-6620872 (2350)] INFO : Installing Rails 3 Controller instrumentation
+[12/11/18 14:40:22 +0000 gejian-jian1209-6620872 (2350)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[12/11/18 14:40:22 +0000 gejian-jian1209-6620872 (2350)] INFO : Finished instrumentation
+[12/11/18 14:40:22 +0000 gejian-jian1209-6620872 (2350)] INFO : Doing deferred dependency-detection before Rack startup
+[12/11/18 14:54:48 +0000 gejian-jian1209-6620872 (2552)] INFO : Starting the New Relic agent in "development" environment.
+[12/11/18 14:54:48 +0000 gejian-jian1209-6620872 (2552)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[12/11/18 14:54:48 +0000 gejian-jian1209-6620872 (2552)] INFO : Reading configuration from config/newrelic.yml (/home/ubuntu/workspace/codeknows)
+[12/11/18 14:54:48 +0000 gejian-jian1209-6620872 (2552)] INFO : New Relic Agent Developer Mode enabled.
+[12/11/18 14:54:48 +0000 gejian-jian1209-6620872 (2552)] ERROR : No application name configured.
+[12/11/18 14:54:48 +0000 gejian-jian1209-6620872 (2552)] ERROR : The Agent cannot start without at least one. Please check your 
+[12/11/18 14:54:48 +0000 gejian-jian1209-6620872 (2552)] ERROR : newrelic.yml and ensure that it is valid and has at least one 
+[12/11/18 14:54:48 +0000 gejian-jian1209-6620872 (2552)] ERROR : value set for app_name in the development 
+[12/11/18 14:54:48 +0000 gejian-jian1209-6620872 (2552)] ERROR : environment.
+[12/11/18 14:54:48 +0000 gejian-jian1209-6620872 (2552)] INFO : Installing deferred Rack instrumentation
+[12/11/18 14:54:48 +0000 gejian-jian1209-6620872 (2552)] INFO : Installing Rack::Builder middleware instrumentation
+[12/11/18 14:54:48 +0000 gejian-jian1209-6620872 (2552)] INFO : Installing middleware-based Excon instrumentation
+[12/11/18 14:54:49 +0000 gejian-jian1209-6620872 (2552)] INFO : Installing ActiveRecord instrumentation
+[12/11/18 14:54:49 +0000 gejian-jian1209-6620872 (2552)] INFO : Installing Sinatra instrumentation
+[12/11/18 14:54:49 +0000 gejian-jian1209-6620872 (2552)] INFO : Installing Sidekiq instrumentation
+[12/11/18 14:54:49 +0000 gejian-jian1209-6620872 (2552)] INFO : Installing Rails 3+ middleware instrumentation
+[12/11/18 14:54:49 +0000 gejian-jian1209-6620872 (2552)] INFO : Installing Net instrumentation
+[12/11/18 14:54:49 +0000 gejian-jian1209-6620872 (2552)] INFO : Installing Curb instrumentation
+[12/11/18 14:54:49 +0000 gejian-jian1209-6620872 (2552)] INFO : Installing Rails 3 Error instrumentation
+[12/11/18 14:54:49 +0000 gejian-jian1209-6620872 (2552)] INFO : Installing Rails 3 Controller instrumentation
+[12/11/18 14:54:49 +0000 gejian-jian1209-6620872 (2552)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[12/11/18 14:54:49 +0000 gejian-jian1209-6620872 (2552)] INFO : Finished instrumentation
+[12/11/18 14:54:49 +0000 gejian-jian1209-6620872 (2552)] INFO : Doing deferred dependency-detection before Rack startup
+[12/12/18 02:27:40 +0000 gejian-jian1209-6620872 (1367)] INFO : Starting the New Relic agent in "development" environment.
+[12/12/18 02:27:40 +0000 gejian-jian1209-6620872 (1367)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[12/12/18 02:27:40 +0000 gejian-jian1209-6620872 (1367)] INFO : Reading configuration from config/newrelic.yml (/home/ubuntu/workspace/codeknows)
+[12/12/18 02:27:40 +0000 gejian-jian1209-6620872 (1367)] INFO : New Relic Agent Developer Mode enabled.
+[12/12/18 02:27:40 +0000 gejian-jian1209-6620872 (1367)] ERROR : No application name configured.
+[12/12/18 02:27:40 +0000 gejian-jian1209-6620872 (1367)] ERROR : The Agent cannot start without at least one. Please check your 
+[12/12/18 02:27:40 +0000 gejian-jian1209-6620872 (1367)] ERROR : newrelic.yml and ensure that it is valid and has at least one 
+[12/12/18 02:27:40 +0000 gejian-jian1209-6620872 (1367)] ERROR : value set for app_name in the development 
+[12/12/18 02:27:40 +0000 gejian-jian1209-6620872 (1367)] ERROR : environment.
+[12/12/18 02:27:40 +0000 gejian-jian1209-6620872 (1367)] INFO : Installing deferred Rack instrumentation
+[12/12/18 02:27:40 +0000 gejian-jian1209-6620872 (1367)] INFO : Installing Rack::Builder middleware instrumentation
+[12/12/18 02:27:40 +0000 gejian-jian1209-6620872 (1367)] INFO : Installing middleware-based Excon instrumentation
+[12/12/18 02:27:40 +0000 gejian-jian1209-6620872 (1367)] INFO : Installing ActiveRecord instrumentation
+[12/12/18 02:27:40 +0000 gejian-jian1209-6620872 (1367)] INFO : Installing Sinatra instrumentation
+[12/12/18 02:27:40 +0000 gejian-jian1209-6620872 (1367)] INFO : Installing Sidekiq instrumentation
+[12/12/18 02:27:40 +0000 gejian-jian1209-6620872 (1367)] INFO : Installing Rails 3+ middleware instrumentation
+[12/12/18 02:27:40 +0000 gejian-jian1209-6620872 (1367)] INFO : Installing Net instrumentation
+[12/12/18 02:27:40 +0000 gejian-jian1209-6620872 (1367)] INFO : Installing Curb instrumentation
+[12/12/18 02:27:40 +0000 gejian-jian1209-6620872 (1367)] INFO : Installing Rails 3 Error instrumentation
+[12/12/18 02:27:40 +0000 gejian-jian1209-6620872 (1367)] INFO : Installing Rails 3 Controller instrumentation
+[12/12/18 02:27:40 +0000 gejian-jian1209-6620872 (1367)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[12/12/18 02:27:40 +0000 gejian-jian1209-6620872 (1367)] INFO : Finished instrumentation
+[12/12/18 02:27:41 +0000 gejian-jian1209-6620872 (1367)] INFO : Doing deferred dependency-detection before Rack startup
+[12/12/18 10:26:34 +0000 gejian-jian1209-6620872 (2786)] INFO : Starting the New Relic agent in "development" environment.
+[12/12/18 10:26:34 +0000 gejian-jian1209-6620872 (2786)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[12/12/18 10:26:34 +0000 gejian-jian1209-6620872 (2786)] INFO : Reading configuration from config/newrelic.yml (/home/ubuntu/workspace/codeknows)
+[12/12/18 10:26:35 +0000 gejian-jian1209-6620872 (2786)] INFO : New Relic Agent Developer Mode enabled.
+[12/12/18 10:26:35 +0000 gejian-jian1209-6620872 (2786)] ERROR : No application name configured.
+[12/12/18 10:26:35 +0000 gejian-jian1209-6620872 (2786)] ERROR : The Agent cannot start without at least one. Please check your 
+[12/12/18 10:26:35 +0000 gejian-jian1209-6620872 (2786)] ERROR : newrelic.yml and ensure that it is valid and has at least one 
+[12/12/18 10:26:35 +0000 gejian-jian1209-6620872 (2786)] ERROR : value set for app_name in the development 
+[12/12/18 10:26:35 +0000 gejian-jian1209-6620872 (2786)] ERROR : environment.
+[12/12/18 10:26:35 +0000 gejian-jian1209-6620872 (2786)] INFO : Installing deferred Rack instrumentation
+[12/12/18 10:26:35 +0000 gejian-jian1209-6620872 (2786)] INFO : Installing Rack::Builder middleware instrumentation
+[12/12/18 10:26:35 +0000 gejian-jian1209-6620872 (2786)] INFO : Installing middleware-based Excon instrumentation
+[12/12/18 10:26:35 +0000 gejian-jian1209-6620872 (2786)] INFO : Installing ActiveRecord instrumentation
+[12/12/18 10:26:35 +0000 gejian-jian1209-6620872 (2786)] INFO : Installing Sinatra instrumentation
+[12/12/18 10:26:35 +0000 gejian-jian1209-6620872 (2786)] INFO : Installing Sidekiq instrumentation
+[12/12/18 10:26:35 +0000 gejian-jian1209-6620872 (2786)] INFO : Installing Rails 3+ middleware instrumentation
+[12/12/18 10:26:35 +0000 gejian-jian1209-6620872 (2786)] INFO : Installing Net instrumentation
+[12/12/18 10:26:35 +0000 gejian-jian1209-6620872 (2786)] INFO : Installing Curb instrumentation
+[12/12/18 10:26:35 +0000 gejian-jian1209-6620872 (2786)] INFO : Installing Rails 3 Error instrumentation
+[12/12/18 10:26:35 +0000 gejian-jian1209-6620872 (2786)] INFO : Installing Rails 3 Controller instrumentation
+[12/12/18 10:26:35 +0000 gejian-jian1209-6620872 (2786)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[12/12/18 10:26:35 +0000 gejian-jian1209-6620872 (2786)] INFO : Finished instrumentation
+[12/12/18 10:28:36 +0000 gejian-jian1209-6620872 (2915)] INFO : Starting the New Relic agent in "development" environment.
+[12/12/18 10:28:36 +0000 gejian-jian1209-6620872 (2915)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[12/12/18 10:28:36 +0000 gejian-jian1209-6620872 (2915)] INFO : Reading configuration from config/newrelic.yml (/home/ubuntu/workspace/codeknows)
+[12/12/18 10:28:36 +0000 gejian-jian1209-6620872 (2915)] INFO : New Relic Agent Developer Mode enabled.
+[12/12/18 10:28:36 +0000 gejian-jian1209-6620872 (2915)] ERROR : No application name configured.
+[12/12/18 10:28:36 +0000 gejian-jian1209-6620872 (2915)] ERROR : The Agent cannot start without at least one. Please check your 
+[12/12/18 10:28:36 +0000 gejian-jian1209-6620872 (2915)] ERROR : newrelic.yml and ensure that it is valid and has at least one 
+[12/12/18 10:28:36 +0000 gejian-jian1209-6620872 (2915)] ERROR : value set for app_name in the development 
+[12/12/18 10:28:36 +0000 gejian-jian1209-6620872 (2915)] ERROR : environment.
+[12/12/18 10:28:36 +0000 gejian-jian1209-6620872 (2915)] INFO : Installing deferred Rack instrumentation
+[12/12/18 10:28:36 +0000 gejian-jian1209-6620872 (2915)] INFO : Installing Rack::Builder middleware instrumentation
+[12/12/18 10:28:36 +0000 gejian-jian1209-6620872 (2915)] INFO : Installing middleware-based Excon instrumentation
+[12/12/18 10:28:36 +0000 gejian-jian1209-6620872 (2915)] INFO : Installing ActiveRecord instrumentation
+[12/12/18 10:28:36 +0000 gejian-jian1209-6620872 (2915)] INFO : Installing Sinatra instrumentation
+[12/12/18 10:28:36 +0000 gejian-jian1209-6620872 (2915)] INFO : Installing Sidekiq instrumentation
+[12/12/18 10:28:36 +0000 gejian-jian1209-6620872 (2915)] INFO : Installing Rails 3+ middleware instrumentation
+[12/12/18 10:28:36 +0000 gejian-jian1209-6620872 (2915)] INFO : Installing Net instrumentation
+[12/12/18 10:28:36 +0000 gejian-jian1209-6620872 (2915)] INFO : Installing Curb instrumentation
+[12/12/18 10:28:36 +0000 gejian-jian1209-6620872 (2915)] INFO : Installing Rails 3 Error instrumentation
+[12/12/18 10:28:36 +0000 gejian-jian1209-6620872 (2915)] INFO : Installing Rails 3 Controller instrumentation
+[12/12/18 10:28:36 +0000 gejian-jian1209-6620872 (2915)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[12/12/18 10:28:36 +0000 gejian-jian1209-6620872 (2915)] INFO : Finished instrumentation
+[12/12/18 10:28:37 +0000 gejian-jian1209-6620872 (2915)] INFO : Doing deferred dependency-detection before Rack startup
+[12/12/18 11:06:37 +0000 gejian-jian1209-6620872 (3750)] INFO : Starting the New Relic agent in "development" environment.
+[12/12/18 11:06:37 +0000 gejian-jian1209-6620872 (3750)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[12/12/18 11:06:37 +0000 gejian-jian1209-6620872 (3750)] INFO : Reading configuration from config/newrelic.yml (/home/ubuntu/workspace/codeknows)
+[12/12/18 11:06:37 +0000 gejian-jian1209-6620872 (3750)] INFO : New Relic Agent Developer Mode enabled.
+[12/12/18 11:06:37 +0000 gejian-jian1209-6620872 (3750)] ERROR : No application name configured.
+[12/12/18 11:06:37 +0000 gejian-jian1209-6620872 (3750)] ERROR : The Agent cannot start without at least one. Please check your 
+[12/12/18 11:06:37 +0000 gejian-jian1209-6620872 (3750)] ERROR : newrelic.yml and ensure that it is valid and has at least one 
+[12/12/18 11:06:37 +0000 gejian-jian1209-6620872 (3750)] ERROR : value set for app_name in the development 
+[12/12/18 11:06:37 +0000 gejian-jian1209-6620872 (3750)] ERROR : environment.
+[12/12/18 11:06:37 +0000 gejian-jian1209-6620872 (3750)] INFO : Installing deferred Rack instrumentation
+[12/12/18 11:06:37 +0000 gejian-jian1209-6620872 (3750)] INFO : Installing Rack::Builder middleware instrumentation
+[12/12/18 11:06:37 +0000 gejian-jian1209-6620872 (3750)] INFO : Installing middleware-based Excon instrumentation
+[12/12/18 11:06:37 +0000 gejian-jian1209-6620872 (3750)] INFO : Installing ActiveRecord instrumentation
+[12/12/18 11:06:37 +0000 gejian-jian1209-6620872 (3750)] INFO : Installing Sinatra instrumentation
+[12/12/18 11:06:37 +0000 gejian-jian1209-6620872 (3750)] INFO : Installing Sidekiq instrumentation
+[12/12/18 11:06:37 +0000 gejian-jian1209-6620872 (3750)] INFO : Installing Rails 3+ middleware instrumentation
+[12/12/18 11:06:37 +0000 gejian-jian1209-6620872 (3750)] INFO : Installing Net instrumentation
+[12/12/18 11:06:37 +0000 gejian-jian1209-6620872 (3750)] INFO : Installing Curb instrumentation
+[12/12/18 11:06:37 +0000 gejian-jian1209-6620872 (3750)] INFO : Installing Rails 3 Error instrumentation
+[12/12/18 11:06:37 +0000 gejian-jian1209-6620872 (3750)] INFO : Installing Rails 3 Controller instrumentation
+[12/12/18 11:06:37 +0000 gejian-jian1209-6620872 (3750)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[12/12/18 11:06:37 +0000 gejian-jian1209-6620872 (3750)] INFO : Finished instrumentation
+[12/12/18 11:06:38 +0000 gejian-jian1209-6620872 (3750)] INFO : Doing deferred dependency-detection before Rack startup

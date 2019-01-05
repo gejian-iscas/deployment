@@ -18,43 +18,43 @@ puts '---- NETWORKS ----'
 S.create_network_for('Ruby')
 S.create_network_for('JavaScript')
 
-puts '---- PLANS ----'
+# puts '---- PLANS ----'
 
-Plan.find_or_create_by_id(1) do |s|
-  s.amount    = 0
-  s.interval  = 'month'
-  s.name      = 'Basic'
-  s.currency  = 'usd'
-  s.public_id = 'sisv2w'
-  s.analytics = false
-end
+# Plan.find_or_create_by_id(1) do |s|
+#   s.amount    = 0
+#   s.interval  = 'month'
+#   s.name      = 'Basic'
+#   s.currency  = 'usd'
+#   s.public_id = 'sisv2w'
+#   s.analytics = false
+# end
 
-Plan.find_or_create_by_id(2) do |s|
-  s.amount    = 9900
-  s.interval  = 'month'
-  s.name      = 'Monthly'
-  s.currency  = 'usd'
-  s.public_id = 'eq6v5q'
-  s.analytics = false
-end
+# Plan.find_or_create_by_id(2) do |s|
+#   s.amount    = 9900
+#   s.interval  = 'month'
+#   s.name      = 'Monthly'
+#   s.currency  = 'usd'
+#   s.public_id = 'eq6v5q'
+#   s.analytics = false
+# end
 
-Plan.find_or_create_by_id(3) do |s|
-  s.amount    = 19900
-  s.interval  = nil
-  s.name      = 'Single'
-  s.currency  = 'usd'
-  s.public_id = 'ryew8a'
-  s.analytics = false
-end
+# Plan.find_or_create_by_id(3) do |s|
+#   s.amount    = 19900
+#   s.interval  = nil
+#   s.name      = 'Single'
+#   s.currency  = 'usd'
+#   s.public_id = 'ryew8a'
+#   s.analytics = false
+# end
 
-Plan.find_or_create_by_id(4) do |s|
-  s.amount    = 19900
-  s.interval  = 'month'
-  s.name      = 'Analytics'
-  s.currency  = 'usd'
-  s.public_id = 'qr5rxa'
-  s.analytics = true
-end
+# Plan.find_or_create_by_id(4) do |s|
+#   s.amount    = 19900
+#   s.interval  = 'month'
+#   s.name      = 'Analytics'
+#   s.currency  = 'usd'
+#   s.public_id = 'qr5rxa'
+#   s.analytics = true
+# end
 
 puts '---- USERS ----'
 
@@ -65,51 +65,51 @@ admin = User.find_or_create_by_id(1) do |s|
   s.name       = 'Administrator'
   s.username   = 'Administrator'
 
-  s.location   = 'San Francisco, CA'
-  s.country    = 'United States'
-  s.state_name = 'California'
+  s.location   = '北京，海淀'
+  s.country    = '中国'
+  s.state_name = '北京'
   s.lat        = 37.7749295
   s.lng        = -122.4194155
 
   s.api_key    = '1276acefb7181a64'
 end
 
-bryce = User.find_or_create_by_email('bryce.shivers@putabirdonit.com') do |s|
+darkh = User.find_or_create_by_email('dark.hu@mails.ucas.edu.cn') do |s|
   s.admin      = false
   s.state      = User::ACTIVE
 
-  s.name       = 'Bryce Shivers'
-  s.username   = 'bryce'
+  s.name       = '胡天毅'
+  s.username   = 'DarkH'
 
-  s.location   = 'Portland, Oregon'
-  s.city       = 'Portland'
-  s.country    = 'United States'
-  s.state_name = 'Oregon'
+  s.location   = '北京, 海淀'
+  s.city       = '北京'
+  s.country    = '中国'
+  s.state_name = '北京'
   s.lat        = 45.5234515
   s.lng        = -122.6762071
 
-  s.title      = 'Co-artisan'
-  s.company    = 'Put a Bird on It'
+  s.title      = '高级工程师'
+  s.company    = '中科院软件所'
 
   s.api_key    = '09d05d2dc824208c'
 end
 
-lisa = User.find_or_create_by_email('lisa.eversman@putabirdonit.com') do |s|
+louisg = User.find_or_create_by_email('louis.ge@mails.ucas.edu.cn') do |s|
   s.admin      = false
   s.state      = User::ACTIVE
 
-  s.name       = 'Lisa Eversman'
-  s.username   = 'lisa'
+  s.name       = '葛健'
+  s.username   = 'LouisG'
 
-  s.location   = 'Portland, Oregon'
-  s.city       = 'Portland'
-  s.country    = 'United States'
-  s.state_name = 'Oregon'
+  s.location   = '北京, 海淀'
+  s.city       = '北京'
+  s.country    = '中国'
+  s.state_name = '北京'
   s.lat        = 45.5234515
   s.lng        = -122.6762071
 
-  s.title      = 'Co-artisan'
-  s.company    = 'Put a Bird on It'
+  s.title      = '高级工程师'
+  s.company    = '中科院软件所'
 
   s.api_key    = 'a1536331c20aad4d'
 end
@@ -117,19 +117,37 @@ end
 puts '---- PROTIPS ----'
 
 
-S.create_protip_for(bryce) do |p|
+# S.create_protip_for(darkh) do |p|
+#   p.title  = '怎么学习Ruby？'
+#   p.body   = '用心学'
+#   p.topic_list = %w{ruby rails}
+# end
+
+# S.create_protip_for(darkh) do |p|
+#   p.title  = '怎么学习C++？'
+#   p.body   = '用心学'
+#   p.topic_list = %w{c++ program}
+# end
+
+# S.create_protip_for(louisg) do |p|
+#   p.title  = '沉迷学习，无法自拔'
+#   p.body   = '多学习'
+#   p.topic_list = %w{studymore dayup}
+# end
+
+S.create_protip_for(darkh) do |p|
   p.title  = 'Suspendisse potenti'
   p.body   = '<p>Suspendisse potenti. Nunc iaculis risus vel &#8216;Orci Ornare&#8217; dignissim sed vitae nulla. Nulla lobortis tempus commodo. Suspendisse <em>potenti</em>. Duis sagittis, est sit amet gravida tristique, purus lectus venenatis urna, id &#8216;molestie&#8217; magna risus ut nunc. Donec tempus tempus tellus, ac <abbr title="Hypertext Markup Language">HTML</abbr> lacinia turpis mattis ac. Fusce ac sodales magna. Fusce ac sodales <abbr title="Cascading Style Sheets">CSS</abbr> magna.</p>'
   p.topic_list = %w{suspendisse potenti}
 end
 
-S.create_protip_for(bryce) do |p|
+S.create_protip_for(darkh) do |p|
   p.title  = 'Vinyl Blue Bottle four loko wayfarers'
   p.body   = 'Austin try-hard artisan, bicycle rights salvia squid dreamcatcher hoodie before they sold out Carles scenester ennui. Organic mumblecore Tumblr, gentrify retro 90\'s fanny pack flexitarian raw denim roof party cornhole. Hella direct trade mixtape +1 cliche, slow-carb Neutra craft beer tousled fap DIY.'
   p.topic_list = %w{etsy hipster}
 end
 
-S.create_protip_for(lisa) do |p|
+S.create_protip_for(louisg) do |p|
   p.title  = 'Cras molestie risus a enim convallis vitae luctus libero lacinia'
   p.body   = '<p>Cras molestie risus a enim convallis vitae luctus libero lacinia. Maecenas sit <q cite="http://www.heydonworks.com">amet tellus nec mi gravida posuere</q> non pretium magna. Nulla vel magna sit amet dui <a href="#">lobortis</a> commodo vitae vel nulla. </p>'
   p.topic_list = %w{cras molestie}
@@ -137,10 +155,10 @@ end
 
 puts '---- TEAMS ----'
 
-team_name = 'Put a Bird on It'
+team_name = '中科院软件所'
 paboi = Team.where(name: team_name).try(:first) || Team.create!(name: team_name)
-paboi.add_member(lisa)
-paboi.add_member(bryce)
+paboi.add_member(darkh)
+paboi.add_member(louisg)
 
 paboi.benefit_name_1 = 'Putting birds on things.'
 paboi.big_quote = 'The dream of the 90s is alive in Portland!'

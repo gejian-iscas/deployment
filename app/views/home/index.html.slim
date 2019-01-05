@@ -1,35 +1,35 @@
 = content_for :footer_menu do
-  li=link_to 'Protips', by_tags_protips_path
+  li=link_to '亮点', by_tags_protips_path
 
 section.users-top
   .inside
-    = link_to 'Sign in', signin_path, class: 'sign-in'
+    = link_to '登录', signin_path, class: 'sign-in'
     = link_to nil , root_path, class: 'new-logo'
-    h1.mainline A community for developers to unlock &amp; share new skills.
+    h1.mainline 一个有关程序员的问答社区！
     .sign-up-panel
       = render 'sessions/join_buttons'
 section.home-section
   .inside.cf
     .text
-      h2 Share protips, learn from the community
-      p Learn from the experts about the latest languages, tools &amp; technologies or share your own pro tip and get feedback from thousands of developers. Share code snippets, tutorials or thought pieces with your peers.
+      h2 分享程序中的亮点, 在社区中学习
+      p 跟随专家学习最新的语言，开发工具，技术或是分享你自己独到的见解，并从其他程序员那里获得反馈。分享你在编程之路上遇到的一切！
     .image
       = image_tag('protip.jpg')
 section.home-section.badge-section
   .inside.cf
     .text
-      h2 Unlock &amp; earn badges for your coding achievements
-      p Earn unique Coderwall badges to display on your user profile. Based on your github repositories, earn badges for all major language types, represent your skills, level-up.
+      h2 解锁编程之路上的成就
+      p 获得独有勋章并展示在你的主页上，并持续获得提升！
     .image
       = image_tag('badges2.jpg')
 section.home-section.team-section
   .inside.cf
     .text
-      h2 Represent your team, curate its culture
-      p Discover over 6,000 brilliant engineering teams, how they're solving interesting challenges, and even find your next dream job. Curate your team's page by adding unique content, illustrating it's culture.
+      h2 创建你的团队
+      p 与志同道合的朋友穿件你的团队，共同努力！
     .image
       = image_tag('team.jpg')
 section.second-signup
   .inside.cf
-    h2.subline Start building your coderwall:
+    h2.subline 开始程序员之道吧：
     = render 'sessions/join_buttons'

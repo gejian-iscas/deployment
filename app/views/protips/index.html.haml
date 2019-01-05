@@ -12,22 +12,22 @@
     .home-top
       .left-panel
         %h1
-          A community for developers to unlock and share new skills, join us
+          一个有关程序员的问答社区，快来加入！
         = render partial: "sessions/join_buttons"
 
       %ul.features-list
         %li.achievements
-          %h2 Earn achievements
-          %p Unlock unique badges for your open-source contributions
+          %h2 获得成就
+          %p 解锁独特勋章，展示给朋友看吧！
         %li.connections
-          %h2 Make connections
-          %p Connect with your peers from around the world
+          %h2 加强联系
+          %p 与全世界的程序员做朋友吧！
         %li.protips
-          %h2 Share protips
-          %p Learn from experts or share your own tips, tricks and best practices
+          %h2 分享亮点
+          %p 学习或分享你自己的亮点和技巧吧！
         %li.team
-          %h2 Represent your team
-          %p Gather your team mates from work to establish your team's geek cred
+          %h2 创建队伍
+          %p 找到志同道合的好友，创建队伍吧！
 
 - else
   #upvoted-protips{'data-protips' => @upvoted_protips_public_ids}
@@ -40,14 +40,14 @@
       %ul.filter-nav#x-scopes
         -if signed_in?
           %li
-            = link_to "Fresh", fresh_protips_path(scope: params[:scope]), class: selected_search_context_class("fresh"), id: "x-scope-fresh"
+            = link_to "新鲜事", fresh_protips_path(scope: params[:scope]), class: selected_search_context_class("fresh"), id: "x-scope-fresh"
         %li
-          = link_to "Trending", trending_protips_path(scope: params[:scope]), class: selected_search_context_class("trending"), id: "x-scope-trending"
+          = link_to "趋势", trending_protips_path(scope: params[:scope]), class: selected_search_context_class("trending"), id: "x-scope-trending"
         %li
-          = link_to "Popular", popular_protips_path(scope: params[:scope]), class: selected_search_context_class("popular"), id: "x-scope-popular"
+          = link_to "流行", popular_protips_path(scope: params[:scope]), class: selected_search_context_class("popular"), id: "x-scope-popular"
         -if signed_in?
           %li
-            = link_to "Liked", liked_protips_path(scope: params[:scope]), class: selected_search_context_class("liked"), id: "x-scope-liked"
+            = link_to "点赞", liked_protips_path(scope: params[:scope]), class: selected_search_context_class("liked"), id: "x-scope-liked"
 
       - if signed_in?
         %ul.toggle-nav
@@ -59,7 +59,7 @@
   .filter-bar.search-bar#x-search{class: display_search_class}
     .inside.cf
       %form.search-bar{href: search_protips_path}
-        %input{name: "search", type: "text", placeholder: "Type here to search, for example: Ruby on Rails", value: params[:search]}
+        %input{name: "search", type: "text", placeholder: "Ruby on Rails", value: params[:search]}
 
       %ul.toggle-nav
         %li
