@@ -245,9 +245,10 @@ Coderwall::Application.routes.draw do
   match 'protips/update', via: %w(get put)
   match 'protip/update' , via: %w(get put)
 
-  #get 'welcome' => 'home#index', as: :welcome
-  #root 'home#index'
-  root to: 'protips#index''
+  # get 'welcome' => 'home#index', as: :welcome
+
+  root to: 'protips#index'
+
   get '/p/dpvbbg', controller: :protips, action: :show, id: 'devsal'
   get '/gh' , controller: :protips, action: :show, utm_campaign: 'github_orgs_badges' , utm_source: 'github'
 
@@ -428,3 +429,4 @@ Coderwall::Application.routes.draw do
     post '/hawt/unfeature' => 'hawt#unfeature'
   end
 end
+
