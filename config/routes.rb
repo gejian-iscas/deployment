@@ -247,7 +247,7 @@ Coderwall::Application.routes.draw do
 
   # get 'welcome' => 'home#index', as: :welcome
 
-  root to: 'protips#index'
+  root to: 'home#index'
 
   get '/p/dpvbbg', controller: :protips, action: :show, id: 'devsal'
   get '/gh' , controller: :protips, action: :show, utm_campaign: 'github_orgs_badges' , utm_source: 'github'
