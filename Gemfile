@@ -109,11 +109,14 @@ source 'https://rubygems.org' do
   gem 'materialize-sass'
 
   gem 'closure_tree'
-
+  gem 'capistrano', '~> 3.0'
   gem 'elasticsearch-model'
+  gem 'capistrano-rvm'
   gem 'elasticsearch-rails'
   gem 'capistrano-rails'
   gem 'capistrano-passenger'
+  gem 'capistrano-rbenv'
+  gem 'capistrano-bundler'
   gem 'newrelic_rpm'
   gem 'rspec'
   gem 'rspec-core'

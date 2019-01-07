@@ -167,3 +167,4 @@ Migrating to LinkCommentToProtipWithoutPolymorphism (20150720001425)
 Migrating to ChangeSkillNameToCitex (20150726134416)
 Migrating to ConvertSkillsColumnsToDatabaseJson (20150726135616)
 Migrating to AddTitleToMembership (20150809160133)
+Connecting to database specified by database.yml
