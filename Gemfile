@@ -1,4 +1,4 @@
-ruby '2.4.5'
+ruby '2.2.2'
 
 source 'https://rubygems.org' do
   gem 'rails', '~> 3.2'
@@ -112,9 +112,11 @@ source 'https://rubygems.org' do
 
   gem 'elasticsearch-model'
   gem 'elasticsearch-rails'
-
+  gem 'capistrano-rails'
+  gem 'capistrano-passenger'
   gem 'newrelic_rpm'
-
+  gem 'rspec'
+  gem 'rspec-core'
 # DROP BEFORE RAILS 4
   gem 'compass-rails'
   gem 'strong_parameters'

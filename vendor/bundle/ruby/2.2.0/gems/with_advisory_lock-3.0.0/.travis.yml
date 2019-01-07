@@ -1,0 +1,31 @@
+language: ruby
+
+rvm:
+  - jruby-19mode
+  - 2.1.2
+  - 1.9.3
+# TODO  - rbx-2
+
+gemfile:
+  - gemfiles/activerecord_3.2.gemfile
+  - gemfiles/activerecord_4.0.gemfile
+  - gemfiles/activerecord_4.1.gemfile
+  - gemfiles/activerecord_edge.gemfile
+
+env:
+  - DB=sqlite
+  - DB=mysql
+  - DB=postgresql
+
+script: WITH_ADVISORY_LOCK_PREFIX=$TRAVIS_JOB_ID bundle exec rake --trace
+
+before_script:
+  - mysql -e 'create database with_advisory_lock_test'
+  - psql -c 'create database with_advisory_lock_test' -U postgres
+
+matrix:
+  allow_failures:
+    - gemfile: gemfiles/activerecord_edge.gemfile
+    - rvm: jruby-19mode # travis' version of jruby has issues. Tests pass with jruby 1.7.13/java 1.8.0_11 on mac.
+    - rvm: rbx-2
+

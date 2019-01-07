@@ -1,0 +1,21 @@
+current directory: /home/louis0526/workspace/codeknows/vendor/bundle/ruby/2.2.0/gems/hitimes-1.2.2/ext/hitimes/c
+/home/louis0526/.rvm/rubies/ruby-2.2.2/bin/ruby -r ./siteconf20190106-30013-1iedrvc.rb extconf.rb
+checking for clock_gettime() in -lrt... yes
+creating Makefile
+
+current directory: /home/louis0526/workspace/codeknows/vendor/bundle/ruby/2.2.0/gems/hitimes-1.2.2/ext/hitimes/c
+make "DESTDIR=" clean
+
+current directory: /home/louis0526/workspace/codeknows/vendor/bundle/ruby/2.2.0/gems/hitimes-1.2.2/ext/hitimes/c
+make "DESTDIR="
+compiling hitimes_stats.c
+compiling hitimes_instant_clock_gettime.c
+compiling hitimes_instant_osx.c
+compiling hitimes.c
+compiling hitimes_instant_windows.c
+compiling hitimes_interval.c
+linking shared-object hitimes/2.2/hitimes.so
+
+current directory: /home/louis0526/workspace/codeknows/vendor/bundle/ruby/2.2.0/gems/hitimes-1.2.2/ext/hitimes/c
+make "DESTDIR=" install
+/usr/bin/install -m 0755 hitimes.so ./.gem.20190106-30013-au2rc4/hitimes/2.2

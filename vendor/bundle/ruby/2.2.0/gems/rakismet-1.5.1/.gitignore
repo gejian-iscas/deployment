@@ -1,0 +1,11 @@
+.DS_Store
+*.tmproj
+tmtags
+*.swp
+*.swo
+*.un~
+coverage
+rdoc
+pkg
+Gemfile.lock
+.bundle

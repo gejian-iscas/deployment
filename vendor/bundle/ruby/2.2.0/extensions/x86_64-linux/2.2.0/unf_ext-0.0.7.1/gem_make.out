@@ -1,0 +1,16 @@
+current directory: /home/louis0526/workspace/codeknows/vendor/bundle/ruby/2.2.0/gems/unf_ext-0.0.7.1/ext/unf_ext
+/home/louis0526/.rvm/rubies/ruby-2.2.2/bin/ruby -r ./siteconf20190106-30013-61j1vb.rb extconf.rb
+checking for main() in -lstdc++... yes
+creating Makefile
+
+current directory: /home/louis0526/workspace/codeknows/vendor/bundle/ruby/2.2.0/gems/unf_ext-0.0.7.1/ext/unf_ext
+make "DESTDIR=" clean
+
+current directory: /home/louis0526/workspace/codeknows/vendor/bundle/ruby/2.2.0/gems/unf_ext-0.0.7.1/ext/unf_ext
+make "DESTDIR="
+compiling unf.cc
+linking shared-object unf_ext.so
+
+current directory: /home/louis0526/workspace/codeknows/vendor/bundle/ruby/2.2.0/gems/unf_ext-0.0.7.1/ext/unf_ext
+make "DESTDIR=" install
+/usr/bin/install -m 0755 unf_ext.so ./.gem.20190106-30013-1slk7ii

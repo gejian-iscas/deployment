@@ -251,3 +251,473 @@
 [12/12/18 11:06:37 +0000 gejian-jian1209-6620872 (3750)] INFO : Installing Rails 3.1/3.2 view instrumentation
 [12/12/18 11:06:37 +0000 gejian-jian1209-6620872 (3750)] INFO : Finished instrumentation
 [12/12/18 11:06:38 +0000 gejian-jian1209-6620872 (3750)] INFO : Doing deferred dependency-detection before Rack startup
+[01/06/19 16:21:00 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20801)] INFO : Starting the New Relic agent in "development" environment.
+[01/06/19 16:21:00 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20801)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[01/06/19 16:21:00 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20801)] INFO : Reading configuration from config/newrelic.yml (/home/louis0526/workspace/codeknows)
+[01/06/19 16:21:00 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20801)] INFO : New Relic Agent Developer Mode enabled.
+[01/06/19 16:21:00 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20801)] ERROR : No application name configured.
+[01/06/19 16:21:00 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20801)] ERROR : The Agent cannot start without at least one. Please check your 
+[01/06/19 16:21:00 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20801)] ERROR : newrelic.yml and ensure that it is valid and has at least one 
+[01/06/19 16:21:00 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20801)] ERROR : value set for app_name in the development 
+[01/06/19 16:21:00 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20801)] ERROR : environment.
+[01/06/19 16:21:00 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20801)] INFO : Installing middleware-based Excon instrumentation
+[01/06/19 16:21:00 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20801)] INFO : Installing deferred Rack instrumentation
+[01/06/19 16:21:00 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20801)] INFO : Installing Rack::Builder middleware instrumentation
+[01/06/19 16:21:00 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20801)] INFO : Installing Curb instrumentation
+[01/06/19 16:21:00 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20801)] INFO : Installing Sinatra instrumentation
+[01/06/19 16:21:00 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20801)] INFO : Installing Sidekiq instrumentation
+[01/06/19 16:21:00 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20801)] INFO : Installing Net instrumentation
+[01/06/19 16:21:00 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20801)] INFO : Installing Rails 3+ middleware instrumentation
+[01/06/19 16:21:00 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20801)] INFO : Installing ActiveRecord instrumentation
+[01/06/19 16:21:00 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20801)] INFO : Installing Rails 3 Error instrumentation
+[01/06/19 16:21:00 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20801)] INFO : Installing Rails 3 Controller instrumentation
+[01/06/19 16:21:00 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20801)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[01/06/19 16:21:00 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20801)] INFO : Finished instrumentation
+[01/06/19 16:21:01 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20801)] INFO : Doing deferred dependency-detection before Rack startup
+[01/06/19 20:40:51 +0800 iZ2ze0gwtfo8df4v3sqva5Z (18111)] INFO : Starting the New Relic agent in "development" environment.
+[01/06/19 20:40:51 +0800 iZ2ze0gwtfo8df4v3sqva5Z (18111)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[01/06/19 20:40:51 +0800 iZ2ze0gwtfo8df4v3sqva5Z (18111)] INFO : Reading configuration from config/newrelic.yml (/home/louis0526/workspace/codeknows)
+[01/06/19 20:40:51 +0800 iZ2ze0gwtfo8df4v3sqva5Z (18111)] INFO : New Relic Agent Developer Mode enabled.
+[01/06/19 20:40:51 +0800 iZ2ze0gwtfo8df4v3sqva5Z (18111)] ERROR : No application name configured.
+[01/06/19 20:40:51 +0800 iZ2ze0gwtfo8df4v3sqva5Z (18111)] ERROR : The Agent cannot start without at least one. Please check your 
+[01/06/19 20:40:51 +0800 iZ2ze0gwtfo8df4v3sqva5Z (18111)] ERROR : newrelic.yml and ensure that it is valid and has at least one 
+[01/06/19 20:40:51 +0800 iZ2ze0gwtfo8df4v3sqva5Z (18111)] ERROR : value set for app_name in the development 
+[01/06/19 20:40:51 +0800 iZ2ze0gwtfo8df4v3sqva5Z (18111)] ERROR : environment.
+[01/06/19 20:40:51 +0800 iZ2ze0gwtfo8df4v3sqva5Z (18111)] INFO : Installing middleware-based Excon instrumentation
+[01/06/19 20:40:51 +0800 iZ2ze0gwtfo8df4v3sqva5Z (18111)] INFO : Installing deferred Rack instrumentation
+[01/06/19 20:40:51 +0800 iZ2ze0gwtfo8df4v3sqva5Z (18111)] INFO : Installing Rack::Builder middleware instrumentation
+[01/06/19 20:40:51 +0800 iZ2ze0gwtfo8df4v3sqva5Z (18111)] INFO : Installing Curb instrumentation
+[01/06/19 20:40:51 +0800 iZ2ze0gwtfo8df4v3sqva5Z (18111)] INFO : Installing Sinatra instrumentation
+[01/06/19 20:40:51 +0800 iZ2ze0gwtfo8df4v3sqva5Z (18111)] INFO : Installing Sidekiq instrumentation
+[01/06/19 20:40:51 +0800 iZ2ze0gwtfo8df4v3sqva5Z (18111)] INFO : Installing Net instrumentation
+[01/06/19 20:40:51 +0800 iZ2ze0gwtfo8df4v3sqva5Z (18111)] INFO : Installing Rails 3+ middleware instrumentation
+[01/06/19 20:40:51 +0800 iZ2ze0gwtfo8df4v3sqva5Z (18111)] INFO : Installing ActiveRecord instrumentation
+[01/06/19 20:40:51 +0800 iZ2ze0gwtfo8df4v3sqva5Z (18111)] INFO : Installing Rails 3 Error instrumentation
+[01/06/19 20:40:51 +0800 iZ2ze0gwtfo8df4v3sqva5Z (18111)] INFO : Installing Rails 3 Controller instrumentation
+[01/06/19 20:40:51 +0800 iZ2ze0gwtfo8df4v3sqva5Z (18111)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[01/06/19 20:40:51 +0800 iZ2ze0gwtfo8df4v3sqva5Z (18111)] INFO : Finished instrumentation
+[01/06/19 20:40:51 +0800 iZ2ze0gwtfo8df4v3sqva5Z (18111)] INFO : Doing deferred dependency-detection before Rack startup
+[01/06/19 23:03:36 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20216)] INFO : Starting the New Relic agent in "development" environment.
+[01/06/19 23:03:36 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20216)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[01/06/19 23:03:36 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20216)] INFO : Reading configuration from config/newrelic.yml (/home/louis0526/workspace/codeknows)
+[01/06/19 23:03:36 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20216)] INFO : New Relic Agent Developer Mode enabled.
+[01/06/19 23:03:36 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20216)] ERROR : No application name configured.
+[01/06/19 23:03:36 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20216)] ERROR : The Agent cannot start without at least one. Please check your 
+[01/06/19 23:03:36 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20216)] ERROR : newrelic.yml and ensure that it is valid and has at least one 
+[01/06/19 23:03:36 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20216)] ERROR : value set for app_name in the development 
+[01/06/19 23:03:36 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20216)] ERROR : environment.
+[01/06/19 23:03:36 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20216)] INFO : Installing middleware-based Excon instrumentation
+[01/06/19 23:03:36 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20216)] INFO : Installing deferred Rack instrumentation
+[01/06/19 23:03:36 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20216)] INFO : Installing Rack::Builder middleware instrumentation
+[01/06/19 23:03:36 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20216)] INFO : Installing Curb instrumentation
+[01/06/19 23:03:36 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20216)] INFO : Installing Sinatra instrumentation
+[01/06/19 23:03:36 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20216)] INFO : Installing Sidekiq instrumentation
+[01/06/19 23:03:36 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20216)] INFO : Installing Net instrumentation
+[01/06/19 23:03:36 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20216)] INFO : Installing Rails 3+ middleware instrumentation
+[01/06/19 23:03:36 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20216)] INFO : Installing ActiveRecord instrumentation
+[01/06/19 23:03:36 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20216)] INFO : Installing Rails 3 Error instrumentation
+[01/06/19 23:03:36 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20216)] INFO : Installing Rails 3 Controller instrumentation
+[01/06/19 23:03:36 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20216)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[01/06/19 23:03:36 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20216)] INFO : Finished instrumentation
+[01/06/19 23:10:28 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20259)] INFO : Starting the New Relic agent in "development" environment.
+[01/06/19 23:10:28 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20259)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[01/06/19 23:10:28 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20259)] INFO : Reading configuration from config/newrelic.yml (/home/louis0526/workspace/codeknows)
+[01/06/19 23:10:28 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20259)] INFO : New Relic Agent Developer Mode enabled.
+[01/06/19 23:10:28 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20259)] ERROR : No application name configured.
+[01/06/19 23:10:28 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20259)] ERROR : The Agent cannot start without at least one. Please check your 
+[01/06/19 23:10:28 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20259)] ERROR : newrelic.yml and ensure that it is valid and has at least one 
+[01/06/19 23:10:28 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20259)] ERROR : value set for app_name in the development 
+[01/06/19 23:10:28 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20259)] ERROR : environment.
+[01/06/19 23:10:28 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20259)] INFO : Installing middleware-based Excon instrumentation
+[01/06/19 23:10:28 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20259)] INFO : Installing deferred Rack instrumentation
+[01/06/19 23:10:28 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20259)] INFO : Installing Rack::Builder middleware instrumentation
+[01/06/19 23:10:28 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20259)] INFO : Installing Curb instrumentation
+[01/06/19 23:10:28 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20259)] INFO : Installing Sinatra instrumentation
+[01/06/19 23:10:28 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20259)] INFO : Installing Sidekiq instrumentation
+[01/06/19 23:10:28 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20259)] INFO : Installing Net instrumentation
+[01/06/19 23:10:28 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20259)] INFO : Installing Rails 3+ middleware instrumentation
+[01/06/19 23:10:28 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20259)] INFO : Installing ActiveRecord instrumentation
+[01/06/19 23:10:28 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20259)] INFO : Installing Rails 3 Error instrumentation
+[01/06/19 23:10:28 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20259)] INFO : Installing Rails 3 Controller instrumentation
+[01/06/19 23:10:28 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20259)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[01/06/19 23:10:28 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20259)] INFO : Finished instrumentation
+[01/06/19 23:38:11 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20818)] INFO : Starting the New Relic agent in "development" environment.
+[01/06/19 23:38:11 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20818)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[01/06/19 23:38:11 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20818)] INFO : Reading configuration from config/newrelic.yml (/home/louis0526/workspace/codeknows)
+[01/06/19 23:38:11 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20818)] INFO : New Relic Agent Developer Mode enabled.
+[01/06/19 23:38:11 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20818)] ERROR : No application name configured.
+[01/06/19 23:38:11 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20818)] ERROR : The Agent cannot start without at least one. Please check your 
+[01/06/19 23:38:11 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20818)] ERROR : newrelic.yml and ensure that it is valid and has at least one 
+[01/06/19 23:38:11 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20818)] ERROR : value set for app_name in the development 
+[01/06/19 23:38:11 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20818)] ERROR : environment.
+[01/06/19 23:38:11 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20818)] INFO : Installing middleware-based Excon instrumentation
+[01/06/19 23:38:11 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20818)] INFO : Installing deferred Rack instrumentation
+[01/06/19 23:38:11 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20818)] INFO : Installing Rack::Builder middleware instrumentation
+[01/06/19 23:38:11 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20818)] INFO : Installing Curb instrumentation
+[01/06/19 23:38:11 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20818)] INFO : Installing Sinatra instrumentation
+[01/06/19 23:38:11 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20818)] INFO : Installing Sidekiq instrumentation
+[01/06/19 23:38:11 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20818)] INFO : Installing Net instrumentation
+[01/06/19 23:38:11 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20818)] INFO : Installing Rails 3+ middleware instrumentation
+[01/06/19 23:38:11 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20818)] INFO : Installing ActiveRecord instrumentation
+[01/06/19 23:38:11 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20818)] INFO : Installing Rails 3 Error instrumentation
+[01/06/19 23:38:11 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20818)] INFO : Installing Rails 3 Controller instrumentation
+[01/06/19 23:38:11 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20818)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[01/06/19 23:38:11 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20818)] INFO : Finished instrumentation
+[01/06/19 23:38:11 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20818)] INFO : Doing deferred dependency-detection before Rack startup
+[01/06/19 23:39:26 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20827)] INFO : Starting the New Relic agent in "development" environment.
+[01/06/19 23:39:26 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20827)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[01/06/19 23:39:26 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20827)] INFO : Reading configuration from config/newrelic.yml (/home/louis0526/workspace/codeknows)
+[01/06/19 23:39:26 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20827)] INFO : New Relic Agent Developer Mode enabled.
+[01/06/19 23:39:26 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20827)] ERROR : No application name configured.
+[01/06/19 23:39:26 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20827)] ERROR : The Agent cannot start without at least one. Please check your 
+[01/06/19 23:39:26 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20827)] ERROR : newrelic.yml and ensure that it is valid and has at least one 
+[01/06/19 23:39:26 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20827)] ERROR : value set for app_name in the development 
+[01/06/19 23:39:26 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20827)] ERROR : environment.
+[01/06/19 23:39:26 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20827)] INFO : Installing middleware-based Excon instrumentation
+[01/06/19 23:39:26 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20827)] INFO : Installing deferred Rack instrumentation
+[01/06/19 23:39:26 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20827)] INFO : Installing Rack::Builder middleware instrumentation
+[01/06/19 23:39:26 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20827)] INFO : Installing Curb instrumentation
+[01/06/19 23:39:26 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20827)] INFO : Installing Sinatra instrumentation
+[01/06/19 23:39:26 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20827)] INFO : Installing Sidekiq instrumentation
+[01/06/19 23:39:26 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20827)] INFO : Installing Net instrumentation
+[01/06/19 23:39:26 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20827)] INFO : Installing Rails 3+ middleware instrumentation
+[01/06/19 23:39:26 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20827)] INFO : Installing ActiveRecord instrumentation
+[01/06/19 23:39:26 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20827)] INFO : Installing Rails 3 Error instrumentation
+[01/06/19 23:39:26 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20827)] INFO : Installing Rails 3 Controller instrumentation
+[01/06/19 23:39:26 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20827)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[01/06/19 23:39:26 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20827)] INFO : Finished instrumentation
+[01/06/19 23:39:26 +0800 iZ2ze0gwtfo8df4v3sqva5Z (20827)] INFO : Doing deferred dependency-detection before Rack startup
+[01/07/19 11:13:34 +0800 iZ2ze0gwtfo8df4v3sqva5Z (24384)] INFO : Starting the New Relic agent in "production" environment.
+[01/07/19 11:13:34 +0800 iZ2ze0gwtfo8df4v3sqva5Z (24384)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "production" section of your newrelic.yml.
+[01/07/19 11:13:34 +0800 iZ2ze0gwtfo8df4v3sqva5Z (24384)] INFO : Reading configuration from config/newrelic.yml (/home/louis0526/workspace/codeknows)
+[01/07/19 11:13:34 +0800 iZ2ze0gwtfo8df4v3sqva5Z (24384)] ERROR : No application name configured.
+[01/07/19 11:13:34 +0800 iZ2ze0gwtfo8df4v3sqva5Z (24384)] ERROR : The Agent cannot start without at least one. Please check your 
+[01/07/19 11:13:34 +0800 iZ2ze0gwtfo8df4v3sqva5Z (24384)] ERROR : newrelic.yml and ensure that it is valid and has at least one 
+[01/07/19 11:13:34 +0800 iZ2ze0gwtfo8df4v3sqva5Z (24384)] ERROR : value set for app_name in the production 
+[01/07/19 11:13:34 +0800 iZ2ze0gwtfo8df4v3sqva5Z (24384)] ERROR : environment.
+[01/07/19 11:13:34 +0800 iZ2ze0gwtfo8df4v3sqva5Z (24384)] INFO : Installing middleware-based Excon instrumentation
+[01/07/19 11:13:34 +0800 iZ2ze0gwtfo8df4v3sqva5Z (24384)] INFO : Installing deferred Rack instrumentation
+[01/07/19 11:13:34 +0800 iZ2ze0gwtfo8df4v3sqva5Z (24384)] INFO : Installing Rack::Builder middleware instrumentation
+[01/07/19 11:13:34 +0800 iZ2ze0gwtfo8df4v3sqva5Z (24384)] INFO : Installing Curb instrumentation
+[01/07/19 11:13:34 +0800 iZ2ze0gwtfo8df4v3sqva5Z (24384)] INFO : Installing Sinatra instrumentation
+[01/07/19 11:13:34 +0800 iZ2ze0gwtfo8df4v3sqva5Z (24384)] INFO : Installing Sidekiq instrumentation
+[01/07/19 11:13:34 +0800 iZ2ze0gwtfo8df4v3sqva5Z (24384)] INFO : Installing Net instrumentation
+[01/07/19 11:13:34 +0800 iZ2ze0gwtfo8df4v3sqva5Z (24384)] INFO : Installing Rails 3+ middleware instrumentation
+[01/07/19 11:13:34 +0800 iZ2ze0gwtfo8df4v3sqva5Z (24384)] INFO : Installing ActiveRecord instrumentation
+[01/07/19 11:13:34 +0800 iZ2ze0gwtfo8df4v3sqva5Z (24384)] INFO : Installing Rails 3 Error instrumentation
+[01/07/19 11:13:34 +0800 iZ2ze0gwtfo8df4v3sqva5Z (24384)] INFO : Installing Rails 3 Controller instrumentation
+[01/07/19 11:13:34 +0800 iZ2ze0gwtfo8df4v3sqva5Z (24384)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[01/07/19 11:13:34 +0800 iZ2ze0gwtfo8df4v3sqva5Z (24384)] INFO : Finished instrumentation
+[01/07/19 11:13:37 +0800 iZ2ze0gwtfo8df4v3sqva5Z (24384)] ERROR : Error establishing connection with New Relic Service at collector.newrelic.com:443:
+[01/07/19 11:13:37 +0800 iZ2ze0gwtfo8df4v3sqva5Z (24384)] ERROR : NewRelic::Agent::ServerConnectionException: Unexpected response from server (404): Not Found
+[01/07/19 11:13:37 +0800 iZ2ze0gwtfo8df4v3sqva5Z (24384)] INFO : Starting the New Relic agent in "production" environment.
+[01/07/19 11:13:37 +0800 iZ2ze0gwtfo8df4v3sqva5Z (24384)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "production" section of your newrelic.yml.
+[01/07/19 11:13:37 +0800 iZ2ze0gwtfo8df4v3sqva5Z (24384)] INFO : Reading configuration from config/newrelic.yml (/home/louis0526/workspace/codeknows)
+[01/07/19 11:13:37 +0800 iZ2ze0gwtfo8df4v3sqva5Z (24384)] INFO : New Relic Agent not running.
+[01/07/19 11:13:37 +0800 iZ2ze0gwtfo8df4v3sqva5Z (24384)] INFO : Starting Agent shutdown
+[01/07/19 11:14:16 +0800 iZ2ze0gwtfo8df4v3sqva5Z (24399)] INFO : Starting the New Relic agent in "production" environment.
+[01/07/19 11:14:16 +0800 iZ2ze0gwtfo8df4v3sqva5Z (24399)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "production" section of your newrelic.yml.
+[01/07/19 11:14:16 +0800 iZ2ze0gwtfo8df4v3sqva5Z (24399)] INFO : Reading configuration from config/newrelic.yml (/home/louis0526/workspace/codeknows)
+[01/07/19 11:14:16 +0800 iZ2ze0gwtfo8df4v3sqva5Z (24399)] ERROR : No application name configured.
+[01/07/19 11:14:16 +0800 iZ2ze0gwtfo8df4v3sqva5Z (24399)] ERROR : The Agent cannot start without at least one. Please check your 
+[01/07/19 11:14:16 +0800 iZ2ze0gwtfo8df4v3sqva5Z (24399)] ERROR : newrelic.yml and ensure that it is valid and has at least one 
+[01/07/19 11:14:16 +0800 iZ2ze0gwtfo8df4v3sqva5Z (24399)] ERROR : value set for app_name in the production 
+[01/07/19 11:14:16 +0800 iZ2ze0gwtfo8df4v3sqva5Z (24399)] ERROR : environment.
+[01/07/19 11:14:16 +0800 iZ2ze0gwtfo8df4v3sqva5Z (24399)] INFO : Installing middleware-based Excon instrumentation
+[01/07/19 11:14:16 +0800 iZ2ze0gwtfo8df4v3sqva5Z (24399)] INFO : Installing deferred Rack instrumentation
+[01/07/19 11:14:16 +0800 iZ2ze0gwtfo8df4v3sqva5Z (24399)] INFO : Installing Rack::Builder middleware instrumentation
+[01/07/19 11:14:16 +0800 iZ2ze0gwtfo8df4v3sqva5Z (24399)] INFO : Installing Curb instrumentation
+[01/07/19 11:14:16 +0800 iZ2ze0gwtfo8df4v3sqva5Z (24399)] INFO : Installing Sinatra instrumentation
+[01/07/19 11:14:16 +0800 iZ2ze0gwtfo8df4v3sqva5Z (24399)] INFO : Installing Sidekiq instrumentation
+[01/07/19 11:14:16 +0800 iZ2ze0gwtfo8df4v3sqva5Z (24399)] INFO : Installing Net instrumentation
+[01/07/19 11:14:16 +0800 iZ2ze0gwtfo8df4v3sqva5Z (24399)] INFO : Installing Rails 3+ middleware instrumentation
+[01/07/19 11:14:16 +0800 iZ2ze0gwtfo8df4v3sqva5Z (24399)] INFO : Installing ActiveRecord instrumentation
+[01/07/19 11:14:16 +0800 iZ2ze0gwtfo8df4v3sqva5Z (24399)] INFO : Installing Rails 3 Error instrumentation
+[01/07/19 11:14:16 +0800 iZ2ze0gwtfo8df4v3sqva5Z (24399)] INFO : Installing Rails 3 Controller instrumentation
+[01/07/19 11:14:16 +0800 iZ2ze0gwtfo8df4v3sqva5Z (24399)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[01/07/19 11:14:16 +0800 iZ2ze0gwtfo8df4v3sqva5Z (24399)] INFO : Finished instrumentation
+[01/07/19 11:14:19 +0800 iZ2ze0gwtfo8df4v3sqva5Z (24399)] ERROR : Error establishing connection with New Relic Service at collector.newrelic.com:443:
+[01/07/19 11:14:19 +0800 iZ2ze0gwtfo8df4v3sqva5Z (24399)] ERROR : NewRelic::Agent::ServerConnectionException: Unexpected response from server (404): Not Found
+[01/07/19 11:14:19 +0800 iZ2ze0gwtfo8df4v3sqva5Z (24399)] INFO : Starting the New Relic agent in "production" environment.
+[01/07/19 11:14:19 +0800 iZ2ze0gwtfo8df4v3sqva5Z (24399)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "production" section of your newrelic.yml.
+[01/07/19 11:14:19 +0800 iZ2ze0gwtfo8df4v3sqva5Z (24399)] INFO : Reading configuration from config/newrelic.yml (/home/louis0526/workspace/codeknows)
+[01/07/19 11:14:19 +0800 iZ2ze0gwtfo8df4v3sqva5Z (24399)] INFO : New Relic Agent not running.
+[01/07/19 11:14:19 +0800 iZ2ze0gwtfo8df4v3sqva5Z (24399)] INFO : Starting Agent shutdown
+[01/07/19 11:33:32 +0800 iZ2ze0gwtfo8df4v3sqva5Z (24542)] INFO : Starting the New Relic agent in "production" environment.
+[01/07/19 11:33:32 +0800 iZ2ze0gwtfo8df4v3sqva5Z (24542)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "production" section of your newrelic.yml.
+[01/07/19 11:33:32 +0800 iZ2ze0gwtfo8df4v3sqva5Z (24542)] INFO : Reading configuration from config/newrelic.yml (/home/louis0526/workspace/codeknows)
+[01/07/19 11:33:32 +0800 iZ2ze0gwtfo8df4v3sqva5Z (24542)] ERROR : No application name configured.
+[01/07/19 11:33:32 +0800 iZ2ze0gwtfo8df4v3sqva5Z (24542)] ERROR : The Agent cannot start without at least one. Please check your 
+[01/07/19 11:33:32 +0800 iZ2ze0gwtfo8df4v3sqva5Z (24542)] ERROR : newrelic.yml and ensure that it is valid and has at least one 
+[01/07/19 11:33:32 +0800 iZ2ze0gwtfo8df4v3sqva5Z (24542)] ERROR : value set for app_name in the production 
+[01/07/19 11:33:32 +0800 iZ2ze0gwtfo8df4v3sqva5Z (24542)] ERROR : environment.
+[01/07/19 11:33:32 +0800 iZ2ze0gwtfo8df4v3sqva5Z (24542)] INFO : Installing middleware-based Excon instrumentation
+[01/07/19 11:33:32 +0800 iZ2ze0gwtfo8df4v3sqva5Z (24542)] INFO : Installing deferred Rack instrumentation
+[01/07/19 11:33:32 +0800 iZ2ze0gwtfo8df4v3sqva5Z (24542)] INFO : Installing Rack::Builder middleware instrumentation
+[01/07/19 11:33:32 +0800 iZ2ze0gwtfo8df4v3sqva5Z (24542)] INFO : Installing Curb instrumentation
+[01/07/19 11:33:32 +0800 iZ2ze0gwtfo8df4v3sqva5Z (24542)] INFO : Installing Sinatra instrumentation
+[01/07/19 11:33:32 +0800 iZ2ze0gwtfo8df4v3sqva5Z (24542)] INFO : Installing Sidekiq instrumentation
+[01/07/19 11:33:32 +0800 iZ2ze0gwtfo8df4v3sqva5Z (24542)] INFO : Installing Net instrumentation
+[01/07/19 11:33:32 +0800 iZ2ze0gwtfo8df4v3sqva5Z (24542)] INFO : Installing Rails 3+ middleware instrumentation
+[01/07/19 11:33:32 +0800 iZ2ze0gwtfo8df4v3sqva5Z (24542)] INFO : Installing ActiveRecord instrumentation
+[01/07/19 11:33:32 +0800 iZ2ze0gwtfo8df4v3sqva5Z (24542)] INFO : Installing Rails 3 Error instrumentation
+[01/07/19 11:33:32 +0800 iZ2ze0gwtfo8df4v3sqva5Z (24542)] INFO : Installing Rails 3 Controller instrumentation
+[01/07/19 11:33:32 +0800 iZ2ze0gwtfo8df4v3sqva5Z (24542)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[01/07/19 11:33:32 +0800 iZ2ze0gwtfo8df4v3sqva5Z (24542)] INFO : Finished instrumentation
+[01/07/19 11:33:34 +0800 iZ2ze0gwtfo8df4v3sqva5Z (24542)] ERROR : Error establishing connection with New Relic Service at collector.newrelic.com:443:
+[01/07/19 11:33:34 +0800 iZ2ze0gwtfo8df4v3sqva5Z (24542)] ERROR : NewRelic::Agent::ServerConnectionException: Unexpected response from server (404): Not Found
+[01/07/19 11:33:34 +0800 iZ2ze0gwtfo8df4v3sqva5Z (24542)] INFO : Starting the New Relic agent in "production" environment.
+[01/07/19 11:33:34 +0800 iZ2ze0gwtfo8df4v3sqva5Z (24542)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "production" section of your newrelic.yml.
+[01/07/19 11:33:34 +0800 iZ2ze0gwtfo8df4v3sqva5Z (24542)] INFO : Reading configuration from config/newrelic.yml (/home/louis0526/workspace/codeknows)
+[01/07/19 11:33:34 +0800 iZ2ze0gwtfo8df4v3sqva5Z (24542)] INFO : New Relic Agent not running.
+[01/07/19 11:33:36 +0800 iZ2ze0gwtfo8df4v3sqva5Z (24542)] ERROR : Error establishing connection with New Relic Service at collector.newrelic.com:443:
+[01/07/19 11:33:36 +0800 iZ2ze0gwtfo8df4v3sqva5Z (24542)] ERROR : NewRelic::Agent::ServerConnectionException: Unexpected response from server (404): Not Found
+[01/07/19 11:33:36 +0800 iZ2ze0gwtfo8df4v3sqva5Z (24542)] INFO : Will re-attempt in 60 seconds
+[01/07/19 11:33:46 +0800 iZ2ze0gwtfo8df4v3sqva5Z (24542)] INFO : Starting Agent shutdown
+[01/07/19 11:55:09 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1173)] INFO : Starting the New Relic agent in "production" environment.
+[01/07/19 11:55:09 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1173)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "production" section of your newrelic.yml.
+[01/07/19 11:55:09 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1173)] INFO : Reading configuration from config/newrelic.yml (/home/louis0526/workspace/codeknows)
+[01/07/19 11:55:09 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1173)] ERROR : No application name configured.
+[01/07/19 11:55:09 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1173)] ERROR : The Agent cannot start without at least one. Please check your 
+[01/07/19 11:55:09 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1173)] ERROR : newrelic.yml and ensure that it is valid and has at least one 
+[01/07/19 11:55:09 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1173)] ERROR : value set for app_name in the production 
+[01/07/19 11:55:09 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1173)] ERROR : environment.
+[01/07/19 11:55:09 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1173)] INFO : Installing middleware-based Excon instrumentation
+[01/07/19 11:55:09 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1173)] INFO : Installing deferred Rack instrumentation
+[01/07/19 11:55:09 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1173)] INFO : Installing Rack::Builder middleware instrumentation
+[01/07/19 11:55:09 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1173)] INFO : Installing Curb instrumentation
+[01/07/19 11:55:09 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1173)] INFO : Installing Sinatra instrumentation
+[01/07/19 11:55:09 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1173)] INFO : Installing Sidekiq instrumentation
+[01/07/19 11:55:09 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1173)] INFO : Installing Net instrumentation
+[01/07/19 11:55:09 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1173)] INFO : Installing Rails 3+ middleware instrumentation
+[01/07/19 11:55:09 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1173)] INFO : Installing ActiveRecord instrumentation
+[01/07/19 11:55:09 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1173)] INFO : Installing Rails 3 Error instrumentation
+[01/07/19 11:55:09 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1173)] INFO : Installing Rails 3 Controller instrumentation
+[01/07/19 11:55:09 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1173)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[01/07/19 11:55:09 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1173)] INFO : Finished instrumentation
+[01/07/19 11:55:11 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1173)] ERROR : Error establishing connection with New Relic Service at collector.newrelic.com:443:
+[01/07/19 11:55:11 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1173)] ERROR : NewRelic::Agent::ServerConnectionException: Unexpected response from server (404): Not Found
+[01/07/19 11:55:11 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1173)] INFO : Starting the New Relic agent in "production" environment.
+[01/07/19 11:55:11 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1173)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "production" section of your newrelic.yml.
+[01/07/19 11:55:11 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1173)] INFO : Reading configuration from config/newrelic.yml (/home/louis0526/workspace/codeknows)
+[01/07/19 11:55:11 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1173)] INFO : New Relic Agent not running.
+[01/07/19 11:55:12 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1173)] INFO : Starting Agent shutdown
+[01/07/19 11:55:44 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1189)] INFO : Starting the New Relic agent in "production" environment.
+[01/07/19 11:55:44 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1189)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "production" section of your newrelic.yml.
+[01/07/19 11:55:44 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1189)] INFO : Reading configuration from config/newrelic.yml (/home/louis0526/workspace/codeknows)
+[01/07/19 11:55:44 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1189)] ERROR : No application name configured.
+[01/07/19 11:55:44 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1189)] ERROR : The Agent cannot start without at least one. Please check your 
+[01/07/19 11:55:44 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1189)] ERROR : newrelic.yml and ensure that it is valid and has at least one 
+[01/07/19 11:55:44 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1189)] ERROR : value set for app_name in the production 
+[01/07/19 11:55:44 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1189)] ERROR : environment.
+[01/07/19 11:55:44 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1189)] INFO : Installing middleware-based Excon instrumentation
+[01/07/19 11:55:44 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1189)] INFO : Installing deferred Rack instrumentation
+[01/07/19 11:55:44 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1189)] INFO : Installing Rack::Builder middleware instrumentation
+[01/07/19 11:55:44 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1189)] INFO : Installing Curb instrumentation
+[01/07/19 11:55:44 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1189)] INFO : Installing Sinatra instrumentation
+[01/07/19 11:55:44 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1189)] INFO : Installing Sidekiq instrumentation
+[01/07/19 11:55:44 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1189)] INFO : Installing Net instrumentation
+[01/07/19 11:55:44 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1189)] INFO : Installing Rails 3+ middleware instrumentation
+[01/07/19 11:55:44 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1189)] INFO : Installing ActiveRecord instrumentation
+[01/07/19 11:55:44 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1189)] INFO : Installing Rails 3 Error instrumentation
+[01/07/19 11:55:44 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1189)] INFO : Installing Rails 3 Controller instrumentation
+[01/07/19 11:55:44 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1189)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[01/07/19 11:55:44 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1189)] INFO : Finished instrumentation
+[01/07/19 11:55:47 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1189)] ERROR : Error establishing connection with New Relic Service at collector.newrelic.com:443:
+[01/07/19 11:55:47 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1189)] ERROR : NewRelic::Agent::ServerConnectionException: Unexpected response from server (404): Not Found
+[01/07/19 11:55:47 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1189)] INFO : Starting the New Relic agent in "production" environment.
+[01/07/19 11:55:47 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1189)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "production" section of your newrelic.yml.
+[01/07/19 11:55:47 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1189)] INFO : Reading configuration from config/newrelic.yml (/home/louis0526/workspace/codeknows)
+[01/07/19 11:55:47 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1189)] INFO : New Relic Agent not running.
+[01/07/19 11:55:49 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1189)] ERROR : Error establishing connection with New Relic Service at collector.newrelic.com:443:
+[01/07/19 11:55:49 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1189)] ERROR : NewRelic::Agent::ServerConnectionException: Unexpected response from server (404): Not Found
+[01/07/19 11:55:49 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1189)] INFO : Will re-attempt in 60 seconds
+[01/07/19 11:55:59 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1189)] INFO : Starting Agent shutdown
+[01/07/19 11:59:43 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1231)] INFO : Starting the New Relic agent in "production" environment.
+[01/07/19 11:59:43 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1231)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "production" section of your newrelic.yml.
+[01/07/19 11:59:43 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1231)] INFO : Reading configuration from config/newrelic.yml (/home/louis0526/workspace/codeknows)
+[01/07/19 11:59:43 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1231)] ERROR : No application name configured.
+[01/07/19 11:59:43 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1231)] ERROR : The Agent cannot start without at least one. Please check your 
+[01/07/19 11:59:43 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1231)] ERROR : newrelic.yml and ensure that it is valid and has at least one 
+[01/07/19 11:59:43 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1231)] ERROR : value set for app_name in the production 
+[01/07/19 11:59:43 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1231)] ERROR : environment.
+[01/07/19 11:59:43 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1231)] INFO : Installing middleware-based Excon instrumentation
+[01/07/19 11:59:43 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1231)] INFO : Installing deferred Rack instrumentation
+[01/07/19 11:59:43 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1231)] INFO : Installing Rack::Builder middleware instrumentation
+[01/07/19 11:59:43 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1231)] INFO : Installing Curb instrumentation
+[01/07/19 11:59:43 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1231)] INFO : Installing Sinatra instrumentation
+[01/07/19 11:59:43 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1231)] INFO : Installing Sidekiq instrumentation
+[01/07/19 11:59:43 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1231)] INFO : Installing Net instrumentation
+[01/07/19 11:59:43 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1231)] INFO : Installing Rails 3+ middleware instrumentation
+[01/07/19 11:59:43 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1231)] INFO : Installing ActiveRecord instrumentation
+[01/07/19 11:59:43 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1231)] INFO : Installing Rails 3 Error instrumentation
+[01/07/19 11:59:43 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1231)] INFO : Installing Rails 3 Controller instrumentation
+[01/07/19 11:59:43 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1231)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[01/07/19 11:59:43 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1231)] INFO : Finished instrumentation
+[01/07/19 11:59:45 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1231)] ERROR : Error establishing connection with New Relic Service at collector.newrelic.com:443:
+[01/07/19 11:59:45 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1231)] ERROR : NewRelic::Agent::ServerConnectionException: Unexpected response from server (404): Not Found
+[01/07/19 11:59:45 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1231)] INFO : Starting the New Relic agent in "production" environment.
+[01/07/19 11:59:45 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1231)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "production" section of your newrelic.yml.
+[01/07/19 11:59:45 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1231)] INFO : Reading configuration from config/newrelic.yml (/home/louis0526/workspace/codeknows)
+[01/07/19 11:59:45 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1231)] INFO : New Relic Agent not running.
+[01/07/19 11:59:46 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1231)] INFO : Starting Agent shutdown
+[01/07/19 12:25:53 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1358)] INFO : Starting the New Relic agent in "development" environment.
+[01/07/19 12:25:53 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1358)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[01/07/19 12:25:53 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1358)] INFO : Reading configuration from config/newrelic.yml (/home/louis0526/workspace/codeknows)
+[01/07/19 12:25:53 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1358)] INFO : New Relic Agent Developer Mode enabled.
+[01/07/19 12:25:53 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1358)] ERROR : No application name configured.
+[01/07/19 12:25:53 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1358)] ERROR : The Agent cannot start without at least one. Please check your 
+[01/07/19 12:25:53 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1358)] ERROR : newrelic.yml and ensure that it is valid and has at least one 
+[01/07/19 12:25:53 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1358)] ERROR : value set for app_name in the development 
+[01/07/19 12:25:53 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1358)] ERROR : environment.
+[01/07/19 12:25:53 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1358)] INFO : Installing middleware-based Excon instrumentation
+[01/07/19 12:25:53 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1358)] INFO : Installing deferred Rack instrumentation
+[01/07/19 12:25:53 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1358)] INFO : Installing Rack::Builder middleware instrumentation
+[01/07/19 12:25:53 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1358)] INFO : Installing Curb instrumentation
+[01/07/19 12:25:53 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1358)] INFO : Installing Sinatra instrumentation
+[01/07/19 12:25:53 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1358)] INFO : Installing Sidekiq instrumentation
+[01/07/19 12:25:53 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1358)] INFO : Installing Net instrumentation
+[01/07/19 12:25:53 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1358)] INFO : Installing Rails 3+ middleware instrumentation
+[01/07/19 12:25:53 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1358)] INFO : Installing ActiveRecord instrumentation
+[01/07/19 12:25:53 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1358)] INFO : Installing Rails 3 Error instrumentation
+[01/07/19 12:25:53 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1358)] INFO : Installing Rails 3 Controller instrumentation
+[01/07/19 12:25:53 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1358)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[01/07/19 12:25:53 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1358)] INFO : Finished instrumentation
+[01/07/19 12:25:54 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1358)] INFO : Doing deferred dependency-detection before Rack startup
+[01/07/19 12:29:35 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1372)] INFO : Starting the New Relic agent in "production" environment.
+[01/07/19 12:29:35 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1372)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "production" section of your newrelic.yml.
+[01/07/19 12:29:35 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1372)] INFO : Reading configuration from config/newrelic.yml (/home/louis0526/workspace/codeknows)
+[01/07/19 12:29:35 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1372)] ERROR : No application name configured.
+[01/07/19 12:29:35 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1372)] ERROR : The Agent cannot start without at least one. Please check your 
+[01/07/19 12:29:35 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1372)] ERROR : newrelic.yml and ensure that it is valid and has at least one 
+[01/07/19 12:29:35 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1372)] ERROR : value set for app_name in the production 
+[01/07/19 12:29:35 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1372)] ERROR : environment.
+[01/07/19 12:29:35 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1372)] INFO : Installing middleware-based Excon instrumentation
+[01/07/19 12:29:35 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1372)] INFO : Installing deferred Rack instrumentation
+[01/07/19 12:29:35 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1372)] INFO : Installing Rack::Builder middleware instrumentation
+[01/07/19 12:29:35 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1372)] INFO : Installing Curb instrumentation
+[01/07/19 12:29:35 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1372)] INFO : Installing Sinatra instrumentation
+[01/07/19 12:29:35 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1372)] INFO : Installing Sidekiq instrumentation
+[01/07/19 12:29:35 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1372)] INFO : Installing Net instrumentation
+[01/07/19 12:29:35 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1372)] INFO : Installing Rails 3+ middleware instrumentation
+[01/07/19 12:29:35 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1372)] INFO : Installing ActiveRecord instrumentation
+[01/07/19 12:29:35 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1372)] INFO : Installing Rails 3 Error instrumentation
+[01/07/19 12:29:35 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1372)] INFO : Installing Rails 3 Controller instrumentation
+[01/07/19 12:29:35 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1372)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[01/07/19 12:29:35 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1372)] INFO : Finished instrumentation
+[01/07/19 12:29:37 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1372)] ERROR : Error establishing connection with New Relic Service at collector.newrelic.com:443:
+[01/07/19 12:29:37 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1372)] ERROR : NewRelic::Agent::ServerConnectionException: Unexpected response from server (404): Not Found
+[01/07/19 12:29:37 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1372)] INFO : Starting the New Relic agent in "production" environment.
+[01/07/19 12:29:37 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1372)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "production" section of your newrelic.yml.
+[01/07/19 12:29:37 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1372)] INFO : Reading configuration from config/newrelic.yml (/home/louis0526/workspace/codeknows)
+[01/07/19 12:29:39 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1372)] INFO : Doing deferred dependency-detection before Rack startup
+[01/07/19 12:29:39 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1372)] ERROR : Error establishing connection with New Relic Service at collector.newrelic.com:443:
+[01/07/19 12:29:39 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1372)] ERROR : NewRelic::Agent::ServerConnectionException: Unexpected response from server (404): Not Found
+[01/07/19 12:29:39 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1372)] INFO : Will re-attempt in 60 seconds
+[01/07/19 12:29:45 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1372)] INFO : Starting Agent shutdown
+[01/07/19 13:04:47 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1690)] INFO : Starting the New Relic agent in "production" environment.
+[01/07/19 13:04:47 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1690)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "production" section of your newrelic.yml.
+[01/07/19 13:04:47 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1690)] INFO : Reading configuration from config/newrelic.yml (/home/louis0526/workspace/codeknows)
+[01/07/19 13:04:47 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1690)] ERROR : No application name configured.
+[01/07/19 13:04:47 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1690)] ERROR : The Agent cannot start without at least one. Please check your 
+[01/07/19 13:04:47 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1690)] ERROR : newrelic.yml and ensure that it is valid and has at least one 
+[01/07/19 13:04:47 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1690)] ERROR : value set for app_name in the production 
+[01/07/19 13:04:47 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1690)] ERROR : environment.
+[01/07/19 13:04:47 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1690)] INFO : Installing middleware-based Excon instrumentation
+[01/07/19 13:04:47 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1690)] INFO : Installing deferred Rack instrumentation
+[01/07/19 13:04:47 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1690)] INFO : Installing Rack::Builder middleware instrumentation
+[01/07/19 13:04:47 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1690)] INFO : Installing Curb instrumentation
+[01/07/19 13:04:47 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1690)] INFO : Installing Sinatra instrumentation
+[01/07/19 13:04:47 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1690)] INFO : Installing Sidekiq instrumentation
+[01/07/19 13:04:47 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1690)] INFO : Installing Net instrumentation
+[01/07/19 13:04:47 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1690)] INFO : Installing Rails 3+ middleware instrumentation
+[01/07/19 13:04:47 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1690)] INFO : Installing ActiveRecord instrumentation
+[01/07/19 13:04:47 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1690)] INFO : Installing Rails 3 Error instrumentation
+[01/07/19 13:04:47 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1690)] INFO : Installing Rails 3 Controller instrumentation
+[01/07/19 13:04:47 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1690)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[01/07/19 13:04:47 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1690)] INFO : Finished instrumentation
+[01/07/19 13:04:50 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1690)] ERROR : Error establishing connection with New Relic Service at collector.newrelic.com:443:
+[01/07/19 13:04:50 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1690)] ERROR : NewRelic::Agent::ServerConnectionException: Unexpected response from server (404): Not Found
+[01/07/19 13:04:50 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1690)] INFO : Starting the New Relic agent in "production" environment.
+[01/07/19 13:04:50 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1690)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "production" section of your newrelic.yml.
+[01/07/19 13:04:50 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1690)] INFO : Reading configuration from config/newrelic.yml (/home/louis0526/workspace/codeknows)
+[01/07/19 13:04:51 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1690)] INFO : Doing deferred dependency-detection before Rack startup
+[01/07/19 13:04:52 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1690)] ERROR : Error establishing connection with New Relic Service at collector.newrelic.com:443:
+[01/07/19 13:04:52 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1690)] ERROR : NewRelic::Agent::ServerConnectionException: Unexpected response from server (404): Not Found
+[01/07/19 13:04:52 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1690)] INFO : Will re-attempt in 60 seconds
+[01/07/19 13:05:39 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1690)] INFO : Starting Agent shutdown
+[01/07/19 13:05:39 +0800 iZ2ze0gwtfo8df4v3sqva5Z (1907)] INFO : Starting Agent shutdown
+[01/07/19 13:12:50 +0800 iZ2ze0gwtfo8df4v3sqva5Z (2139)] INFO : Starting the New Relic agent in "production" environment.
+[01/07/19 13:12:50 +0800 iZ2ze0gwtfo8df4v3sqva5Z (2139)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "production" section of your newrelic.yml.
+[01/07/19 13:12:50 +0800 iZ2ze0gwtfo8df4v3sqva5Z (2139)] INFO : Reading configuration from config/newrelic.yml (/home/louis0526/workspace/codeknows)
+[01/07/19 13:12:50 +0800 iZ2ze0gwtfo8df4v3sqva5Z (2139)] ERROR : No application name configured.
+[01/07/19 13:12:50 +0800 iZ2ze0gwtfo8df4v3sqva5Z (2139)] ERROR : The Agent cannot start without at least one. Please check your 
+[01/07/19 13:12:50 +0800 iZ2ze0gwtfo8df4v3sqva5Z (2139)] ERROR : newrelic.yml and ensure that it is valid and has at least one 
+[01/07/19 13:12:50 +0800 iZ2ze0gwtfo8df4v3sqva5Z (2139)] ERROR : value set for app_name in the production 
+[01/07/19 13:12:50 +0800 iZ2ze0gwtfo8df4v3sqva5Z (2139)] ERROR : environment.
+[01/07/19 13:12:50 +0800 iZ2ze0gwtfo8df4v3sqva5Z (2139)] INFO : Installing middleware-based Excon instrumentation
+[01/07/19 13:12:50 +0800 iZ2ze0gwtfo8df4v3sqva5Z (2139)] INFO : Installing deferred Rack instrumentation
+[01/07/19 13:12:50 +0800 iZ2ze0gwtfo8df4v3sqva5Z (2139)] INFO : Installing Rack::Builder middleware instrumentation
+[01/07/19 13:12:50 +0800 iZ2ze0gwtfo8df4v3sqva5Z (2139)] INFO : Installing Curb instrumentation
+[01/07/19 13:12:50 +0800 iZ2ze0gwtfo8df4v3sqva5Z (2139)] INFO : Installing Sinatra instrumentation
+[01/07/19 13:12:50 +0800 iZ2ze0gwtfo8df4v3sqva5Z (2139)] INFO : Installing Sidekiq instrumentation
+[01/07/19 13:12:50 +0800 iZ2ze0gwtfo8df4v3sqva5Z (2139)] INFO : Installing Net instrumentation
+[01/07/19 13:12:50 +0800 iZ2ze0gwtfo8df4v3sqva5Z (2139)] INFO : Installing Rails 3+ middleware instrumentation
+[01/07/19 13:12:50 +0800 iZ2ze0gwtfo8df4v3sqva5Z (2139)] INFO : Installing ActiveRecord instrumentation
+[01/07/19 13:12:50 +0800 iZ2ze0gwtfo8df4v3sqva5Z (2139)] INFO : Installing Rails 3 Error instrumentation
+[01/07/19 13:12:50 +0800 iZ2ze0gwtfo8df4v3sqva5Z (2139)] INFO : Installing Rails 3 Controller instrumentation
+[01/07/19 13:12:50 +0800 iZ2ze0gwtfo8df4v3sqva5Z (2139)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[01/07/19 13:12:50 +0800 iZ2ze0gwtfo8df4v3sqva5Z (2139)] INFO : Finished instrumentation
+[01/07/19 13:12:52 +0800 iZ2ze0gwtfo8df4v3sqva5Z (2139)] ERROR : Error establishing connection with New Relic Service at collector.newrelic.com:443:
+[01/07/19 13:12:52 +0800 iZ2ze0gwtfo8df4v3sqva5Z (2139)] ERROR : NewRelic::Agent::ServerConnectionException: Unexpected response from server (404): Not Found
+[01/07/19 13:12:52 +0800 iZ2ze0gwtfo8df4v3sqva5Z (2139)] INFO : Starting the New Relic agent in "production" environment.
+[01/07/19 13:12:52 +0800 iZ2ze0gwtfo8df4v3sqva5Z (2139)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "production" section of your newrelic.yml.
+[01/07/19 13:12:52 +0800 iZ2ze0gwtfo8df4v3sqva5Z (2139)] INFO : Reading configuration from config/newrelic.yml (/home/louis0526/workspace/codeknows)
+[01/07/19 13:12:52 +0800 iZ2ze0gwtfo8df4v3sqva5Z (2139)] INFO : New Relic Agent not running.
+[01/07/19 13:12:53 +0800 iZ2ze0gwtfo8df4v3sqva5Z (2139)] INFO : Starting Agent shutdown
+[01/07/19 14:06:17 +0800 iZ2ze0gwtfo8df4v3sqva5Z (3094)] INFO : Starting the New Relic agent in "development" environment.
+[01/07/19 14:06:17 +0800 iZ2ze0gwtfo8df4v3sqva5Z (3094)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[01/07/19 14:06:17 +0800 iZ2ze0gwtfo8df4v3sqva5Z (3094)] INFO : Reading configuration from config/newrelic.yml (/home/louis0526/workspace/codeknows)
+[01/07/19 14:06:17 +0800 iZ2ze0gwtfo8df4v3sqva5Z (3094)] INFO : New Relic Agent Developer Mode enabled.
+[01/07/19 14:06:17 +0800 iZ2ze0gwtfo8df4v3sqva5Z (3094)] ERROR : No application name configured.
+[01/07/19 14:06:17 +0800 iZ2ze0gwtfo8df4v3sqva5Z (3094)] ERROR : The Agent cannot start without at least one. Please check your 
+[01/07/19 14:06:17 +0800 iZ2ze0gwtfo8df4v3sqva5Z (3094)] ERROR : newrelic.yml and ensure that it is valid and has at least one 
+[01/07/19 14:06:17 +0800 iZ2ze0gwtfo8df4v3sqva5Z (3094)] ERROR : value set for app_name in the development 
+[01/07/19 14:06:17 +0800 iZ2ze0gwtfo8df4v3sqva5Z (3094)] ERROR : environment.
+[01/07/19 14:06:17 +0800 iZ2ze0gwtfo8df4v3sqva5Z (3094)] INFO : Installing middleware-based Excon instrumentation
+[01/07/19 14:06:17 +0800 iZ2ze0gwtfo8df4v3sqva5Z (3094)] INFO : Installing deferred Rack instrumentation
+[01/07/19 14:06:17 +0800 iZ2ze0gwtfo8df4v3sqva5Z (3094)] INFO : Installing Rack::Builder middleware instrumentation
+[01/07/19 14:06:17 +0800 iZ2ze0gwtfo8df4v3sqva5Z (3094)] INFO : Installing Curb instrumentation
+[01/07/19 14:06:17 +0800 iZ2ze0gwtfo8df4v3sqva5Z (3094)] INFO : Installing Sinatra instrumentation
+[01/07/19 14:06:17 +0800 iZ2ze0gwtfo8df4v3sqva5Z (3094)] INFO : Installing Sidekiq instrumentation
+[01/07/19 14:06:17 +0800 iZ2ze0gwtfo8df4v3sqva5Z (3094)] INFO : Installing Net instrumentation
+[01/07/19 14:06:17 +0800 iZ2ze0gwtfo8df4v3sqva5Z (3094)] INFO : Installing Rails 3+ middleware instrumentation
+[01/07/19 14:06:17 +0800 iZ2ze0gwtfo8df4v3sqva5Z (3094)] INFO : Installing ActiveRecord instrumentation
+[01/07/19 14:06:17 +0800 iZ2ze0gwtfo8df4v3sqva5Z (3094)] INFO : Installing Rails 3 Error instrumentation
+[01/07/19 14:06:17 +0800 iZ2ze0gwtfo8df4v3sqva5Z (3094)] INFO : Installing Rails 3 Controller instrumentation
+[01/07/19 14:06:17 +0800 iZ2ze0gwtfo8df4v3sqva5Z (3094)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[01/07/19 14:06:17 +0800 iZ2ze0gwtfo8df4v3sqva5Z (3094)] INFO : Finished instrumentation
+[01/07/19 14:06:18 +0800 iZ2ze0gwtfo8df4v3sqva5Z (3094)] INFO : Doing deferred dependency-detection before Rack startup
+[01/07/19 14:10:23 +0800 iZ2ze0gwtfo8df4v3sqva5Z (3129)] INFO : Starting the New Relic agent in "development" environment.
+[01/07/19 14:10:23 +0800 iZ2ze0gwtfo8df4v3sqva5Z (3129)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[01/07/19 14:10:23 +0800 iZ2ze0gwtfo8df4v3sqva5Z (3129)] INFO : Reading configuration from config/newrelic.yml (/home/louis0526/workspace/codeknows)
+[01/07/19 14:10:23 +0800 iZ2ze0gwtfo8df4v3sqva5Z (3129)] INFO : New Relic Agent Developer Mode enabled.
+[01/07/19 14:10:23 +0800 iZ2ze0gwtfo8df4v3sqva5Z (3129)] ERROR : No application name configured.
+[01/07/19 14:10:23 +0800 iZ2ze0gwtfo8df4v3sqva5Z (3129)] ERROR : The Agent cannot start without at least one. Please check your 
+[01/07/19 14:10:23 +0800 iZ2ze0gwtfo8df4v3sqva5Z (3129)] ERROR : newrelic.yml and ensure that it is valid and has at least one 
+[01/07/19 14:10:23 +0800 iZ2ze0gwtfo8df4v3sqva5Z (3129)] ERROR : value set for app_name in the development 
+[01/07/19 14:10:23 +0800 iZ2ze0gwtfo8df4v3sqva5Z (3129)] ERROR : environment.
+[01/07/19 14:10:23 +0800 iZ2ze0gwtfo8df4v3sqva5Z (3129)] INFO : Installing middleware-based Excon instrumentation
+[01/07/19 14:10:23 +0800 iZ2ze0gwtfo8df4v3sqva5Z (3129)] INFO : Installing deferred Rack instrumentation
+[01/07/19 14:10:23 +0800 iZ2ze0gwtfo8df4v3sqva5Z (3129)] INFO : Installing Rack::Builder middleware instrumentation
+[01/07/19 14:10:23 +0800 iZ2ze0gwtfo8df4v3sqva5Z (3129)] INFO : Installing Curb instrumentation
+[01/07/19 14:10:23 +0800 iZ2ze0gwtfo8df4v3sqva5Z (3129)] INFO : Installing Sinatra instrumentation
+[01/07/19 14:10:23 +0800 iZ2ze0gwtfo8df4v3sqva5Z (3129)] INFO : Installing Sidekiq instrumentation
+[01/07/19 14:10:23 +0800 iZ2ze0gwtfo8df4v3sqva5Z (3129)] INFO : Installing Net instrumentation
+[01/07/19 14:10:23 +0800 iZ2ze0gwtfo8df4v3sqva5Z (3129)] INFO : Installing Rails 3+ middleware instrumentation
+[01/07/19 14:10:23 +0800 iZ2ze0gwtfo8df4v3sqva5Z (3129)] INFO : Installing ActiveRecord instrumentation
+[01/07/19 14:10:23 +0800 iZ2ze0gwtfo8df4v3sqva5Z (3129)] INFO : Installing Rails 3 Error instrumentation
+[01/07/19 14:10:23 +0800 iZ2ze0gwtfo8df4v3sqva5Z (3129)] INFO : Installing Rails 3 Controller instrumentation
+[01/07/19 14:10:23 +0800 iZ2ze0gwtfo8df4v3sqva5Z (3129)] INFO : Installing Rails 3.1/3.2 view instrumentation
+[01/07/19 14:10:23 +0800 iZ2ze0gwtfo8df4v3sqva5Z (3129)] INFO : Finished instrumentation
+[01/07/19 14:10:23 +0800 iZ2ze0gwtfo8df4v3sqva5Z (3129)] INFO : Doing deferred dependency-detection before Rack startup
