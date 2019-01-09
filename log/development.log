@@ -20992,3 +20992,1315 @@ Connecting to database specified by database.yml
 Connecting to database specified by database.yml
 Connecting to database specified by database.yml
 Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 124.16.79.232 at 2019-01-09 08:29:26 +0000
+Processing by HomeController#index as HTML
+Completed 500 Internal Server Error in 2.0ms
+
+Redis::CannotConnectError (Error connecting to Redis on 127.0.0.1:6379 (Errno::ECONNREFUSED)):
+  app/controllers/application_controller.rb:94:in `ensure_and_reconcile_tracking_code'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-3.2.22/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-3.2.22/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-3.2.22/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (39.4ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 124.16.79.232 at 2019-01-09 08:30:04 +0000
+Processing by HomeController#index as HTML
+  Rendered sessions/_join_buttons.html.slim (4.6ms)
+  Rendered sessions/_join_buttons.html.slim (0.3ms)
+  Rendered home/index.html.slim within layouts/home4-layout (32.3ms)
+  Rendered application/_fav_icons.slim (5.2ms)
+  Rendered shared/_mixpanel_properties.html.erb (1.3ms)
+  Rendered application/_footer.html.slim (10.0ms)
+Completed 200 OK in 80.9ms (Views: 73.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/coderwall.css" for 124.16.79.232 at 2019-01-09 08:30:04 +0000
+Warning. Error encountered while saving cache /home/ubuntu/workspace/deployment/tmp/cache/sass/f693734fd725d36a082c44b3e191872f0d023532/coderwall.scssc: can't dump anonymous class #<Class:0x00000004b20828>
+
+Warning. Error encountered while saving cache /home/ubuntu/workspace/deployment/tmp/cache/sass/f693734fd725d36a082c44b3e191872f0d023532/base.scssc: can't dump anonymous class #<Class:0x00000004b20828>
+
+Warning. Error encountered while saving cache /home/ubuntu/workspace/deployment/tmp/cache/sass/f693734fd725d36a082c44b3e191872f0d023532/fonts.scssc: can't dump anonymous class #<Class:0x00000004b20828>
+
+Warning. Error encountered while saving cache /home/ubuntu/workspace/deployment/tmp/cache/sass/f92e815474c16c24e27c914c178a8e182873d56b/font-awesome.scssc: can't dump anonymous class #<Class:0x00000004b20828>
+
+Warning. Error encountered while saving cache /home/ubuntu/workspace/deployment/tmp/cache/sass/76810217ed408a236e187affbef859be3929fe98/font-awesome.scssc: can't dump anonymous class #<Class:0x00000004b20828>
+
+Warning. Error encountered while saving cache /home/ubuntu/workspace/deployment/tmp/cache/sass/f693734fd725d36a082c44b3e191872f0d023532/normailze.scssc: can't dump anonymous class #<Class:0x00000004b20828>
+
+Warning. Error encountered while saving cache /home/ubuntu/workspace/deployment/tmp/cache/sass/f693734fd725d36a082c44b3e191872f0d023532/tipTip.scssc: can't dump anonymous class #<Class:0x00000004b20828>
+
+Warning. Error encountered while saving cache /home/ubuntu/workspace/deployment/tmp/cache/sass/f693734fd725d36a082c44b3e191872f0d023532/new-new-home.scssc: can't dump anonymous class #<Class:0x00000004b20828>
+
+Warning. Error encountered while saving cache /home/ubuntu/workspace/deployment/tmp/cache/sass/f693734fd725d36a082c44b3e191872f0d023532/protips-grid.scssc: can't dump anonymous class #<Class:0x00000004b20828>
+
+Warning. Error encountered while saving cache /home/ubuntu/workspace/deployment/tmp/cache/sass/f693734fd725d36a082c44b3e191872f0d023532/error.scssc: can't dump anonymous class #<Class:0x00000004b20828>
+
+Warning. Error encountered while saving cache /home/ubuntu/workspace/deployment/tmp/cache/sass/f693734fd725d36a082c44b3e191872f0d023532/footer.scssc: can't dump anonymous class #<Class:0x00000004b20828>
+
+Warning. Error encountered while saving cache /home/ubuntu/workspace/deployment/tmp/cache/sass/3ee9c489b20257668c4d426ce9eb1a89143b86bc/jquery.dropdown.min.scssc: can't dump anonymous class #<Class:0x00000004b20828>
+
+Warning. Error encountered while saving cache /home/ubuntu/workspace/deployment/tmp/cache/sass/f693734fd725d36a082c44b3e191872f0d023532/backgrounds.css.scssc: can't dump anonymous class #<Class:0x00000004b20828>
+
+Warning. Error encountered while saving cache /home/ubuntu/workspace/deployment/tmp/cache/sass/f693734fd725d36a082c44b3e191872f0d023532/profile.scssc: can't dump anonymous class #<Class:0x00000004b20828>
+
+Warning. Error encountered while saving cache /home/ubuntu/workspace/deployment/tmp/cache/sass/f693734fd725d36a082c44b3e191872f0d023532/connections.scssc: can't dump anonymous class #<Class:0x00000004b20828>
+
+Warning. Error encountered while saving cache /home/ubuntu/workspace/deployment/tmp/cache/sass/f693734fd725d36a082c44b3e191872f0d023532/protip.css.scssc: can't dump anonymous class #<Class:0x00000004b20828>
+
+Warning. Error encountered while saving cache /home/ubuntu/workspace/deployment/tmp/cache/sass/d039a892ed70683878c2f01a2e6a62db75d08451/selectize.scssc: can't dump anonymous class #<Class:0x00000004b20828>
+
+Warning. Error encountered while saving cache /home/ubuntu/workspace/deployment/tmp/cache/sass/d039a892ed70683878c2f01a2e6a62db75d08451/selectize.default.scssc: can't dump anonymous class #<Class:0x00000004b20828>
+
+Warning. Error encountered while saving cache /home/ubuntu/workspace/deployment/tmp/cache/sass/f693734fd725d36a082c44b3e191872f0d023532/networks.scssc: can't dump anonymous class #<Class:0x00000004b20828>
+
+Warning. Error encountered while saving cache /home/ubuntu/workspace/deployment/tmp/cache/sass/f693734fd725d36a082c44b3e191872f0d023532/alerts.scssc: can't dump anonymous class #<Class:0x00000004b20828>
+
+Warning. Error encountered while saving cache /home/ubuntu/workspace/deployment/tmp/cache/sass/f693734fd725d36a082c44b3e191872f0d023532/team.scssc: can't dump anonymous class #<Class:0x00000004b20828>
+
+Warning. Error encountered while saving cache /home/ubuntu/workspace/deployment/tmp/cache/sass/f693734fd725d36a082c44b3e191872f0d023532/home.scssc: can't dump anonymous class #<Class:0x00000004b20828>
+
+Warning. Error encountered while saving cache /home/ubuntu/workspace/deployment/tmp/cache/sass/f693734fd725d36a082c44b3e191872f0d023532/dashboard.css.scssc: can't dump anonymous class #<Class:0x00000004b20828>
+
+Warning. Error encountered while saving cache /home/ubuntu/workspace/deployment/tmp/cache/sass/f693734fd725d36a082c44b3e191872f0d023532/featured-teams.scssc: can't dump anonymous class #<Class:0x00000004b20828>
+
+Warning. Error encountered while saving cache /home/ubuntu/workspace/deployment/tmp/cache/sass/f693734fd725d36a082c44b3e191872f0d023532/jobs.scssc: can't dump anonymous class #<Class:0x00000004b20828>
+
+Warning. Error encountered while saving cache /home/ubuntu/workspace/deployment/tmp/cache/sass/f693734fd725d36a082c44b3e191872f0d023532/protip-phone.scssc: can't dump anonymous class #<Class:0x00000004b20828>
+
+Warning. Error encountered while saving cache /home/ubuntu/workspace/deployment/tmp/cache/sass/f693734fd725d36a082c44b3e191872f0d023532/product_description.css.scssc: can't dump anonymous class #<Class:0x00000004b20828>
+
+Compiled coderwall.css  (9930ms)  (pid 8080)
+Served asset /coderwall.css - 200 OK (9948ms)
+
+
+Started GET "/assets/coderwall.js" for 124.16.79.232 at 2019-01-09 08:30:14 +0000
+Compiled jquery/jquery.js  (3ms)  (pid 8080)
+Compiled jquery.js  (11ms)  (pid 8080)
+Compiled jquery-migrate.js  (0ms)  (pid 8080)
+Compiled jquery_ujs.js  (0ms)  (pid 8080)
+Compiled jquery.tipTip.js  (0ms)  (pid 8080)
+Compiled jquery.sortElements.js  (0ms)  (pid 8080)
+Compiled jquery.fancybox.min.js  (0ms)  (pid 8080)
+Compiled jquery.autocomplete.js  (0ms)  (pid 8080)
+Compiled jquery.flexslider-min.js  (0ms)  (pid 8080)
+Compiled underscore.js  (0ms)  (pid 8080)
+Compiled jquery-dropdown/jquery.dropdown.js  (0ms)  (pid 8080)
+Compiled coderwall.js  (49ms)  (pid 8080)
+Served asset /coderwall.js - 200 OK (57ms)
+
+
+Started GET "/signin" for 124.16.79.232 at 2019-01-09 08:31:31 +0000
+Processing by SessionsController#signin as HTML
+  Rendered sessions/_signin.html.haml (3.7ms)
+  Rendered sessions/signin.html.haml within layouts/application (8.2ms)
+  Rendered application/_fav_icons.slim (0.3ms)
+  Rendered application/_nav_bar.slim (19.3ms)
+  Rendered shared/_mixpanel_properties.html.erb (0.0ms)
+  Rendered application/_footer.html.slim (2.8ms)
+  Rendered application/_current_user_js.html.slim (4.1ms)
+Completed 200 OK in 68.8ms (Views: 67.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/coderwall.js" for 124.16.79.232 at 2019-01-09 08:31:32 +0000
+Served asset /coderwall.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/coderwall.css" for 124.16.79.232 at 2019-01-09 08:31:32 +0000
+Served asset /coderwall.css - 304 Not Modified (0ms)
+
+
+Started GET "/auth/developer" for 124.16.79.232 at 2019-01-09 08:31:42 +0000
+
+
+Started GET "/auth/developer/callback" for 124.16.79.232 at 2019-01-09 08:31:42 +0000
+Processing by SessionsController#create as HTML
+  Parameters: {"provider"=>"developer"}
+  [1m[36mUser Load (13.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = '1234' LIMIT 1[0m
+Redirected to https://jian0108-gejian.c9users.io/users/new
+Completed 302 Found in 306.7ms (ActiveRecord: 105.5ms)
+
+
+Started GET "/users/new" for 124.16.79.232 at 2019-01-09 08:31:43 +0000
+Processing by UsersController#new as HTML
+  [1m[35mUser Load (0.8ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = '1234' LIMIT 1
+Completed 500 Internal Server Error in 72.3ms
+
+RuntimeError (Unexpected provider: default):
+  app/models/concerns/user_oauth.rb:27:in `apply_oauth'
+  app/models/concerns/user_oauth.rb:54:in `for_omniauth'
+  app/controllers/users_controller.rb:12:in `new'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-3.2.22/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-3.2.22/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-3.2.22/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (34.3ms)
+Connecting to database specified by database.yml
+  [1m[36m (5.5ms)[0m  [1mCREATE extension IF NOT EXISTS "citext"[0m
+  [1m[35m (0.2ms)[0m  CREATE extension IF NOT EXISTS "hstore"
+  [1m[36m (0.2ms)[0m  [1mCREATE extension IF NOT EXISTS "pg_stat_statements"[0m
+  [1m[35m (14.7ms)[0m  ALTER TABLE "api_accesses" DISABLE TRIGGER ALL;ALTER TABLE "followed_teams" DISABLE TRIGGER ALL;ALTER TABLE "follows" DISABLE TRIGGER ALL;ALTER TABLE "plans" DISABLE TRIGGER ALL;ALTER TABLE "pictures" DISABLE TRIGGER ALL;ALTER TABLE "protip_links" DISABLE TRIGGER ALL;ALTER TABLE "opportunities" DISABLE TRIGGER ALL;ALTER TABLE "likes" DISABLE TRIGGER ALL;ALTER TABLE "networks" DISABLE TRIGGER ALL;ALTER TABLE "teams" DISABLE TRIGGER ALL;ALTER TABLE "spam_reports" DISABLE TRIGGER ALL;ALTER TABLE "sent_mails" DISABLE TRIGGER ALL;ALTER TABLE "tags" DISABLE TRIGGER ALL;ALTER TABLE "seized_opportunities" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "teams_account_plans" DISABLE TRIGGER ALL;ALTER TABLE "teams_members" DISABLE TRIGGER ALL;ALTER TABLE "user_events" DISABLE TRIGGER ALL;ALTER TABLE "users_github_organizations" DISABLE TRIGGER ALL;ALTER TABLE "users_github_repositories" DISABLE TRIGGER ALL;ALTER TABLE "users_github_profiles" DISABLE TRIGGER ALL;ALTER TABLE "teams_locations" DISABLE TRIGGER ALL;ALTER TABLE "teams_accounts" DISABLE TRIGGER ALL;ALTER TABLE "users_github_repositories_contributors" DISABLE TRIGGER ALL;ALTER TABLE "users_github_repositories_followers" DISABLE TRIGGER ALL;ALTER TABLE "badges" DISABLE TRIGGER ALL;ALTER TABLE "comments" DISABLE TRIGGER ALL;ALTER TABLE "protips" DISABLE TRIGGER ALL;ALTER TABLE "endorsements" DISABLE TRIGGER ALL;ALTER TABLE "taggings" DISABLE TRIGGER ALL;ALTER TABLE "facts" DISABLE TRIGGER ALL;ALTER TABLE "invitations" DISABLE TRIGGER ALL;ALTER TABLE "network_hierarchies" DISABLE TRIGGER ALL;ALTER TABLE "users_github_organizations_followers" DISABLE TRIGGER ALL;ALTER TABLE "network_protips" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "users_github_profiles_followers" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL
+  [1m[36m (42.5ms)[0m  [1mDROP TABLE "api_accesses"[0m
+  [1m[35m (9.3ms)[0m  ALTER TABLE "followed_teams" ENABLE TRIGGER ALL;ALTER TABLE "follows" ENABLE TRIGGER ALL;ALTER TABLE "plans" ENABLE TRIGGER ALL;ALTER TABLE "pictures" ENABLE TRIGGER ALL;ALTER TABLE "protip_links" ENABLE TRIGGER ALL;ALTER TABLE "opportunities" ENABLE TRIGGER ALL;ALTER TABLE "likes" ENABLE TRIGGER ALL;ALTER TABLE "networks" ENABLE TRIGGER ALL;ALTER TABLE "teams" ENABLE TRIGGER ALL;ALTER TABLE "spam_reports" ENABLE TRIGGER ALL;ALTER TABLE "sent_mails" ENABLE TRIGGER ALL;ALTER TABLE "tags" ENABLE TRIGGER ALL;ALTER TABLE "seized_opportunities" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "teams_account_plans" ENABLE TRIGGER ALL;ALTER TABLE "teams_members" ENABLE TRIGGER ALL;ALTER TABLE "user_events" ENABLE TRIGGER ALL;ALTER TABLE "users_github_organizations" ENABLE TRIGGER ALL;ALTER TABLE "users_github_repositories" ENABLE TRIGGER ALL;ALTER TABLE "users_github_profiles" ENABLE TRIGGER ALL;ALTER TABLE "teams_locations" ENABLE TRIGGER ALL;ALTER TABLE "teams_accounts" ENABLE TRIGGER ALL;ALTER TABLE "users_github_repositories_contributors" ENABLE TRIGGER ALL;ALTER TABLE "users_github_repositories_followers" ENABLE TRIGGER ALL;ALTER TABLE "badges" ENABLE TRIGGER ALL;ALTER TABLE "comments" ENABLE TRIGGER ALL;ALTER TABLE "protips" ENABLE TRIGGER ALL;ALTER TABLE "endorsements" ENABLE TRIGGER ALL;ALTER TABLE "taggings" ENABLE TRIGGER ALL;ALTER TABLE "facts" ENABLE TRIGGER ALL;ALTER TABLE "invitations" ENABLE TRIGGER ALL;ALTER TABLE "network_hierarchies" ENABLE TRIGGER ALL;ALTER TABLE "users_github_organizations_followers" ENABLE TRIGGER ALL;ALTER TABLE "network_protips" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "users_github_profiles_followers" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL
+  [1m[36m (57.3ms)[0m  [1mCREATE TABLE "api_accesses" ("id" serial primary key, "api_key" character varying(255), "awards" text, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (7.7ms)[0m  ALTER TABLE "followed_teams" DISABLE TRIGGER ALL;ALTER TABLE "follows" DISABLE TRIGGER ALL;ALTER TABLE "plans" DISABLE TRIGGER ALL;ALTER TABLE "pictures" DISABLE TRIGGER ALL;ALTER TABLE "protip_links" DISABLE TRIGGER ALL;ALTER TABLE "opportunities" DISABLE TRIGGER ALL;ALTER TABLE "likes" DISABLE TRIGGER ALL;ALTER TABLE "networks" DISABLE TRIGGER ALL;ALTER TABLE "teams" DISABLE TRIGGER ALL;ALTER TABLE "spam_reports" DISABLE TRIGGER ALL;ALTER TABLE "sent_mails" DISABLE TRIGGER ALL;ALTER TABLE "tags" DISABLE TRIGGER ALL;ALTER TABLE "seized_opportunities" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "teams_account_plans" DISABLE TRIGGER ALL;ALTER TABLE "teams_members" DISABLE TRIGGER ALL;ALTER TABLE "user_events" DISABLE TRIGGER ALL;ALTER TABLE "users_github_organizations" DISABLE TRIGGER ALL;ALTER TABLE "users_github_repositories" DISABLE TRIGGER ALL;ALTER TABLE "users_github_profiles" DISABLE TRIGGER ALL;ALTER TABLE "teams_locations" DISABLE TRIGGER ALL;ALTER TABLE "teams_accounts" DISABLE TRIGGER ALL;ALTER TABLE "users_github_repositories_contributors" DISABLE TRIGGER ALL;ALTER TABLE "users_github_repositories_followers" DISABLE TRIGGER ALL;ALTER TABLE "badges" DISABLE TRIGGER ALL;ALTER TABLE "api_accesses" DISABLE TRIGGER ALL;ALTER TABLE "comments" DISABLE TRIGGER ALL;ALTER TABLE "protips" DISABLE TRIGGER ALL;ALTER TABLE "endorsements" DISABLE TRIGGER ALL;ALTER TABLE "taggings" DISABLE TRIGGER ALL;ALTER TABLE "facts" DISABLE TRIGGER ALL;ALTER TABLE "invitations" DISABLE TRIGGER ALL;ALTER TABLE "network_hierarchies" DISABLE TRIGGER ALL;ALTER TABLE "users_github_organizations_followers" DISABLE TRIGGER ALL;ALTER TABLE "network_protips" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "users_github_profiles_followers" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL
+  [1m[36m (14.8ms)[0m  [1mDROP TABLE "badges"[0m
+  [1m[35m (8.1ms)[0m  ALTER TABLE "followed_teams" ENABLE TRIGGER ALL;ALTER TABLE "follows" ENABLE TRIGGER ALL;ALTER TABLE "plans" ENABLE TRIGGER ALL;ALTER TABLE "pictures" ENABLE TRIGGER ALL;ALTER TABLE "protip_links" ENABLE TRIGGER ALL;ALTER TABLE "opportunities" ENABLE TRIGGER ALL;ALTER TABLE "likes" ENABLE TRIGGER ALL;ALTER TABLE "networks" ENABLE TRIGGER ALL;ALTER TABLE "teams" ENABLE TRIGGER ALL;ALTER TABLE "spam_reports" ENABLE TRIGGER ALL;ALTER TABLE "sent_mails" ENABLE TRIGGER ALL;ALTER TABLE "tags" ENABLE TRIGGER ALL;ALTER TABLE "seized_opportunities" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "teams_account_plans" ENABLE TRIGGER ALL;ALTER TABLE "teams_members" ENABLE TRIGGER ALL;ALTER TABLE "user_events" ENABLE TRIGGER ALL;ALTER TABLE "users_github_organizations" ENABLE TRIGGER ALL;ALTER TABLE "users_github_repositories" ENABLE TRIGGER ALL;ALTER TABLE "users_github_profiles" ENABLE TRIGGER ALL;ALTER TABLE "teams_locations" ENABLE TRIGGER ALL;ALTER TABLE "teams_accounts" ENABLE TRIGGER ALL;ALTER TABLE "users_github_repositories_contributors" ENABLE TRIGGER ALL;ALTER TABLE "users_github_repositories_followers" ENABLE TRIGGER ALL;ALTER TABLE "api_accesses" ENABLE TRIGGER ALL;ALTER TABLE "comments" ENABLE TRIGGER ALL;ALTER TABLE "protips" ENABLE TRIGGER ALL;ALTER TABLE "endorsements" ENABLE TRIGGER ALL;ALTER TABLE "taggings" ENABLE TRIGGER ALL;ALTER TABLE "facts" ENABLE TRIGGER ALL;ALTER TABLE "invitations" ENABLE TRIGGER ALL;ALTER TABLE "network_hierarchies" ENABLE TRIGGER ALL;ALTER TABLE "users_github_organizations_followers" ENABLE TRIGGER ALL;ALTER TABLE "network_protips" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "users_github_profiles_followers" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL
+  [1m[36m (11.3ms)[0m  [1mCREATE TABLE "badges" ("id" serial primary key, "created_at" timestamp, "updated_at" timestamp, "user_id" integer, "badge_class_name" character varying(255)) [0m
+  [1m[35m (2.4ms)[0m  SELECT opcname FROM pg_opclass
+  [1m[36m (4.3ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'badges'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+[0m
+  [1m[35m (7.9ms)[0m  CREATE UNIQUE INDEX "index_badges_on_user_id_and_badge_class_name" ON "badges"("user_id", "badge_class_name" )
+  [1m[36m (4.3ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'badges'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+[0m
+  [1m[35mColumns for index index_badges_on_user_id_and_badge_class_name on badges (1.0ms)[0m   SELECT a.attnum::text, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 49168
+ AND a.attnum IN (4,5)
+
+  [1m[36m (8.9ms)[0m  [1mCREATE INDEX "index_badges_on_user_id" ON "badges"("user_id" )[0m
+  [1m[35m (9.6ms)[0m  ALTER TABLE "followed_teams" DISABLE TRIGGER ALL;ALTER TABLE "follows" DISABLE TRIGGER ALL;ALTER TABLE "plans" DISABLE TRIGGER ALL;ALTER TABLE "pictures" DISABLE TRIGGER ALL;ALTER TABLE "protip_links" DISABLE TRIGGER ALL;ALTER TABLE "opportunities" DISABLE TRIGGER ALL;ALTER TABLE "likes" DISABLE TRIGGER ALL;ALTER TABLE "networks" DISABLE TRIGGER ALL;ALTER TABLE "teams" DISABLE TRIGGER ALL;ALTER TABLE "spam_reports" DISABLE TRIGGER ALL;ALTER TABLE "sent_mails" DISABLE TRIGGER ALL;ALTER TABLE "tags" DISABLE TRIGGER ALL;ALTER TABLE "seized_opportunities" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "teams_account_plans" DISABLE TRIGGER ALL;ALTER TABLE "teams_members" DISABLE TRIGGER ALL;ALTER TABLE "user_events" DISABLE TRIGGER ALL;ALTER TABLE "users_github_organizations" DISABLE TRIGGER ALL;ALTER TABLE "users_github_repositories" DISABLE TRIGGER ALL;ALTER TABLE "users_github_profiles" DISABLE TRIGGER ALL;ALTER TABLE "teams_locations" DISABLE TRIGGER ALL;ALTER TABLE "teams_accounts" DISABLE TRIGGER ALL;ALTER TABLE "users_github_repositories_contributors" DISABLE TRIGGER ALL;ALTER TABLE "users_github_repositories_followers" DISABLE TRIGGER ALL;ALTER TABLE "api_accesses" DISABLE TRIGGER ALL;ALTER TABLE "comments" DISABLE TRIGGER ALL;ALTER TABLE "protips" DISABLE TRIGGER ALL;ALTER TABLE "badges" DISABLE TRIGGER ALL;ALTER TABLE "endorsements" DISABLE TRIGGER ALL;ALTER TABLE "taggings" DISABLE TRIGGER ALL;ALTER TABLE "facts" DISABLE TRIGGER ALL;ALTER TABLE "invitations" DISABLE TRIGGER ALL;ALTER TABLE "network_hierarchies" DISABLE TRIGGER ALL;ALTER TABLE "users_github_organizations_followers" DISABLE TRIGGER ALL;ALTER TABLE "network_protips" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "users_github_profiles_followers" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL
+  [1m[36m (8.6ms)[0m  [1mDROP TABLE "comments"[0m
+  [1m[35m (7.0ms)[0m  ALTER TABLE "followed_teams" ENABLE TRIGGER ALL;ALTER TABLE "follows" ENABLE TRIGGER ALL;ALTER TABLE "plans" ENABLE TRIGGER ALL;ALTER TABLE "pictures" ENABLE TRIGGER ALL;ALTER TABLE "protip_links" ENABLE TRIGGER ALL;ALTER TABLE "opportunities" ENABLE TRIGGER ALL;ALTER TABLE "likes" ENABLE TRIGGER ALL;ALTER TABLE "networks" ENABLE TRIGGER ALL;ALTER TABLE "teams" ENABLE TRIGGER ALL;ALTER TABLE "spam_reports" ENABLE TRIGGER ALL;ALTER TABLE "sent_mails" ENABLE TRIGGER ALL;ALTER TABLE "tags" ENABLE TRIGGER ALL;ALTER TABLE "seized_opportunities" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "teams_account_plans" ENABLE TRIGGER ALL;ALTER TABLE "teams_members" ENABLE TRIGGER ALL;ALTER TABLE "user_events" ENABLE TRIGGER ALL;ALTER TABLE "users_github_organizations" ENABLE TRIGGER ALL;ALTER TABLE "users_github_repositories" ENABLE TRIGGER ALL;ALTER TABLE "users_github_profiles" ENABLE TRIGGER ALL;ALTER TABLE "teams_locations" ENABLE TRIGGER ALL;ALTER TABLE "teams_accounts" ENABLE TRIGGER ALL;ALTER TABLE "users_github_repositories_contributors" ENABLE TRIGGER ALL;ALTER TABLE "users_github_repositories_followers" ENABLE TRIGGER ALL;ALTER TABLE "api_accesses" ENABLE TRIGGER ALL;ALTER TABLE "protips" ENABLE TRIGGER ALL;ALTER TABLE "badges" ENABLE TRIGGER ALL;ALTER TABLE "endorsements" ENABLE TRIGGER ALL;ALTER TABLE "taggings" ENABLE TRIGGER ALL;ALTER TABLE "facts" ENABLE TRIGGER ALL;ALTER TABLE "invitations" ENABLE TRIGGER ALL;ALTER TABLE "network_hierarchies" ENABLE TRIGGER ALL;ALTER TABLE "users_github_organizations_followers" ENABLE TRIGGER ALL;ALTER TABLE "network_protips" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "users_github_profiles_followers" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL
+  [1m[36m (16.7ms)[0m  [1mCREATE TABLE "comments" ("id" serial primary key, "title" character varying(50) DEFAULT '', "comment" text DEFAULT '', "protip_id" integer, "user_id" integer, "likes_cache" integer DEFAULT 0, "likes_value_cache" integer DEFAULT 0, "created_at" timestamp, "updated_at" timestamp, "likes_count" integer DEFAULT 0, "user_name" character varying(255), "user_email" character varying(255), "user_agent" character varying(255), "user_ip" inet, "request_format" character varying(255), "spam_reports_count" integer DEFAULT 0, "state" character varying(255) DEFAULT 'active') [0m
+  [1m[35m (3.9ms)[0m   SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'comments'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+
+  [1m[36m (8.0ms)[0m  [1mCREATE INDEX "index_comments_on_commentable_id" ON "comments"("protip_id" )[0m
+  [1m[35m (1.2ms)[0m   SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'comments'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+
+  [1m[36mColumns for index index_comments_on_commentable_id on comments (0.4ms)[0m  [1m SELECT a.attnum::text, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 49178
+ AND a.attnum IN (4)
+[0m
+  [1m[35m (7.4ms)[0m  CREATE INDEX "index_comments_on_user_id" ON "comments"("user_id" )
+  [1m[36m (6.5ms)[0m  [1mALTER TABLE "followed_teams" DISABLE TRIGGER ALL;ALTER TABLE "follows" DISABLE TRIGGER ALL;ALTER TABLE "plans" DISABLE TRIGGER ALL;ALTER TABLE "pictures" DISABLE TRIGGER ALL;ALTER TABLE "protip_links" DISABLE TRIGGER ALL;ALTER TABLE "opportunities" DISABLE TRIGGER ALL;ALTER TABLE "likes" DISABLE TRIGGER ALL;ALTER TABLE "networks" DISABLE TRIGGER ALL;ALTER TABLE "teams" DISABLE TRIGGER ALL;ALTER TABLE "spam_reports" DISABLE TRIGGER ALL;ALTER TABLE "sent_mails" DISABLE TRIGGER ALL;ALTER TABLE "tags" DISABLE TRIGGER ALL;ALTER TABLE "seized_opportunities" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "teams_account_plans" DISABLE TRIGGER ALL;ALTER TABLE "teams_members" DISABLE TRIGGER ALL;ALTER TABLE "user_events" DISABLE TRIGGER ALL;ALTER TABLE "users_github_organizations" DISABLE TRIGGER ALL;ALTER TABLE "users_github_repositories" DISABLE TRIGGER ALL;ALTER TABLE "users_github_profiles" DISABLE TRIGGER ALL;ALTER TABLE "teams_locations" DISABLE TRIGGER ALL;ALTER TABLE "teams_accounts" DISABLE TRIGGER ALL;ALTER TABLE "users_github_repositories_contributors" DISABLE TRIGGER ALL;ALTER TABLE "users_github_repositories_followers" DISABLE TRIGGER ALL;ALTER TABLE "api_accesses" DISABLE TRIGGER ALL;ALTER TABLE "protips" DISABLE TRIGGER ALL;ALTER TABLE "badges" DISABLE TRIGGER ALL;ALTER TABLE "endorsements" DISABLE TRIGGER ALL;ALTER TABLE "taggings" DISABLE TRIGGER ALL;ALTER TABLE "facts" DISABLE TRIGGER ALL;ALTER TABLE "comments" DISABLE TRIGGER ALL;ALTER TABLE "invitations" DISABLE TRIGGER ALL;ALTER TABLE "network_hierarchies" DISABLE TRIGGER ALL;ALTER TABLE "users_github_organizations_followers" DISABLE TRIGGER ALL;ALTER TABLE "network_protips" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "users_github_profiles_followers" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (5.5ms)[0m  DROP TABLE "endorsements"
+  [1m[36m (6.0ms)[0m  [1mALTER TABLE "followed_teams" ENABLE TRIGGER ALL;ALTER TABLE "follows" ENABLE TRIGGER ALL;ALTER TABLE "plans" ENABLE TRIGGER ALL;ALTER TABLE "pictures" ENABLE TRIGGER ALL;ALTER TABLE "protip_links" ENABLE TRIGGER ALL;ALTER TABLE "opportunities" ENABLE TRIGGER ALL;ALTER TABLE "likes" ENABLE TRIGGER ALL;ALTER TABLE "networks" ENABLE TRIGGER ALL;ALTER TABLE "teams" ENABLE TRIGGER ALL;ALTER TABLE "spam_reports" ENABLE TRIGGER ALL;ALTER TABLE "sent_mails" ENABLE TRIGGER ALL;ALTER TABLE "tags" ENABLE TRIGGER ALL;ALTER TABLE "seized_opportunities" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "teams_account_plans" ENABLE TRIGGER ALL;ALTER TABLE "teams_members" ENABLE TRIGGER ALL;ALTER TABLE "user_events" ENABLE TRIGGER ALL;ALTER TABLE "users_github_organizations" ENABLE TRIGGER ALL;ALTER TABLE "users_github_repositories" ENABLE TRIGGER ALL;ALTER TABLE "users_github_profiles" ENABLE TRIGGER ALL;ALTER TABLE "teams_locations" ENABLE TRIGGER ALL;ALTER TABLE "teams_accounts" ENABLE TRIGGER ALL;ALTER TABLE "users_github_repositories_contributors" ENABLE TRIGGER ALL;ALTER TABLE "users_github_repositories_followers" ENABLE TRIGGER ALL;ALTER TABLE "api_accesses" ENABLE TRIGGER ALL;ALTER TABLE "protips" ENABLE TRIGGER ALL;ALTER TABLE "badges" ENABLE TRIGGER ALL;ALTER TABLE "taggings" ENABLE TRIGGER ALL;ALTER TABLE "facts" ENABLE TRIGGER ALL;ALTER TABLE "comments" ENABLE TRIGGER ALL;ALTER TABLE "invitations" ENABLE TRIGGER ALL;ALTER TABLE "network_hierarchies" ENABLE TRIGGER ALL;ALTER TABLE "users_github_organizations_followers" ENABLE TRIGGER ALL;ALTER TABLE "network_protips" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "users_github_profiles_followers" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (8.3ms)[0m  CREATE TABLE "endorsements" ("id" serial primary key, "endorsed_user_id" integer, "endorsing_user_id" integer, "specialty" character varying(255), "created_at" timestamp, "updated_at" timestamp, "skill_id" integer) 
+  [1m[36m (1.0ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'endorsements'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+[0m
+  [1m[35m (6.7ms)[0m  CREATE UNIQUE INDEX "only_unique_endorsements" ON "endorsements"("endorsed_user_id", "endorsing_user_id", "specialty" )
+  [1m[36m (1.3ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'endorsements'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+[0m
+  [1m[35mColumns for index only_unique_endorsements on endorsements (0.4ms)[0m   SELECT a.attnum::text, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 49198
+ AND a.attnum IN (2,3,4)
+
+  [1m[36m (6.0ms)[0m  [1mCREATE INDEX "index_endorsements_on_endorsed_user_id" ON "endorsements"("endorsed_user_id" )[0m
+  [1m[35m (3.6ms)[0m   SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'endorsements'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+
+  [1m[36mColumns for index index_endorsements_on_endorsed_user_id on endorsements (0.3ms)[0m  [1m SELECT a.attnum::text, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 49198
+ AND a.attnum IN (2)
+[0m
+  [1m[35mColumns for index only_unique_endorsements on endorsements (0.3ms)[0m   SELECT a.attnum::text, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 49198
+ AND a.attnum IN (2,3,4)
+
+  [1m[36m (8.4ms)[0m  [1mCREATE INDEX "index_endorsements_on_endorsing_user_id" ON "endorsements"("endorsing_user_id" )[0m
+  [1m[35m (6.1ms)[0m  ALTER TABLE "followed_teams" DISABLE TRIGGER ALL;ALTER TABLE "follows" DISABLE TRIGGER ALL;ALTER TABLE "plans" DISABLE TRIGGER ALL;ALTER TABLE "pictures" DISABLE TRIGGER ALL;ALTER TABLE "protip_links" DISABLE TRIGGER ALL;ALTER TABLE "opportunities" DISABLE TRIGGER ALL;ALTER TABLE "likes" DISABLE TRIGGER ALL;ALTER TABLE "networks" DISABLE TRIGGER ALL;ALTER TABLE "teams" DISABLE TRIGGER ALL;ALTER TABLE "spam_reports" DISABLE TRIGGER ALL;ALTER TABLE "sent_mails" DISABLE TRIGGER ALL;ALTER TABLE "tags" DISABLE TRIGGER ALL;ALTER TABLE "seized_opportunities" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "teams_account_plans" DISABLE TRIGGER ALL;ALTER TABLE "teams_members" DISABLE TRIGGER ALL;ALTER TABLE "user_events" DISABLE TRIGGER ALL;ALTER TABLE "users_github_organizations" DISABLE TRIGGER ALL;ALTER TABLE "users_github_repositories" DISABLE TRIGGER ALL;ALTER TABLE "users_github_profiles" DISABLE TRIGGER ALL;ALTER TABLE "teams_locations" DISABLE TRIGGER ALL;ALTER TABLE "teams_accounts" DISABLE TRIGGER ALL;ALTER TABLE "users_github_repositories_contributors" DISABLE TRIGGER ALL;ALTER TABLE "users_github_repositories_followers" DISABLE TRIGGER ALL;ALTER TABLE "api_accesses" DISABLE TRIGGER ALL;ALTER TABLE "protips" DISABLE TRIGGER ALL;ALTER TABLE "badges" DISABLE TRIGGER ALL;ALTER TABLE "taggings" DISABLE TRIGGER ALL;ALTER TABLE "facts" DISABLE TRIGGER ALL;ALTER TABLE "comments" DISABLE TRIGGER ALL;ALTER TABLE "invitations" DISABLE TRIGGER ALL;ALTER TABLE "network_hierarchies" DISABLE TRIGGER ALL;ALTER TABLE "endorsements" DISABLE TRIGGER ALL;ALTER TABLE "users_github_organizations_followers" DISABLE TRIGGER ALL;ALTER TABLE "network_protips" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "users_github_profiles_followers" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL
+  [1m[36m (4.7ms)[0m  [1mDROP TABLE "facts"[0m
+  [1m[35m (6.3ms)[0m  ALTER TABLE "followed_teams" ENABLE TRIGGER ALL;ALTER TABLE "follows" ENABLE TRIGGER ALL;ALTER TABLE "plans" ENABLE TRIGGER ALL;ALTER TABLE "pictures" ENABLE TRIGGER ALL;ALTER TABLE "protip_links" ENABLE TRIGGER ALL;ALTER TABLE "opportunities" ENABLE TRIGGER ALL;ALTER TABLE "likes" ENABLE TRIGGER ALL;ALTER TABLE "networks" ENABLE TRIGGER ALL;ALTER TABLE "teams" ENABLE TRIGGER ALL;ALTER TABLE "spam_reports" ENABLE TRIGGER ALL;ALTER TABLE "sent_mails" ENABLE TRIGGER ALL;ALTER TABLE "tags" ENABLE TRIGGER ALL;ALTER TABLE "seized_opportunities" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "teams_account_plans" ENABLE TRIGGER ALL;ALTER TABLE "teams_members" ENABLE TRIGGER ALL;ALTER TABLE "user_events" ENABLE TRIGGER ALL;ALTER TABLE "users_github_organizations" ENABLE TRIGGER ALL;ALTER TABLE "users_github_repositories" ENABLE TRIGGER ALL;ALTER TABLE "users_github_profiles" ENABLE TRIGGER ALL;ALTER TABLE "teams_locations" ENABLE TRIGGER ALL;ALTER TABLE "teams_accounts" ENABLE TRIGGER ALL;ALTER TABLE "users_github_repositories_contributors" ENABLE TRIGGER ALL;ALTER TABLE "users_github_repositories_followers" ENABLE TRIGGER ALL;ALTER TABLE "api_accesses" ENABLE TRIGGER ALL;ALTER TABLE "protips" ENABLE TRIGGER ALL;ALTER TABLE "badges" ENABLE TRIGGER ALL;ALTER TABLE "taggings" ENABLE TRIGGER ALL;ALTER TABLE "comments" ENABLE TRIGGER ALL;ALTER TABLE "invitations" ENABLE TRIGGER ALL;ALTER TABLE "network_hierarchies" ENABLE TRIGGER ALL;ALTER TABLE "endorsements" ENABLE TRIGGER ALL;ALTER TABLE "users_github_organizations_followers" ENABLE TRIGGER ALL;ALTER TABLE "network_protips" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "users_github_profiles_followers" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL
+  [1m[36m (18.2ms)[0m  [1mCREATE TABLE "facts" ("id" serial primary key, "identity" character varying(255), "owner" character varying(255), "name" character varying(255), "url" character varying(255), "tags" text, "metadata" text, "relevant_on" timestamp, "created_at" timestamp, "updated_at" timestamp, "user_id" integer) [0m
+  [1m[35m (1.5ms)[0m   SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'facts'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+
+  [1m[36m (7.4ms)[0m  [1mCREATE INDEX "index_facts_on_identity" ON "facts"("identity" )[0m
+  [1m[35m (3.4ms)[0m   SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'facts'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+
+  [1m[36mColumns for index index_facts_on_identity on facts (0.3ms)[0m  [1m SELECT a.attnum::text, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 49209
+ AND a.attnum IN (2)
+[0m
+  [1m[35m (8.0ms)[0m  CREATE INDEX "index_facts_on_owner" ON "facts"("owner" )
+  [1m[36m (5.5ms)[0m  [1mALTER TABLE "followed_teams" DISABLE TRIGGER ALL;ALTER TABLE "follows" DISABLE TRIGGER ALL;ALTER TABLE "plans" DISABLE TRIGGER ALL;ALTER TABLE "pictures" DISABLE TRIGGER ALL;ALTER TABLE "protip_links" DISABLE TRIGGER ALL;ALTER TABLE "opportunities" DISABLE TRIGGER ALL;ALTER TABLE "likes" DISABLE TRIGGER ALL;ALTER TABLE "networks" DISABLE TRIGGER ALL;ALTER TABLE "teams" DISABLE TRIGGER ALL;ALTER TABLE "spam_reports" DISABLE TRIGGER ALL;ALTER TABLE "sent_mails" DISABLE TRIGGER ALL;ALTER TABLE "tags" DISABLE TRIGGER ALL;ALTER TABLE "seized_opportunities" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "teams_account_plans" DISABLE TRIGGER ALL;ALTER TABLE "teams_members" DISABLE TRIGGER ALL;ALTER TABLE "user_events" DISABLE TRIGGER ALL;ALTER TABLE "users_github_organizations" DISABLE TRIGGER ALL;ALTER TABLE "users_github_repositories" DISABLE TRIGGER ALL;ALTER TABLE "users_github_profiles" DISABLE TRIGGER ALL;ALTER TABLE "teams_locations" DISABLE TRIGGER ALL;ALTER TABLE "teams_accounts" DISABLE TRIGGER ALL;ALTER TABLE "users_github_repositories_contributors" DISABLE TRIGGER ALL;ALTER TABLE "users_github_repositories_followers" DISABLE TRIGGER ALL;ALTER TABLE "facts" DISABLE TRIGGER ALL;ALTER TABLE "api_accesses" DISABLE TRIGGER ALL;ALTER TABLE "protips" DISABLE TRIGGER ALL;ALTER TABLE "badges" DISABLE TRIGGER ALL;ALTER TABLE "taggings" DISABLE TRIGGER ALL;ALTER TABLE "comments" DISABLE TRIGGER ALL;ALTER TABLE "invitations" DISABLE TRIGGER ALL;ALTER TABLE "network_hierarchies" DISABLE TRIGGER ALL;ALTER TABLE "endorsements" DISABLE TRIGGER ALL;ALTER TABLE "users_github_organizations_followers" DISABLE TRIGGER ALL;ALTER TABLE "network_protips" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "users_github_profiles_followers" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL[0m
+  [1m[35m (4.3ms)[0m  DROP TABLE "followed_teams"
+  [1m[36m (5.1ms)[0m  [1mALTER TABLE "follows" ENABLE TRIGGER ALL;ALTER TABLE "plans" ENABLE TRIGGER ALL;ALTER TABLE "pictures" ENABLE TRIGGER ALL;ALTER TABLE "protip_links" ENABLE TRIGGER ALL;ALTER TABLE "opportunities" ENABLE TRIGGER ALL;ALTER TABLE "likes" ENABLE TRIGGER ALL;ALTER TABLE "networks" ENABLE TRIGGER ALL;ALTER TABLE "teams" ENABLE TRIGGER ALL;ALTER TABLE "spam_reports" ENABLE TRIGGER ALL;ALTER TABLE "sent_mails" ENABLE TRIGGER ALL;ALTER TABLE "tags" ENABLE TRIGGER ALL;ALTER TABLE "seized_opportunities" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "teams_account_plans" ENABLE TRIGGER ALL;ALTER TABLE "teams_members" ENABLE TRIGGER ALL;ALTER TABLE "user_events" ENABLE TRIGGER ALL;ALTER TABLE "users_github_organizations" ENABLE TRIGGER ALL;ALTER TABLE "users_github_repositories" ENABLE TRIGGER ALL;ALTER TABLE "users_github_profiles" ENABLE TRIGGER ALL;ALTER TABLE "teams_locations" ENABLE TRIGGER ALL;ALTER TABLE "teams_accounts" ENABLE TRIGGER ALL;ALTER TABLE "users_github_repositories_contributors" ENABLE TRIGGER ALL;ALTER TABLE "users_github_repositories_followers" ENABLE TRIGGER ALL;ALTER TABLE "facts" ENABLE TRIGGER ALL;ALTER TABLE "api_accesses" ENABLE TRIGGER ALL;ALTER TABLE "protips" ENABLE TRIGGER ALL;ALTER TABLE "badges" ENABLE TRIGGER ALL;ALTER TABLE "taggings" ENABLE TRIGGER ALL;ALTER TABLE "comments" ENABLE TRIGGER ALL;ALTER TABLE "invitations" ENABLE TRIGGER ALL;ALTER TABLE "network_hierarchies" ENABLE TRIGGER ALL;ALTER TABLE "endorsements" ENABLE TRIGGER ALL;ALTER TABLE "users_github_organizations_followers" ENABLE TRIGGER ALL;ALTER TABLE "network_protips" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "users_github_profiles_followers" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL[0m
+  [1m[35m (11.3ms)[0m  CREATE TABLE "followed_teams" ("id" serial primary key, "user_id" integer, "team_document_id" character varying(255), "created_at" timestamp DEFAULT '2012-03-12 21:01:09', "team_id" integer) 
+  [1m[36m (1.0ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'followed_teams'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+[0m
+  [1m[35m (8.0ms)[0m  CREATE INDEX "index_followed_teams_on_team_document_id" ON "followed_teams"("team_document_id" )
+  [1m[36m (1.6ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'followed_teams'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+[0m
+  [1m[35mColumns for index index_followed_teams_on_team_document_id on followed_teams (0.3ms)[0m   SELECT a.attnum::text, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 49222
+ AND a.attnum IN (3)
+
+  [1m[36m (7.0ms)[0m  [1mCREATE INDEX "index_followed_teams_on_user_id" ON "followed_teams"("user_id" )[0m
+  [1m[35m (8.7ms)[0m  ALTER TABLE "follows" DISABLE TRIGGER ALL;ALTER TABLE "plans" DISABLE TRIGGER ALL;ALTER TABLE "pictures" DISABLE TRIGGER ALL;ALTER TABLE "protip_links" DISABLE TRIGGER ALL;ALTER TABLE "opportunities" DISABLE TRIGGER ALL;ALTER TABLE "likes" DISABLE TRIGGER ALL;ALTER TABLE "networks" DISABLE TRIGGER ALL;ALTER TABLE "teams" DISABLE TRIGGER ALL;ALTER TABLE "spam_reports" DISABLE TRIGGER ALL;ALTER TABLE "sent_mails" DISABLE TRIGGER ALL;ALTER TABLE "tags" DISABLE TRIGGER ALL;ALTER TABLE "seized_opportunities" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "teams_account_plans" DISABLE TRIGGER ALL;ALTER TABLE "teams_members" DISABLE TRIGGER ALL;ALTER TABLE "user_events" DISABLE TRIGGER ALL;ALTER TABLE "users_github_organizations" DISABLE TRIGGER ALL;ALTER TABLE "users_github_repositories" DISABLE TRIGGER ALL;ALTER TABLE "users_github_profiles" DISABLE TRIGGER ALL;ALTER TABLE "teams_locations" DISABLE TRIGGER ALL;ALTER TABLE "teams_accounts" DISABLE TRIGGER ALL;ALTER TABLE "users_github_repositories_contributors" DISABLE TRIGGER ALL;ALTER TABLE "users_github_repositories_followers" DISABLE TRIGGER ALL;ALTER TABLE "facts" DISABLE TRIGGER ALL;ALTER TABLE "api_accesses" DISABLE TRIGGER ALL;ALTER TABLE "protips" DISABLE TRIGGER ALL;ALTER TABLE "badges" DISABLE TRIGGER ALL;ALTER TABLE "taggings" DISABLE TRIGGER ALL;ALTER TABLE "comments" DISABLE TRIGGER ALL;ALTER TABLE "invitations" DISABLE TRIGGER ALL;ALTER TABLE "network_hierarchies" DISABLE TRIGGER ALL;ALTER TABLE "endorsements" DISABLE TRIGGER ALL;ALTER TABLE "users_github_organizations_followers" DISABLE TRIGGER ALL;ALTER TABLE "network_protips" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "users_github_profiles_followers" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "followed_teams" DISABLE TRIGGER ALL
+  [1m[36m (7.7ms)[0m  [1mDROP TABLE "follows"[0m
+  [1m[35m (6.8ms)[0m  ALTER TABLE "plans" ENABLE TRIGGER ALL;ALTER TABLE "pictures" ENABLE TRIGGER ALL;ALTER TABLE "protip_links" ENABLE TRIGGER ALL;ALTER TABLE "opportunities" ENABLE TRIGGER ALL;ALTER TABLE "likes" ENABLE TRIGGER ALL;ALTER TABLE "networks" ENABLE TRIGGER ALL;ALTER TABLE "teams" ENABLE TRIGGER ALL;ALTER TABLE "spam_reports" ENABLE TRIGGER ALL;ALTER TABLE "sent_mails" ENABLE TRIGGER ALL;ALTER TABLE "tags" ENABLE TRIGGER ALL;ALTER TABLE "seized_opportunities" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "teams_account_plans" ENABLE TRIGGER ALL;ALTER TABLE "teams_members" ENABLE TRIGGER ALL;ALTER TABLE "user_events" ENABLE TRIGGER ALL;ALTER TABLE "users_github_organizations" ENABLE TRIGGER ALL;ALTER TABLE "users_github_repositories" ENABLE TRIGGER ALL;ALTER TABLE "users_github_profiles" ENABLE TRIGGER ALL;ALTER TABLE "teams_locations" ENABLE TRIGGER ALL;ALTER TABLE "teams_accounts" ENABLE TRIGGER ALL;ALTER TABLE "users_github_repositories_contributors" ENABLE TRIGGER ALL;ALTER TABLE "users_github_repositories_followers" ENABLE TRIGGER ALL;ALTER TABLE "facts" ENABLE TRIGGER ALL;ALTER TABLE "api_accesses" ENABLE TRIGGER ALL;ALTER TABLE "protips" ENABLE TRIGGER ALL;ALTER TABLE "badges" ENABLE TRIGGER ALL;ALTER TABLE "taggings" ENABLE TRIGGER ALL;ALTER TABLE "comments" ENABLE TRIGGER ALL;ALTER TABLE "invitations" ENABLE TRIGGER ALL;ALTER TABLE "network_hierarchies" ENABLE TRIGGER ALL;ALTER TABLE "endorsements" ENABLE TRIGGER ALL;ALTER TABLE "users_github_organizations_followers" ENABLE TRIGGER ALL;ALTER TABLE "network_protips" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "users_github_profiles_followers" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "followed_teams" ENABLE TRIGGER ALL
+  [1m[36m (19.6ms)[0m  [1mCREATE TABLE "follows" ("id" serial primary key, "followable_id" integer NOT NULL, "followable_type" character varying(255) NOT NULL, "follower_id" integer NOT NULL, "follower_type" character varying(255) NOT NULL, "blocked" boolean DEFAULT 'f' NOT NULL, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (1.3ms)[0m   SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'follows'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+
+  [1m[36m (9.6ms)[0m  [1mCREATE UNIQUE INDEX "follows_uniq_followable_id_type_follower" ON "follows"("followable_id", "followable_type", "follower_id" )[0m
+  [1m[35m (1.5ms)[0m   SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'follows'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+
+  [1m[36mColumns for index follows_uniq_followable_id_type_follower on follows (0.4ms)[0m  [1m SELECT a.attnum::text, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 49233
+ AND a.attnum IN (2,3,4)
+[0m
+  [1m[35m (7.7ms)[0m  CREATE INDEX "fk_followables" ON "follows"("followable_id", "followable_type" )
+  [1m[36m (3.6ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'follows'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+[0m
+  [1m[35mColumns for index fk_followables on follows (0.5ms)[0m   SELECT a.attnum::text, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 49233
+ AND a.attnum IN (2,3)
+
+  [1m[36mColumns for index follows_uniq_followable_id_type_follower on follows (0.3ms)[0m  [1m SELECT a.attnum::text, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 49233
+ AND a.attnum IN (2,3,4)
+[0m
+  [1m[35m (7.4ms)[0m  CREATE INDEX "fk_follows" ON "follows"("follower_id", "follower_type" )
+  [1m[36m (5.0ms)[0m  [1mALTER TABLE "plans" DISABLE TRIGGER ALL;ALTER TABLE "pictures" DISABLE TRIGGER ALL;ALTER TABLE "protip_links" DISABLE TRIGGER ALL;ALTER TABLE "opportunities" DISABLE TRIGGER ALL;ALTER TABLE "likes" DISABLE TRIGGER ALL;ALTER TABLE "networks" DISABLE TRIGGER ALL;ALTER TABLE "teams" DISABLE TRIGGER ALL;ALTER TABLE "spam_reports" DISABLE TRIGGER ALL;ALTER TABLE "sent_mails" DISABLE TRIGGER ALL;ALTER TABLE "tags" DISABLE TRIGGER ALL;ALTER TABLE "seized_opportunities" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "teams_account_plans" DISABLE TRIGGER ALL;ALTER TABLE "teams_members" DISABLE TRIGGER ALL;ALTER TABLE "user_events" DISABLE TRIGGER ALL;ALTER TABLE "users_github_organizations" DISABLE TRIGGER ALL;ALTER TABLE "users_github_repositories" DISABLE TRIGGER ALL;ALTER TABLE "users_github_profiles" DISABLE TRIGGER ALL;ALTER TABLE "teams_locations" DISABLE TRIGGER ALL;ALTER TABLE "teams_accounts" DISABLE TRIGGER ALL;ALTER TABLE "users_github_repositories_contributors" DISABLE TRIGGER ALL;ALTER TABLE "users_github_repositories_followers" DISABLE TRIGGER ALL;ALTER TABLE "facts" DISABLE TRIGGER ALL;ALTER TABLE "api_accesses" DISABLE TRIGGER ALL;ALTER TABLE "protips" DISABLE TRIGGER ALL;ALTER TABLE "badges" DISABLE TRIGGER ALL;ALTER TABLE "taggings" DISABLE TRIGGER ALL;ALTER TABLE "comments" DISABLE TRIGGER ALL;ALTER TABLE "invitations" DISABLE TRIGGER ALL;ALTER TABLE "network_hierarchies" DISABLE TRIGGER ALL;ALTER TABLE "endorsements" DISABLE TRIGGER ALL;ALTER TABLE "users_github_organizations_followers" DISABLE TRIGGER ALL;ALTER TABLE "network_protips" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "users_github_profiles_followers" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "followed_teams" DISABLE TRIGGER ALL;ALTER TABLE "follows" DISABLE TRIGGER ALL[0m
+  [1m[35m (4.4ms)[0m  DROP TABLE "invitations"
+  [1m[36m (4.9ms)[0m  [1mALTER TABLE "plans" ENABLE TRIGGER ALL;ALTER TABLE "pictures" ENABLE TRIGGER ALL;ALTER TABLE "protip_links" ENABLE TRIGGER ALL;ALTER TABLE "opportunities" ENABLE TRIGGER ALL;ALTER TABLE "likes" ENABLE TRIGGER ALL;ALTER TABLE "networks" ENABLE TRIGGER ALL;ALTER TABLE "teams" ENABLE TRIGGER ALL;ALTER TABLE "spam_reports" ENABLE TRIGGER ALL;ALTER TABLE "sent_mails" ENABLE TRIGGER ALL;ALTER TABLE "tags" ENABLE TRIGGER ALL;ALTER TABLE "seized_opportunities" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "teams_account_plans" ENABLE TRIGGER ALL;ALTER TABLE "teams_members" ENABLE TRIGGER ALL;ALTER TABLE "user_events" ENABLE TRIGGER ALL;ALTER TABLE "users_github_organizations" ENABLE TRIGGER ALL;ALTER TABLE "users_github_repositories" ENABLE TRIGGER ALL;ALTER TABLE "users_github_profiles" ENABLE TRIGGER ALL;ALTER TABLE "teams_locations" ENABLE TRIGGER ALL;ALTER TABLE "teams_accounts" ENABLE TRIGGER ALL;ALTER TABLE "users_github_repositories_contributors" ENABLE TRIGGER ALL;ALTER TABLE "users_github_repositories_followers" ENABLE TRIGGER ALL;ALTER TABLE "facts" ENABLE TRIGGER ALL;ALTER TABLE "api_accesses" ENABLE TRIGGER ALL;ALTER TABLE "protips" ENABLE TRIGGER ALL;ALTER TABLE "badges" ENABLE TRIGGER ALL;ALTER TABLE "taggings" ENABLE TRIGGER ALL;ALTER TABLE "comments" ENABLE TRIGGER ALL;ALTER TABLE "network_hierarchies" ENABLE TRIGGER ALL;ALTER TABLE "endorsements" ENABLE TRIGGER ALL;ALTER TABLE "users_github_organizations_followers" ENABLE TRIGGER ALL;ALTER TABLE "network_protips" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "users_github_profiles_followers" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "followed_teams" ENABLE TRIGGER ALL;ALTER TABLE "follows" ENABLE TRIGGER ALL[0m
+  [1m[35m (16.3ms)[0m  CREATE TABLE "invitations" ("id" serial primary key, "email" character varying(255), "team_document_id" character varying(255), "token" character varying(255), "state" character varying(255), "inviter_id" integer, "created_at" timestamp, "updated_at" timestamp, "team_id" integer) 
+  [1m[36m (5.7ms)[0m  [1mALTER TABLE "plans" DISABLE TRIGGER ALL;ALTER TABLE "pictures" DISABLE TRIGGER ALL;ALTER TABLE "protip_links" DISABLE TRIGGER ALL;ALTER TABLE "opportunities" DISABLE TRIGGER ALL;ALTER TABLE "likes" DISABLE TRIGGER ALL;ALTER TABLE "networks" DISABLE TRIGGER ALL;ALTER TABLE "teams" DISABLE TRIGGER ALL;ALTER TABLE "spam_reports" DISABLE TRIGGER ALL;ALTER TABLE "sent_mails" DISABLE TRIGGER ALL;ALTER TABLE "tags" DISABLE TRIGGER ALL;ALTER TABLE "seized_opportunities" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "teams_account_plans" DISABLE TRIGGER ALL;ALTER TABLE "teams_members" DISABLE TRIGGER ALL;ALTER TABLE "user_events" DISABLE TRIGGER ALL;ALTER TABLE "users_github_organizations" DISABLE TRIGGER ALL;ALTER TABLE "users_github_repositories" DISABLE TRIGGER ALL;ALTER TABLE "users_github_profiles" DISABLE TRIGGER ALL;ALTER TABLE "teams_locations" DISABLE TRIGGER ALL;ALTER TABLE "teams_accounts" DISABLE TRIGGER ALL;ALTER TABLE "users_github_repositories_contributors" DISABLE TRIGGER ALL;ALTER TABLE "users_github_repositories_followers" DISABLE TRIGGER ALL;ALTER TABLE "facts" DISABLE TRIGGER ALL;ALTER TABLE "api_accesses" DISABLE TRIGGER ALL;ALTER TABLE "protips" DISABLE TRIGGER ALL;ALTER TABLE "badges" DISABLE TRIGGER ALL;ALTER TABLE "taggings" DISABLE TRIGGER ALL;ALTER TABLE "comments" DISABLE TRIGGER ALL;ALTER TABLE "network_hierarchies" DISABLE TRIGGER ALL;ALTER TABLE "endorsements" DISABLE TRIGGER ALL;ALTER TABLE "users_github_organizations_followers" DISABLE TRIGGER ALL;ALTER TABLE "network_protips" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "users_github_profiles_followers" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "followed_teams" DISABLE TRIGGER ALL;ALTER TABLE "follows" DISABLE TRIGGER ALL;ALTER TABLE "invitations" DISABLE TRIGGER ALL[0m
+  [1m[35m (7.0ms)[0m  DROP TABLE "likes"
+  [1m[36m (5.5ms)[0m  [1mALTER TABLE "plans" ENABLE TRIGGER ALL;ALTER TABLE "pictures" ENABLE TRIGGER ALL;ALTER TABLE "protip_links" ENABLE TRIGGER ALL;ALTER TABLE "opportunities" ENABLE TRIGGER ALL;ALTER TABLE "networks" ENABLE TRIGGER ALL;ALTER TABLE "teams" ENABLE TRIGGER ALL;ALTER TABLE "spam_reports" ENABLE TRIGGER ALL;ALTER TABLE "sent_mails" ENABLE TRIGGER ALL;ALTER TABLE "tags" ENABLE TRIGGER ALL;ALTER TABLE "seized_opportunities" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "teams_account_plans" ENABLE TRIGGER ALL;ALTER TABLE "teams_members" ENABLE TRIGGER ALL;ALTER TABLE "user_events" ENABLE TRIGGER ALL;ALTER TABLE "users_github_organizations" ENABLE TRIGGER ALL;ALTER TABLE "users_github_repositories" ENABLE TRIGGER ALL;ALTER TABLE "users_github_profiles" ENABLE TRIGGER ALL;ALTER TABLE "teams_locations" ENABLE TRIGGER ALL;ALTER TABLE "teams_accounts" ENABLE TRIGGER ALL;ALTER TABLE "users_github_repositories_contributors" ENABLE TRIGGER ALL;ALTER TABLE "users_github_repositories_followers" ENABLE TRIGGER ALL;ALTER TABLE "facts" ENABLE TRIGGER ALL;ALTER TABLE "api_accesses" ENABLE TRIGGER ALL;ALTER TABLE "protips" ENABLE TRIGGER ALL;ALTER TABLE "badges" ENABLE TRIGGER ALL;ALTER TABLE "taggings" ENABLE TRIGGER ALL;ALTER TABLE "comments" ENABLE TRIGGER ALL;ALTER TABLE "network_hierarchies" ENABLE TRIGGER ALL;ALTER TABLE "endorsements" ENABLE TRIGGER ALL;ALTER TABLE "users_github_organizations_followers" ENABLE TRIGGER ALL;ALTER TABLE "network_protips" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "users_github_profiles_followers" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "followed_teams" ENABLE TRIGGER ALL;ALTER TABLE "follows" ENABLE TRIGGER ALL;ALTER TABLE "invitations" ENABLE TRIGGER ALL[0m
+  [1m[35m (17.5ms)[0m  CREATE TABLE "likes" ("id" serial primary key, "value" integer, "tracking_code" character varying(255), "user_id" integer, "likable_id" integer, "likable_type" character varying(255), "created_at" timestamp, "updated_at" timestamp, "ip_address" character varying(255)) 
+  [1m[36m (1.1ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'likes'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+[0m
+  [1m[35m (8.7ms)[0m  CREATE UNIQUE INDEX "index_likes_on_user_id" ON "likes"("likable_id", "likable_type", "user_id" )
+  [1m[36m (5.1ms)[0m  [1mALTER TABLE "plans" DISABLE TRIGGER ALL;ALTER TABLE "pictures" DISABLE TRIGGER ALL;ALTER TABLE "protip_links" DISABLE TRIGGER ALL;ALTER TABLE "opportunities" DISABLE TRIGGER ALL;ALTER TABLE "networks" DISABLE TRIGGER ALL;ALTER TABLE "teams" DISABLE TRIGGER ALL;ALTER TABLE "spam_reports" DISABLE TRIGGER ALL;ALTER TABLE "sent_mails" DISABLE TRIGGER ALL;ALTER TABLE "tags" DISABLE TRIGGER ALL;ALTER TABLE "seized_opportunities" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "teams_account_plans" DISABLE TRIGGER ALL;ALTER TABLE "teams_members" DISABLE TRIGGER ALL;ALTER TABLE "user_events" DISABLE TRIGGER ALL;ALTER TABLE "users_github_organizations" DISABLE TRIGGER ALL;ALTER TABLE "users_github_repositories" DISABLE TRIGGER ALL;ALTER TABLE "users_github_profiles" DISABLE TRIGGER ALL;ALTER TABLE "teams_locations" DISABLE TRIGGER ALL;ALTER TABLE "teams_accounts" DISABLE TRIGGER ALL;ALTER TABLE "users_github_repositories_contributors" DISABLE TRIGGER ALL;ALTER TABLE "users_github_repositories_followers" DISABLE TRIGGER ALL;ALTER TABLE "facts" DISABLE TRIGGER ALL;ALTER TABLE "api_accesses" DISABLE TRIGGER ALL;ALTER TABLE "protips" DISABLE TRIGGER ALL;ALTER TABLE "badges" DISABLE TRIGGER ALL;ALTER TABLE "taggings" DISABLE TRIGGER ALL;ALTER TABLE "comments" DISABLE TRIGGER ALL;ALTER TABLE "network_hierarchies" DISABLE TRIGGER ALL;ALTER TABLE "endorsements" DISABLE TRIGGER ALL;ALTER TABLE "users_github_organizations_followers" DISABLE TRIGGER ALL;ALTER TABLE "network_protips" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "users_github_profiles_followers" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "followed_teams" DISABLE TRIGGER ALL;ALTER TABLE "follows" DISABLE TRIGGER ALL;ALTER TABLE "invitations" DISABLE TRIGGER ALL;ALTER TABLE "likes" DISABLE TRIGGER ALL[0m
+  [1m[35m (3.5ms)[0m  DROP TABLE "network_hierarchies"
+  [1m[36m (4.7ms)[0m  [1mALTER TABLE "plans" ENABLE TRIGGER ALL;ALTER TABLE "pictures" ENABLE TRIGGER ALL;ALTER TABLE "protip_links" ENABLE TRIGGER ALL;ALTER TABLE "opportunities" ENABLE TRIGGER ALL;ALTER TABLE "networks" ENABLE TRIGGER ALL;ALTER TABLE "teams" ENABLE TRIGGER ALL;ALTER TABLE "spam_reports" ENABLE TRIGGER ALL;ALTER TABLE "sent_mails" ENABLE TRIGGER ALL;ALTER TABLE "tags" ENABLE TRIGGER ALL;ALTER TABLE "seized_opportunities" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "teams_account_plans" ENABLE TRIGGER ALL;ALTER TABLE "teams_members" ENABLE TRIGGER ALL;ALTER TABLE "user_events" ENABLE TRIGGER ALL;ALTER TABLE "users_github_organizations" ENABLE TRIGGER ALL;ALTER TABLE "users_github_repositories" ENABLE TRIGGER ALL;ALTER TABLE "users_github_profiles" ENABLE TRIGGER ALL;ALTER TABLE "teams_locations" ENABLE TRIGGER ALL;ALTER TABLE "teams_accounts" ENABLE TRIGGER ALL;ALTER TABLE "users_github_repositories_contributors" ENABLE TRIGGER ALL;ALTER TABLE "users_github_repositories_followers" ENABLE TRIGGER ALL;ALTER TABLE "facts" ENABLE TRIGGER ALL;ALTER TABLE "api_accesses" ENABLE TRIGGER ALL;ALTER TABLE "protips" ENABLE TRIGGER ALL;ALTER TABLE "badges" ENABLE TRIGGER ALL;ALTER TABLE "taggings" ENABLE TRIGGER ALL;ALTER TABLE "comments" ENABLE TRIGGER ALL;ALTER TABLE "endorsements" ENABLE TRIGGER ALL;ALTER TABLE "users_github_organizations_followers" ENABLE TRIGGER ALL;ALTER TABLE "network_protips" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "users_github_profiles_followers" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "followed_teams" ENABLE TRIGGER ALL;ALTER TABLE "follows" ENABLE TRIGGER ALL;ALTER TABLE "invitations" ENABLE TRIGGER ALL;ALTER TABLE "likes" ENABLE TRIGGER ALL[0m
+  [1m[35m (3.5ms)[0m  CREATE TABLE "network_hierarchies" ("ancestor_id" integer NOT NULL, "descendant_id" integer NOT NULL, "generations" integer NOT NULL) 
+  [1m[36m (0.9ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'network_hierarchies'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+[0m
+  [1m[35m (9.2ms)[0m  CREATE UNIQUE INDEX "network_anc_desc_idx" ON "network_hierarchies"("ancestor_id", "descendant_id", "generations" )
+  [1m[36m (4.1ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'network_hierarchies'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+[0m
+  [1m[35mColumns for index network_anc_desc_idx on network_hierarchies (0.4ms)[0m   SELECT a.attnum::text, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 49269
+ AND a.attnum IN (1,2,3)
+
+  [1m[36m (7.4ms)[0m  [1mCREATE INDEX "network_desc_idx" ON "network_hierarchies"("descendant_id" )[0m
+  [1m[35m (5.2ms)[0m  ALTER TABLE "plans" DISABLE TRIGGER ALL;ALTER TABLE "pictures" DISABLE TRIGGER ALL;ALTER TABLE "protip_links" DISABLE TRIGGER ALL;ALTER TABLE "opportunities" DISABLE TRIGGER ALL;ALTER TABLE "networks" DISABLE TRIGGER ALL;ALTER TABLE "teams" DISABLE TRIGGER ALL;ALTER TABLE "spam_reports" DISABLE TRIGGER ALL;ALTER TABLE "sent_mails" DISABLE TRIGGER ALL;ALTER TABLE "tags" DISABLE TRIGGER ALL;ALTER TABLE "seized_opportunities" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "teams_account_plans" DISABLE TRIGGER ALL;ALTER TABLE "teams_members" DISABLE TRIGGER ALL;ALTER TABLE "user_events" DISABLE TRIGGER ALL;ALTER TABLE "users_github_organizations" DISABLE TRIGGER ALL;ALTER TABLE "users_github_repositories" DISABLE TRIGGER ALL;ALTER TABLE "users_github_profiles" DISABLE TRIGGER ALL;ALTER TABLE "teams_locations" DISABLE TRIGGER ALL;ALTER TABLE "teams_accounts" DISABLE TRIGGER ALL;ALTER TABLE "users_github_repositories_contributors" DISABLE TRIGGER ALL;ALTER TABLE "users_github_repositories_followers" DISABLE TRIGGER ALL;ALTER TABLE "facts" DISABLE TRIGGER ALL;ALTER TABLE "api_accesses" DISABLE TRIGGER ALL;ALTER TABLE "protips" DISABLE TRIGGER ALL;ALTER TABLE "badges" DISABLE TRIGGER ALL;ALTER TABLE "taggings" DISABLE TRIGGER ALL;ALTER TABLE "comments" DISABLE TRIGGER ALL;ALTER TABLE "endorsements" DISABLE TRIGGER ALL;ALTER TABLE "users_github_organizations_followers" DISABLE TRIGGER ALL;ALTER TABLE "network_protips" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "users_github_profiles_followers" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "followed_teams" DISABLE TRIGGER ALL;ALTER TABLE "follows" DISABLE TRIGGER ALL;ALTER TABLE "invitations" DISABLE TRIGGER ALL;ALTER TABLE "likes" DISABLE TRIGGER ALL;ALTER TABLE "network_hierarchies" DISABLE TRIGGER ALL
+  [1m[36m (4.6ms)[0m  [1mDROP TABLE "network_protips"[0m
+  [1m[35m (5.2ms)[0m  ALTER TABLE "plans" ENABLE TRIGGER ALL;ALTER TABLE "pictures" ENABLE TRIGGER ALL;ALTER TABLE "protip_links" ENABLE TRIGGER ALL;ALTER TABLE "opportunities" ENABLE TRIGGER ALL;ALTER TABLE "networks" ENABLE TRIGGER ALL;ALTER TABLE "teams" ENABLE TRIGGER ALL;ALTER TABLE "spam_reports" ENABLE TRIGGER ALL;ALTER TABLE "sent_mails" ENABLE TRIGGER ALL;ALTER TABLE "tags" ENABLE TRIGGER ALL;ALTER TABLE "seized_opportunities" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "teams_account_plans" ENABLE TRIGGER ALL;ALTER TABLE "teams_members" ENABLE TRIGGER ALL;ALTER TABLE "user_events" ENABLE TRIGGER ALL;ALTER TABLE "users_github_organizations" ENABLE TRIGGER ALL;ALTER TABLE "users_github_repositories" ENABLE TRIGGER ALL;ALTER TABLE "users_github_profiles" ENABLE TRIGGER ALL;ALTER TABLE "teams_locations" ENABLE TRIGGER ALL;ALTER TABLE "teams_accounts" ENABLE TRIGGER ALL;ALTER TABLE "users_github_repositories_contributors" ENABLE TRIGGER ALL;ALTER TABLE "users_github_repositories_followers" ENABLE TRIGGER ALL;ALTER TABLE "facts" ENABLE TRIGGER ALL;ALTER TABLE "api_accesses" ENABLE TRIGGER ALL;ALTER TABLE "protips" ENABLE TRIGGER ALL;ALTER TABLE "badges" ENABLE TRIGGER ALL;ALTER TABLE "taggings" ENABLE TRIGGER ALL;ALTER TABLE "comments" ENABLE TRIGGER ALL;ALTER TABLE "endorsements" ENABLE TRIGGER ALL;ALTER TABLE "users_github_organizations_followers" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "users_github_profiles_followers" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "followed_teams" ENABLE TRIGGER ALL;ALTER TABLE "follows" ENABLE TRIGGER ALL;ALTER TABLE "invitations" ENABLE TRIGGER ALL;ALTER TABLE "likes" ENABLE TRIGGER ALL;ALTER TABLE "network_hierarchies" ENABLE TRIGGER ALL
+  [1m[36m (9.1ms)[0m  [1mCREATE TABLE "network_protips" ("id" serial primary key, "network_id" integer, "protip_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (6.1ms)[0m  ALTER TABLE "plans" DISABLE TRIGGER ALL;ALTER TABLE "pictures" DISABLE TRIGGER ALL;ALTER TABLE "protip_links" DISABLE TRIGGER ALL;ALTER TABLE "opportunities" DISABLE TRIGGER ALL;ALTER TABLE "networks" DISABLE TRIGGER ALL;ALTER TABLE "teams" DISABLE TRIGGER ALL;ALTER TABLE "spam_reports" DISABLE TRIGGER ALL;ALTER TABLE "sent_mails" DISABLE TRIGGER ALL;ALTER TABLE "tags" DISABLE TRIGGER ALL;ALTER TABLE "seized_opportunities" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "teams_account_plans" DISABLE TRIGGER ALL;ALTER TABLE "teams_members" DISABLE TRIGGER ALL;ALTER TABLE "user_events" DISABLE TRIGGER ALL;ALTER TABLE "users_github_organizations" DISABLE TRIGGER ALL;ALTER TABLE "users_github_repositories" DISABLE TRIGGER ALL;ALTER TABLE "users_github_profiles" DISABLE TRIGGER ALL;ALTER TABLE "teams_locations" DISABLE TRIGGER ALL;ALTER TABLE "teams_accounts" DISABLE TRIGGER ALL;ALTER TABLE "users_github_repositories_contributors" DISABLE TRIGGER ALL;ALTER TABLE "users_github_repositories_followers" DISABLE TRIGGER ALL;ALTER TABLE "facts" DISABLE TRIGGER ALL;ALTER TABLE "api_accesses" DISABLE TRIGGER ALL;ALTER TABLE "protips" DISABLE TRIGGER ALL;ALTER TABLE "badges" DISABLE TRIGGER ALL;ALTER TABLE "taggings" DISABLE TRIGGER ALL;ALTER TABLE "comments" DISABLE TRIGGER ALL;ALTER TABLE "endorsements" DISABLE TRIGGER ALL;ALTER TABLE "users_github_organizations_followers" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "users_github_profiles_followers" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "followed_teams" DISABLE TRIGGER ALL;ALTER TABLE "follows" DISABLE TRIGGER ALL;ALTER TABLE "invitations" DISABLE TRIGGER ALL;ALTER TABLE "likes" DISABLE TRIGGER ALL;ALTER TABLE "network_hierarchies" DISABLE TRIGGER ALL;ALTER TABLE "network_protips" DISABLE TRIGGER ALL
+  [1m[36m (12.2ms)[0m  [1mDROP TABLE "networks"[0m
+  [1m[35m (6.4ms)[0m  ALTER TABLE "plans" ENABLE TRIGGER ALL;ALTER TABLE "pictures" ENABLE TRIGGER ALL;ALTER TABLE "protip_links" ENABLE TRIGGER ALL;ALTER TABLE "opportunities" ENABLE TRIGGER ALL;ALTER TABLE "teams" ENABLE TRIGGER ALL;ALTER TABLE "spam_reports" ENABLE TRIGGER ALL;ALTER TABLE "sent_mails" ENABLE TRIGGER ALL;ALTER TABLE "tags" ENABLE TRIGGER ALL;ALTER TABLE "seized_opportunities" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "teams_account_plans" ENABLE TRIGGER ALL;ALTER TABLE "teams_members" ENABLE TRIGGER ALL;ALTER TABLE "user_events" ENABLE TRIGGER ALL;ALTER TABLE "users_github_organizations" ENABLE TRIGGER ALL;ALTER TABLE "users_github_repositories" ENABLE TRIGGER ALL;ALTER TABLE "users_github_profiles" ENABLE TRIGGER ALL;ALTER TABLE "teams_locations" ENABLE TRIGGER ALL;ALTER TABLE "teams_accounts" ENABLE TRIGGER ALL;ALTER TABLE "users_github_repositories_contributors" ENABLE TRIGGER ALL;ALTER TABLE "users_github_repositories_followers" ENABLE TRIGGER ALL;ALTER TABLE "facts" ENABLE TRIGGER ALL;ALTER TABLE "api_accesses" ENABLE TRIGGER ALL;ALTER TABLE "protips" ENABLE TRIGGER ALL;ALTER TABLE "badges" ENABLE TRIGGER ALL;ALTER TABLE "taggings" ENABLE TRIGGER ALL;ALTER TABLE "comments" ENABLE TRIGGER ALL;ALTER TABLE "endorsements" ENABLE TRIGGER ALL;ALTER TABLE "users_github_organizations_followers" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "users_github_profiles_followers" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "followed_teams" ENABLE TRIGGER ALL;ALTER TABLE "follows" ENABLE TRIGGER ALL;ALTER TABLE "invitations" ENABLE TRIGGER ALL;ALTER TABLE "likes" ENABLE TRIGGER ALL;ALTER TABLE "network_hierarchies" ENABLE TRIGGER ALL;ALTER TABLE "network_protips" ENABLE TRIGGER ALL
+  [1m[36m (19.7ms)[0m  [1mCREATE TABLE "networks" ("id" serial primary key, "name" character varying(255), "slug" character varying(255), "created_at" timestamp, "updated_at" timestamp, "protips_count_cache" integer DEFAULT 0, "featured" boolean DEFAULT 'f', "parent_id" integer, "network_tags" citext[]) [0m
+  [1m[35m (8.1ms)[0m  ALTER TABLE "plans" DISABLE TRIGGER ALL;ALTER TABLE "pictures" DISABLE TRIGGER ALL;ALTER TABLE "protip_links" DISABLE TRIGGER ALL;ALTER TABLE "opportunities" DISABLE TRIGGER ALL;ALTER TABLE "teams" DISABLE TRIGGER ALL;ALTER TABLE "spam_reports" DISABLE TRIGGER ALL;ALTER TABLE "sent_mails" DISABLE TRIGGER ALL;ALTER TABLE "tags" DISABLE TRIGGER ALL;ALTER TABLE "seized_opportunities" DISABLE TRIGGER ALL;ALTER TABLE "skills" DISABLE TRIGGER ALL;ALTER TABLE "teams_account_plans" DISABLE TRIGGER ALL;ALTER TABLE "teams_members" DISABLE TRIGGER ALL;ALTER TABLE "user_events" DISABLE TRIGGER ALL;ALTER TABLE "users_github_organizations" DISABLE TRIGGER ALL;ALTER TABLE "users_github_repositories" DISABLE TRIGGER ALL;ALTER TABLE "users_github_profiles" DISABLE TRIGGER ALL;ALTER TABLE "teams_locations" DISABLE TRIGGER ALL;ALTER TABLE "teams_accounts" DISABLE TRIGGER ALL;ALTER TABLE "users_github_repositories_contributors" DISABLE TRIGGER ALL;ALTER TABLE "users_github_repositories_followers" DISABLE TRIGGER ALL;ALTER TABLE "facts" DISABLE TRIGGER ALL;ALTER TABLE "api_accesses" DISABLE TRIGGER ALL;ALTER TABLE "protips" DISABLE TRIGGER ALL;ALTER TABLE "badges" DISABLE TRIGGER ALL;ALTER TABLE "taggings" DISABLE TRIGGER ALL;ALTER TABLE "comments" DISABLE TRIGGER ALL;ALTER TABLE "endorsements" DISABLE TRIGGER ALL;ALTER TABLE "users_github_organizations_followers" DISABLE TRIGGER ALL;ALTER TABLE "users" DISABLE TRIGGER ALL;ALTER TABLE "users_github_profiles_followers" DISABLE TRIGGER ALL;ALTER TABLE "schema_migrations" DISABLE TRIGGER ALL;ALTER TABLE "followed_teams" DISABLE TRIGGER ALL;ALTER TABLE "follows" DISABLE TRIGGER ALL;ALTER TABLE "invitations" DISABLE TRIGGER ALL;ALTER TABLE "likes" DISABLE TRIGGER ALL;ALTER TABLE "network_hierarchies" DISABLE TRIGGER ALL;ALTER TABLE "network_protips" DISABLE TRIGGER ALL;ALTER TABLE "networks" DISABLE TRIGGER ALL
+  [1m[36m (1.4ms)[0m  [1mDROP TABLE "opportunities"[0m
+PG::DependentObjectsStillExist: ERROR:  cannot drop table opportunities because other objects depend on it
+DETAIL:  constraint seized_opportunities_opportunity_id_fk on table seized_opportunities depends on table opportunities
+HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+: DROP TABLE "opportunities"
+  [1m[35m (5.3ms)[0m  ALTER TABLE "plans" ENABLE TRIGGER ALL;ALTER TABLE "pictures" ENABLE TRIGGER ALL;ALTER TABLE "protip_links" ENABLE TRIGGER ALL;ALTER TABLE "opportunities" ENABLE TRIGGER ALL;ALTER TABLE "teams" ENABLE TRIGGER ALL;ALTER TABLE "spam_reports" ENABLE TRIGGER ALL;ALTER TABLE "sent_mails" ENABLE TRIGGER ALL;ALTER TABLE "tags" ENABLE TRIGGER ALL;ALTER TABLE "seized_opportunities" ENABLE TRIGGER ALL;ALTER TABLE "skills" ENABLE TRIGGER ALL;ALTER TABLE "teams_account_plans" ENABLE TRIGGER ALL;ALTER TABLE "teams_members" ENABLE TRIGGER ALL;ALTER TABLE "user_events" ENABLE TRIGGER ALL;ALTER TABLE "users_github_organizations" ENABLE TRIGGER ALL;ALTER TABLE "users_github_repositories" ENABLE TRIGGER ALL;ALTER TABLE "users_github_profiles" ENABLE TRIGGER ALL;ALTER TABLE "teams_locations" ENABLE TRIGGER ALL;ALTER TABLE "teams_accounts" ENABLE TRIGGER ALL;ALTER TABLE "users_github_repositories_contributors" ENABLE TRIGGER ALL;ALTER TABLE "users_github_repositories_followers" ENABLE TRIGGER ALL;ALTER TABLE "facts" ENABLE TRIGGER ALL;ALTER TABLE "api_accesses" ENABLE TRIGGER ALL;ALTER TABLE "protips" ENABLE TRIGGER ALL;ALTER TABLE "badges" ENABLE TRIGGER ALL;ALTER TABLE "taggings" ENABLE TRIGGER ALL;ALTER TABLE "comments" ENABLE TRIGGER ALL;ALTER TABLE "endorsements" ENABLE TRIGGER ALL;ALTER TABLE "users_github_organizations_followers" ENABLE TRIGGER ALL;ALTER TABLE "users" ENABLE TRIGGER ALL;ALTER TABLE "users_github_profiles_followers" ENABLE TRIGGER ALL;ALTER TABLE "schema_migrations" ENABLE TRIGGER ALL;ALTER TABLE "followed_teams" ENABLE TRIGGER ALL;ALTER TABLE "follows" ENABLE TRIGGER ALL;ALTER TABLE "invitations" ENABLE TRIGGER ALL;ALTER TABLE "likes" ENABLE TRIGGER ALL;ALTER TABLE "network_hierarchies" ENABLE TRIGGER ALL;ALTER TABLE "network_protips" ENABLE TRIGGER ALL;ALTER TABLE "networks" ENABLE TRIGGER ALL
+Connecting to database specified by database.yml
+  [1m[36m (46.3ms)[0m  [1mCREATE extension IF NOT EXISTS "citext"[0m
+  [1m[35m (27.3ms)[0m  CREATE extension IF NOT EXISTS "hstore"
+  [1m[36m (16.2ms)[0m  [1mCREATE extension IF NOT EXISTS "pg_stat_statements"[0m
+  [1m[35m (21.4ms)[0m  CREATE TABLE "api_accesses" ("id" serial primary key, "api_key" character varying(255), "awards" text, "created_at" timestamp, "updated_at" timestamp) 
+  [1m[36m (10.0ms)[0m  [1mCREATE TABLE "badges" ("id" serial primary key, "created_at" timestamp, "updated_at" timestamp, "user_id" integer, "badge_class_name" character varying(255)) [0m
+  [1m[35m (0.7ms)[0m  SELECT opcname FROM pg_opclass
+  [1m[36m (2.2ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'badges'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+[0m
+  [1m[35m (7.7ms)[0m  CREATE UNIQUE INDEX "index_badges_on_user_id_and_badge_class_name" ON "badges"("user_id", "badge_class_name" )
+  [1m[36m (1.2ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'badges'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+[0m
+  [1m[35mColumns for index index_badges_on_user_id_and_badge_class_name on badges (3.5ms)[0m   SELECT a.attnum::text, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 49522
+ AND a.attnum IN (4,5)
+
+  [1m[36m (10.0ms)[0m  [1mCREATE INDEX "index_badges_on_user_id" ON "badges"("user_id" )[0m
+  [1m[35m (17.6ms)[0m  CREATE TABLE "comments" ("id" serial primary key, "title" character varying(50) DEFAULT '', "comment" text DEFAULT '', "protip_id" integer, "user_id" integer, "likes_cache" integer DEFAULT 0, "likes_value_cache" integer DEFAULT 0, "created_at" timestamp, "updated_at" timestamp, "likes_count" integer DEFAULT 0, "user_name" character varying(255), "user_email" character varying(255), "user_agent" character varying(255), "user_ip" inet, "request_format" character varying(255), "spam_reports_count" integer DEFAULT 0, "state" character varying(255) DEFAULT 'active') 
+  [1m[36m (1.1ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'comments'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+[0m
+  [1m[35m (8.7ms)[0m  CREATE INDEX "index_comments_on_commentable_id" ON "comments"("protip_id" )
+  [1m[36m (1.3ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'comments'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+[0m
+  [1m[35mColumns for index index_comments_on_commentable_id on comments (0.4ms)[0m   SELECT a.attnum::text, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 49532
+ AND a.attnum IN (4)
+
+  [1m[36m (6.7ms)[0m  [1mCREATE INDEX "index_comments_on_user_id" ON "comments"("user_id" )[0m
+  [1m[35m (9.3ms)[0m  CREATE TABLE "endorsements" ("id" serial primary key, "endorsed_user_id" integer, "endorsing_user_id" integer, "specialty" character varying(255), "created_at" timestamp, "updated_at" timestamp, "skill_id" integer) 
+  [1m[36m (1.2ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'endorsements'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+[0m
+  [1m[35m (9.9ms)[0m  CREATE UNIQUE INDEX "only_unique_endorsements" ON "endorsements"("endorsed_user_id", "endorsing_user_id", "specialty" )
+  [1m[36m (1.4ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'endorsements'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+[0m
+  [1m[35mColumns for index only_unique_endorsements on endorsements (0.4ms)[0m   SELECT a.attnum::text, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 49552
+ AND a.attnum IN (2,3,4)
+
+  [1m[36m (7.1ms)[0m  [1mCREATE INDEX "index_endorsements_on_endorsed_user_id" ON "endorsements"("endorsed_user_id" )[0m
+  [1m[35m (1.1ms)[0m   SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'endorsements'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+
+  [1m[36mColumns for index index_endorsements_on_endorsed_user_id on endorsements (0.3ms)[0m  [1m SELECT a.attnum::text, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 49552
+ AND a.attnum IN (2)
+[0m
+  [1m[35mColumns for index only_unique_endorsements on endorsements (0.3ms)[0m   SELECT a.attnum::text, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 49552
+ AND a.attnum IN (2,3,4)
+
+  [1m[36m (7.0ms)[0m  [1mCREATE INDEX "index_endorsements_on_endorsing_user_id" ON "endorsements"("endorsing_user_id" )[0m
+  [1m[35m (13.7ms)[0m  CREATE TABLE "facts" ("id" serial primary key, "identity" character varying(255), "owner" character varying(255), "name" character varying(255), "url" character varying(255), "tags" text, "metadata" text, "relevant_on" timestamp, "created_at" timestamp, "updated_at" timestamp, "user_id" integer) 
+  [1m[36m (1.1ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'facts'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+[0m
+  [1m[35m (8.2ms)[0m  CREATE INDEX "index_facts_on_identity" ON "facts"("identity" )
+  [1m[36m (1.1ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'facts'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+[0m
+  [1m[35mColumns for index index_facts_on_identity on facts (0.3ms)[0m   SELECT a.attnum::text, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 49563
+ AND a.attnum IN (2)
+
+  [1m[36m (6.8ms)[0m  [1mCREATE INDEX "index_facts_on_owner" ON "facts"("owner" )[0m
+  [1m[35m (8.8ms)[0m  CREATE TABLE "followed_teams" ("id" serial primary key, "user_id" integer, "team_document_id" character varying(255), "created_at" timestamp DEFAULT '2012-03-12 21:01:09', "team_id" integer) 
+  [1m[36m (1.1ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'followed_teams'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+[0m
+  [1m[35m (7.8ms)[0m  CREATE INDEX "index_followed_teams_on_team_document_id" ON "followed_teams"("team_document_id" )
+  [1m[36m (1.0ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'followed_teams'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+[0m
+  [1m[35mColumns for index index_followed_teams_on_team_document_id on followed_teams (0.3ms)[0m   SELECT a.attnum::text, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 49576
+ AND a.attnum IN (3)
+
+  [1m[36m (7.6ms)[0m  [1mCREATE INDEX "index_followed_teams_on_user_id" ON "followed_teams"("user_id" )[0m
+  [1m[35m (14.5ms)[0m  CREATE TABLE "follows" ("id" serial primary key, "followable_id" integer NOT NULL, "followable_type" character varying(255) NOT NULL, "follower_id" integer NOT NULL, "follower_type" character varying(255) NOT NULL, "blocked" boolean DEFAULT 'f' NOT NULL, "created_at" timestamp, "updated_at" timestamp) 
+  [1m[36m (1.0ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'follows'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+[0m
+  [1m[35m (7.5ms)[0m  CREATE UNIQUE INDEX "follows_uniq_followable_id_type_follower" ON "follows"("followable_id", "followable_type", "follower_id" )
+  [1m[36m (1.0ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'follows'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+[0m
+  [1m[35mColumns for index follows_uniq_followable_id_type_follower on follows (0.4ms)[0m   SELECT a.attnum::text, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 49587
+ AND a.attnum IN (2,3,4)
+
+  [1m[36m (5.4ms)[0m  [1mCREATE INDEX "fk_followables" ON "follows"("followable_id", "followable_type" )[0m
+  [1m[35m (4.0ms)[0m   SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'follows'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+
+  [1m[36mColumns for index fk_followables on follows (0.4ms)[0m  [1m SELECT a.attnum::text, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 49587
+ AND a.attnum IN (2,3)
+[0m
+  [1m[35mColumns for index follows_uniq_followable_id_type_follower on follows (0.3ms)[0m   SELECT a.attnum::text, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 49587
+ AND a.attnum IN (2,3,4)
+
+  [1m[36m (9.2ms)[0m  [1mCREATE INDEX "fk_follows" ON "follows"("follower_id", "follower_type" )[0m
+  [1m[35m (12.3ms)[0m  CREATE TABLE "invitations" ("id" serial primary key, "email" character varying(255), "team_document_id" character varying(255), "token" character varying(255), "state" character varying(255), "inviter_id" integer, "created_at" timestamp, "updated_at" timestamp, "team_id" integer) 
+  [1m[36m (15.8ms)[0m  [1mCREATE TABLE "likes" ("id" serial primary key, "value" integer, "tracking_code" character varying(255), "user_id" integer, "likable_id" integer, "likable_type" character varying(255), "created_at" timestamp, "updated_at" timestamp, "ip_address" character varying(255)) [0m
+  [1m[35m (1.2ms)[0m   SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'likes'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+
+  [1m[36m (8.1ms)[0m  [1mCREATE UNIQUE INDEX "index_likes_on_user_id" ON "likes"("likable_id", "likable_type", "user_id" )[0m
+  [1m[35m (3.1ms)[0m  CREATE TABLE "network_hierarchies" ("ancestor_id" integer NOT NULL, "descendant_id" integer NOT NULL, "generations" integer NOT NULL) 
+  [1m[36m (1.1ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'network_hierarchies'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+[0m
+  [1m[35m (7.1ms)[0m  CREATE UNIQUE INDEX "network_anc_desc_idx" ON "network_hierarchies"("ancestor_id", "descendant_id", "generations" )
+  [1m[36m (1.3ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'network_hierarchies'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+[0m
+  [1m[35mColumns for index network_anc_desc_idx on network_hierarchies (0.3ms)[0m   SELECT a.attnum::text, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 49623
+ AND a.attnum IN (1,2,3)
+
+  [1m[36m (8.5ms)[0m  [1mCREATE INDEX "network_desc_idx" ON "network_hierarchies"("descendant_id" )[0m
+  [1m[35m (11.7ms)[0m  CREATE TABLE "network_protips" ("id" serial primary key, "network_id" integer, "protip_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36m (12.5ms)[0m  [1mCREATE TABLE "networks" ("id" serial primary key, "name" character varying(255), "slug" character varying(255), "created_at" timestamp, "updated_at" timestamp, "protips_count_cache" integer DEFAULT 0, "featured" boolean DEFAULT 'f', "parent_id" integer, "network_tags" citext[]) [0m
+  [1m[35m (18.0ms)[0m  CREATE TABLE "opportunities" ("id" serial primary key, "name" character varying(255), "description" text, "designation" character varying(255), "location" character varying(255), "cached_tags" character varying(255), "link" character varying(255), "salary" integer, "options" float, "deleted" boolean DEFAULT 'f', "deleted_at" timestamp, "created_at" timestamp, "updated_at" timestamp, "expires_at" timestamp DEFAULT '1970-01-01 00:00:00', "opportunity_type" character varying(255) DEFAULT 'full-time', "location_city" character varying(255), "apply" boolean DEFAULT 'f', "public_id" character varying(255), "team_id" integer, "remote" boolean) 
+  [1m[36m (10.1ms)[0m  [1mCREATE TABLE "pictures" ("id" serial primary key, "user_id" integer, "file" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (14.5ms)[0m  CREATE TABLE "plans" ("id" serial primary key, "amount" integer, "interval" character varying(255) DEFAULT 'month', "name" character varying(255), "currency" character varying(255) DEFAULT 'usd', "public_id" character varying(255), "created_at" timestamp, "updated_at" timestamp, "analytics" boolean DEFAULT 'f', "interval_in_seconds" integer DEFAULT 2592000) 
+  [1m[36m (17.8ms)[0m  [1mCREATE TABLE "protip_links" ("id" serial primary key, "identifier" character varying(255), "url" character varying(255), "protip_id" integer, "created_at" timestamp, "updated_at" timestamp, "kind" character varying(255)) [0m
+  [1m[35m (13.8ms)[0m  CREATE TABLE "protips" ("id" serial primary key, "public_id" character varying(255), "kind" character varying(255), "title" character varying(255), "body" text, "user_id" integer, "created_at" timestamp, "updated_at" timestamp, "score" float, "created_by" character varying(255) DEFAULT 'self', "featured" boolean DEFAULT 'f', "featured_at" timestamp, "upvotes_value_cache" integer DEFAULT 0 NOT NULL, "boost_factor" float DEFAULT 1.0, "inappropriate" integer DEFAULT 0, "likes_count" integer DEFAULT 0, "slug" character varying(255) NOT NULL, "user_name" character varying(255), "user_email" character varying(255), "user_agent" character varying(255), "user_ip" inet, "spam_reports_count" integer DEFAULT 0, "state" character varying(255) DEFAULT 'active') 
+  [1m[36m (1.1ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'protips'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+[0m
+  [1m[35m (10.5ms)[0m  CREATE INDEX "index_protips_on_public_id" ON "protips"("public_id" )
+  [1m[36m (1.3ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'protips'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+[0m
+  [1m[35mColumns for index index_protips_on_public_id on protips (0.3ms)[0m   SELECT a.attnum::text, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 49700
+ AND a.attnum IN (2)
+
+  [1m[36m (8.7ms)[0m  [1mCREATE INDEX "index_protips_on_slug" ON "protips"("slug" )[0m
+  [1m[35m (1.5ms)[0m   SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'protips'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+
+  [1m[36mColumns for index index_protips_on_public_id on protips (0.4ms)[0m  [1m SELECT a.attnum::text, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 49700
+ AND a.attnum IN (2)
+[0m
+  [1m[35mColumns for index index_protips_on_slug on protips (0.3ms)[0m   SELECT a.attnum::text, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 49700
+ AND a.attnum IN (17)
+
+  [1m[36m (7.2ms)[0m  [1mCREATE INDEX "index_protips_on_user_id" ON "protips"("user_id" )[0m
+  [1m[35m (13.6ms)[0m  CREATE TABLE "seized_opportunities" ("id" serial primary key, "opportunity_id" integer, "user_id" integer, "created_at" timestamp, "updated_at" timestamp) 
+  [1m[36m (8.1ms)[0m  [1mCREATE TABLE "sent_mails" ("id" serial primary key, "mailable_id" integer, "mailable_type" character varying(255), "user_id" integer, "sent_at" timestamp) [0m
+  [1m[35m (13.4ms)[0m  CREATE TABLE "skills" ("id" serial primary key, "user_id" integer, "name" citext NOT NULL, "endorsements_count" integer DEFAULT 0, "created_at" timestamp, "updated_at" timestamp, "tokenized" character varying(255), "weight" integer DEFAULT 0, "repos" text, "speaking_events" text, "attended_events" text, "deleted" boolean DEFAULT 'f' NOT NULL, "deleted_at" timestamp, "links" json DEFAULT '{}') 
+  [1m[36m (1.1ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'skills'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+[0m
+  [1m[35m (6.4ms)[0m  CREATE INDEX "index_skills_on_deleted_and_user_id" ON "skills"("deleted", "user_id" )
+  [1m[36m (3.8ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'skills'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+[0m
+  [1m[35mColumns for index index_skills_on_deleted_and_user_id on skills (0.4ms)[0m   SELECT a.attnum::text, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 49738
+ AND a.attnum IN (12,2)
+
+  [1m[36m (8.4ms)[0m  [1mCREATE INDEX "index_skills_on_user_id" ON "skills"("user_id" )[0m
+  [1m[35m (10.7ms)[0m  CREATE TABLE "spam_reports" ("id" serial primary key, "spammable_id" integer NOT NULL, "spammable_type" character varying(255) NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36m (14.9ms)[0m  [1mCREATE TABLE "taggings" ("id" serial primary key, "tag_id" integer, "taggable_id" integer, "taggable_type" character varying(255), "tagger_id" integer, "tagger_type" character varying(255), "context" character varying(255), "created_at" timestamp) [0m
+  [1m[35m (1.0ms)[0m   SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'taggings'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+
+  [1m[36m (9.4ms)[0m  [1mCREATE UNIQUE INDEX "taggings_idx" ON "taggings"("tag_id", "taggable_id", "taggable_type", "context", "tagger_id", "tagger_type" )[0m
+  [1m[35m (11.5ms)[0m  CREATE TABLE "tags" ("id" serial primary key, "name" character varying(255), "taggings_count" integer DEFAULT 0) 
+  [1m[36m (1.3ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'tags'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+[0m
+  [1m[35m (8.2ms)[0m  CREATE UNIQUE INDEX "index_tags_on_name" ON "tags"("name" )
+  [1m[36m (18.8ms)[0m  [1mCREATE TABLE "teams" ("id" serial primary key, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "website" character varying(255), "about" text, "total" decimal(40,30) DEFAULT 0.0, "size" integer DEFAULT 0, "mean" decimal(40,30) DEFAULT 0.0, "median" decimal(40,30) DEFAULT 0.0, "score" decimal(40,30) DEFAULT 0.0, "twitter" character varying(255), "facebook" character varying(255), "slug" citext NOT NULL, "premium" boolean DEFAULT 'f', "analytics" boolean DEFAULT 'f', "valid_jobs" boolean DEFAULT 'f', "hide_from_featured" boolean DEFAULT 'f', "preview_code" character varying(255), "youtube_url" character varying(255), "github" character varying(255), "highlight_tags" character varying(255), "branding" text, "headline" text, "big_quote" text, "big_image" character varying(255), "featured_banner_image" character varying(255), "benefit_name_1" text, "benefit_description_1" text, "benefit_name_2" text, "benefit_description_2" text, "benefit_name_3" text, "benefit_description_3" text, "reason_name_1" text, "reason_description_1" text, "reason_name_2" text, "reason_description_2" text, "reason_name_3" text, "reason_description_3" text, "why_work_image" text, "organization_way" text, "organization_way_name" text, "organization_way_photo" text, "blog_feed" text, "our_challenge" text, "your_impact" text, "hiring_tagline" text, "link_to_careers_page" text, "avatar" character varying(255), "achievement_count" integer DEFAULT 0, "endorsement_count" integer DEFAULT 0, "upgraded_at" timestamp, "paid_job_posts" integer DEFAULT 0, "monthly_subscription" boolean DEFAULT 'f', "stack_list" text DEFAULT '', "number_of_jobs_to_show" integer DEFAULT 2, "location" character varying(255), "country_id" integer, "name" character varying(255), "github_organization_name" character varying(255), "team_size" integer, "mongo_id" character varying(255), "office_photos" character varying(255)[] DEFAULT '{}', "upcoming_events" text[] DEFAULT '{}', "interview_steps" text[] DEFAULT '{}', "invited_emails" character varying(255)[] DEFAULT '{}', "pending_join_requests" character varying(255)[] DEFAULT '{}', "state" character varying(255) DEFAULT 'active') [0m
+  [1m[35m (9.1ms)[0m  CREATE TABLE "teams_account_plans" ("id" serial primary key, "plan_id" integer, "account_id" integer, "state" character varying(255) DEFAULT 'active', "expire_at" timestamp) 
+  [1m[36m (14.3ms)[0m  [1mCREATE TABLE "teams_accounts" ("id" serial primary key, "team_id" integer NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "stripe_card_token" character varying(255) NOT NULL, "stripe_customer_token" character varying(255) NOT NULL) [0m
+  [1m[35m (12.9ms)[0m  CREATE TABLE "teams_locations" ("id" serial primary key, "name" character varying(255), "description" text, "address" text, "city" character varying(255), "state_code" character varying(255), "country" character varying(255), "team_id" integer NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "points_of_interest" character varying(255)[] DEFAULT '{}') 
+  [1m[36m (15.3ms)[0m  [1mCREATE TABLE "teams_members" ("id" serial primary key, "team_id" integer NOT NULL, "user_id" integer NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "state" character varying(255) DEFAULT 'pending', "score_cache" float, "team_banner" character varying(255), "team_avatar" character varying(255), "role" character varying(255) DEFAULT 'member', "title" character varying(255)) [0m
+  [1m[35m (17.3ms)[0m  CREATE TABLE "user_events" ("id" serial primary key, "user_id" integer, "name" character varying(255), "data" text, "created_at" timestamp DEFAULT '2012-03-12 21:01:10') 
+  [1m[36m (20.7ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "username" citext, "name" character varying(255), "email" citext, "location" character varying(255), "old_github_token" character varying(255), "state" character varying(255), "created_at" timestamp, "updated_at" timestamp, "twitter" character varying(255), "linkedin_legacy" character varying(255), "stackoverflow" character varying(255), "admin" boolean DEFAULT 'f', "backup_email" character varying(255), "badges_count" integer DEFAULT 0, "bitbucket" character varying(255), "codeplex" character varying(255), "login_count" integer DEFAULT 0, "last_request_at" timestamp DEFAULT '2014-07-23 03:14:36', "achievements_checked_at" timestamp DEFAULT '1911-08-12 21:49:21', "claim_code" text, "github_id" integer, "country" character varying(255), "city" character varying(255), "state_name" character varying(255), "lat" float, "lng" float, "http_counter" integer, "github_token" character varying(255), "twitter_checked_at" timestamp DEFAULT '1911-08-12 21:49:21', "title" character varying(255), "company" character varying(255), "blog" character varying(255), "github" citext, "forrst" character varying(255), "dribbble" character varying(255), "specialties" text, "notify_on_award" boolean DEFAULT 't', "receive_newsletter" boolean DEFAULT 't', "zerply" character varying(255), "linkedin" character varying(255), "linkedin_id" character varying(255), "linkedin_token" character varying(255), "twitter_id" character varying(255), "twitter_token" character varying(255), "twitter_secret" character varying(255), "linkedin_secret" character varying(255), "last_email_sent" timestamp, "linkedin_public_url" character varying(255), "endorsements_count" integer DEFAULT 0, "team_document_id" character varying(255), "speakerdeck" character varying(255), "slideshare" character varying(255), "last_refresh_at" timestamp DEFAULT '1970-01-01 00:00:00', "referral_token" character varying(255), "referred_by" character varying(255), "about" text, "joined_github_on" date, "avatar" character varying(255), "banner" character varying(255), "remind_to_invite_team_members" timestamp, "activated_on" timestamp, "tracking_code" character varying(255), "utm_campaign" character varying(255), "score_cache" float DEFAULT 0.0, "notify_on_follow" boolean DEFAULT 't', "api_key" character varying(255), "remind_to_create_team" timestamp, "remind_to_create_protip" timestamp, "remind_to_create_skills" timestamp, "remind_to_link_accounts" timestamp, "favorite_websites" character varying(255), "team_responsibilities" text, "team_avatar" character varying(255), "team_banner" character varying(255), "stat_name_1" character varying(255), "stat_number_1" character varying(255), "stat_name_2" character varying(255), "stat_number_2" character varying(255), "stat_name_3" character varying(255), "stat_number_3" character varying(255), "ip_lat" float, "ip_lng" float, "penalty" float DEFAULT 0.0, "receive_weekly_digest" boolean DEFAULT 't', "github_failures" integer DEFAULT 0, "resume" character varying(255), "sourceforge" character varying(255), "google_code" character varying(255), "sales_rep" boolean DEFAULT 'f', "visits" character varying(255) DEFAULT '', "visit_frequency" character varying(255) DEFAULT 'rarely', "pitchbox_id" integer, "join_badge_orgs" boolean DEFAULT 'f', "use_social_for_pitchbox" boolean DEFAULT 'f', "last_asm_email_at" timestamp, "banned_at" timestamp, "last_ip" character varying(255), "last_ua" character varying(255), "team_id" integer, "role" character varying(255) DEFAULT 'user') [0m
+  [1m[35m (1.0ms)[0m   SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'users'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+
+  [1m[36m (7.5ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_linkedin_id" ON "users"("linkedin_id" )[0m
+  [1m[35m (1.1ms)[0m   SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'users'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+
+  [1m[36mColumns for index index_users_on_linkedin_id on users (0.5ms)[0m  [1m SELECT a.attnum::text, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 49874
+ AND a.attnum IN (42)
+[0m
+  [1m[35m (7.1ms)[0m  CREATE UNIQUE INDEX "index_users_on_github_token" ON "users"("old_github_token" )
+  [1m[36m (1.4ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'users'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+[0m
+  [1m[35mColumns for index index_users_on_github_token on users (0.3ms)[0m   SELECT a.attnum::text, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 49874
+ AND a.attnum IN (6)
+
+  [1m[36mColumns for index index_users_on_linkedin_id on users (0.3ms)[0m  [1m SELECT a.attnum::text, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 49874
+ AND a.attnum IN (42)
+[0m
+  [1m[35m (6.9ms)[0m  CREATE INDEX "index_users_on_team_document_id" ON "users"("team_document_id" )
+  [1m[36m (1.4ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'users'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+[0m
+  [1m[35mColumns for index index_users_on_github_token on users (0.3ms)[0m   SELECT a.attnum::text, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 49874
+ AND a.attnum IN (6)
+
+  [1m[36mColumns for index index_users_on_linkedin_id on users (0.3ms)[0m  [1m SELECT a.attnum::text, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 49874
+ AND a.attnum IN (42)
+[0m
+  [1m[35mColumns for index index_users_on_team_document_id on users (0.3ms)[0m   SELECT a.attnum::text, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 49874
+ AND a.attnum IN (51)
+
+  [1m[36m (11.8ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_twitter_id" ON "users"("twitter_id" )[0m
+  [1m[35m (2.0ms)[0m   SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'users'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+
+  [1m[36mColumns for index index_users_on_github_token on users (0.4ms)[0m  [1m SELECT a.attnum::text, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 49874
+ AND a.attnum IN (6)
+[0m
+  [1m[35mColumns for index index_users_on_linkedin_id on users (0.4ms)[0m   SELECT a.attnum::text, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 49874
+ AND a.attnum IN (42)
+
+  [1m[36mColumns for index index_users_on_team_document_id on users (0.4ms)[0m  [1m SELECT a.attnum::text, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 49874
+ AND a.attnum IN (51)
+[0m
+  [1m[35mColumns for index index_users_on_twitter_id on users (0.3ms)[0m   SELECT a.attnum::text, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 49874
+ AND a.attnum IN (44)
+
+  [1m[36m (10.5ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_username" ON "users"("username" )[0m
+  [1m[35m (17.1ms)[0m  CREATE TABLE "users_github_organizations" ("id" serial primary key, "login" character varying(255), "company" character varying(255), "blog" character varying(255), "location" character varying(255), "url" character varying(255), "github_id" integer, "github_created_at" timestamp, "github_updated_at" timestamp, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36m (3.5ms)[0m  [1mCREATE TABLE "users_github_organizations_followers" ("organization_id" integer NOT NULL, "profile_id" integer NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (17.6ms)[0m  CREATE TABLE "users_github_profiles" ("id" serial primary key, "login" citext NOT NULL, "name" character varying(255), "company" character varying(255), "location" character varying(255), "github_id" integer, "user_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "hireable" boolean DEFAULT 'f', "followers_count" integer DEFAULT 0, "following_count" integer DEFAULT 0, "github_created_at" timestamp, "github_updated_at" timestamp, "spider_updated_at" timestamp) 
+  [1m[36m (3.5ms)[0m  [1mCREATE TABLE "users_github_profiles_followers" ("follower_id" integer NOT NULL, "profile_id" integer NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (17.5ms)[0m  CREATE TABLE "users_github_repositories" ("id" serial primary key, "name" character varying(255), "description" text, "full_name" character varying(255), "homepage" character varying(255), "fork" boolean DEFAULT 'f', "forks_count" integer DEFAULT 0, "forks_count_updated_at" timestamp DEFAULT '2014-07-23 03:14:37', "stargazers_count" integer DEFAULT 0, "stargazers_count_updated_at" timestamp DEFAULT '2014-07-23 03:14:37', "language" character varying(255), "followers_count" integer DEFAULT 0 NOT NULL, "github_id" integer NOT NULL, "owner_id" integer, "organization_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36m (3.1ms)[0m  [1mCREATE TABLE "users_github_repositories_contributors" ("repository_id" integer NOT NULL, "profile_id" integer NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (5.4ms)[0m  CREATE TABLE "users_github_repositories_followers" ("repository_id" integer NOT NULL, "profile_id" integer NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36m (7.0ms)[0m  [1mALTER TABLE "badges" ADD CONSTRAINT "badges_user_id_fk" FOREIGN KEY ("user_id") REFERENCES "users"(id) ON DELETE CASCADE[0m
+  [1m[35m (4.2ms)[0m  ALTER TABLE "comments" ADD CONSTRAINT "comments_protip_id_fk" FOREIGN KEY ("protip_id") REFERENCES "protips"(id)
+  [1m[36m (4.4ms)[0m  [1mALTER TABLE "comments" ADD CONSTRAINT "comments_user_id_fk" FOREIGN KEY ("user_id") REFERENCES "users"(id) ON DELETE CASCADE[0m
+  [1m[35m (4.1ms)[0m  ALTER TABLE "endorsements" ADD CONSTRAINT "endorsements_skill_id_fk" FOREIGN KEY ("skill_id") REFERENCES "skills"(id) ON DELETE CASCADE
+  [1m[36m (3.7ms)[0m  [1mALTER TABLE "endorsements" ADD CONSTRAINT "endorsements_endorsed_user_id_fk" FOREIGN KEY ("endorsed_user_id") REFERENCES "users"(id) ON DELETE CASCADE[0m
+  [1m[35m (3.5ms)[0m  ALTER TABLE "endorsements" ADD CONSTRAINT "endorsements_endorsing_user_id_fk" FOREIGN KEY ("endorsing_user_id") REFERENCES "users"(id) ON DELETE CASCADE
+  [1m[36m (4.1ms)[0m  [1mALTER TABLE "facts" ADD CONSTRAINT "facts_user_id_fk" FOREIGN KEY ("user_id") REFERENCES "users"(id) ON DELETE CASCADE[0m
+  [1m[35m (4.5ms)[0m  ALTER TABLE "followed_teams" ADD CONSTRAINT "followed_teams_team_id_fk" FOREIGN KEY ("team_id") REFERENCES "teams"(id)
+  [1m[36m (4.0ms)[0m  [1mALTER TABLE "followed_teams" ADD CONSTRAINT "followed_teams_user_id_fk" FOREIGN KEY ("user_id") REFERENCES "users"(id) ON DELETE CASCADE[0m
+  [1m[35m (3.7ms)[0m  ALTER TABLE "invitations" ADD CONSTRAINT "invitations_team_id_fk" FOREIGN KEY ("team_id") REFERENCES "teams"(id) ON DELETE CASCADE
+  [1m[36m (4.2ms)[0m  [1mALTER TABLE "invitations" ADD CONSTRAINT "invitations_inviter_id_fk" FOREIGN KEY ("inviter_id") REFERENCES "users"(id)[0m
+  [1m[35m (4.1ms)[0m  ALTER TABLE "likes" ADD CONSTRAINT "likes_user_id_fk" FOREIGN KEY ("user_id") REFERENCES "users"(id)
+  [1m[36m (7.2ms)[0m  [1mALTER TABLE "network_hierarchies" ADD CONSTRAINT "network_hierarchies_ancestor_id_fk" FOREIGN KEY ("ancestor_id") REFERENCES "networks"(id)[0m
+  [1m[35m (4.3ms)[0m  ALTER TABLE "network_hierarchies" ADD CONSTRAINT "network_hierarchies_descendant_id_fk" FOREIGN KEY ("descendant_id") REFERENCES "networks"(id)
+  [1m[36m (3.8ms)[0m  [1mALTER TABLE "network_protips" ADD CONSTRAINT "network_protips_network_id_fk" FOREIGN KEY ("network_id") REFERENCES "networks"(id) ON DELETE CASCADE[0m
+  [1m[35m (4.0ms)[0m  ALTER TABLE "network_protips" ADD CONSTRAINT "network_protips_protip_id_fk" FOREIGN KEY ("protip_id") REFERENCES "protips"(id) ON DELETE CASCADE
+  [1m[36m (4.0ms)[0m  [1mALTER TABLE "networks" ADD CONSTRAINT "networks_parent_id_fk" FOREIGN KEY ("parent_id") REFERENCES "networks"(id)[0m
+  [1m[35m (6.7ms)[0m  ALTER TABLE "opportunities" ADD CONSTRAINT "opportunities_team_id_fk" FOREIGN KEY ("team_id") REFERENCES "teams"(id)
+  [1m[36m (4.1ms)[0m  [1mALTER TABLE "pictures" ADD CONSTRAINT "pictures_user_id_fk" FOREIGN KEY ("user_id") REFERENCES "users"(id)[0m
+  [1m[35m (4.0ms)[0m  ALTER TABLE "protip_links" ADD CONSTRAINT "protip_links_protip_id_fk" FOREIGN KEY ("protip_id") REFERENCES "protips"(id)
+  [1m[36m (3.9ms)[0m  [1mALTER TABLE "protips" ADD CONSTRAINT "protips_user_id_fk" FOREIGN KEY ("user_id") REFERENCES "users"(id) ON DELETE CASCADE[0m
+  [1m[35m (3.6ms)[0m  ALTER TABLE "seized_opportunities" ADD CONSTRAINT "seized_opportunities_opportunity_id_fk" FOREIGN KEY ("opportunity_id") REFERENCES "opportunities"(id) ON DELETE CASCADE
+  [1m[36m (4.2ms)[0m  [1mALTER TABLE "seized_opportunities" ADD CONSTRAINT "seized_opportunities_user_id_fk" FOREIGN KEY ("user_id") REFERENCES "users"(id)[0m
+  [1m[35m (3.8ms)[0m  ALTER TABLE "sent_mails" ADD CONSTRAINT "sent_mails_user_id_fk" FOREIGN KEY ("user_id") REFERENCES "users"(id)
+  [1m[36m (3.7ms)[0m  [1mALTER TABLE "skills" ADD CONSTRAINT "skills_user_id_fk" FOREIGN KEY ("user_id") REFERENCES "users"(id) ON DELETE CASCADE[0m
+  [1m[35m (6.1ms)[0m  ALTER TABLE "taggings" ADD CONSTRAINT "taggings_tag_id_fk" FOREIGN KEY ("tag_id") REFERENCES "tags"(id)
+  [1m[36m (3.9ms)[0m  [1mALTER TABLE "teams_account_plans" ADD CONSTRAINT "teams_account_plans_plan_id_fk" FOREIGN KEY ("plan_id") REFERENCES "plans"(id)[0m
+  [1m[35m (3.3ms)[0m  ALTER TABLE "teams_account_plans" ADD CONSTRAINT "teams_account_plans_account_id_fk" FOREIGN KEY ("account_id") REFERENCES "teams_accounts"(id)
+  [1m[36m (3.7ms)[0m  [1mALTER TABLE "teams_accounts" ADD CONSTRAINT "teams_accounts_team_id_fk" FOREIGN KEY ("team_id") REFERENCES "teams"(id) ON DELETE CASCADE[0m
+  [1m[35m (3.6ms)[0m  ALTER TABLE "teams_locations" ADD CONSTRAINT "teams_locations_team_id_fk" FOREIGN KEY ("team_id") REFERENCES "teams"(id) ON DELETE CASCADE
+  [1m[36m (3.7ms)[0m  [1mALTER TABLE "teams_members" ADD CONSTRAINT "teams_members_team_id_fk" FOREIGN KEY ("team_id") REFERENCES "teams"(id) ON DELETE CASCADE[0m
+  [1m[35m (3.7ms)[0m  ALTER TABLE "teams_members" ADD CONSTRAINT "teams_members_user_id_fk" FOREIGN KEY ("user_id") REFERENCES "users"(id)
+  [1m[36m (3.8ms)[0m  [1mALTER TABLE "user_events" ADD CONSTRAINT "user_events_user_id_fk" FOREIGN KEY ("user_id") REFERENCES "users"(id)[0m
+  [1m[35m (4.9ms)[0m  ALTER TABLE "users" ADD CONSTRAINT "users_team_id_fk" FOREIGN KEY ("team_id") REFERENCES "teams"(id)
+  [1m[36m (3.8ms)[0m  [1mALTER TABLE "users_github_organizations_followers" ADD CONSTRAINT "users_github_organizations_followers_organization_id_fk" FOREIGN KEY ("organization_id") REFERENCES "users_github_organizations"(id) ON DELETE CASCADE[0m
+  [1m[35m (3.9ms)[0m  ALTER TABLE "users_github_organizations_followers" ADD CONSTRAINT "users_github_organizations_followers_profile_id_fk" FOREIGN KEY ("profile_id") REFERENCES "users_github_profiles"(id)
+  [1m[36m (6.4ms)[0m  [1mALTER TABLE "users_github_profiles" ADD CONSTRAINT "users_github_profiles_user_id_fk" FOREIGN KEY ("user_id") REFERENCES "users"(id)[0m
+  [1m[35m (3.9ms)[0m  ALTER TABLE "users_github_profiles_followers" ADD CONSTRAINT "users_github_profiles_followers_follower_id_fk" FOREIGN KEY ("follower_id") REFERENCES "users_github_profiles"(id) ON DELETE CASCADE
+  [1m[36m (3.6ms)[0m  [1mALTER TABLE "users_github_profiles_followers" ADD CONSTRAINT "users_github_profiles_followers_profile_id_fk" FOREIGN KEY ("profile_id") REFERENCES "users_github_profiles"(id)[0m
+  [1m[35m (4.4ms)[0m  ALTER TABLE "users_github_repositories" ADD CONSTRAINT "users_github_repositories_organization_id_fk" FOREIGN KEY ("organization_id") REFERENCES "users_github_organizations"(id)
+  [1m[36m (3.7ms)[0m  [1mALTER TABLE "users_github_repositories" ADD CONSTRAINT "users_github_repositories_owner_id_fk" FOREIGN KEY ("owner_id") REFERENCES "users_github_profiles"(id)[0m
+  [1m[35m (3.7ms)[0m  ALTER TABLE "users_github_repositories_contributors" ADD CONSTRAINT "users_github_repositories_contributors_profile_id_fk" FOREIGN KEY ("profile_id") REFERENCES "users_github_profiles"(id)
+  [1m[36m (3.6ms)[0m  [1mALTER TABLE "users_github_repositories_contributors" ADD CONSTRAINT "users_github_repositories_contributors_repository_id_fk" FOREIGN KEY ("repository_id") REFERENCES "users_github_repositories"(id) ON DELETE CASCADE[0m
+  [1m[35m (3.3ms)[0m  ALTER TABLE "users_github_repositories_followers" ADD CONSTRAINT "users_github_repositories_followers_profile_id_fk" FOREIGN KEY ("profile_id") REFERENCES "users_github_profiles"(id)
+  [1m[36m (4.2ms)[0m  [1mALTER TABLE "users_github_repositories_followers" ADD CONSTRAINT "users_github_repositories_followers_repository_id_fk" FOREIGN KEY ("repository_id") REFERENCES "users_github_repositories"(id) ON DELETE CASCADE[0m
+  [1m[35m (3.2ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) 
+  [1m[36m (1.0ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'schema_migrations'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+[0m
+  [1m[35m (9.5ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations"("version" )
+  [1m[36m (0.6ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (2.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150809160133')
+  [1m[36m (2.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140919042707')[0m
+  [1m[35m (2.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150514164819')
+  [1m[36m (1.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140731132710')[0m
+  [1m[35m (2.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140709044301')
+  [1m[36m (1.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140728214411')[0m
+  [1m[35m (2.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140718083928')
+  [1m[36m (1.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150519051740')[0m
+  [1m[35m (2.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140801145543')
+  [1m[36m (1.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140720121419')[0m
+  [1m[35m (2.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140713193201')
+  [1m[36m (1.4ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140823174046')[0m
+  [1m[35m (3.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140713162421')
+  [1m[36m (2.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140718120040')[0m
+  [1m[35m (1.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140728170247')
+  [1m[36m (2.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140730225739')[0m
+  [1m[35m (3.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140718190054')
+  [1m[36m (1.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140719221934')[0m
+  [1m[35m (2.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150109101515')
+  [1m[36m (1.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140919041335')[0m
+  [1m[35m (3.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140728165706')
+  [1m[36m (2.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150523214130')[0m
+  [1m[35m (1.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150428091725')
+  [1m[36m (2.4ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150718093835')[0m
+  [1m[35m (1.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150720001425')
+  [1m[36m (2.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150719222345')[0m
+  [1m[35m (1.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140717105025')
+  [1m[36m (2.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150523090756')[0m
+  [1m[35m (1.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150703215747')
+  [1m[36m (2.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140731225657')[0m
+  [1m[35m (1.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140720113851')
+  [1m[36m (2.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140628045757')[0m
+  [1m[35m (1.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140703223632')
+  [1m[36m (2.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140718190057')[0m
+  [1m[35m (1.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150719111620')
+  [1m[36m (2.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140718084025')[0m
+  [1m[35m (1.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150718114825')
+  [1m[36m (2.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140718190055')[0m
+  [1m[35m (2.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140918031936')
+  [1m[36m (1.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20141221211825')[0m
+  [1m[35m (2.5ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140718190053')
+  [1m[36m (1.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140718190056')[0m
+  [1m[35m (2.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140726233900')
+  [1m[36m (1.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140807214719')[0m
+  [1m[35m (2.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140914051313')
+  [1m[36m (1.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20141015182230')[0m
+  [1m[35m (2.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150109004213')
+  [1m[36m (1.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20141231203425')[0m
+  [1m[35m (1.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150519184842')
+  [1m[36m (2.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150103105333')[0m
+  [1m[35m (1.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150225094555')
+  [1m[36m (2.4ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140718115310')[0m
+  [1m[35m (1.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140718083741')
+  [1m[36m (2.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150108152023')[0m
+  [1m[35m (1.5ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140918030009')
+  [1m[36m (2.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140726214006')[0m
+  [1m[35m (2.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150514141341')
+  [1m[36m (1.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140919035232')[0m
+  [1m[35m (2.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140701170008')
+  [1m[36m (1.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150504132134')[0m
+  [1m[35m (2.5ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140718083944')
+  [1m[36m (1.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140728205954')[0m
+  [1m[35m (2.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140630201109')
+  [1m[36m (1.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150718141045')[0m
+  [1m[35m (2.5ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140823103534')
+  [1m[36m (1.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150726134416')[0m
+  [1m[35m (1.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150503075957')
+  [1m[36m (2.4ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20141111082038')[0m
+  [1m[35m (1.5ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140718190051')
+  [1m[36m (2.9ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150110140000')[0m
+  [1m[35m (2.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140729091832')
+  [1m[36m (1.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140719160422')[0m
+  [1m[35m (2.5ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140718083912')
+  [1m[36m (1.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150726135616')[0m
+  [1m[35m (2.5ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150110084027')
+  [1m[36m (1.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140718190052')[0m
+  [1m[35m (0.3ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36mNetwork Load (0.9ms)[0m  [1mSELECT "networks".* FROM "networks" WHERE "networks"."name" = 'Ruby' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mNetwork Exists (0.5ms)[0m  [1mSELECT 1 AS one FROM "networks" WHERE "networks"."slug" = 'ruby' LIMIT 1[0m
+  [1m[35mActsAsTaggableOn::Tag Load (0.6ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" IS NULL AND "taggings"."taggable_type" = 'Network' AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)
+  [1m[36mSQL (11.2ms)[0m  [1mINSERT INTO "networks" ("created_at", "featured", "name", "network_tags", "parent_id", "protips_count_cache", "slug", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["created_at", Wed, 09 Jan 2019 08:38:55 UTC +00:00], ["featured", false], ["name", "Ruby"], ["network_tags", nil], ["parent_id", nil], ["protips_count_cache", 0], ["slug", "ruby"], ["updated_at", Wed, 09 Jan 2019 08:38:55 UTC +00:00]]
+  [1m[35mSkill Load (0.6ms)[0m  SELECT DISTINCT(user_id) FROM "skills" WHERE "skills"."deleted" = 'f' AND "skills"."name" IN ('ruby')
+  [1m[36m (0.5ms)[0m  [1mSELECT pg_try_advisory_lock(831009494,0) AS t413b2945df586456f59ba00dedd6e06b[0m
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "network_hierarchies" ("ancestor_id", "descendant_id", "generations") VALUES ($1, $2, $3)  [["ancestor_id", 1], ["descendant_id", 1], ["generations", 0]]
+  [1m[36mNetwork Load (0.5ms)[0m  [1mSELECT "networks".* FROM "networks" WHERE "networks"."parent_id" = 1 ORDER BY slug[0m
+  [1m[35m (0.3ms)[0m  SELECT pg_advisory_unlock(831009494,0) AS t6c4d03d858e782fc0907b5a8c5c92569
+  [1m[36mActsAsTaggableOn::Tag Load (0.4ms)[0m  [1mSELECT "tags".* FROM "tags" WHERE (LOWER(name) = LOWER('ruby'))[0m
+  [1m[35mActsAsTaggableOn::Tag Exists (0.4ms)[0m  SELECT 1 AS one FROM "tags" WHERE "tags"."name" = 'ruby' LIMIT 1
+  [1m[36mSQL (3.1ms)[0m  [1mINSERT INTO "tags" ("name", "taggings_count") VALUES ($1, $2) RETURNING "id"[0m  [["name", "ruby"], ["taggings_count", 0]]
+  [1m[35mActsAsTaggableOn::Tag Load (0.7ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = 1 AND "taggings"."taggable_type" = 'Network' AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)
+  [1m[36mActsAsTaggableOn::Tagging Exists (0.6ms)[0m  [1mSELECT 1 AS one FROM "taggings" WHERE ("taggings"."tag_id" = 1 AND "taggings"."taggable_type" = 'Network' AND "taggings"."taggable_id" = 1 AND "taggings"."context" = 'tags' AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL) LIMIT 1[0m
+  [1m[35mSQL (1.3ms)[0m  INSERT INTO "taggings" ("context", "created_at", "tag_id", "taggable_id", "taggable_type", "tagger_id", "tagger_type") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["context", "tags"], ["created_at", Wed, 09 Jan 2019 08:38:55 UTC +00:00], ["tag_id", 1], ["taggable_id", 1], ["taggable_type", "Network"], ["tagger_id", nil], ["tagger_type", nil]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.3ms)[0m  [1mSELECT "tags".* FROM "tags" WHERE "tags"."id" = 1 LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = 1
+  [1m[36m (3.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mNetwork Load (0.6ms)[0m  SELECT "networks".* FROM "networks" WHERE "networks"."name" = 'JavaScript' LIMIT 1
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mNetwork Exists (0.4ms)[0m  SELECT 1 AS one FROM "networks" WHERE "networks"."slug" = 'javascript' LIMIT 1
+  [1m[36mActsAsTaggableOn::Tag Load (0.7ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" IS NULL AND "taggings"."taggable_type" = 'Network' AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "networks" ("created_at", "featured", "name", "network_tags", "parent_id", "protips_count_cache", "slug", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["created_at", Wed, 09 Jan 2019 08:38:55 UTC +00:00], ["featured", false], ["name", "JavaScript"], ["network_tags", nil], ["parent_id", nil], ["protips_count_cache", 0], ["slug", "javascript"], ["updated_at", Wed, 09 Jan 2019 08:38:55 UTC +00:00]]
+  [1m[36mSkill Load (0.4ms)[0m  [1mSELECT DISTINCT(user_id) FROM "skills" WHERE "skills"."deleted" = 'f' AND "skills"."name" IN ('javascript')[0m
+  [1m[35m (0.2ms)[0m  SELECT pg_try_advisory_lock(831009494,0) AS t7018b5b2c34df93bdf460c330412d220
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "network_hierarchies" ("ancestor_id", "descendant_id", "generations") VALUES ($1, $2, $3)[0m  [["ancestor_id", 2], ["descendant_id", 2], ["generations", 0]]
+  [1m[35mNetwork Load (0.3ms)[0m  SELECT "networks".* FROM "networks" WHERE "networks"."parent_id" = 2 ORDER BY slug
+  [1m[36m (0.3ms)[0m  [1mSELECT pg_advisory_unlock(831009494,0) AS td6118285cd3b2ec95e9938fd351fe633[0m
+  [1m[35mActsAsTaggableOn::Tag Load (0.4ms)[0m  SELECT "tags".* FROM "tags" WHERE (LOWER(name) = LOWER('javascript'))
+  [1m[36mActsAsTaggableOn::Tag Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "tags" WHERE "tags"."name" = 'javascript' LIMIT 1[0m
+  [1m[35mSQL (3.1ms)[0m  INSERT INTO "tags" ("name", "taggings_count") VALUES ($1, $2) RETURNING "id"  [["name", "javascript"], ["taggings_count", 0]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.5ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = 2 AND "taggings"."taggable_type" = 'Network' AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)[0m
+  [1m[35mActsAsTaggableOn::Tagging Exists (0.4ms)[0m  SELECT 1 AS one FROM "taggings" WHERE ("taggings"."tag_id" = 2 AND "taggings"."taggable_type" = 'Network' AND "taggings"."taggable_id" = 2 AND "taggings"."context" = 'tags' AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL) LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "taggings" ("context", "created_at", "tag_id", "taggable_id", "taggable_type", "tagger_id", "tagger_type") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["context", "tags"], ["created_at", Wed, 09 Jan 2019 08:38:55 UTC +00:00], ["tag_id", 2], ["taggable_id", 2], ["taggable_type", "Network"], ["tagger_id", nil], ["tagger_type", nil]]
+  [1m[35mActsAsTaggableOn::Tag Load (0.4ms)[0m  SELECT "tags".* FROM "tags" WHERE "tags"."id" = 2 LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = 2[0m
+  [1m[35m (3.0ms)[0m  COMMIT
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.7ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."username" = 'Administrator' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'dark.hu@mails.ucas.edu.cn' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."username" = 'DarkH' LIMIT 1[0m
+  [1m[35mSQL (4.7ms)[0m  INSERT INTO "users" ("about", "achievements_checked_at", "activated_on", "admin", "api_key", "avatar", "backup_email", "badges_count", "banned_at", "banner", "bitbucket", "blog", "city", "claim_code", "codeplex", "company", "country", "created_at", "dribbble", "email", "endorsements_count", "favorite_websites", "forrst", "github", "github_failures", "github_id", "github_token", "google_code", "http_counter", "ip_lat", "ip_lng", "join_badge_orgs", "joined_github_on", "last_asm_email_at", "last_email_sent", "last_ip", "last_refresh_at", "last_request_at", "last_ua", "lat", "linkedin", "linkedin_id", "linkedin_legacy", "linkedin_public_url", "linkedin_secret", "linkedin_token", "lng", "location", "login_count", "name", "notify_on_award", "notify_on_follow", "old_github_token", "penalty", "pitchbox_id", "receive_newsletter", "receive_weekly_digest", "referral_token", "referred_by", "remind_to_create_protip", "remind_to_create_skills", "remind_to_create_team", "remind_to_invite_team_members", "remind_to_link_accounts", "resume", "role", "sales_rep", "score_cache", "slideshare", "sourceforge", "speakerdeck", "specialties", "stackoverflow", "stat_name_1", "stat_name_2", "stat_name_3", "stat_number_1", "stat_number_2", "stat_number_3", "state", "state_name", "team_avatar", "team_banner", "team_document_id", "team_id", "team_responsibilities", "title", "tracking_code", "twitter", "twitter_checked_at", "twitter_id", "twitter_secret", "twitter_token", "updated_at", "use_social_for_pitchbox", "username", "utm_campaign", "visit_frequency", "visits", "zerply") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22, $23, $24, $25, $26, $27, $28, $29, $30, $31, $32, $33, $34, $35, $36, $37, $38, $39, $40, $41, $42, $43, $44, $45, $46, $47, $48, $49, $50, $51, $52, $53, $54, $55, $56, $57, $58, $59, $60, $61, $62, $63, $64, $65, $66, $67, $68, $69, $70, $71, $72, $73, $74, $75, $76, $77, $78, $79, $80, $81, $82, $83, $84, $85, $86, $87, $88, $89, $90, $91, $92, $93, $94, $95, $96, $97, $98, $99, $100) RETURNING "id"  [["about", nil], ["achievements_checked_at", Sat, 12 Aug 1911 21:49:21 UTC +00:00], ["activated_on", nil], ["admin", false], ["api_key", "09d05d2dc824208c"], ["avatar", nil], ["backup_email", nil], ["badges_count", 0], ["banned_at", nil], ["banner", nil], ["bitbucket", nil], ["blog", nil], ["city", "北京"], ["claim_code", nil], ["codeplex", nil], ["company", "中科院软件所"], ["country", "中国"], ["created_at", Wed, 09 Jan 2019 08:38:56 UTC +00:00], ["dribbble", nil], ["email", "dark.hu@mails.ucas.edu.cn"], ["endorsements_count", 0], ["favorite_websites", nil], ["forrst", nil], ["github", nil], ["github_failures", 0], ["github_id", nil], ["github_token", nil], ["google_code", nil], ["http_counter", nil], ["ip_lat", nil], ["ip_lng", nil], ["join_badge_orgs", false], ["joined_github_on", nil], ["last_asm_email_at", nil], ["last_email_sent", nil], ["last_ip", nil], ["last_refresh_at", Thu, 01 Jan 1970 00:00:00 UTC +00:00], ["last_request_at", Wed, 23 Jul 2014 03:14:36 UTC +00:00], ["last_ua", nil], ["lat", 45.5234515], ["linkedin", nil], ["linkedin_id", nil], ["linkedin_legacy", nil], ["linkedin_public_url", nil], ["linkedin_secret", nil], ["linkedin_token", nil], ["lng", -122.6762071], ["location", "北京, 海淀"], ["login_count", 0], ["name", "胡天毅"], ["notify_on_award", true], ["notify_on_follow", true], ["old_github_token", nil], ["penalty", 0.0], ["pitchbox_id", nil], ["receive_newsletter", true], ["receive_weekly_digest", true], ["referral_token", "a1c6c42dedb0a645"], ["referred_by", nil], ["remind_to_create_protip", nil], ["remind_to_create_skills", nil], ["remind_to_create_team", nil], ["remind_to_invite_team_members", nil], ["remind_to_link_accounts", nil], ["resume", nil], ["role", "user"], ["sales_rep", false], ["score_cache", 0.0], ["slideshare", nil], ["sourceforge", nil], ["speakerdeck", nil], ["specialties", nil], ["stackoverflow", nil], ["stat_name_1", nil], ["stat_name_2", nil], ["stat_name_3", nil], ["stat_number_1", nil], ["stat_number_2", nil], ["stat_number_3", nil], ["state", "active"], ["state_name", "北京"], ["team_avatar", nil], ["team_banner", nil], ["team_document_id", nil], ["team_id", nil], ["team_responsibilities", nil], ["title", "高级工程师"], ["tracking_code", nil], ["twitter", nil], ["twitter_checked_at", Sat, 12 Aug 1911 21:49:21 UTC +00:00], ["twitter_id", nil], ["twitter_secret", nil], ["twitter_token", nil], ["updated_at", Wed, 09 Jan 2019 08:38:56 UTC +00:00], ["use_social_for_pitchbox", false], ["username", "DarkH"], ["utm_campaign", nil], ["visit_frequency", "rarely"], ["visits", ""], ["zerply", nil]]
+  [1m[36mProtip Load (0.6ms)[0m  [1mSELECT "protips".* FROM "protips" WHERE "protips"."user_id" = 1[0m
+  [1m[35m (3.0ms)[0m  COMMIT
+  [1m[36mUser Load (3.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'louis.ge@mails.ucas.edu.cn' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."username" = 'LouisG' LIMIT 1[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "users" ("about", "achievements_checked_at", "activated_on", "admin", "api_key", "avatar", "backup_email", "badges_count", "banned_at", "banner", "bitbucket", "blog", "city", "claim_code", "codeplex", "company", "country", "created_at", "dribbble", "email", "endorsements_count", "favorite_websites", "forrst", "github", "github_failures", "github_id", "github_token", "google_code", "http_counter", "ip_lat", "ip_lng", "join_badge_orgs", "joined_github_on", "last_asm_email_at", "last_email_sent", "last_ip", "last_refresh_at", "last_request_at", "last_ua", "lat", "linkedin", "linkedin_id", "linkedin_legacy", "linkedin_public_url", "linkedin_secret", "linkedin_token", "lng", "location", "login_count", "name", "notify_on_award", "notify_on_follow", "old_github_token", "penalty", "pitchbox_id", "receive_newsletter", "receive_weekly_digest", "referral_token", "referred_by", "remind_to_create_protip", "remind_to_create_skills", "remind_to_create_team", "remind_to_invite_team_members", "remind_to_link_accounts", "resume", "role", "sales_rep", "score_cache", "slideshare", "sourceforge", "speakerdeck", "specialties", "stackoverflow", "stat_name_1", "stat_name_2", "stat_name_3", "stat_number_1", "stat_number_2", "stat_number_3", "state", "state_name", "team_avatar", "team_banner", "team_document_id", "team_id", "team_responsibilities", "title", "tracking_code", "twitter", "twitter_checked_at", "twitter_id", "twitter_secret", "twitter_token", "updated_at", "use_social_for_pitchbox", "username", "utm_campaign", "visit_frequency", "visits", "zerply") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22, $23, $24, $25, $26, $27, $28, $29, $30, $31, $32, $33, $34, $35, $36, $37, $38, $39, $40, $41, $42, $43, $44, $45, $46, $47, $48, $49, $50, $51, $52, $53, $54, $55, $56, $57, $58, $59, $60, $61, $62, $63, $64, $65, $66, $67, $68, $69, $70, $71, $72, $73, $74, $75, $76, $77, $78, $79, $80, $81, $82, $83, $84, $85, $86, $87, $88, $89, $90, $91, $92, $93, $94, $95, $96, $97, $98, $99, $100) RETURNING "id"  [["about", nil], ["achievements_checked_at", Sat, 12 Aug 1911 21:49:21 UTC +00:00], ["activated_on", nil], ["admin", false], ["api_key", "a1536331c20aad4d"], ["avatar", nil], ["backup_email", nil], ["badges_count", 0], ["banned_at", nil], ["banner", nil], ["bitbucket", nil], ["blog", nil], ["city", "北京"], ["claim_code", nil], ["codeplex", nil], ["company", "中科院软件所"], ["country", "中国"], ["created_at", Wed, 09 Jan 2019 08:38:56 UTC +00:00], ["dribbble", nil], ["email", "louis.ge@mails.ucas.edu.cn"], ["endorsements_count", 0], ["favorite_websites", nil], ["forrst", nil], ["github", nil], ["github_failures", 0], ["github_id", nil], ["github_token", nil], ["google_code", nil], ["http_counter", nil], ["ip_lat", nil], ["ip_lng", nil], ["join_badge_orgs", false], ["joined_github_on", nil], ["last_asm_email_at", nil], ["last_email_sent", nil], ["last_ip", nil], ["last_refresh_at", Thu, 01 Jan 1970 00:00:00 UTC +00:00], ["last_request_at", Wed, 23 Jul 2014 03:14:36 UTC +00:00], ["last_ua", nil], ["lat", 45.5234515], ["linkedin", nil], ["linkedin_id", nil], ["linkedin_legacy", nil], ["linkedin_public_url", nil], ["linkedin_secret", nil], ["linkedin_token", nil], ["lng", -122.6762071], ["location", "北京, 海淀"], ["login_count", 0], ["name", "葛健"], ["notify_on_award", true], ["notify_on_follow", true], ["old_github_token", nil], ["penalty", 0.0], ["pitchbox_id", nil], ["receive_newsletter", true], ["receive_weekly_digest", true], ["referral_token", "9085b59648a2f377"], ["referred_by", nil], ["remind_to_create_protip", nil], ["remind_to_create_skills", nil], ["remind_to_create_team", nil], ["remind_to_invite_team_members", nil], ["remind_to_link_accounts", nil], ["resume", nil], ["role", "user"], ["sales_rep", false], ["score_cache", 0.0], ["slideshare", nil], ["sourceforge", nil], ["speakerdeck", nil], ["specialties", nil], ["stackoverflow", nil], ["stat_name_1", nil], ["stat_name_2", nil], ["stat_name_3", nil], ["stat_number_1", nil], ["stat_number_2", nil], ["stat_number_3", nil], ["state", "active"], ["state_name", "北京"], ["team_avatar", nil], ["team_banner", nil], ["team_document_id", nil], ["team_id", nil], ["team_responsibilities", nil], ["title", "高级工程师"], ["tracking_code", nil], ["twitter", nil], ["twitter_checked_at", Sat, 12 Aug 1911 21:49:21 UTC +00:00], ["twitter_id", nil], ["twitter_secret", nil], ["twitter_token", nil], ["updated_at", Wed, 09 Jan 2019 08:38:56 UTC +00:00], ["use_social_for_pitchbox", false], ["username", "LouisG"], ["utm_campaign", nil], ["visit_frequency", "rarely"], ["visits", ""], ["zerply", nil]]
+  [1m[36mProtip Load (0.5ms)[0m  [1mSELECT "protips".* FROM "protips" WHERE "protips"."user_id" = 2[0m
+  [1m[35m (3.0ms)[0m  COMMIT
+  [1m[36mActsAsTaggableOn::Tag Load (0.8ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" IS NULL AND "taggings"."taggable_type" = 'Protip' AND (taggings.context = 'topics' AND taggings.tagger_id IS NULL)[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mProtip Load (3.5ms)[0m  [1mSELECT "protips".* FROM "protips" WHERE ("slug" = 'suspendisse-potenti' OR "slug" LIKE 'suspendisse-potenti--%') ORDER BY LENGTH("slug") DESC, "slug" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.9ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mActsAsTaggableOn::Tag Load (0.6ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" IS NULL AND "taggings"."taggable_type" = 'Protip' AND (taggings.context = 'users' AND taggings.tagger_id IS NULL)[0m
+  [1m[35mLike Load (0.7ms)[0m  SELECT SUM(likes.value) as like_score FROM "likes" WHERE "likes"."likable_type" = 'Protip' AND "likes"."likable_id" IS NULL GROUP BY likable_id
+  [1m[36mEndorsement Load (0.7ms)[0m  [1mSELECT distinct(endorsements.endorsing_user_id), endorsements.created_at FROM "endorsements" WHERE "endorsements"."endorsed_user_id" = 1 AND (endorsements.created_at > '1970-01-01 00:00:00.000000')[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "users" WHERE 1=0
+  [1m[36mBadge Load (0.5ms)[0m  [1mSELECT "badges".* FROM "badges" WHERE "badges"."user_id" = 1 ORDER BY created_at DESC[0m
+  [1m[35mFact Load (0.5ms)[0m  SELECT "facts".* FROM "facts" WHERE "facts"."owner" IN ('1')
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "protips" WHERE "protips"."public_id" = '6nzmsa'[0m
+  [1m[35mSQL (1.7ms)[0m  INSERT INTO "protips" ("body", "boost_factor", "created_at", "created_by", "featured", "featured_at", "inappropriate", "kind", "likes_count", "public_id", "score", "slug", "spam_reports_count", "state", "title", "updated_at", "upvotes_value_cache", "user_agent", "user_email", "user_id", "user_ip", "user_name") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22) RETURNING "id"  [["body", "<p>Suspendisse potenti. Nunc iaculis risus vel &#8216;Orci Ornare&#8217; dignissim sed vitae nulla. Nulla lobortis tempus commodo. Suspendisse <em>potenti</em>. Duis sagittis, est sit amet gravida tristique, purus lectus venenatis urna, id &#8216;molestie&#8217; magna risus ut nunc. Donec tempus tempus tellus, ac <abbr title=\"Hypertext Markup Language\">HTML</abbr> lacinia turpis mattis ac. Fusce ac sodales magna. Fusce ac sodales <abbr title=\"Cascading Style Sheets\">CSS</abbr> magna.</p>"], ["boost_factor", 3.5], ["created_at", Wed, 09 Jan 2019 08:38:56 UTC +00:00], ["created_by", "self"], ["featured", false], ["featured_at", nil], ["inappropriate", 0], ["kind", :article], ["likes_count", 0], ["public_id", "6nzmsa"], ["score", 4482.510017594035], ["slug", "suspendisse-potenti"], ["spam_reports_count", 0], ["state", "active"], ["title", "Suspendisse potenti"], ["updated_at", Wed, 09 Jan 2019 08:38:56 UTC +00:00], ["upvotes_value_cache", 0], ["user_agent", nil], ["user_email", "dark.hu@mails.ucas.edu.cn"], ["user_id", 1], ["user_ip", nil], ["user_name", "胡天毅"]]
+  [1m[36mProtip Load (0.8ms)[0m  [1mSELECT "protips".* FROM "protips" WHERE "protips"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mActsAsTaggableOn::Tag Load (0.6ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = 1 AND "taggings"."taggable_type" = 'Protip' AND (taggings.context = 'topics' AND taggings.tagger_id IS NULL)
+  [1m[36mActsAsTaggableOn::Tag Load (0.4ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = 1 AND "taggings"."taggable_type" = 'Protip' AND (taggings.context = 'users' AND taggings.tagger_id IS NULL)[0m
+  [1m[35mNetworkProtip Load (0.4ms)[0m  SELECT "network_protips".* FROM "network_protips" WHERE "network_protips"."protip_id" = 1
+  [1m[36mActsAsTaggableOn::Tag Load (0.5ms)[0m  [1mSELECT "tags".* FROM "tags" WHERE (LOWER(name) = LOWER('suspendisse') OR LOWER(name) = LOWER('potenti'))[0m
+  [1m[35mActsAsTaggableOn::Tag Exists (0.4ms)[0m  SELECT 1 AS one FROM "tags" WHERE "tags"."name" = 'suspendisse' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "tags" ("name", "taggings_count") VALUES ($1, $2) RETURNING "id"[0m  [["name", "suspendisse"], ["taggings_count", 0]]
+  [1m[35mActsAsTaggableOn::Tag Exists (0.3ms)[0m  SELECT 1 AS one FROM "tags" WHERE "tags"."name" = 'potenti' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "tags" ("name", "taggings_count") VALUES ($1, $2) RETURNING "id"[0m  [["name", "potenti"], ["taggings_count", 0]]
+  [1m[35mActsAsTaggableOn::Tag Load (0.5ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = 1 AND "taggings"."taggable_type" = 'Protip' AND (taggings.context = 'topics' AND taggings.tagger_id IS NULL)
+  [1m[36mActsAsTaggableOn::Tagging Exists (0.4ms)[0m  [1mSELECT 1 AS one FROM "taggings" WHERE ("taggings"."tag_id" = 3 AND "taggings"."taggable_type" = 'Protip' AND "taggings"."taggable_id" = 1 AND "taggings"."context" = 'topics' AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "taggings" ("context", "created_at", "tag_id", "taggable_id", "taggable_type", "tagger_id", "tagger_type") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["context", "topics"], ["created_at", Wed, 09 Jan 2019 08:38:56 UTC +00:00], ["tag_id", 3], ["taggable_id", 1], ["taggable_type", "Protip"], ["tagger_id", nil], ["tagger_type", nil]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.3ms)[0m  [1mSELECT "tags".* FROM "tags" WHERE "tags"."id" = 3 LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = 3
+  [1m[36mActsAsTaggableOn::Tagging Exists (0.4ms)[0m  [1mSELECT 1 AS one FROM "taggings" WHERE ("taggings"."tag_id" = 4 AND "taggings"."taggable_type" = 'Protip' AND "taggings"."taggable_id" = 1 AND "taggings"."context" = 'topics' AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "taggings" ("context", "created_at", "tag_id", "taggable_id", "taggable_type", "tagger_id", "tagger_type") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["context", "topics"], ["created_at", Wed, 09 Jan 2019 08:38:56 UTC +00:00], ["tag_id", 4], ["taggable_id", 1], ["taggable_type", "Protip"], ["tagger_id", nil], ["tagger_type", nil]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.4ms)[0m  [1mSELECT "tags".* FROM "tags" WHERE "tags"."id" = 4 LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = 4
+  [1m[36mActsAsTaggableOn::Tag Load (0.3ms)[0m  [1mSELECT "tags".* FROM "tags" WHERE (LOWER(name) = LOWER('darkh'))[0m
+  [1m[35mActsAsTaggableOn::Tag Exists (0.2ms)[0m  SELECT 1 AS one FROM "tags" WHERE "tags"."name" = 'darkh' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "tags" ("name", "taggings_count") VALUES ($1, $2) RETURNING "id"[0m  [["name", "darkh"], ["taggings_count", 0]]
+  [1m[35mActsAsTaggableOn::Tag Load (0.5ms)[0m  SELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = 1 AND "taggings"."taggable_type" = 'Protip' AND (taggings.context = 'users' AND taggings.tagger_id IS NULL)
+  [1m[36mActsAsTaggableOn::Tagging Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "taggings" WHERE ("taggings"."tag_id" = 5 AND "taggings"."taggable_type" = 'Protip' AND "taggings"."taggable_id" = 1 AND "taggings"."context" = 'users' AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL) LIMIT 1[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "taggings" ("context", "created_at", "tag_id", "taggable_id", "taggable_type", "tagger_id", "tagger_type") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["context", "users"], ["created_at", Wed, 09 Jan 2019 08:38:56 UTC +00:00], ["tag_id", 5], ["taggable_id", 1], ["taggable_type", "Protip"], ["tagger_id", nil], ["tagger_type", nil]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.3ms)[0m  [1mSELECT "tags".* FROM "tags" WHERE "tags"."id" = 5 LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = 5
+  [1m[36mProtip Load (0.5ms)[0m  [1mSELECT "protips".* FROM "protips" WHERE "protips"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.9ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mActsAsTaggableOn::Tag Load (0.8ms)[0m  [1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = 1 AND "taggings"."taggable_type" = 'Protip' AND (taggings.context = 'topics' AND taggings.tagger_id IS NULL)[0m
+  [1m[35mProtipLink Load (0.4ms)[0m  SELECT "protip_links".* FROM "protip_links" WHERE "protip_links"."protip_id" = 1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "endorsements" WHERE "endorsements"."endorsed_user_id" = 1[0m
+  [1m[35mBadge Load (0.3ms)[0m  SELECT "badges".* FROM "badges" WHERE "badges"."user_id" = 1 ORDER BY created_at DESC
+  [1m[36mLike Load (0.5ms)[0m  [1mSELECT SUM(likes.value) as like_score FROM "likes" WHERE "likes"."likable_type" = 'Protip' AND "likes"."likable_id" = 1 GROUP BY likable_id[0m
+  [1m[35mEndorsement Load (0.4ms)[0m  SELECT distinct(endorsements.endorsing_user_id), endorsements.created_at FROM "endorsements" WHERE "endorsements"."endorsed_user_id" = 1 AND (endorsements.created_at > '1970-01-01 00:00:00.000000')
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE 1=0[0m
+  [1m[35mFact Load (0.4ms)[0m  SELECT "facts".* FROM "facts" WHERE "facts"."owner" IN ('1')
+  [1m[36mComment Load (0.6ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."protip_id" = 1 ORDER BY likes_cache DESC, created_at[0m
+  [1m[35m (0.4ms)[0m  SELECT user_id FROM "likes" WHERE "likes"."likable_id" = 1 AND "likes"."likable_type" = 'Protip'
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."protip_id" = 1[0m
+  [1m[35mSQL (0.4ms)[0m  SELECT "networks"."slug" FROM "networks" INNER JOIN "network_protips" ON "networks"."id" = "network_protips"."network_id" WHERE "network_protips"."protip_id" = 1
+  [1m[36mTeams::Member Load (0.4ms)[0m  [1mSELECT "teams_members".* FROM "teams_members" WHERE "teams_members"."user_id" = 1 LIMIT 1[0m
+  [1m[35mSQL (0.9ms)[0m  SELECT "tags"."id" FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = 1 AND "taggings"."taggable_type" = 'Protip' AND "taggings"."context" = 'topics'
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/users/new" for 124.16.79.232 at 2019-01-09 08:43:38 +0000
+Processing by UsersController#new as HTML
+  [1m[36mUser Load (2.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = '1234' LIMIT 1[0m
+Completed 500 Internal Server Error in 62.2ms
+
+RuntimeError (Unexpected provider: default):
+  app/models/concerns/user_oauth.rb:27:in `apply_oauth'
+  app/models/concerns/user_oauth.rb:54:in `for_omniauth'
+  app/controllers/users_controller.rb:12:in `new'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-3.2.22/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-3.2.22/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (17.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-3.2.22/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (54.7ms)
+
+
+Started GET "/auth/github" for 124.16.79.232 at 2019-01-09 08:44:10 +0000
+
+
+Started GET "/auth/github/callback" for 124.16.79.232 at 2019-01-09 08:44:11 +0000
+Processing by SessionsController#create as HTML
+  Parameters: {"provider"=>"github"}
+  [1m[35mUser Load (1.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."github_id" = 0 LIMIT 1
+Redirected to https://jian0108-gejian.c9users.io/users/new
+Completed 302 Found in 4.5ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/users/new" for 124.16.79.232 at 2019-01-09 08:44:11 +0000
+Processing by UsersController#new as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."github_id" = 0 LIMIT 1[0m
+  Rendered shared/_error_messages.html.haml (2.0ms)
+  Rendered users/new.html.slim within layouts/application (23.0ms)
+  Rendered application/_fav_icons.slim (4.8ms)
+  Rendered application/_nav_bar.slim (12.1ms)
+  Rendered shared/_mixpanel_properties.html.erb (1.5ms)
+  Rendered application/_footer.html.slim (11.0ms)
+  Rendered application/_current_user_js.html.slim (3.0ms)
+Completed 200 OK in 104.2ms (Views: 99.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/username-validation.js" for 124.16.79.232 at 2019-01-09 08:44:11 +0000
+Compiled username-validation.js  (0ms)  (pid 8383)
+Served asset /username-validation.js - 200 OK (6ms)
+
+
+Started GET "/assets/coderwall.css" for 124.16.79.232 at 2019-01-09 08:44:11 +0000
+Warning. Error encountered while saving cache /home/ubuntu/workspace/deployment/tmp/cache/sass/f693734fd725d36a082c44b3e191872f0d023532/coderwall.scssc: can't dump anonymous class #<Class:0x0000000415b4c8>
+
+Warning. Error encountered while saving cache /home/ubuntu/workspace/deployment/tmp/cache/sass/f693734fd725d36a082c44b3e191872f0d023532/base.scssc: can't dump anonymous class #<Class:0x0000000415b4c8>
+
+Warning. Error encountered while saving cache /home/ubuntu/workspace/deployment/tmp/cache/sass/f693734fd725d36a082c44b3e191872f0d023532/fonts.scssc: can't dump anonymous class #<Class:0x0000000415b4c8>
+
+Warning. Error encountered while saving cache /home/ubuntu/workspace/deployment/tmp/cache/sass/f92e815474c16c24e27c914c178a8e182873d56b/font-awesome.scssc: can't dump anonymous class #<Class:0x0000000415b4c8>
+
+Warning. Error encountered while saving cache /home/ubuntu/workspace/deployment/tmp/cache/sass/76810217ed408a236e187affbef859be3929fe98/font-awesome.scssc: can't dump anonymous class #<Class:0x0000000415b4c8>
+
+Warning. Error encountered while saving cache /home/ubuntu/workspace/deployment/tmp/cache/sass/f693734fd725d36a082c44b3e191872f0d023532/normailze.scssc: can't dump anonymous class #<Class:0x0000000415b4c8>
+
+Warning. Error encountered while saving cache /home/ubuntu/workspace/deployment/tmp/cache/sass/f693734fd725d36a082c44b3e191872f0d023532/tipTip.scssc: can't dump anonymous class #<Class:0x0000000415b4c8>
+
+Warning. Error encountered while saving cache /home/ubuntu/workspace/deployment/tmp/cache/sass/f693734fd725d36a082c44b3e191872f0d023532/new-new-home.scssc: can't dump anonymous class #<Class:0x0000000415b4c8>
+
+Warning. Error encountered while saving cache /home/ubuntu/workspace/deployment/tmp/cache/sass/f693734fd725d36a082c44b3e191872f0d023532/protips-grid.scssc: can't dump anonymous class #<Class:0x0000000415b4c8>
+
+Warning. Error encountered while saving cache /home/ubuntu/workspace/deployment/tmp/cache/sass/f693734fd725d36a082c44b3e191872f0d023532/error.scssc: can't dump anonymous class #<Class:0x0000000415b4c8>
+
+Warning. Error encountered while saving cache /home/ubuntu/workspace/deployment/tmp/cache/sass/f693734fd725d36a082c44b3e191872f0d023532/footer.scssc: can't dump anonymous class #<Class:0x0000000415b4c8>
+
+Warning. Error encountered while saving cache /home/ubuntu/workspace/deployment/tmp/cache/sass/3ee9c489b20257668c4d426ce9eb1a89143b86bc/jquery.dropdown.min.scssc: can't dump anonymous class #<Class:0x0000000415b4c8>
+
+Warning. Error encountered while saving cache /home/ubuntu/workspace/deployment/tmp/cache/sass/f693734fd725d36a082c44b3e191872f0d023532/backgrounds.css.scssc: can't dump anonymous class #<Class:0x0000000415b4c8>
+
+Warning. Error encountered while saving cache /home/ubuntu/workspace/deployment/tmp/cache/sass/f693734fd725d36a082c44b3e191872f0d023532/profile.scssc: can't dump anonymous class #<Class:0x0000000415b4c8>
+
+Warning. Error encountered while saving cache /home/ubuntu/workspace/deployment/tmp/cache/sass/f693734fd725d36a082c44b3e191872f0d023532/connections.scssc: can't dump anonymous class #<Class:0x0000000415b4c8>
+
+Warning. Error encountered while saving cache /home/ubuntu/workspace/deployment/tmp/cache/sass/f693734fd725d36a082c44b3e191872f0d023532/protip.css.scssc: can't dump anonymous class #<Class:0x0000000415b4c8>
+
+Warning. Error encountered while saving cache /home/ubuntu/workspace/deployment/tmp/cache/sass/d039a892ed70683878c2f01a2e6a62db75d08451/selectize.scssc: can't dump anonymous class #<Class:0x0000000415b4c8>
+
+Warning. Error encountered while saving cache /home/ubuntu/workspace/deployment/tmp/cache/sass/d039a892ed70683878c2f01a2e6a62db75d08451/selectize.default.scssc: can't dump anonymous class #<Class:0x0000000415b4c8>
+
+Warning. Error encountered while saving cache /home/ubuntu/workspace/deployment/tmp/cache/sass/f693734fd725d36a082c44b3e191872f0d023532/networks.scssc: can't dump anonymous class #<Class:0x0000000415b4c8>
+
+Warning. Error encountered while saving cache /home/ubuntu/workspace/deployment/tmp/cache/sass/f693734fd725d36a082c44b3e191872f0d023532/alerts.scssc: can't dump anonymous class #<Class:0x0000000415b4c8>
+
+Warning. Error encountered while saving cache /home/ubuntu/workspace/deployment/tmp/cache/sass/f693734fd725d36a082c44b3e191872f0d023532/team.scssc: can't dump anonymous class #<Class:0x0000000415b4c8>
+
+Warning. Error encountered while saving cache /home/ubuntu/workspace/deployment/tmp/cache/sass/f693734fd725d36a082c44b3e191872f0d023532/home.scssc: can't dump anonymous class #<Class:0x0000000415b4c8>
+
+Warning. Error encountered while saving cache /home/ubuntu/workspace/deployment/tmp/cache/sass/f693734fd725d36a082c44b3e191872f0d023532/dashboard.css.scssc: can't dump anonymous class #<Class:0x0000000415b4c8>
+
+Warning. Error encountered while saving cache /home/ubuntu/workspace/deployment/tmp/cache/sass/f693734fd725d36a082c44b3e191872f0d023532/featured-teams.scssc: can't dump anonymous class #<Class:0x0000000415b4c8>
+
+Warning. Error encountered while saving cache /home/ubuntu/workspace/deployment/tmp/cache/sass/f693734fd725d36a082c44b3e191872f0d023532/jobs.scssc: can't dump anonymous class #<Class:0x0000000415b4c8>
+
+Warning. Error encountered while saving cache /home/ubuntu/workspace/deployment/tmp/cache/sass/f693734fd725d36a082c44b3e191872f0d023532/protip-phone.scssc: can't dump anonymous class #<Class:0x0000000415b4c8>
+
+Warning. Error encountered while saving cache /home/ubuntu/workspace/deployment/tmp/cache/sass/f693734fd725d36a082c44b3e191872f0d023532/product_description.css.scssc: can't dump anonymous class #<Class:0x0000000415b4c8>
+
+Compiled coderwall.css  (9721ms)  (pid 8383)
+Served asset /coderwall.css - 304 Not Modified (9851ms)
+
+
+Started GET "/assets/coderwall.js" for 124.16.79.232 at 2019-01-09 08:44:21 +0000
+Compiled jquery/jquery.js  (3ms)  (pid 8383)
+Compiled jquery.js  (8ms)  (pid 8383)
+Compiled jquery-migrate.js  (0ms)  (pid 8383)
+Compiled jquery_ujs.js  (0ms)  (pid 8383)
+Compiled jquery.tipTip.js  (0ms)  (pid 8383)
+Compiled jquery.sortElements.js  (0ms)  (pid 8383)
+Compiled jquery.fancybox.min.js  (0ms)  (pid 8383)
+Compiled jquery.autocomplete.js  (0ms)  (pid 8383)
+Compiled jquery.flexslider-min.js  (0ms)  (pid 8383)
+Compiled underscore.js  (0ms)  (pid 8383)
+Compiled jquery-dropdown/jquery.dropdown.js  (0ms)  (pid 8383)
+Compiled coderwall.js  (41ms)  (pid 8383)
+Served asset /coderwall.js - 304 Not Modified (49ms)
+
+
+Started GET "/usernames/githubuser" for 124.16.79.232 at 2019-01-09 08:44:21 +0000
+Processing by UsernamesController#show as */*
+  Parameters: {"id"=>"githubuser"}
+  [1m[35mUser Load (0.9ms)[0m  SELECT "users".* FROM "users" WHERE "users"."username" = 'githubuser' LIMIT 1
+Completed 200 OK in 3.4ms (ActiveRecord: 0.9ms)
