@@ -129,7 +129,10 @@ source 'https://rubygems.org' do
   gem 'state_machine'
   gem 'activerecord-postgres-json'
   gem "mail_view", "~> 2.0.4"
-
+  gem 'puma', '>=2.15.3'
+  gem 'rails_12factor'
+  gem 'heroku-deflater'
+  gem 'bugsnag'
 # ElasticSearch client
   gem 'tire'
 # /DROP BEFORE RAILS 4
@@ -159,29 +162,6 @@ source 'https://rubygems.org' do
     gem 'quiet_assets'
     gem 'rspec-rails'
     gem 'syntax'
-  end
-
-  group :test do
-    gem 'capybara'
-    gem 'capybara-screenshot'
-    gem 'rack_session_access' # allows to set session from within Capybara
-    gem 'poltergeist' # headless js driver for Capybara that uses phantomJs
-    gem 'selenium-webdriver' # headfull js driver for Capybara
-    gem 'codeclimate-test-reporter', require: false
-    gem 'database_cleaner'
-    gem 'fuubar'
-    gem 'shoulda-matchers'
-    gem 'timecop'
-    gem 'vcr'
-    gem 'webmock', '<1.16'
-    gem 'stripe-ruby-mock'
-  end
-
-  group :production do
-    gem 'puma', '>=2.15.3'
-    gem 'rails_12factor'
-    gem 'heroku-deflater'
-    gem 'bugsnag'
   end
 end
 
