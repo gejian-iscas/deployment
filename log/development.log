@@ -22304,3 +22304,1372 @@ Processing by UsernamesController#show as */*
   Parameters: {"id"=>"githubuser"}
   [1m[35mUser Load (0.9ms)[0m  SELECT "users".* FROM "users" WHERE "users"."username" = 'githubuser' LIMIT 1
 Completed 200 OK in 3.4ms (ActiveRecord: 0.9ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/users/new" for 124.16.79.232 at 2019-01-09 09:01:25 +0000
+
+ActionController::RoutingError (No route matches [GET] "/users/new"):
+  actionpack (3.2.22) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  newrelic_rpm (3.12.1.298) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (3.2.22) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  newrelic_rpm (3.12.1.298) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  railties (3.2.22) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.22) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.22) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.22) lib/rails/rack/logger.rb:16:in `call'
+  newrelic_rpm (3.12.1.298) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (3.2.22) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  newrelic_rpm (3.12.1.298) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  newrelic_rpm (3.12.1.298) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  newrelic_rpm (3.12.1.298) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  activesupport (3.2.22) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  newrelic_rpm (3.12.1.298) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  newrelic_rpm (3.12.1.298) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  actionpack (3.2.22) lib/action_dispatch/middleware/static.rb:83:in `call'
+  newrelic_rpm (3.12.1.298) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  railties (3.2.22) lib/rails/engine.rb:484:in `call'
+  railties (3.2.22) lib/rails/application.rb:231:in `call'
+  railties (3.2.22) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  newrelic_rpm (3.12.1.298) lib/new_relic/agent/instrumentation/middleware_tracing.rb:67:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.22) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/local/rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-3.2.22/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (6.2ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/users/new" for 124.16.79.232 at 2019-01-09 09:04:04 +0000
+Processing by UsersController#new as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."github_id" = 0 LIMIT 1[0m
+  Rendered shared/_error_messages.html.haml (1.8ms)
+  Rendered users/new.html.slim within layouts/application (40.6ms)
+  Rendered application/_fav_icons.slim (4.2ms)
+  Rendered application/_nav_bar.slim (10.2ms)
+  Rendered shared/_mixpanel_properties.html.erb (1.2ms)
+  Rendered application/_footer.html.slim (8.9ms)
+  Rendered application/_current_user_js.html.slim (2.5ms)
+Completed 200 OK in 165.5ms (Views: 97.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/username-validation.js" for 124.16.79.232 at 2019-01-09 09:04:05 +0000
+Served asset /username-validation.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/coderwall.js" for 124.16.79.232 at 2019-01-09 09:04:05 +0000
+Served asset /coderwall.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/coderwall.css" for 124.16.79.232 at 2019-01-09 09:04:05 +0000
+Served asset /coderwall.css - 304 Not Modified (10ms)
+
+
+Started GET "/usernames/githubuser" for 124.16.79.232 at 2019-01-09 09:04:06 +0000
+Processing by UsernamesController#show as */*
+  Parameters: {"id"=>"githubuser"}
+  [1m[35mUser Load (2.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."username" = 'githubuser' LIMIT 1
+Completed 200 OK in 4.9ms (ActiveRecord: 2.3ms)
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35mextensions (0.5ms)[0m  select extname from pg_extension
+  [1m[36m (1.0ms)[0m  [1mSELECT opcname FROM pg_opclass[0m
+  [1m[35m (2.1ms)[0m   SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'api_accesses'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+
+  [1m[36m (1.1ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'badges'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+[0m
+  [1m[35mColumns for index index_badges_on_user_id on badges (0.4ms)[0m   SELECT a.attnum::text, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 49522
+ AND a.attnum IN (4)
+
+  [1m[36mColumns for index index_badges_on_user_id_and_badge_class_name on badges (0.6ms)[0m  [1m SELECT a.attnum::text, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 49522
+ AND a.attnum IN (4,5)
+[0m
+  [1m[35m (0.9ms)[0m   SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'comments'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+
+  [1m[36mColumns for index index_comments_on_commentable_id on comments (0.3ms)[0m  [1m SELECT a.attnum::text, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 49532
+ AND a.attnum IN (4)
+[0m
+  [1m[35mColumns for index index_comments_on_user_id on comments (0.3ms)[0m   SELECT a.attnum::text, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 49532
+ AND a.attnum IN (5)
+
+  [1m[36m (0.9ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'endorsements'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+[0m
+  [1m[35mColumns for index index_endorsements_on_endorsed_user_id on endorsements (0.3ms)[0m   SELECT a.attnum::text, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 49552
+ AND a.attnum IN (2)
+
+  [1m[36mColumns for index index_endorsements_on_endorsing_user_id on endorsements (0.2ms)[0m  [1m SELECT a.attnum::text, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 49552
+ AND a.attnum IN (3)
+[0m
+  [1m[35mColumns for index only_unique_endorsements on endorsements (0.3ms)[0m   SELECT a.attnum::text, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 49552
+ AND a.attnum IN (2,3,4)
+
+  [1m[36m (0.9ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'facts'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+[0m
+  [1m[35mColumns for index index_facts_on_identity on facts (0.2ms)[0m   SELECT a.attnum::text, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 49563
+ AND a.attnum IN (2)
+
+  [1m[36mColumns for index index_facts_on_owner on facts (0.2ms)[0m  [1m SELECT a.attnum::text, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 49563
+ AND a.attnum IN (3)
+[0m
+  [1m[35m (0.9ms)[0m   SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'followed_teams'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+
+  [1m[36mColumns for index index_followed_teams_on_team_document_id on followed_teams (0.3ms)[0m  [1m SELECT a.attnum::text, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 49576
+ AND a.attnum IN (3)
+[0m
+  [1m[35mColumns for index index_followed_teams_on_user_id on followed_teams (0.2ms)[0m   SELECT a.attnum::text, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 49576
+ AND a.attnum IN (2)
+
+  [1m[36m (1.0ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'follows'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+[0m
+  [1m[35mColumns for index fk_followables on follows (0.3ms)[0m   SELECT a.attnum::text, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 49587
+ AND a.attnum IN (2,3)
+
+  [1m[36mColumns for index fk_follows on follows (0.3ms)[0m  [1m SELECT a.attnum::text, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 49587
+ AND a.attnum IN (4,5)
+[0m
+  [1m[35mColumns for index follows_uniq_followable_id_type_follower on follows (0.3ms)[0m   SELECT a.attnum::text, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 49587
+ AND a.attnum IN (2,3,4)
+
+  [1m[36m (0.7ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'invitations'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+[0m
+  [1m[35m (0.9ms)[0m   SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'likes'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+
+  [1m[36mColumns for index index_likes_on_user_id on likes (0.3ms)[0m  [1m SELECT a.attnum::text, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 49613
+ AND a.attnum IN (5,6,4)
+[0m
+  [1m[35m (0.9ms)[0m   SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'network_hierarchies'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+
+  [1m[36mColumns for index network_anc_desc_idx on network_hierarchies (0.2ms)[0m  [1m SELECT a.attnum::text, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 49623
+ AND a.attnum IN (1,2,3)
+[0m
+  [1m[35mColumns for index network_desc_idx on network_hierarchies (0.5ms)[0m   SELECT a.attnum::text, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 49623
+ AND a.attnum IN (2)
+
+  [1m[36m (1.0ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'network_protips'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+[0m
+  [1m[35m (0.9ms)[0m   SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'networks'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+
+  [1m[36m (0.9ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'opportunities'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+[0m
+  [1m[35m (0.8ms)[0m   SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'pictures'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+
+  [1m[36m (1.3ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'plans'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+[0m
+  [1m[35m (0.7ms)[0m   SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'protip_links'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+
+  [1m[36m (1.2ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'protips'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+[0m
+  [1m[35mColumns for index index_protips_on_public_id on protips (0.3ms)[0m   SELECT a.attnum::text, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 49700
+ AND a.attnum IN (2)
+
+  [1m[36mColumns for index index_protips_on_slug on protips (0.3ms)[0m  [1m SELECT a.attnum::text, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 49700
+ AND a.attnum IN (17)
+[0m
+  [1m[35mColumns for index index_protips_on_user_id on protips (0.3ms)[0m   SELECT a.attnum::text, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 49700
+ AND a.attnum IN (6)
+
+  [1m[36m (0.8ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'seized_opportunities'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+[0m
+  [1m[35m (0.7ms)[0m   SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'sent_mails'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+
+  [1m[36m (1.0ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'skills'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+[0m
+  [1m[35mColumns for index index_skills_on_deleted_and_user_id on skills (0.4ms)[0m   SELECT a.attnum::text, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 49738
+ AND a.attnum IN (12,2)
+
+  [1m[36mColumns for index index_skills_on_user_id on skills (0.3ms)[0m  [1m SELECT a.attnum::text, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 49738
+ AND a.attnum IN (2)
+[0m
+  [1m[35m (0.7ms)[0m   SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'spam_reports'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+
+  [1m[36m (1.4ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'taggings'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+[0m
+  [1m[35mColumns for index taggings_idx on taggings (1.2ms)[0m   SELECT a.attnum::text, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 49763
+ AND a.attnum IN (2,3,4,7,5,6)
+
+  [1m[36m (1.1ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'tags'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+[0m
+  [1m[35mColumns for index index_tags_on_name on tags (0.4ms)[0m   SELECT a.attnum::text, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 49775
+ AND a.attnum IN (2)
+
+  [1m[36m (1.0ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'teams'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+[0m
+  [1m[35m (0.9ms)[0m   SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'teams_account_plans'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+
+  [1m[36m (0.7ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'teams_accounts'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+[0m
+  [1m[35m (0.7ms)[0m   SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'teams_locations'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+
+  [1m[36m (0.8ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'teams_members'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+[0m
+  [1m[35m (0.7ms)[0m   SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'user_events'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+
+  [1m[36m (1.3ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'users'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+[0m
+  [1m[35mColumns for index index_users_on_github_token on users (0.3ms)[0m   SELECT a.attnum::text, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 49874
+ AND a.attnum IN (6)
+
+  [1m[36mColumns for index index_users_on_linkedin_id on users (0.3ms)[0m  [1m SELECT a.attnum::text, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 49874
+ AND a.attnum IN (42)
+[0m
+  [1m[35mColumns for index index_users_on_team_document_id on users (0.2ms)[0m   SELECT a.attnum::text, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 49874
+ AND a.attnum IN (51)
+
+  [1m[36mColumns for index index_users_on_twitter_id on users (0.2ms)[0m  [1m SELECT a.attnum::text, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 49874
+ AND a.attnum IN (44)
+[0m
+  [1m[35mColumns for index index_users_on_username on users (0.2ms)[0m   SELECT a.attnum::text, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 49874
+ AND a.attnum IN (2)
+
+  [1m[36m (0.8ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'users_github_organizations'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+[0m
+  [1m[35m (0.8ms)[0m   SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'users_github_organizations_followers'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+
+  [1m[36m (0.7ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'users_github_profiles'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+[0m
+  [1m[35m (0.7ms)[0m   SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'users_github_profiles_followers'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+
+  [1m[36m (0.8ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'users_github_repositories'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+[0m
+  [1m[35m (0.7ms)[0m   SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'users_github_repositories_contributors'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+
+  [1m[36m (0.8ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'users_github_repositories_followers'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+[0m
+  [1m[35m (2.8ms)[0m  
+ SELECT t2.relname AS to_table
+ , a1.attname AS column
+ , a2.attname AS primary_key
+ , c.conname AS name
+ , c.confdeltype AS dependency
+ , c.confupdtype AS update_dependency
+ , c.condeferrable AS deferrable
+ , c.condeferred AS deferred
+ , c.convalidated AS valid
+ FROM pg_constraint c
+ JOIN pg_class t1 ON c.conrelid = t1.oid
+ JOIN pg_class t2 ON c.confrelid = t2.oid
+ JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+ JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+ JOIN pg_namespace t3 ON c.connamespace = t3.oid
+ WHERE c.contype = 'f'
+ AND t1.relname = 'api_accesses'
+ AND t3.nspname = ANY (current_schemas(false))
+ ORDER BY c.conname
+ 
+  [1m[36m (2.9ms)[0m  [1m
+ SELECT t2.relname AS to_table
+ , a1.attname AS column
+ , a2.attname AS primary_key
+ , c.conname AS name
+ , c.confdeltype AS dependency
+ , c.confupdtype AS update_dependency
+ , c.condeferrable AS deferrable
+ , c.condeferred AS deferred
+ , c.convalidated AS valid
+ FROM pg_constraint c
+ JOIN pg_class t1 ON c.conrelid = t1.oid
+ JOIN pg_class t2 ON c.confrelid = t2.oid
+ JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+ JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+ JOIN pg_namespace t3 ON c.connamespace = t3.oid
+ WHERE c.contype = 'f'
+ AND t1.relname = 'badges'
+ AND t3.nspname = ANY (current_schemas(false))
+ ORDER BY c.conname
+ [0m
+  [1m[35m (2.9ms)[0m  
+ SELECT t2.relname AS to_table
+ , a1.attname AS column
+ , a2.attname AS primary_key
+ , c.conname AS name
+ , c.confdeltype AS dependency
+ , c.confupdtype AS update_dependency
+ , c.condeferrable AS deferrable
+ , c.condeferred AS deferred
+ , c.convalidated AS valid
+ FROM pg_constraint c
+ JOIN pg_class t1 ON c.conrelid = t1.oid
+ JOIN pg_class t2 ON c.confrelid = t2.oid
+ JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+ JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+ JOIN pg_namespace t3 ON c.connamespace = t3.oid
+ WHERE c.contype = 'f'
+ AND t1.relname = 'comments'
+ AND t3.nspname = ANY (current_schemas(false))
+ ORDER BY c.conname
+ 
+  [1m[36m (2.7ms)[0m  [1m
+ SELECT t2.relname AS to_table
+ , a1.attname AS column
+ , a2.attname AS primary_key
+ , c.conname AS name
+ , c.confdeltype AS dependency
+ , c.confupdtype AS update_dependency
+ , c.condeferrable AS deferrable
+ , c.condeferred AS deferred
+ , c.convalidated AS valid
+ FROM pg_constraint c
+ JOIN pg_class t1 ON c.conrelid = t1.oid
+ JOIN pg_class t2 ON c.confrelid = t2.oid
+ JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+ JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+ JOIN pg_namespace t3 ON c.connamespace = t3.oid
+ WHERE c.contype = 'f'
+ AND t1.relname = 'endorsements'
+ AND t3.nspname = ANY (current_schemas(false))
+ ORDER BY c.conname
+ [0m
+  [1m[35m (2.7ms)[0m  
+ SELECT t2.relname AS to_table
+ , a1.attname AS column
+ , a2.attname AS primary_key
+ , c.conname AS name
+ , c.confdeltype AS dependency
+ , c.confupdtype AS update_dependency
+ , c.condeferrable AS deferrable
+ , c.condeferred AS deferred
+ , c.convalidated AS valid
+ FROM pg_constraint c
+ JOIN pg_class t1 ON c.conrelid = t1.oid
+ JOIN pg_class t2 ON c.confrelid = t2.oid
+ JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+ JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+ JOIN pg_namespace t3 ON c.connamespace = t3.oid
+ WHERE c.contype = 'f'
+ AND t1.relname = 'facts'
+ AND t3.nspname = ANY (current_schemas(false))
+ ORDER BY c.conname
+ 
+  [1m[36m (3.0ms)[0m  [1m
+ SELECT t2.relname AS to_table
+ , a1.attname AS column
+ , a2.attname AS primary_key
+ , c.conname AS name
+ , c.confdeltype AS dependency
+ , c.confupdtype AS update_dependency
+ , c.condeferrable AS deferrable
+ , c.condeferred AS deferred
+ , c.convalidated AS valid
+ FROM pg_constraint c
+ JOIN pg_class t1 ON c.conrelid = t1.oid
+ JOIN pg_class t2 ON c.confrelid = t2.oid
+ JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+ JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+ JOIN pg_namespace t3 ON c.connamespace = t3.oid
+ WHERE c.contype = 'f'
+ AND t1.relname = 'followed_teams'
+ AND t3.nspname = ANY (current_schemas(false))
+ ORDER BY c.conname
+ [0m
+  [1m[35m (3.1ms)[0m  
+ SELECT t2.relname AS to_table
+ , a1.attname AS column
+ , a2.attname AS primary_key
+ , c.conname AS name
+ , c.confdeltype AS dependency
+ , c.confupdtype AS update_dependency
+ , c.condeferrable AS deferrable
+ , c.condeferred AS deferred
+ , c.convalidated AS valid
+ FROM pg_constraint c
+ JOIN pg_class t1 ON c.conrelid = t1.oid
+ JOIN pg_class t2 ON c.confrelid = t2.oid
+ JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+ JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+ JOIN pg_namespace t3 ON c.connamespace = t3.oid
+ WHERE c.contype = 'f'
+ AND t1.relname = 'follows'
+ AND t3.nspname = ANY (current_schemas(false))
+ ORDER BY c.conname
+ 
+  [1m[36m (2.9ms)[0m  [1m
+ SELECT t2.relname AS to_table
+ , a1.attname AS column
+ , a2.attname AS primary_key
+ , c.conname AS name
+ , c.confdeltype AS dependency
+ , c.confupdtype AS update_dependency
+ , c.condeferrable AS deferrable
+ , c.condeferred AS deferred
+ , c.convalidated AS valid
+ FROM pg_constraint c
+ JOIN pg_class t1 ON c.conrelid = t1.oid
+ JOIN pg_class t2 ON c.confrelid = t2.oid
+ JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+ JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+ JOIN pg_namespace t3 ON c.connamespace = t3.oid
+ WHERE c.contype = 'f'
+ AND t1.relname = 'invitations'
+ AND t3.nspname = ANY (current_schemas(false))
+ ORDER BY c.conname
+ [0m
+  [1m[35m (2.7ms)[0m  
+ SELECT t2.relname AS to_table
+ , a1.attname AS column
+ , a2.attname AS primary_key
+ , c.conname AS name
+ , c.confdeltype AS dependency
+ , c.confupdtype AS update_dependency
+ , c.condeferrable AS deferrable
+ , c.condeferred AS deferred
+ , c.convalidated AS valid
+ FROM pg_constraint c
+ JOIN pg_class t1 ON c.conrelid = t1.oid
+ JOIN pg_class t2 ON c.confrelid = t2.oid
+ JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+ JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+ JOIN pg_namespace t3 ON c.connamespace = t3.oid
+ WHERE c.contype = 'f'
+ AND t1.relname = 'likes'
+ AND t3.nspname = ANY (current_schemas(false))
+ ORDER BY c.conname
+ 
+  [1m[36m (2.6ms)[0m  [1m
+ SELECT t2.relname AS to_table
+ , a1.attname AS column
+ , a2.attname AS primary_key
+ , c.conname AS name
+ , c.confdeltype AS dependency
+ , c.confupdtype AS update_dependency
+ , c.condeferrable AS deferrable
+ , c.condeferred AS deferred
+ , c.convalidated AS valid
+ FROM pg_constraint c
+ JOIN pg_class t1 ON c.conrelid = t1.oid
+ JOIN pg_class t2 ON c.confrelid = t2.oid
+ JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+ JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+ JOIN pg_namespace t3 ON c.connamespace = t3.oid
+ WHERE c.contype = 'f'
+ AND t1.relname = 'network_hierarchies'
+ AND t3.nspname = ANY (current_schemas(false))
+ ORDER BY c.conname
+ [0m
+  [1m[35m (2.5ms)[0m  
+ SELECT t2.relname AS to_table
+ , a1.attname AS column
+ , a2.attname AS primary_key
+ , c.conname AS name
+ , c.confdeltype AS dependency
+ , c.confupdtype AS update_dependency
+ , c.condeferrable AS deferrable
+ , c.condeferred AS deferred
+ , c.convalidated AS valid
+ FROM pg_constraint c
+ JOIN pg_class t1 ON c.conrelid = t1.oid
+ JOIN pg_class t2 ON c.confrelid = t2.oid
+ JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+ JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+ JOIN pg_namespace t3 ON c.connamespace = t3.oid
+ WHERE c.contype = 'f'
+ AND t1.relname = 'network_protips'
+ AND t3.nspname = ANY (current_schemas(false))
+ ORDER BY c.conname
+ 
+  [1m[36m (2.6ms)[0m  [1m
+ SELECT t2.relname AS to_table
+ , a1.attname AS column
+ , a2.attname AS primary_key
+ , c.conname AS name
+ , c.confdeltype AS dependency
+ , c.confupdtype AS update_dependency
+ , c.condeferrable AS deferrable
+ , c.condeferred AS deferred
+ , c.convalidated AS valid
+ FROM pg_constraint c
+ JOIN pg_class t1 ON c.conrelid = t1.oid
+ JOIN pg_class t2 ON c.confrelid = t2.oid
+ JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+ JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+ JOIN pg_namespace t3 ON c.connamespace = t3.oid
+ WHERE c.contype = 'f'
+ AND t1.relname = 'networks'
+ AND t3.nspname = ANY (current_schemas(false))
+ ORDER BY c.conname
+ [0m
+  [1m[35m (2.6ms)[0m  
+ SELECT t2.relname AS to_table
+ , a1.attname AS column
+ , a2.attname AS primary_key
+ , c.conname AS name
+ , c.confdeltype AS dependency
+ , c.confupdtype AS update_dependency
+ , c.condeferrable AS deferrable
+ , c.condeferred AS deferred
+ , c.convalidated AS valid
+ FROM pg_constraint c
+ JOIN pg_class t1 ON c.conrelid = t1.oid
+ JOIN pg_class t2 ON c.confrelid = t2.oid
+ JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+ JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+ JOIN pg_namespace t3 ON c.connamespace = t3.oid
+ WHERE c.contype = 'f'
+ AND t1.relname = 'opportunities'
+ AND t3.nspname = ANY (current_schemas(false))
+ ORDER BY c.conname
+ 
+  [1m[36m (2.7ms)[0m  [1m
+ SELECT t2.relname AS to_table
+ , a1.attname AS column
+ , a2.attname AS primary_key
+ , c.conname AS name
+ , c.confdeltype AS dependency
+ , c.confupdtype AS update_dependency
+ , c.condeferrable AS deferrable
+ , c.condeferred AS deferred
+ , c.convalidated AS valid
+ FROM pg_constraint c
+ JOIN pg_class t1 ON c.conrelid = t1.oid
+ JOIN pg_class t2 ON c.confrelid = t2.oid
+ JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+ JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+ JOIN pg_namespace t3 ON c.connamespace = t3.oid
+ WHERE c.contype = 'f'
+ AND t1.relname = 'pictures'
+ AND t3.nspname = ANY (current_schemas(false))
+ ORDER BY c.conname
+ [0m
+  [1m[35m (2.6ms)[0m  
+ SELECT t2.relname AS to_table
+ , a1.attname AS column
+ , a2.attname AS primary_key
+ , c.conname AS name
+ , c.confdeltype AS dependency
+ , c.confupdtype AS update_dependency
+ , c.condeferrable AS deferrable
+ , c.condeferred AS deferred
+ , c.convalidated AS valid
+ FROM pg_constraint c
+ JOIN pg_class t1 ON c.conrelid = t1.oid
+ JOIN pg_class t2 ON c.confrelid = t2.oid
+ JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+ JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+ JOIN pg_namespace t3 ON c.connamespace = t3.oid
+ WHERE c.contype = 'f'
+ AND t1.relname = 'plans'
+ AND t3.nspname = ANY (current_schemas(false))
+ ORDER BY c.conname
+ 
+  [1m[36m (3.0ms)[0m  [1m
+ SELECT t2.relname AS to_table
+ , a1.attname AS column
+ , a2.attname AS primary_key
+ , c.conname AS name
+ , c.confdeltype AS dependency
+ , c.confupdtype AS update_dependency
+ , c.condeferrable AS deferrable
+ , c.condeferred AS deferred
+ , c.convalidated AS valid
+ FROM pg_constraint c
+ JOIN pg_class t1 ON c.conrelid = t1.oid
+ JOIN pg_class t2 ON c.confrelid = t2.oid
+ JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+ JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+ JOIN pg_namespace t3 ON c.connamespace = t3.oid
+ WHERE c.contype = 'f'
+ AND t1.relname = 'protip_links'
+ AND t3.nspname = ANY (current_schemas(false))
+ ORDER BY c.conname
+ [0m
+  [1m[35m (3.4ms)[0m  
+ SELECT t2.relname AS to_table
+ , a1.attname AS column
+ , a2.attname AS primary_key
+ , c.conname AS name
+ , c.confdeltype AS dependency
+ , c.confupdtype AS update_dependency
+ , c.condeferrable AS deferrable
+ , c.condeferred AS deferred
+ , c.convalidated AS valid
+ FROM pg_constraint c
+ JOIN pg_class t1 ON c.conrelid = t1.oid
+ JOIN pg_class t2 ON c.confrelid = t2.oid
+ JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+ JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+ JOIN pg_namespace t3 ON c.connamespace = t3.oid
+ WHERE c.contype = 'f'
+ AND t1.relname = 'protips'
+ AND t3.nspname = ANY (current_schemas(false))
+ ORDER BY c.conname
+ 
+  [1m[36m (2.4ms)[0m  [1m
+ SELECT t2.relname AS to_table
+ , a1.attname AS column
+ , a2.attname AS primary_key
+ , c.conname AS name
+ , c.confdeltype AS dependency
+ , c.confupdtype AS update_dependency
+ , c.condeferrable AS deferrable
+ , c.condeferred AS deferred
+ , c.convalidated AS valid
+ FROM pg_constraint c
+ JOIN pg_class t1 ON c.conrelid = t1.oid
+ JOIN pg_class t2 ON c.confrelid = t2.oid
+ JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+ JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+ JOIN pg_namespace t3 ON c.connamespace = t3.oid
+ WHERE c.contype = 'f'
+ AND t1.relname = 'seized_opportunities'
+ AND t3.nspname = ANY (current_schemas(false))
+ ORDER BY c.conname
+ [0m
+  [1m[35m (2.6ms)[0m  
+ SELECT t2.relname AS to_table
+ , a1.attname AS column
+ , a2.attname AS primary_key
+ , c.conname AS name
+ , c.confdeltype AS dependency
+ , c.confupdtype AS update_dependency
+ , c.condeferrable AS deferrable
+ , c.condeferred AS deferred
+ , c.convalidated AS valid
+ FROM pg_constraint c
+ JOIN pg_class t1 ON c.conrelid = t1.oid
+ JOIN pg_class t2 ON c.confrelid = t2.oid
+ JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+ JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+ JOIN pg_namespace t3 ON c.connamespace = t3.oid
+ WHERE c.contype = 'f'
+ AND t1.relname = 'sent_mails'
+ AND t3.nspname = ANY (current_schemas(false))
+ ORDER BY c.conname
+ 
+  [1m[36m (2.4ms)[0m  [1m
+ SELECT t2.relname AS to_table
+ , a1.attname AS column
+ , a2.attname AS primary_key
+ , c.conname AS name
+ , c.confdeltype AS dependency
+ , c.confupdtype AS update_dependency
+ , c.condeferrable AS deferrable
+ , c.condeferred AS deferred
+ , c.convalidated AS valid
+ FROM pg_constraint c
+ JOIN pg_class t1 ON c.conrelid = t1.oid
+ JOIN pg_class t2 ON c.confrelid = t2.oid
+ JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+ JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+ JOIN pg_namespace t3 ON c.connamespace = t3.oid
+ WHERE c.contype = 'f'
+ AND t1.relname = 'skills'
+ AND t3.nspname = ANY (current_schemas(false))
+ ORDER BY c.conname
+ [0m
+  [1m[35m (2.7ms)[0m  
+ SELECT t2.relname AS to_table
+ , a1.attname AS column
+ , a2.attname AS primary_key
+ , c.conname AS name
+ , c.confdeltype AS dependency
+ , c.confupdtype AS update_dependency
+ , c.condeferrable AS deferrable
+ , c.condeferred AS deferred
+ , c.convalidated AS valid
+ FROM pg_constraint c
+ JOIN pg_class t1 ON c.conrelid = t1.oid
+ JOIN pg_class t2 ON c.confrelid = t2.oid
+ JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+ JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+ JOIN pg_namespace t3 ON c.connamespace = t3.oid
+ WHERE c.contype = 'f'
+ AND t1.relname = 'spam_reports'
+ AND t3.nspname = ANY (current_schemas(false))
+ ORDER BY c.conname
+ 
+  [1m[36m (2.5ms)[0m  [1m
+ SELECT t2.relname AS to_table
+ , a1.attname AS column
+ , a2.attname AS primary_key
+ , c.conname AS name
+ , c.confdeltype AS dependency
+ , c.confupdtype AS update_dependency
+ , c.condeferrable AS deferrable
+ , c.condeferred AS deferred
+ , c.convalidated AS valid
+ FROM pg_constraint c
+ JOIN pg_class t1 ON c.conrelid = t1.oid
+ JOIN pg_class t2 ON c.confrelid = t2.oid
+ JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+ JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+ JOIN pg_namespace t3 ON c.connamespace = t3.oid
+ WHERE c.contype = 'f'
+ AND t1.relname = 'taggings'
+ AND t3.nspname = ANY (current_schemas(false))
+ ORDER BY c.conname
+ [0m
+  [1m[35m (2.2ms)[0m  
+ SELECT t2.relname AS to_table
+ , a1.attname AS column
+ , a2.attname AS primary_key
+ , c.conname AS name
+ , c.confdeltype AS dependency
+ , c.confupdtype AS update_dependency
+ , c.condeferrable AS deferrable
+ , c.condeferred AS deferred
+ , c.convalidated AS valid
+ FROM pg_constraint c
+ JOIN pg_class t1 ON c.conrelid = t1.oid
+ JOIN pg_class t2 ON c.confrelid = t2.oid
+ JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+ JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+ JOIN pg_namespace t3 ON c.connamespace = t3.oid
+ WHERE c.contype = 'f'
+ AND t1.relname = 'tags'
+ AND t3.nspname = ANY (current_schemas(false))
+ ORDER BY c.conname
+ 
+  [1m[36m (2.3ms)[0m  [1m
+ SELECT t2.relname AS to_table
+ , a1.attname AS column
+ , a2.attname AS primary_key
+ , c.conname AS name
+ , c.confdeltype AS dependency
+ , c.confupdtype AS update_dependency
+ , c.condeferrable AS deferrable
+ , c.condeferred AS deferred
+ , c.convalidated AS valid
+ FROM pg_constraint c
+ JOIN pg_class t1 ON c.conrelid = t1.oid
+ JOIN pg_class t2 ON c.confrelid = t2.oid
+ JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+ JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+ JOIN pg_namespace t3 ON c.connamespace = t3.oid
+ WHERE c.contype = 'f'
+ AND t1.relname = 'teams'
+ AND t3.nspname = ANY (current_schemas(false))
+ ORDER BY c.conname
+ [0m
+  [1m[35m (2.4ms)[0m  
+ SELECT t2.relname AS to_table
+ , a1.attname AS column
+ , a2.attname AS primary_key
+ , c.conname AS name
+ , c.confdeltype AS dependency
+ , c.confupdtype AS update_dependency
+ , c.condeferrable AS deferrable
+ , c.condeferred AS deferred
+ , c.convalidated AS valid
+ FROM pg_constraint c
+ JOIN pg_class t1 ON c.conrelid = t1.oid
+ JOIN pg_class t2 ON c.confrelid = t2.oid
+ JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+ JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+ JOIN pg_namespace t3 ON c.connamespace = t3.oid
+ WHERE c.contype = 'f'
+ AND t1.relname = 'teams_account_plans'
+ AND t3.nspname = ANY (current_schemas(false))
+ ORDER BY c.conname
+ 
+  [1m[36m (2.3ms)[0m  [1m
+ SELECT t2.relname AS to_table
+ , a1.attname AS column
+ , a2.attname AS primary_key
+ , c.conname AS name
+ , c.confdeltype AS dependency
+ , c.confupdtype AS update_dependency
+ , c.condeferrable AS deferrable
+ , c.condeferred AS deferred
+ , c.convalidated AS valid
+ FROM pg_constraint c
+ JOIN pg_class t1 ON c.conrelid = t1.oid
+ JOIN pg_class t2 ON c.confrelid = t2.oid
+ JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+ JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+ JOIN pg_namespace t3 ON c.connamespace = t3.oid
+ WHERE c.contype = 'f'
+ AND t1.relname = 'teams_accounts'
+ AND t3.nspname = ANY (current_schemas(false))
+ ORDER BY c.conname
+ [0m
+  [1m[35m (2.4ms)[0m  
+ SELECT t2.relname AS to_table
+ , a1.attname AS column
+ , a2.attname AS primary_key
+ , c.conname AS name
+ , c.confdeltype AS dependency
+ , c.confupdtype AS update_dependency
+ , c.condeferrable AS deferrable
+ , c.condeferred AS deferred
+ , c.convalidated AS valid
+ FROM pg_constraint c
+ JOIN pg_class t1 ON c.conrelid = t1.oid
+ JOIN pg_class t2 ON c.confrelid = t2.oid
+ JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+ JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+ JOIN pg_namespace t3 ON c.connamespace = t3.oid
+ WHERE c.contype = 'f'
+ AND t1.relname = 'teams_locations'
+ AND t3.nspname = ANY (current_schemas(false))
+ ORDER BY c.conname
+ 
+  [1m[36m (3.4ms)[0m  [1m
+ SELECT t2.relname AS to_table
+ , a1.attname AS column
+ , a2.attname AS primary_key
+ , c.conname AS name
+ , c.confdeltype AS dependency
+ , c.confupdtype AS update_dependency
+ , c.condeferrable AS deferrable
+ , c.condeferred AS deferred
+ , c.convalidated AS valid
+ FROM pg_constraint c
+ JOIN pg_class t1 ON c.conrelid = t1.oid
+ JOIN pg_class t2 ON c.confrelid = t2.oid
+ JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+ JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+ JOIN pg_namespace t3 ON c.connamespace = t3.oid
+ WHERE c.contype = 'f'
+ AND t1.relname = 'teams_members'
+ AND t3.nspname = ANY (current_schemas(false))
+ ORDER BY c.conname
+ [0m
+  [1m[35m (2.5ms)[0m  
+ SELECT t2.relname AS to_table
+ , a1.attname AS column
+ , a2.attname AS primary_key
+ , c.conname AS name
+ , c.confdeltype AS dependency
+ , c.confupdtype AS update_dependency
+ , c.condeferrable AS deferrable
+ , c.condeferred AS deferred
+ , c.convalidated AS valid
+ FROM pg_constraint c
+ JOIN pg_class t1 ON c.conrelid = t1.oid
+ JOIN pg_class t2 ON c.confrelid = t2.oid
+ JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+ JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+ JOIN pg_namespace t3 ON c.connamespace = t3.oid
+ WHERE c.contype = 'f'
+ AND t1.relname = 'user_events'
+ AND t3.nspname = ANY (current_schemas(false))
+ ORDER BY c.conname
+ 
+  [1m[36m (2.5ms)[0m  [1m
+ SELECT t2.relname AS to_table
+ , a1.attname AS column
+ , a2.attname AS primary_key
+ , c.conname AS name
+ , c.confdeltype AS dependency
+ , c.confupdtype AS update_dependency
+ , c.condeferrable AS deferrable
+ , c.condeferred AS deferred
+ , c.convalidated AS valid
+ FROM pg_constraint c
+ JOIN pg_class t1 ON c.conrelid = t1.oid
+ JOIN pg_class t2 ON c.confrelid = t2.oid
+ JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+ JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+ JOIN pg_namespace t3 ON c.connamespace = t3.oid
+ WHERE c.contype = 'f'
+ AND t1.relname = 'users'
+ AND t3.nspname = ANY (current_schemas(false))
+ ORDER BY c.conname
+ [0m
+  [1m[35m (2.3ms)[0m  
+ SELECT t2.relname AS to_table
+ , a1.attname AS column
+ , a2.attname AS primary_key
+ , c.conname AS name
+ , c.confdeltype AS dependency
+ , c.confupdtype AS update_dependency
+ , c.condeferrable AS deferrable
+ , c.condeferred AS deferred
+ , c.convalidated AS valid
+ FROM pg_constraint c
+ JOIN pg_class t1 ON c.conrelid = t1.oid
+ JOIN pg_class t2 ON c.confrelid = t2.oid
+ JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+ JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+ JOIN pg_namespace t3 ON c.connamespace = t3.oid
+ WHERE c.contype = 'f'
+ AND t1.relname = 'users_github_organizations'
+ AND t3.nspname = ANY (current_schemas(false))
+ ORDER BY c.conname
+ 
+  [1m[36m (2.4ms)[0m  [1m
+ SELECT t2.relname AS to_table
+ , a1.attname AS column
+ , a2.attname AS primary_key
+ , c.conname AS name
+ , c.confdeltype AS dependency
+ , c.confupdtype AS update_dependency
+ , c.condeferrable AS deferrable
+ , c.condeferred AS deferred
+ , c.convalidated AS valid
+ FROM pg_constraint c
+ JOIN pg_class t1 ON c.conrelid = t1.oid
+ JOIN pg_class t2 ON c.confrelid = t2.oid
+ JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+ JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+ JOIN pg_namespace t3 ON c.connamespace = t3.oid
+ WHERE c.contype = 'f'
+ AND t1.relname = 'users_github_organizations_followers'
+ AND t3.nspname = ANY (current_schemas(false))
+ ORDER BY c.conname
+ [0m
+  [1m[35m (3.4ms)[0m  
+ SELECT t2.relname AS to_table
+ , a1.attname AS column
+ , a2.attname AS primary_key
+ , c.conname AS name
+ , c.confdeltype AS dependency
+ , c.confupdtype AS update_dependency
+ , c.condeferrable AS deferrable
+ , c.condeferred AS deferred
+ , c.convalidated AS valid
+ FROM pg_constraint c
+ JOIN pg_class t1 ON c.conrelid = t1.oid
+ JOIN pg_class t2 ON c.confrelid = t2.oid
+ JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+ JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+ JOIN pg_namespace t3 ON c.connamespace = t3.oid
+ WHERE c.contype = 'f'
+ AND t1.relname = 'users_github_profiles'
+ AND t3.nspname = ANY (current_schemas(false))
+ ORDER BY c.conname
+ 
+  [1m[36m (3.3ms)[0m  [1m
+ SELECT t2.relname AS to_table
+ , a1.attname AS column
+ , a2.attname AS primary_key
+ , c.conname AS name
+ , c.confdeltype AS dependency
+ , c.confupdtype AS update_dependency
+ , c.condeferrable AS deferrable
+ , c.condeferred AS deferred
+ , c.convalidated AS valid
+ FROM pg_constraint c
+ JOIN pg_class t1 ON c.conrelid = t1.oid
+ JOIN pg_class t2 ON c.confrelid = t2.oid
+ JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+ JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+ JOIN pg_namespace t3 ON c.connamespace = t3.oid
+ WHERE c.contype = 'f'
+ AND t1.relname = 'users_github_profiles_followers'
+ AND t3.nspname = ANY (current_schemas(false))
+ ORDER BY c.conname
+ [0m
+  [1m[35m (2.8ms)[0m  
+ SELECT t2.relname AS to_table
+ , a1.attname AS column
+ , a2.attname AS primary_key
+ , c.conname AS name
+ , c.confdeltype AS dependency
+ , c.confupdtype AS update_dependency
+ , c.condeferrable AS deferrable
+ , c.condeferred AS deferred
+ , c.convalidated AS valid
+ FROM pg_constraint c
+ JOIN pg_class t1 ON c.conrelid = t1.oid
+ JOIN pg_class t2 ON c.confrelid = t2.oid
+ JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+ JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+ JOIN pg_namespace t3 ON c.connamespace = t3.oid
+ WHERE c.contype = 'f'
+ AND t1.relname = 'users_github_repositories'
+ AND t3.nspname = ANY (current_schemas(false))
+ ORDER BY c.conname
+ 
+  [1m[36m (2.2ms)[0m  [1m
+ SELECT t2.relname AS to_table
+ , a1.attname AS column
+ , a2.attname AS primary_key
+ , c.conname AS name
+ , c.confdeltype AS dependency
+ , c.confupdtype AS update_dependency
+ , c.condeferrable AS deferrable
+ , c.condeferred AS deferred
+ , c.convalidated AS valid
+ FROM pg_constraint c
+ JOIN pg_class t1 ON c.conrelid = t1.oid
+ JOIN pg_class t2 ON c.confrelid = t2.oid
+ JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+ JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+ JOIN pg_namespace t3 ON c.connamespace = t3.oid
+ WHERE c.contype = 'f'
+ AND t1.relname = 'users_github_repositories_contributors'
+ AND t3.nspname = ANY (current_schemas(false))
+ ORDER BY c.conname
+ [0m
+  [1m[35m (2.2ms)[0m  
+ SELECT t2.relname AS to_table
+ , a1.attname AS column
+ , a2.attname AS primary_key
+ , c.conname AS name
+ , c.confdeltype AS dependency
+ , c.confupdtype AS update_dependency
+ , c.condeferrable AS deferrable
+ , c.condeferred AS deferred
+ , c.convalidated AS valid
+ FROM pg_constraint c
+ JOIN pg_class t1 ON c.conrelid = t1.oid
+ JOIN pg_class t2 ON c.confrelid = t2.oid
+ JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+ JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+ JOIN pg_namespace t3 ON c.connamespace = t3.oid
+ WHERE c.contype = 'f'
+ AND t1.relname = 'users_github_repositories_followers'
+ AND t3.nspname = ANY (current_schemas(false))
+ ORDER BY c.conname
+ 
