@@ -1911,3 +1911,579 @@ end pattern with unmatched parenthesis: /:location(/
 /home/louis0526/.rvm/gems/ruby-2.2.2/bin/ruby_executable_hooks:24:in `<main>'
  DEBUG [9f37bfbf] 	Tasks: TOP => db:migrate => environment
  DEBUG [9f37bfbf] 	(See full trace by running task with --trace)
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-01-07 17:28:59 +0800 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [57451a45] Running /usr/bin/env which passenger as louis0526@39.106.60.115
+ DEBUG [57451a45] Command: /usr/bin/env which passenger
+ DEBUG [9f326cf3] 	/usr/bin/passenger
+ DEBUG [9f326cf3] Finished in 3.446 seconds with exit status 0 (successful).
+ DEBUG [1d30d796] Running [ -d ~/.rvm ] as louis0526@39.106.60.115
+ DEBUG [1d30d796] Command: [ -d ~/.rvm ]
+ DEBUG [7b4bcfab] Finished in 0.043 seconds with exit status 0 (successful).
+ DEBUG [b5de7b27] Running ~/.rvm/bin/rvm version as louis0526@39.106.60.115
+ DEBUG [b5de7b27] Command: ~/.rvm/bin/rvm version
+ DEBUG [d5359c53] 	rvm 1.29.7 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+ DEBUG [d5359c53] Finished in 0.212 seconds with exit status 0 (successful).
+ DEBUG [2cc4367d] Running ~/.rvm/bin/rvm current as louis0526@39.106.60.115
+ DEBUG [2cc4367d] Command: ~/.rvm/bin/rvm current
+ DEBUG [d8119b38] 	ruby-2.2.2
+ DEBUG [d8119b38] Finished in 0.207 seconds with exit status 0 (successful).
+ DEBUG [b1c9dd96] Running ~/.rvm/bin/rvm default do ruby --version as louis0526@39.106.60.115
+ DEBUG [b1c9dd96] Command: ~/.rvm/bin/rvm default do ruby --version
+ DEBUG [bc4b90f1] 	ruby 2.2.2p95 (2015-04-13 revision 50295) [x86_64-linux]
+ DEBUG [bc4b90f1] Finished in 0.316 seconds with exit status 0 (successful).
+  INFO [6cd4dc1c] Running /usr/bin/env mkdir -p /tmp as louis0526@39.106.60.115
+ DEBUG [6cd4dc1c] Command: /usr/bin/env mkdir -p /tmp
+  INFO [41d37d95] Finished in 0.043 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-codeknows-production-louis0526.sh 0.0%
+  INFO Uploading /tmp/git-ssh-codeknows-production-louis0526.sh 100.0%
+  INFO [5f1f9fd6] Running /usr/bin/env chmod 700 /tmp/git-ssh-codeknows-production-louis0526.sh as louis0526@39.106.60.115
+ DEBUG [5f1f9fd6] Command: /usr/bin/env chmod 700 /tmp/git-ssh-codeknows-production-louis0526.sh
+  INFO [ab7c9f6f] Finished in 0.046 seconds with exit status 0 (successful).
+  INFO [99f3fb02] Running /usr/bin/env git ls-remote https://github.com/louis0526/deployment.git HEAD as louis0526@39.106.60.115
+ DEBUG [99f3fb02] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-codeknows-production-louis0526.sh" ; /usr/bin/env git ls-remote https://github.com/louis0526/deployment.git HEAD )
+ DEBUG [061392e0] 	8a126e2f0dc05396a4ceef0a8833321dccbdef5e	HEAD
+  INFO [061392e0] Finished in 1.749 seconds with exit status 0 (successful).
+  INFO [70a9e845] Running /usr/bin/env mkdir -p /home/louis0526/workspace/deployment/shared /home/louis0526/workspace/deployment/releases as louis0526@39.106.60.115
+ DEBUG [70a9e845] Command: /usr/bin/env mkdir -p /home/louis0526/workspace/deployment/shared /home/louis0526/workspace/deployment/releases
+  INFO [2276479b] Finished in 0.045 seconds with exit status 0 (successful).
+  INFO [6f6c7bfc] Running /usr/bin/env mkdir -p /home/louis0526/workspace/deployment/shared/log /home/louis0526/workspace/deployment/shared/tmp/pids /home/louis0526/workspace/deployment/shared/tmp/cache /home/louis0526/workspace/deployment/shared/tmp/sockets /home/louis0526/workspace/deployment/shared/public/system /home/louis0526/workspace/deployment/shared/public/assets as louis0526@39.106.60.115
+ DEBUG [6f6c7bfc] Command: /usr/bin/env mkdir -p /home/louis0526/workspace/deployment/shared/log /home/louis0526/workspace/deployment/shared/tmp/pids /home/louis0526/workspace/deployment/shared/tmp/cache /home/louis0526/workspace/deployment/shared/tmp/sockets /home/louis0526/workspace/deployment/shared/public/system /home/louis0526/workspace/deployment/shared/public/assets
+  INFO [b15fceae] Finished in 0.046 seconds with exit status 0 (successful).
+  INFO [03224660] Running /usr/bin/env mkdir -p /home/louis0526/workspace/deployment/shared/config as louis0526@39.106.60.115
+ DEBUG [03224660] Command: /usr/bin/env mkdir -p /home/louis0526/workspace/deployment/shared/config
+  INFO [c61de1b6] Finished in 0.046 seconds with exit status 0 (successful).
+ DEBUG [9469c7a2] Running [ -f /home/louis0526/workspace/deployment/shared/config/database.yml ] as louis0526@39.106.60.115
+ DEBUG [9469c7a2] Command: [ -f /home/louis0526/workspace/deployment/shared/config/database.yml ]
+ DEBUG [01c8bb27] Finished in 0.042 seconds with exit status 0 (successful).
+ DEBUG [66c329e7] Running [ -f /home/louis0526/workspace/deployment/shared/config/secrets.yml ] as louis0526@39.106.60.115
+ DEBUG [66c329e7] Command: [ -f /home/louis0526/workspace/deployment/shared/config/secrets.yml ]
+ DEBUG [c25b2df0] Finished in 0.043 seconds with exit status 0 (successful).
+ DEBUG [5444685a] Running [ -f /home/louis0526/workspace/deployment/current/REVISION ] as louis0526@39.106.60.115
+ DEBUG [5444685a] Command: [ -f /home/louis0526/workspace/deployment/current/REVISION ]
+ DEBUG [9d02a96c] Finished in 0.043 seconds with exit status 0 (successful).
+ DEBUG [81b8e6a1] Running /usr/bin/env cat /home/louis0526/workspace/deployment/current/REVISION 2>/dev/null as louis0526@39.106.60.115
+ DEBUG [81b8e6a1] Command: /usr/bin/env cat /home/louis0526/workspace/deployment/current/REVISION 2>/dev/null
+ DEBUG [b54d1937] 	e472ca90049af06052fb13621490d6adc7fa3b07
+ DEBUG [b54d1937] Finished in 0.046 seconds with exit status 0 (successful).
+ DEBUG [8e7e1cb5] Running [ -f /home/louis0526/workspace/deployment/repo/HEAD ] as louis0526@39.106.60.115
+ DEBUG [8e7e1cb5] Command: [ -f /home/louis0526/workspace/deployment/repo/HEAD ]
+ DEBUG [7c4508e3] Finished in 0.043 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/louis0526/workspace/deployment/repo
+ DEBUG [04237f89] Running if test ! -d /home/louis0526/workspace/deployment/repo; then echo "Directory does not exist '/home/louis0526/workspace/deployment/repo'" 1>&2; false; fi as louis0526@39.106.60.115
+ DEBUG [04237f89] Command: if test ! -d /home/louis0526/workspace/deployment/repo; then echo "Directory does not exist '/home/louis0526/workspace/deployment/repo'" 1>&2; false; fi
+ DEBUG [7c0a3cd9] Finished in 0.043 seconds with exit status 0 (successful).
+  INFO [abcc4a1b] Running /usr/bin/env git remote set-url origin https://github.com/louis0526/deployment.git as louis0526@39.106.60.115
+ DEBUG [abcc4a1b] Command: cd /home/louis0526/workspace/deployment/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-codeknows-production-louis0526.sh" ; /usr/bin/env git remote set-url origin https://github.com/louis0526/deployment.git )
+  INFO [cdd57b8a] Finished in 0.047 seconds with exit status 0 (successful).
+  INFO [71fd50d6] Running /usr/bin/env git remote update --prune as louis0526@39.106.60.115
+ DEBUG [71fd50d6] Command: cd /home/louis0526/workspace/deployment/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-codeknows-production-louis0526.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [05fd06b3] 	Fetching origin
+ DEBUG [05fd06b3] 	From https://github.com/louis0526/deployment
+ DEBUG [05fd06b3] 	   6d72d5e..8a126e2  master     -> master
+  INFO [05fd06b3] Finished in 2.599 seconds with exit status 0 (successful).
+ DEBUG [f8ae2344] Running if test ! -d /home/louis0526/workspace/deployment/repo; then echo "Directory does not exist '/home/louis0526/workspace/deployment/repo'" 1>&2; false; fi as louis0526@39.106.60.115
+ DEBUG [f8ae2344] Command: if test ! -d /home/louis0526/workspace/deployment/repo; then echo "Directory does not exist '/home/louis0526/workspace/deployment/repo'" 1>&2; false; fi
+ DEBUG [c3aa72c7] Finished in 0.044 seconds with exit status 0 (successful).
+  INFO [64c7c6f5] Running /usr/bin/env mkdir -p /home/louis0526/workspace/deployment/releases/20190107092906 as louis0526@39.106.60.115
+ DEBUG [64c7c6f5] Command: cd /home/louis0526/workspace/deployment/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-codeknows-production-louis0526.sh" ; /usr/bin/env mkdir -p /home/louis0526/workspace/deployment/releases/20190107092906 )
+  INFO [c48f80a9] Finished in 0.045 seconds with exit status 0 (successful).
+  INFO [84e23fdf] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/louis0526/workspace/deployment/releases/20190107092906 as louis0526@39.106.60.115
+ DEBUG [84e23fdf] Command: cd /home/louis0526/workspace/deployment/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-codeknows-production-louis0526.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/louis0526/workspace/deployment/releases/20190107092906 )
+  INFO [880c83f2] Finished in 2.516 seconds with exit status 0 (successful).
+ DEBUG [779268b4] Running if test ! -d /home/louis0526/workspace/deployment/repo; then echo "Directory does not exist '/home/louis0526/workspace/deployment/repo'" 1>&2; false; fi as louis0526@39.106.60.115
+ DEBUG [779268b4] Command: if test ! -d /home/louis0526/workspace/deployment/repo; then echo "Directory does not exist '/home/louis0526/workspace/deployment/repo'" 1>&2; false; fi
+ DEBUG [9c29a352] Finished in 0.045 seconds with exit status 0 (successful).
+ DEBUG [27162695] Running /usr/bin/env git rev-list --max-count=1 master as louis0526@39.106.60.115
+ DEBUG [27162695] Command: cd /home/louis0526/workspace/deployment/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-codeknows-production-louis0526.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [d12f0f14] 	8a126e2f0dc05396a4ceef0a8833321dccbdef5e
+ DEBUG [d12f0f14] Finished in 0.050 seconds with exit status 0 (successful).
+ DEBUG [d658fe59] Running if test ! -d /home/louis0526/workspace/deployment/releases/20190107092906; then echo "Directory does not exist '/home/louis0526/workspace/deployment/releases/20190107092906'" 1>&2; false; fi as louis0526@39.106.60.115
+ DEBUG [d658fe59] Command: if test ! -d /home/louis0526/workspace/deployment/releases/20190107092906; then echo "Directory does not exist '/home/louis0526/workspace/deployment/releases/20190107092906'" 1>&2; false; fi
+ DEBUG [6dd7e860] Finished in 0.043 seconds with exit status 0 (successful).
+  INFO [5651f4ee] Running /usr/bin/env echo "8a126e2f0dc05396a4ceef0a8833321dccbdef5e" > REVISION as louis0526@39.106.60.115
+ DEBUG [5651f4ee] Command: cd /home/louis0526/workspace/deployment/releases/20190107092906 && /usr/bin/env echo "8a126e2f0dc05396a4ceef0a8833321dccbdef5e" > REVISION
+  INFO [84ce482d] Finished in 0.044 seconds with exit status 0 (successful).
+  INFO [39883c14] Running /usr/bin/env mkdir -p /home/louis0526/workspace/deployment/releases/20190107092906/config as louis0526@39.106.60.115
+ DEBUG [39883c14] Command: /usr/bin/env mkdir -p /home/louis0526/workspace/deployment/releases/20190107092906/config
+  INFO [101109d9] Finished in 0.047 seconds with exit status 0 (successful).
+ DEBUG [f42aae1d] Running [ -L /home/louis0526/workspace/deployment/releases/20190107092906/config/database.yml ] as louis0526@39.106.60.115
+ DEBUG [f42aae1d] Command: [ -L /home/louis0526/workspace/deployment/releases/20190107092906/config/database.yml ]
+ DEBUG [11de5f69] Finished in 0.046 seconds with exit status 1 (failed).
+ DEBUG [9cfce834] Running [ -f /home/louis0526/workspace/deployment/releases/20190107092906/config/database.yml ] as louis0526@39.106.60.115
+ DEBUG [9cfce834] Command: [ -f /home/louis0526/workspace/deployment/releases/20190107092906/config/database.yml ]
+ DEBUG [c1bc0f42] Finished in 0.044 seconds with exit status 0 (successful).
+  INFO [e6445c7b] Running /usr/bin/env rm /home/louis0526/workspace/deployment/releases/20190107092906/config/database.yml as louis0526@39.106.60.115
+ DEBUG [e6445c7b] Command: /usr/bin/env rm /home/louis0526/workspace/deployment/releases/20190107092906/config/database.yml
+  INFO [664a501a] Finished in 0.044 seconds with exit status 0 (successful).
+  INFO [29a8a77a] Running /usr/bin/env ln -s /home/louis0526/workspace/deployment/shared/config/database.yml /home/louis0526/workspace/deployment/releases/20190107092906/config/database.yml as louis0526@39.106.60.115
+ DEBUG [29a8a77a] Command: /usr/bin/env ln -s /home/louis0526/workspace/deployment/shared/config/database.yml /home/louis0526/workspace/deployment/releases/20190107092906/config/database.yml
+  INFO [5a66e364] Finished in 0.047 seconds with exit status 0 (successful).
+ DEBUG [61a7620e] Running [ -L /home/louis0526/workspace/deployment/releases/20190107092906/config/secrets.yml ] as louis0526@39.106.60.115
+ DEBUG [61a7620e] Command: [ -L /home/louis0526/workspace/deployment/releases/20190107092906/config/secrets.yml ]
+ DEBUG [364808dc] Finished in 0.043 seconds with exit status 1 (failed).
+ DEBUG [f0fc5590] Running [ -f /home/louis0526/workspace/deployment/releases/20190107092906/config/secrets.yml ] as louis0526@39.106.60.115
+ DEBUG [f0fc5590] Command: [ -f /home/louis0526/workspace/deployment/releases/20190107092906/config/secrets.yml ]
+ DEBUG [a20b4d74] Finished in 0.044 seconds with exit status 0 (successful).
+  INFO [17693238] Running /usr/bin/env rm /home/louis0526/workspace/deployment/releases/20190107092906/config/secrets.yml as louis0526@39.106.60.115
+ DEBUG [17693238] Command: /usr/bin/env rm /home/louis0526/workspace/deployment/releases/20190107092906/config/secrets.yml
+  INFO [51da0dc8] Finished in 0.044 seconds with exit status 0 (successful).
+  INFO [eef35c23] Running /usr/bin/env ln -s /home/louis0526/workspace/deployment/shared/config/secrets.yml /home/louis0526/workspace/deployment/releases/20190107092906/config/secrets.yml as louis0526@39.106.60.115
+ DEBUG [eef35c23] Command: /usr/bin/env ln -s /home/louis0526/workspace/deployment/shared/config/secrets.yml /home/louis0526/workspace/deployment/releases/20190107092906/config/secrets.yml
+  INFO [fccd0bd8] Finished in 0.044 seconds with exit status 0 (successful).
+  INFO [64f62163] Running /usr/bin/env mkdir -p /home/louis0526/workspace/deployment/releases/20190107092906 /home/louis0526/workspace/deployment/releases/20190107092906/tmp /home/louis0526/workspace/deployment/releases/20190107092906/public as louis0526@39.106.60.115
+ DEBUG [64f62163] Command: /usr/bin/env mkdir -p /home/louis0526/workspace/deployment/releases/20190107092906 /home/louis0526/workspace/deployment/releases/20190107092906/tmp /home/louis0526/workspace/deployment/releases/20190107092906/public
+  INFO [8d7dd0f6] Finished in 0.046 seconds with exit status 0 (successful).
+ DEBUG [e6c41aff] Running [ -L /home/louis0526/workspace/deployment/releases/20190107092906/log ] as louis0526@39.106.60.115
+ DEBUG [e6c41aff] Command: [ -L /home/louis0526/workspace/deployment/releases/20190107092906/log ]
+ DEBUG [353e744f] Finished in 0.042 seconds with exit status 1 (failed).
+ DEBUG [643145d3] Running [ -d /home/louis0526/workspace/deployment/releases/20190107092906/log ] as louis0526@39.106.60.115
+ DEBUG [643145d3] Command: [ -d /home/louis0526/workspace/deployment/releases/20190107092906/log ]
+ DEBUG [66770eb8] Finished in 0.044 seconds with exit status 0 (successful).
+  INFO [2f86338a] Running /usr/bin/env rm -rf /home/louis0526/workspace/deployment/releases/20190107092906/log as louis0526@39.106.60.115
+ DEBUG [2f86338a] Command: /usr/bin/env rm -rf /home/louis0526/workspace/deployment/releases/20190107092906/log
+  INFO [c0cccde5] Finished in 0.045 seconds with exit status 0 (successful).
+  INFO [de168721] Running /usr/bin/env ln -s /home/louis0526/workspace/deployment/shared/log /home/louis0526/workspace/deployment/releases/20190107092906/log as louis0526@39.106.60.115
+ DEBUG [de168721] Command: /usr/bin/env ln -s /home/louis0526/workspace/deployment/shared/log /home/louis0526/workspace/deployment/releases/20190107092906/log
+  INFO [4f8db429] Finished in 0.047 seconds with exit status 0 (successful).
+ DEBUG [013444e3] Running [ -L /home/louis0526/workspace/deployment/releases/20190107092906/tmp/pids ] as louis0526@39.106.60.115
+ DEBUG [013444e3] Command: [ -L /home/louis0526/workspace/deployment/releases/20190107092906/tmp/pids ]
+ DEBUG [90512921] Finished in 0.046 seconds with exit status 1 (failed).
+ DEBUG [d859173b] Running [ -d /home/louis0526/workspace/deployment/releases/20190107092906/tmp/pids ] as louis0526@39.106.60.115
+ DEBUG [d859173b] Command: [ -d /home/louis0526/workspace/deployment/releases/20190107092906/tmp/pids ]
+ DEBUG [9c00d5d0] Finished in 0.044 seconds with exit status 1 (failed).
+  INFO [d5002996] Running /usr/bin/env ln -s /home/louis0526/workspace/deployment/shared/tmp/pids /home/louis0526/workspace/deployment/releases/20190107092906/tmp/pids as louis0526@39.106.60.115
+ DEBUG [d5002996] Command: /usr/bin/env ln -s /home/louis0526/workspace/deployment/shared/tmp/pids /home/louis0526/workspace/deployment/releases/20190107092906/tmp/pids
+  INFO [487d7006] Finished in 0.044 seconds with exit status 0 (successful).
+ DEBUG [eaea47c3] Running [ -L /home/louis0526/workspace/deployment/releases/20190107092906/tmp/cache ] as louis0526@39.106.60.115
+ DEBUG [eaea47c3] Command: [ -L /home/louis0526/workspace/deployment/releases/20190107092906/tmp/cache ]
+ DEBUG [8a015168] Finished in 0.042 seconds with exit status 1 (failed).
+ DEBUG [dce67970] Running [ -d /home/louis0526/workspace/deployment/releases/20190107092906/tmp/cache ] as louis0526@39.106.60.115
+ DEBUG [dce67970] Command: [ -d /home/louis0526/workspace/deployment/releases/20190107092906/tmp/cache ]
+ DEBUG [dc2aa487] Finished in 0.043 seconds with exit status 0 (successful).
+  INFO [395c7861] Running /usr/bin/env rm -rf /home/louis0526/workspace/deployment/releases/20190107092906/tmp/cache as louis0526@39.106.60.115
+ DEBUG [395c7861] Command: /usr/bin/env rm -rf /home/louis0526/workspace/deployment/releases/20190107092906/tmp/cache
+  INFO [9d0e2037] Finished in 0.111 seconds with exit status 0 (successful).
+  INFO [b626f8ae] Running /usr/bin/env ln -s /home/louis0526/workspace/deployment/shared/tmp/cache /home/louis0526/workspace/deployment/releases/20190107092906/tmp/cache as louis0526@39.106.60.115
+ DEBUG [b626f8ae] Command: /usr/bin/env ln -s /home/louis0526/workspace/deployment/shared/tmp/cache /home/louis0526/workspace/deployment/releases/20190107092906/tmp/cache
+  INFO [82a8de9f] Finished in 0.046 seconds with exit status 0 (successful).
+ DEBUG [f3471abe] Running [ -L /home/louis0526/workspace/deployment/releases/20190107092906/tmp/sockets ] as louis0526@39.106.60.115
+ DEBUG [f3471abe] Command: [ -L /home/louis0526/workspace/deployment/releases/20190107092906/tmp/sockets ]
+ DEBUG [5db19438] Finished in 0.046 seconds with exit status 1 (failed).
+ DEBUG [5a37527a] Running [ -d /home/louis0526/workspace/deployment/releases/20190107092906/tmp/sockets ] as louis0526@39.106.60.115
+ DEBUG [5a37527a] Command: [ -d /home/louis0526/workspace/deployment/releases/20190107092906/tmp/sockets ]
+ DEBUG [38c366dc] Finished in 0.043 seconds with exit status 1 (failed).
+  INFO [8b209176] Running /usr/bin/env ln -s /home/louis0526/workspace/deployment/shared/tmp/sockets /home/louis0526/workspace/deployment/releases/20190107092906/tmp/sockets as louis0526@39.106.60.115
+ DEBUG [8b209176] Command: /usr/bin/env ln -s /home/louis0526/workspace/deployment/shared/tmp/sockets /home/louis0526/workspace/deployment/releases/20190107092906/tmp/sockets
+  INFO [2dd4fb6e] Finished in 0.044 seconds with exit status 0 (successful).
+ DEBUG [12fe5baa] Running [ -L /home/louis0526/workspace/deployment/releases/20190107092906/public/system ] as louis0526@39.106.60.115
+ DEBUG [12fe5baa] Command: [ -L /home/louis0526/workspace/deployment/releases/20190107092906/public/system ]
+ DEBUG [def4df6b] Finished in 0.042 seconds with exit status 1 (failed).
+ DEBUG [77c4e0d1] Running [ -d /home/louis0526/workspace/deployment/releases/20190107092906/public/system ] as louis0526@39.106.60.115
+ DEBUG [77c4e0d1] Command: [ -d /home/louis0526/workspace/deployment/releases/20190107092906/public/system ]
+ DEBUG [d9fd60db] Finished in 0.044 seconds with exit status 1 (failed).
+  INFO [c8d76a2d] Running /usr/bin/env ln -s /home/louis0526/workspace/deployment/shared/public/system /home/louis0526/workspace/deployment/releases/20190107092906/public/system as louis0526@39.106.60.115
+ DEBUG [c8d76a2d] Command: /usr/bin/env ln -s /home/louis0526/workspace/deployment/shared/public/system /home/louis0526/workspace/deployment/releases/20190107092906/public/system
+  INFO [85441dac] Finished in 0.045 seconds with exit status 0 (successful).
+ DEBUG [cb8169d5] Running [ -L /home/louis0526/workspace/deployment/releases/20190107092906/public/assets ] as louis0526@39.106.60.115
+ DEBUG [cb8169d5] Command: [ -L /home/louis0526/workspace/deployment/releases/20190107092906/public/assets ]
+ DEBUG [7f3bfbdb] Finished in 0.046 seconds with exit status 1 (failed).
+ DEBUG [0d761001] Running [ -d /home/louis0526/workspace/deployment/releases/20190107092906/public/assets ] as louis0526@39.106.60.115
+ DEBUG [0d761001] Command: [ -d /home/louis0526/workspace/deployment/releases/20190107092906/public/assets ]
+ DEBUG [169520bb] Finished in 0.044 seconds with exit status 0 (successful).
+  INFO [37f32243] Running /usr/bin/env rm -rf /home/louis0526/workspace/deployment/releases/20190107092906/public/assets as louis0526@39.106.60.115
+ DEBUG [37f32243] Command: /usr/bin/env rm -rf /home/louis0526/workspace/deployment/releases/20190107092906/public/assets
+  INFO [7e22e564] Finished in 0.067 seconds with exit status 0 (successful).
+  INFO [b48e885d] Running /usr/bin/env ln -s /home/louis0526/workspace/deployment/shared/public/assets /home/louis0526/workspace/deployment/releases/20190107092906/public/assets as louis0526@39.106.60.115
+ DEBUG [b48e885d] Command: /usr/bin/env ln -s /home/louis0526/workspace/deployment/shared/public/assets /home/louis0526/workspace/deployment/releases/20190107092906/public/assets
+  INFO [f6223971] Finished in 0.045 seconds with exit status 0 (successful).
+ DEBUG [8af9ba94] Running if test ! -d /home/louis0526/workspace/deployment/releases/20190107092906; then echo "Directory does not exist '/home/louis0526/workspace/deployment/releases/20190107092906'" 1>&2; false; fi as louis0526@39.106.60.115
+ DEBUG [8af9ba94] Command: if test ! -d /home/louis0526/workspace/deployment/releases/20190107092906; then echo "Directory does not exist '/home/louis0526/workspace/deployment/releases/20190107092906'" 1>&2; false; fi
+ DEBUG [1f6e2525] Finished in 0.041 seconds with exit status 0 (successful).
+ DEBUG [3add4643] Running ~/.rvm/bin/rvm default do bundle check --path /home/louis0526/workspace/deployment/shared/bundle as louis0526@39.106.60.115
+ DEBUG [3add4643] Command: cd /home/louis0526/workspace/deployment/releases/20190107092906 && ~/.rvm/bin/rvm default do bundle check --path /home/louis0526/workspace/deployment/shared/bundle
+ DEBUG [533f6073] 	The Gemfile's dependencies are satisfied
+ DEBUG [533f6073] Finished in 0.822 seconds with exit status 0 (successful).
+  INFO The Gemfile's dependencies are satisfied, skipping installation
+ DEBUG [13570f4c] Running if test ! -d /home/louis0526/workspace/deployment/releases/20190107092906; then echo "Directory does not exist '/home/louis0526/workspace/deployment/releases/20190107092906'" 1>&2; false; fi as louis0526@39.106.60.115
+ DEBUG [13570f4c] Command: if test ! -d /home/louis0526/workspace/deployment/releases/20190107092906; then echo "Directory does not exist '/home/louis0526/workspace/deployment/releases/20190107092906'" 1>&2; false; fi
+ DEBUG [aff7c5f4] Finished in 0.047 seconds with exit status 0 (successful).
+  INFO [db51063e] Running ~/.rvm/bin/rvm default do bundle exec rake assets:precompile as louis0526@39.106.60.115
+ DEBUG [db51063e] Command: cd /home/louis0526/workspace/deployment/releases/20190107092906 && ( export RAILS_ENV="production" RAILS_GROUPS="" ; ~/.rvm/bin/rvm default do bundle exec rake assets:precompile )
+ DEBUG [90a247df] 	/home/louis0526/.rvm/rubies/ruby-2.2.2/bin/ruby /home/louis0526/workspace/deployment/shared/bundle/ruby/2.2.0/bin/rake assets:precompile:all RAILS_ENV=production RAILS_GROUPS=
+ DEBUG [90a247df] 	
+  INFO [90a247df] Finished in 16.070 seconds with exit status 0 (successful).
+ DEBUG [cf5032bf] Running if test ! -d /home/louis0526/workspace/deployment/releases/20190107092906; then echo "Directory does not exist '/home/louis0526/workspace/deployment/releases/20190107092906'" 1>&2; false; fi as louis0526@39.106.60.115
+ DEBUG [cf5032bf] Command: if test ! -d /home/louis0526/workspace/deployment/releases/20190107092906; then echo "Directory does not exist '/home/louis0526/workspace/deployment/releases/20190107092906'" 1>&2; false; fi
+ DEBUG [d7add358] Finished in 0.042 seconds with exit status 0 (successful).
+  INFO [d2f956ba] Running /usr/bin/env mkdir -p /home/louis0526/workspace/deployment/releases/20190107092906/assets_manifest_backup as louis0526@39.106.60.115
+ DEBUG [d2f956ba] Command: cd /home/louis0526/workspace/deployment/releases/20190107092906 && /usr/bin/env mkdir -p /home/louis0526/workspace/deployment/releases/20190107092906/assets_manifest_backup
+  INFO [c2aa4592] Finished in 0.045 seconds with exit status 0 (successful).
+ DEBUG [1ee2d307] Running /usr/bin/env ls /home/louis0526/workspace/deployment/releases/20190107092906/public/assets/.sprockets-manifest* as louis0526@39.106.60.115
+ DEBUG [1ee2d307] Command: cd /home/louis0526/workspace/deployment/releases/20190107092906 && /usr/bin/env ls /home/louis0526/workspace/deployment/releases/20190107092906/public/assets/.sprockets-manifest*
+ DEBUG [dfebfe69] 	ls: 
+ DEBUG [dfebfe69] 	cannot access '/home/louis0526/workspace/deployment/releases/20190107092906/public/assets/.sprockets-manifest*'
+ DEBUG [dfebfe69] 	: No such file or directory
+ DEBUG [dfebfe69] 	
+ DEBUG [dfebfe69] Finished in 0.048 seconds with exit status 2 (failed).
+ DEBUG [9741064c] Running /usr/bin/env ls /home/louis0526/workspace/deployment/releases/20190107092906/public/assets/manifest*.* as louis0526@39.106.60.115
+ DEBUG [9741064c] Command: cd /home/louis0526/workspace/deployment/releases/20190107092906 && /usr/bin/env ls /home/louis0526/workspace/deployment/releases/20190107092906/public/assets/manifest*.*
+ DEBUG [9fc66f8f] 	/home/louis0526/workspace/deployment/releases/20190107092906/public/assets/manifest.yml
+ DEBUG [9fc66f8f] Finished in 0.048 seconds with exit status 0 (successful).
+ DEBUG [d48053df] Running /usr/bin/env ls /home/louis0526/workspace/deployment/releases/20190107092906/public/assets/manifest*.* as louis0526@39.106.60.115
+ DEBUG [d48053df] Command: cd /home/louis0526/workspace/deployment/releases/20190107092906 && /usr/bin/env ls /home/louis0526/workspace/deployment/releases/20190107092906/public/assets/manifest*.*
+ DEBUG [956e888d] 	/home/louis0526/workspace/deployment/releases/20190107092906/public/assets/manifest.yml
+ DEBUG [956e888d] Finished in 0.048 seconds with exit status 0 (successful).
+  INFO [f7a4dd26] Running /usr/bin/env cp /home/louis0526/workspace/deployment/releases/20190107092906/public/assets/manifest.yml /home/louis0526/workspace/deployment/releases/20190107092906/assets_manifest_backup as louis0526@39.106.60.115
+ DEBUG [f7a4dd26] Command: cd /home/louis0526/workspace/deployment/releases/20190107092906 && /usr/bin/env cp /home/louis0526/workspace/deployment/releases/20190107092906/public/assets/manifest.yml /home/louis0526/workspace/deployment/releases/20190107092906/assets_manifest_backup
+  INFO [273dd7fc] Finished in 0.049 seconds with exit status 0 (successful).
+  INFO [deploy:migrate] Run `rake db:migrate`
+ DEBUG [e0960e0b] Running if test ! -d /home/louis0526/workspace/deployment/releases/20190107092906; then echo "Directory does not exist '/home/louis0526/workspace/deployment/releases/20190107092906'" 1>&2; false; fi as louis0526@39.106.60.115
+ DEBUG [e0960e0b] Command: if test ! -d /home/louis0526/workspace/deployment/releases/20190107092906; then echo "Directory does not exist '/home/louis0526/workspace/deployment/releases/20190107092906'" 1>&2; false; fi
+ DEBUG [abf55d62] Finished in 0.043 seconds with exit status 0 (successful).
+  INFO [ba445031] Running ~/.rvm/bin/rvm default do bundle exec rake db:migrate as louis0526@39.106.60.115
+ DEBUG [ba445031] Command: cd /home/louis0526/workspace/deployment/releases/20190107092906 && ( export RAILS_ENV="production" ; ~/.rvm/bin/rvm default do bundle exec rake db:migrate )
+  INFO [1078e03d] Finished in 7.721 seconds with exit status 0 (successful).
+  INFO [d77edd9f] Running /usr/bin/env ln -s /home/louis0526/workspace/deployment/releases/20190107092906 /home/louis0526/workspace/deployment/releases/current as louis0526@39.106.60.115
+ DEBUG [d77edd9f] Command: /usr/bin/env ln -s /home/louis0526/workspace/deployment/releases/20190107092906 /home/louis0526/workspace/deployment/releases/current
+  INFO [20b55698] Finished in 0.046 seconds with exit status 0 (successful).
+  INFO [4629d4ef] Running /usr/bin/env mv /home/louis0526/workspace/deployment/releases/current /home/louis0526/workspace/deployment as louis0526@39.106.60.115
+ DEBUG [4629d4ef] Command: /usr/bin/env mv /home/louis0526/workspace/deployment/releases/current /home/louis0526/workspace/deployment
+  INFO [16598e11] Finished in 0.049 seconds with exit status 0 (successful).
+ DEBUG [b4497913] Running if test ! -d /home/louis0526/workspace/deployment/releases/20190107092906; then echo "Directory does not exist '/home/louis0526/workspace/deployment/releases/20190107092906'" 1>&2; false; fi as louis0526@39.106.60.115
+ DEBUG [b4497913] Command: if test ! -d /home/louis0526/workspace/deployment/releases/20190107092906; then echo "Directory does not exist '/home/louis0526/workspace/deployment/releases/20190107092906'" 1>&2; false; fi
+ DEBUG [f6f7ddef] Finished in 0.044 seconds with exit status 0 (successful).
+ DEBUG [4ee7302a] Running /usr/bin/env passenger -v as louis0526@39.106.60.115
+ DEBUG [4ee7302a] Command: cd /home/louis0526/workspace/deployment/releases/20190107092906 && /usr/bin/env passenger -v
+ DEBUG [0e5beea8] 	Phusion Passenger 6.0.0
+ DEBUG [0e5beea8] 	
+ DEBUG [0e5beea8] Finished in 0.208 seconds with exit status 0 (successful).
+  INFO [decbf0dd] Running /usr/bin/env passenger-config restart-app /home/louis0526/workspace/deployment --ignore-app-not-running as louis0526@39.106.60.115
+ DEBUG [decbf0dd] Command: cd /home/louis0526/workspace/deployment/releases/20190107092906 && /usr/bin/env passenger-config restart-app /home/louis0526/workspace/deployment --ignore-app-not-running
+ DEBUG [8782f568] 	*** Cleaning stale instance directory /tmp/passenger.OV363qX
+    Warning: Operation not permitted @ rb_file_chown - /tmp/passenger.OV363qX/.
+*** Cleaning stale instance directory /tmp/passenger.rbRYUYU
+    Warning: Operation not permitted @ rb_file_chown - /tmp/passenger.rbRYUYU/.
+*** Cleaning stale instance directory /tmp/passenger.LGpCHU9
+    Warning: Operation not permitted @ rb_file_chown - /tmp/passenger.LGpCHU9/.
+*** Cleaning stale instance directory /tmp/passenger.rqg4fhy
+    Warning: Operation not permitted @ rb_file_chown - /tmp/passenger.rqg4fhy/.
+*** Cleaning stale instance directory /tmp/passenger.aycD6xF
+    Warning: Operation not permitted @ rb_file_chown - /tmp/passenger.aycD6xF/.
+Restarting /home/louis0526/workspace/deployment/current (production)
+  INFO [8782f568] Finished in 0.241 seconds with exit status 0 (successful).
+ DEBUG [d0ec4a24] Running /usr/bin/env ls -x /home/louis0526/workspace/deployment/releases as louis0526@39.106.60.115
+ DEBUG [d0ec4a24] Command: /usr/bin/env ls -x /home/louis0526/workspace/deployment/releases
+ DEBUG [9c13e474] 	20190107082830	20190107083200	20190107083514	20190107085133	20190107091517
+20190107092036	20190107092906
+ DEBUG [9c13e474] Finished in 0.045 seconds with exit status 0 (successful).
+  INFO Keeping 5 of 7 deployed releases on 39.106.60.115
+ DEBUG [c466a63d] Running [ -d /home/louis0526/workspace/deployment/current ] as louis0526@39.106.60.115
+ DEBUG [c466a63d] Command: [ -d /home/louis0526/workspace/deployment/current ]
+ DEBUG [4f4eb5f8] Finished in 0.042 seconds with exit status 0 (successful).
+ DEBUG [b5e96828] Running /usr/bin/env readlink /home/louis0526/workspace/deployment/current as louis0526@39.106.60.115
+ DEBUG [b5e96828] Command: /usr/bin/env readlink /home/louis0526/workspace/deployment/current
+ DEBUG [2922ea40] 	/home/louis0526/workspace/deployment/releases/20190107092906
+ DEBUG [2922ea40] Finished in 0.050 seconds with exit status 0 (successful).
+  INFO [038903c8] Running /usr/bin/env rm -rf /home/louis0526/workspace/deployment/releases/20190107082830 /home/louis0526/workspace/deployment/releases/20190107083200 as louis0526@39.106.60.115
+ DEBUG [038903c8] Command: /usr/bin/env rm -rf /home/louis0526/workspace/deployment/releases/20190107082830 /home/louis0526/workspace/deployment/releases/20190107083200
+  INFO [d97bca75] Finished in 4.890 seconds with exit status 0 (successful).
+ DEBUG [706934d7] Running if test ! -d /home/louis0526/workspace/deployment/releases; then echo "Directory does not exist '/home/louis0526/workspace/deployment/releases'" 1>&2; false; fi as louis0526@39.106.60.115
+ DEBUG [706934d7] Command: if test ! -d /home/louis0526/workspace/deployment/releases; then echo "Directory does not exist '/home/louis0526/workspace/deployment/releases'" 1>&2; false; fi
+ DEBUG [224ae506] Finished in 0.043 seconds with exit status 0 (successful).
+  INFO [2ef86075] Running /usr/bin/env echo "Branch master (at 8a126e2f0dc05396a4ceef0a8833321dccbdef5e) deployed as release 20190107092906 by louis0526" >> /home/louis0526/workspace/deployment/revisions.log as louis0526@39.106.60.115
+ DEBUG [2ef86075] Command: cd /home/louis0526/workspace/deployment/releases && /usr/bin/env echo "Branch master (at 8a126e2f0dc05396a4ceef0a8833321dccbdef5e) deployed as release 20190107092906 by louis0526" >> /home/louis0526/workspace/deployment/revisions.log
+  INFO [6193fd34] Finished in 0.045 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-01-07 18:43:02 +0800 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [db80c14b] Running /usr/bin/env which passenger as louis0526@39.106.60.115
+ DEBUG [db80c14b] Command: /usr/bin/env which passenger
+ DEBUG [98dc3c3b] 	/usr/bin/passenger
+ DEBUG [98dc3c3b] Finished in 3.232 seconds with exit status 0 (successful).
+ DEBUG [dbe63e38] Running [ -d ~/.rvm ] as louis0526@39.106.60.115
+ DEBUG [dbe63e38] Command: [ -d ~/.rvm ]
+ DEBUG [b97f257e] Finished in 0.046 seconds with exit status 0 (successful).
+ DEBUG [598880a1] Running ~/.rvm/bin/rvm version as louis0526@39.106.60.115
+ DEBUG [598880a1] Command: ~/.rvm/bin/rvm version
+ DEBUG [567dd06f] 	rvm 1.29.7 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+ DEBUG [567dd06f] Finished in 0.203 seconds with exit status 0 (successful).
+ DEBUG [c1e93d00] Running ~/.rvm/bin/rvm current as louis0526@39.106.60.115
+ DEBUG [c1e93d00] Command: ~/.rvm/bin/rvm current
+ DEBUG [ca17f2c6] 	ruby-2.2.2
+ DEBUG [ca17f2c6] Finished in 0.195 seconds with exit status 0 (successful).
+ DEBUG [9b5ef9e9] Running ~/.rvm/bin/rvm default do ruby --version as louis0526@39.106.60.115
+ DEBUG [9b5ef9e9] Command: ~/.rvm/bin/rvm default do ruby --version
+ DEBUG [9f6809af] 	ruby 2.2.2p95 (2015-04-13 revision 50295) [x86_64-linux]
+ DEBUG [9f6809af] Finished in 0.304 seconds with exit status 0 (successful).
+  INFO [a03c1b4f] Running /usr/bin/env mkdir -p /tmp as louis0526@39.106.60.115
+ DEBUG [a03c1b4f] Command: /usr/bin/env mkdir -p /tmp
+  INFO [2d29e23c] Finished in 0.044 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-codeknows-production-louis0526.sh 0.0%
+  INFO Uploading /tmp/git-ssh-codeknows-production-louis0526.sh 100.0%
+  INFO [8f67991b] Running /usr/bin/env chmod 700 /tmp/git-ssh-codeknows-production-louis0526.sh as louis0526@39.106.60.115
+ DEBUG [8f67991b] Command: /usr/bin/env chmod 700 /tmp/git-ssh-codeknows-production-louis0526.sh
+  INFO [50d6e78d] Finished in 0.046 seconds with exit status 0 (successful).
+  INFO [a7f1c83d] Running /usr/bin/env git ls-remote https://github.com/louis0526/deployment.git HEAD as louis0526@39.106.60.115
+ DEBUG [a7f1c83d] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-codeknows-production-louis0526.sh" ; /usr/bin/env git ls-remote https://github.com/louis0526/deployment.git HEAD )
+ DEBUG [6af419c5] 	d53c9d806c3e8fb1d4b837307f7fa14f836561bc	HEAD
+  INFO [6af419c5] Finished in 1.423 seconds with exit status 0 (successful).
+  INFO [66f9c823] Running /usr/bin/env mkdir -p /home/louis0526/workspace/deployment/shared /home/louis0526/workspace/deployment/releases as louis0526@39.106.60.115
+ DEBUG [66f9c823] Command: /usr/bin/env mkdir -p /home/louis0526/workspace/deployment/shared /home/louis0526/workspace/deployment/releases
+  INFO [51f303cd] Finished in 0.043 seconds with exit status 0 (successful).
+  INFO [e6da5fce] Running /usr/bin/env mkdir -p /home/louis0526/workspace/deployment/shared/log /home/louis0526/workspace/deployment/shared/tmp/pids /home/louis0526/workspace/deployment/shared/tmp/cache /home/louis0526/workspace/deployment/shared/tmp/sockets /home/louis0526/workspace/deployment/shared/public/system /home/louis0526/workspace/deployment/shared/public/assets as louis0526@39.106.60.115
+ DEBUG [e6da5fce] Command: /usr/bin/env mkdir -p /home/louis0526/workspace/deployment/shared/log /home/louis0526/workspace/deployment/shared/tmp/pids /home/louis0526/workspace/deployment/shared/tmp/cache /home/louis0526/workspace/deployment/shared/tmp/sockets /home/louis0526/workspace/deployment/shared/public/system /home/louis0526/workspace/deployment/shared/public/assets
+  INFO [49a57b9a] Finished in 0.046 seconds with exit status 0 (successful).
+  INFO [7c197c55] Running /usr/bin/env mkdir -p /home/louis0526/workspace/deployment/shared/config as louis0526@39.106.60.115
+ DEBUG [7c197c55] Command: /usr/bin/env mkdir -p /home/louis0526/workspace/deployment/shared/config
+  INFO [c5d107d9] Finished in 0.047 seconds with exit status 0 (successful).
+ DEBUG [c75d5b3f] Running [ -f /home/louis0526/workspace/deployment/shared/config/database.yml ] as louis0526@39.106.60.115
+ DEBUG [c75d5b3f] Command: [ -f /home/louis0526/workspace/deployment/shared/config/database.yml ]
+ DEBUG [37eef298] Finished in 0.046 seconds with exit status 0 (successful).
+ DEBUG [bb9ab0bb] Running [ -f /home/louis0526/workspace/deployment/shared/config/secrets.yml ] as louis0526@39.106.60.115
+ DEBUG [bb9ab0bb] Command: [ -f /home/louis0526/workspace/deployment/shared/config/secrets.yml ]
+ DEBUG [77719e4b] Finished in 0.048 seconds with exit status 0 (successful).
+ DEBUG [6c1ad69b] Running [ -f /home/louis0526/workspace/deployment/current/REVISION ] as louis0526@39.106.60.115
+ DEBUG [6c1ad69b] Command: [ -f /home/louis0526/workspace/deployment/current/REVISION ]
+ DEBUG [ef19ad40] Finished in 0.043 seconds with exit status 0 (successful).
+ DEBUG [dbf26b1f] Running /usr/bin/env cat /home/louis0526/workspace/deployment/current/REVISION 2>/dev/null as louis0526@39.106.60.115
+ DEBUG [dbf26b1f] Command: /usr/bin/env cat /home/louis0526/workspace/deployment/current/REVISION 2>/dev/null
+ DEBUG [b8c35f17] 	8a126e2f0dc05396a4ceef0a8833321dccbdef5e
+ DEBUG [b8c35f17] Finished in 0.046 seconds with exit status 0 (successful).
+ DEBUG [893ad7e4] Running [ -f /home/louis0526/workspace/deployment/repo/HEAD ] as louis0526@39.106.60.115
+ DEBUG [893ad7e4] Command: [ -f /home/louis0526/workspace/deployment/repo/HEAD ]
+ DEBUG [494595a5] Finished in 0.045 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/louis0526/workspace/deployment/repo
+ DEBUG [531bbf31] Running if test ! -d /home/louis0526/workspace/deployment/repo; then echo "Directory does not exist '/home/louis0526/workspace/deployment/repo'" 1>&2; false; fi as louis0526@39.106.60.115
+ DEBUG [531bbf31] Command: if test ! -d /home/louis0526/workspace/deployment/repo; then echo "Directory does not exist '/home/louis0526/workspace/deployment/repo'" 1>&2; false; fi
+ DEBUG [72cc066c] Finished in 0.047 seconds with exit status 0 (successful).
+  INFO [771360c5] Running /usr/bin/env git remote set-url origin https://github.com/louis0526/deployment.git as louis0526@39.106.60.115
+ DEBUG [771360c5] Command: cd /home/louis0526/workspace/deployment/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-codeknows-production-louis0526.sh" ; /usr/bin/env git remote set-url origin https://github.com/louis0526/deployment.git )
+  INFO [273adec8] Finished in 0.050 seconds with exit status 0 (successful).
+  INFO [9847a461] Running /usr/bin/env git remote update --prune as louis0526@39.106.60.115
+ DEBUG [9847a461] Command: cd /home/louis0526/workspace/deployment/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-codeknows-production-louis0526.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [f872221f] 	Fetching origin
+ DEBUG [f872221f] 	From https://github.com/louis0526/deployment
+ DEBUG [f872221f] 	   8a126e2..d53c9d8  master     -> master
+  INFO [f872221f] Finished in 2.384 seconds with exit status 0 (successful).
+ DEBUG [1ad727d9] Running if test ! -d /home/louis0526/workspace/deployment/repo; then echo "Directory does not exist '/home/louis0526/workspace/deployment/repo'" 1>&2; false; fi as louis0526@39.106.60.115
+ DEBUG [1ad727d9] Command: if test ! -d /home/louis0526/workspace/deployment/repo; then echo "Directory does not exist '/home/louis0526/workspace/deployment/repo'" 1>&2; false; fi
+ DEBUG [7d4cb3d6] Finished in 0.044 seconds with exit status 0 (successful).
+  INFO [ad870bfd] Running /usr/bin/env mkdir -p /home/louis0526/workspace/deployment/releases/20190107104308 as louis0526@39.106.60.115
+ DEBUG [ad870bfd] Command: cd /home/louis0526/workspace/deployment/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-codeknows-production-louis0526.sh" ; /usr/bin/env mkdir -p /home/louis0526/workspace/deployment/releases/20190107104308 )
+  INFO [854c40b9] Finished in 0.049 seconds with exit status 0 (successful).
+  INFO [8a6b4328] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/louis0526/workspace/deployment/releases/20190107104308 as louis0526@39.106.60.115
+ DEBUG [8a6b4328] Command: cd /home/louis0526/workspace/deployment/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-codeknows-production-louis0526.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/louis0526/workspace/deployment/releases/20190107104308 )
+  INFO [b8231bf5] Finished in 2.526 seconds with exit status 0 (successful).
+ DEBUG [7a6d6775] Running if test ! -d /home/louis0526/workspace/deployment/repo; then echo "Directory does not exist '/home/louis0526/workspace/deployment/repo'" 1>&2; false; fi as louis0526@39.106.60.115
+ DEBUG [7a6d6775] Command: if test ! -d /home/louis0526/workspace/deployment/repo; then echo "Directory does not exist '/home/louis0526/workspace/deployment/repo'" 1>&2; false; fi
+ DEBUG [5bfa415c] Finished in 0.047 seconds with exit status 0 (successful).
+ DEBUG [9cd04e9b] Running /usr/bin/env git rev-list --max-count=1 master as louis0526@39.106.60.115
+ DEBUG [9cd04e9b] Command: cd /home/louis0526/workspace/deployment/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-codeknows-production-louis0526.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [9d70fa90] 	d53c9d806c3e8fb1d4b837307f7fa14f836561bc
+ DEBUG [9d70fa90] Finished in 0.056 seconds with exit status 0 (successful).
+ DEBUG [d41d8d49] Running if test ! -d /home/louis0526/workspace/deployment/releases/20190107104308; then echo "Directory does not exist '/home/louis0526/workspace/deployment/releases/20190107104308'" 1>&2; false; fi as louis0526@39.106.60.115
+ DEBUG [d41d8d49] Command: if test ! -d /home/louis0526/workspace/deployment/releases/20190107104308; then echo "Directory does not exist '/home/louis0526/workspace/deployment/releases/20190107104308'" 1>&2; false; fi
+ DEBUG [10e65b3e] Finished in 0.046 seconds with exit status 0 (successful).
+  INFO [f7be3133] Running /usr/bin/env echo "d53c9d806c3e8fb1d4b837307f7fa14f836561bc" > REVISION as louis0526@39.106.60.115
+ DEBUG [f7be3133] Command: cd /home/louis0526/workspace/deployment/releases/20190107104308 && /usr/bin/env echo "d53c9d806c3e8fb1d4b837307f7fa14f836561bc" > REVISION
+  INFO [a0f222ff] Finished in 0.052 seconds with exit status 0 (successful).
+  INFO [749418e2] Running /usr/bin/env mkdir -p /home/louis0526/workspace/deployment/releases/20190107104308/config as louis0526@39.106.60.115
+ DEBUG [749418e2] Command: /usr/bin/env mkdir -p /home/louis0526/workspace/deployment/releases/20190107104308/config
+  INFO [467ed12a] Finished in 0.048 seconds with exit status 0 (successful).
+ DEBUG [76b9fedd] Running [ -L /home/louis0526/workspace/deployment/releases/20190107104308/config/database.yml ] as louis0526@39.106.60.115
+ DEBUG [76b9fedd] Command: [ -L /home/louis0526/workspace/deployment/releases/20190107104308/config/database.yml ]
+ DEBUG [48cb00ee] Finished in 0.046 seconds with exit status 1 (failed).
+ DEBUG [4cc640ce] Running [ -f /home/louis0526/workspace/deployment/releases/20190107104308/config/database.yml ] as louis0526@39.106.60.115
+ DEBUG [4cc640ce] Command: [ -f /home/louis0526/workspace/deployment/releases/20190107104308/config/database.yml ]
+ DEBUG [1f118653] Finished in 0.048 seconds with exit status 0 (successful).
+  INFO [064b31e8] Running /usr/bin/env rm /home/louis0526/workspace/deployment/releases/20190107104308/config/database.yml as louis0526@39.106.60.115
+ DEBUG [064b31e8] Command: /usr/bin/env rm /home/louis0526/workspace/deployment/releases/20190107104308/config/database.yml
+  INFO [a1708e9c] Finished in 0.048 seconds with exit status 0 (successful).
+  INFO [b945cb28] Running /usr/bin/env ln -s /home/louis0526/workspace/deployment/shared/config/database.yml /home/louis0526/workspace/deployment/releases/20190107104308/config/database.yml as louis0526@39.106.60.115
+ DEBUG [b945cb28] Command: /usr/bin/env ln -s /home/louis0526/workspace/deployment/shared/config/database.yml /home/louis0526/workspace/deployment/releases/20190107104308/config/database.yml
+  INFO [61396388] Finished in 0.048 seconds with exit status 0 (successful).
+ DEBUG [f69cc57f] Running [ -L /home/louis0526/workspace/deployment/releases/20190107104308/config/secrets.yml ] as louis0526@39.106.60.115
+ DEBUG [f69cc57f] Command: [ -L /home/louis0526/workspace/deployment/releases/20190107104308/config/secrets.yml ]
+ DEBUG [93225a13] Finished in 0.047 seconds with exit status 1 (failed).
+ DEBUG [f8f9367e] Running [ -f /home/louis0526/workspace/deployment/releases/20190107104308/config/secrets.yml ] as louis0526@39.106.60.115
+ DEBUG [f8f9367e] Command: [ -f /home/louis0526/workspace/deployment/releases/20190107104308/config/secrets.yml ]
+ DEBUG [273d172e] Finished in 0.048 seconds with exit status 0 (successful).
+  INFO [7303db89] Running /usr/bin/env rm /home/louis0526/workspace/deployment/releases/20190107104308/config/secrets.yml as louis0526@39.106.60.115
+ DEBUG [7303db89] Command: /usr/bin/env rm /home/louis0526/workspace/deployment/releases/20190107104308/config/secrets.yml
+  INFO [5805fbcb] Finished in 0.048 seconds with exit status 0 (successful).
+  INFO [5d288e13] Running /usr/bin/env ln -s /home/louis0526/workspace/deployment/shared/config/secrets.yml /home/louis0526/workspace/deployment/releases/20190107104308/config/secrets.yml as louis0526@39.106.60.115
+ DEBUG [5d288e13] Command: /usr/bin/env ln -s /home/louis0526/workspace/deployment/shared/config/secrets.yml /home/louis0526/workspace/deployment/releases/20190107104308/config/secrets.yml
+  INFO [941ddf49] Finished in 0.047 seconds with exit status 0 (successful).
+  INFO [26470680] Running /usr/bin/env mkdir -p /home/louis0526/workspace/deployment/releases/20190107104308 /home/louis0526/workspace/deployment/releases/20190107104308/tmp /home/louis0526/workspace/deployment/releases/20190107104308/public as louis0526@39.106.60.115
+ DEBUG [26470680] Command: /usr/bin/env mkdir -p /home/louis0526/workspace/deployment/releases/20190107104308 /home/louis0526/workspace/deployment/releases/20190107104308/tmp /home/louis0526/workspace/deployment/releases/20190107104308/public
+  INFO [f91df41c] Finished in 0.046 seconds with exit status 0 (successful).
+ DEBUG [2908a3b3] Running [ -L /home/louis0526/workspace/deployment/releases/20190107104308/log ] as louis0526@39.106.60.115
+ DEBUG [2908a3b3] Command: [ -L /home/louis0526/workspace/deployment/releases/20190107104308/log ]
+ DEBUG [9e7456cb] Finished in 0.047 seconds with exit status 1 (failed).
+ DEBUG [ddc4ad03] Running [ -d /home/louis0526/workspace/deployment/releases/20190107104308/log ] as louis0526@39.106.60.115
+ DEBUG [ddc4ad03] Command: [ -d /home/louis0526/workspace/deployment/releases/20190107104308/log ]
+ DEBUG [5075f96d] Finished in 0.047 seconds with exit status 0 (successful).
+  INFO [516d8d7c] Running /usr/bin/env rm -rf /home/louis0526/workspace/deployment/releases/20190107104308/log as louis0526@39.106.60.115
+ DEBUG [516d8d7c] Command: /usr/bin/env rm -rf /home/louis0526/workspace/deployment/releases/20190107104308/log
+  INFO [7354060f] Finished in 0.049 seconds with exit status 0 (successful).
+  INFO [48a56989] Running /usr/bin/env ln -s /home/louis0526/workspace/deployment/shared/log /home/louis0526/workspace/deployment/releases/20190107104308/log as louis0526@39.106.60.115
+ DEBUG [48a56989] Command: /usr/bin/env ln -s /home/louis0526/workspace/deployment/shared/log /home/louis0526/workspace/deployment/releases/20190107104308/log
+  INFO [7f87d632] Finished in 0.048 seconds with exit status 0 (successful).
+ DEBUG [bd700a97] Running [ -L /home/louis0526/workspace/deployment/releases/20190107104308/tmp/pids ] as louis0526@39.106.60.115
+ DEBUG [bd700a97] Command: [ -L /home/louis0526/workspace/deployment/releases/20190107104308/tmp/pids ]
+ DEBUG [f79b6c1c] Finished in 0.046 seconds with exit status 1 (failed).
+ DEBUG [cae57484] Running [ -d /home/louis0526/workspace/deployment/releases/20190107104308/tmp/pids ] as louis0526@39.106.60.115
+ DEBUG [cae57484] Command: [ -d /home/louis0526/workspace/deployment/releases/20190107104308/tmp/pids ]
+ DEBUG [773a9250] Finished in 0.048 seconds with exit status 1 (failed).
+  INFO [09a28637] Running /usr/bin/env ln -s /home/louis0526/workspace/deployment/shared/tmp/pids /home/louis0526/workspace/deployment/releases/20190107104308/tmp/pids as louis0526@39.106.60.115
+ DEBUG [09a28637] Command: /usr/bin/env ln -s /home/louis0526/workspace/deployment/shared/tmp/pids /home/louis0526/workspace/deployment/releases/20190107104308/tmp/pids
+  INFO [0419ac42] Finished in 0.049 seconds with exit status 0 (successful).
+ DEBUG [550f153c] Running [ -L /home/louis0526/workspace/deployment/releases/20190107104308/tmp/cache ] as louis0526@39.106.60.115
+ DEBUG [550f153c] Command: [ -L /home/louis0526/workspace/deployment/releases/20190107104308/tmp/cache ]
+ DEBUG [7c1e4b86] Finished in 0.045 seconds with exit status 1 (failed).
+ DEBUG [3435eca7] Running [ -d /home/louis0526/workspace/deployment/releases/20190107104308/tmp/cache ] as louis0526@39.106.60.115
+ DEBUG [3435eca7] Command: [ -d /home/louis0526/workspace/deployment/releases/20190107104308/tmp/cache ]
+ DEBUG [986adddb] Finished in 0.044 seconds with exit status 0 (successful).
+  INFO [4df3bb57] Running /usr/bin/env rm -rf /home/louis0526/workspace/deployment/releases/20190107104308/tmp/cache as louis0526@39.106.60.115
+ DEBUG [4df3bb57] Command: /usr/bin/env rm -rf /home/louis0526/workspace/deployment/releases/20190107104308/tmp/cache
+  INFO [23dc87b6] Finished in 0.089 seconds with exit status 0 (successful).
+  INFO [ada1a132] Running /usr/bin/env ln -s /home/louis0526/workspace/deployment/shared/tmp/cache /home/louis0526/workspace/deployment/releases/20190107104308/tmp/cache as louis0526@39.106.60.115
+ DEBUG [ada1a132] Command: /usr/bin/env ln -s /home/louis0526/workspace/deployment/shared/tmp/cache /home/louis0526/workspace/deployment/releases/20190107104308/tmp/cache
+  INFO [1f4ca447] Finished in 0.048 seconds with exit status 0 (successful).
+ DEBUG [f43826b0] Running [ -L /home/louis0526/workspace/deployment/releases/20190107104308/tmp/sockets ] as louis0526@39.106.60.115
+ DEBUG [f43826b0] Command: [ -L /home/louis0526/workspace/deployment/releases/20190107104308/tmp/sockets ]
+ DEBUG [a1c99d68] Finished in 0.046 seconds with exit status 1 (failed).
+ DEBUG [7a09e000] Running [ -d /home/louis0526/workspace/deployment/releases/20190107104308/tmp/sockets ] as louis0526@39.106.60.115
+ DEBUG [7a09e000] Command: [ -d /home/louis0526/workspace/deployment/releases/20190107104308/tmp/sockets ]
+ DEBUG [a7dcc459] Finished in 0.048 seconds with exit status 1 (failed).
+  INFO [d01a5941] Running /usr/bin/env ln -s /home/louis0526/workspace/deployment/shared/tmp/sockets /home/louis0526/workspace/deployment/releases/20190107104308/tmp/sockets as louis0526@39.106.60.115
+ DEBUG [d01a5941] Command: /usr/bin/env ln -s /home/louis0526/workspace/deployment/shared/tmp/sockets /home/louis0526/workspace/deployment/releases/20190107104308/tmp/sockets
+  INFO [85b511c2] Finished in 0.049 seconds with exit status 0 (successful).
+ DEBUG [5d9a4362] Running [ -L /home/louis0526/workspace/deployment/releases/20190107104308/public/system ] as louis0526@39.106.60.115
+ DEBUG [5d9a4362] Command: [ -L /home/louis0526/workspace/deployment/releases/20190107104308/public/system ]
+ DEBUG [9a8589f9] Finished in 0.046 seconds with exit status 1 (failed).
+ DEBUG [ee7a3bef] Running [ -d /home/louis0526/workspace/deployment/releases/20190107104308/public/system ] as louis0526@39.106.60.115
+ DEBUG [ee7a3bef] Command: [ -d /home/louis0526/workspace/deployment/releases/20190107104308/public/system ]
+ DEBUG [626885d6] Finished in 0.048 seconds with exit status 1 (failed).
+  INFO [d721789f] Running /usr/bin/env ln -s /home/louis0526/workspace/deployment/shared/public/system /home/louis0526/workspace/deployment/releases/20190107104308/public/system as louis0526@39.106.60.115
+ DEBUG [d721789f] Command: /usr/bin/env ln -s /home/louis0526/workspace/deployment/shared/public/system /home/louis0526/workspace/deployment/releases/20190107104308/public/system
+  INFO [7941349f] Finished in 0.049 seconds with exit status 0 (successful).
+ DEBUG [619613d5] Running [ -L /home/louis0526/workspace/deployment/releases/20190107104308/public/assets ] as louis0526@39.106.60.115
+ DEBUG [619613d5] Command: [ -L /home/louis0526/workspace/deployment/releases/20190107104308/public/assets ]
+ DEBUG [a038094e] Finished in 0.046 seconds with exit status 1 (failed).
+ DEBUG [db0ff791] Running [ -d /home/louis0526/workspace/deployment/releases/20190107104308/public/assets ] as louis0526@39.106.60.115
+ DEBUG [db0ff791] Command: [ -d /home/louis0526/workspace/deployment/releases/20190107104308/public/assets ]
+ DEBUG [a35b56b0] Finished in 0.048 seconds with exit status 0 (successful).
+  INFO [54c27369] Running /usr/bin/env rm -rf /home/louis0526/workspace/deployment/releases/20190107104308/public/assets as louis0526@39.106.60.115
+ DEBUG [54c27369] Command: /usr/bin/env rm -rf /home/louis0526/workspace/deployment/releases/20190107104308/public/assets
+  INFO [96e41c4c] Finished in 0.070 seconds with exit status 0 (successful).
+  INFO [5bdf1ec9] Running /usr/bin/env ln -s /home/louis0526/workspace/deployment/shared/public/assets /home/louis0526/workspace/deployment/releases/20190107104308/public/assets as louis0526@39.106.60.115
+ DEBUG [5bdf1ec9] Command: /usr/bin/env ln -s /home/louis0526/workspace/deployment/shared/public/assets /home/louis0526/workspace/deployment/releases/20190107104308/public/assets
+  INFO [34688fd7] Finished in 0.046 seconds with exit status 0 (successful).
+ DEBUG [140ee9f6] Running if test ! -d /home/louis0526/workspace/deployment/releases/20190107104308; then echo "Directory does not exist '/home/louis0526/workspace/deployment/releases/20190107104308'" 1>&2; false; fi as louis0526@39.106.60.115
+ DEBUG [140ee9f6] Command: if test ! -d /home/louis0526/workspace/deployment/releases/20190107104308; then echo "Directory does not exist '/home/louis0526/workspace/deployment/releases/20190107104308'" 1>&2; false; fi
+ DEBUG [4fd5f328] Finished in 0.045 seconds with exit status 0 (successful).
+ DEBUG [5224eb16] Running ~/.rvm/bin/rvm default do bundle check --path /home/louis0526/workspace/deployment/shared/bundle as louis0526@39.106.60.115
+ DEBUG [5224eb16] Command: cd /home/louis0526/workspace/deployment/releases/20190107104308 && ~/.rvm/bin/rvm default do bundle check --path /home/louis0526/workspace/deployment/shared/bundle
+ DEBUG [487162d7] 	The Gemfile's dependencies are satisfied
+ DEBUG [487162d7] Finished in 0.800 seconds with exit status 0 (successful).
+  INFO The Gemfile's dependencies are satisfied, skipping installation
+ DEBUG [7a04837b] Running if test ! -d /home/louis0526/workspace/deployment/releases/20190107104308; then echo "Directory does not exist '/home/louis0526/workspace/deployment/releases/20190107104308'" 1>&2; false; fi as louis0526@39.106.60.115
+ DEBUG [7a04837b] Command: if test ! -d /home/louis0526/workspace/deployment/releases/20190107104308; then echo "Directory does not exist '/home/louis0526/workspace/deployment/releases/20190107104308'" 1>&2; false; fi
+ DEBUG [ba29b807] Finished in 0.047 seconds with exit status 0 (successful).
+  INFO [0465baa7] Running ~/.rvm/bin/rvm default do bundle exec rake assets:precompile as louis0526@39.106.60.115
+ DEBUG [0465baa7] Command: cd /home/louis0526/workspace/deployment/releases/20190107104308 && ( export RAILS_ENV="production" RAILS_GROUPS="" ; ~/.rvm/bin/rvm default do bundle exec rake assets:precompile )
+ DEBUG [483ac9cd] 	/home/louis0526/.rvm/rubies/ruby-2.2.2/bin/ruby /home/louis0526/workspace/deployment/shared/bundle/ruby/2.2.0/bin/rake assets:precompile:all RAILS_ENV=production RAILS_GROUPS=
+ DEBUG [483ac9cd] 	
+  INFO [483ac9cd] Finished in 15.724 seconds with exit status 0 (successful).
+ DEBUG [54e2e2df] Running if test ! -d /home/louis0526/workspace/deployment/releases/20190107104308; then echo "Directory does not exist '/home/louis0526/workspace/deployment/releases/20190107104308'" 1>&2; false; fi as louis0526@39.106.60.115
+ DEBUG [54e2e2df] Command: if test ! -d /home/louis0526/workspace/deployment/releases/20190107104308; then echo "Directory does not exist '/home/louis0526/workspace/deployment/releases/20190107104308'" 1>&2; false; fi
+ DEBUG [f2e13f5a] Finished in 0.046 seconds with exit status 0 (successful).
+  INFO [cb4d4b98] Running /usr/bin/env mkdir -p /home/louis0526/workspace/deployment/releases/20190107104308/assets_manifest_backup as louis0526@39.106.60.115
+ DEBUG [cb4d4b98] Command: cd /home/louis0526/workspace/deployment/releases/20190107104308 && /usr/bin/env mkdir -p /home/louis0526/workspace/deployment/releases/20190107104308/assets_manifest_backup
+  INFO [3d484f56] Finished in 0.048 seconds with exit status 0 (successful).
+ DEBUG [f174c4aa] Running /usr/bin/env ls /home/louis0526/workspace/deployment/releases/20190107104308/public/assets/.sprockets-manifest* as louis0526@39.106.60.115
+ DEBUG [f174c4aa] Command: cd /home/louis0526/workspace/deployment/releases/20190107104308 && /usr/bin/env ls /home/louis0526/workspace/deployment/releases/20190107104308/public/assets/.sprockets-manifest*
+ DEBUG [87de0c8a] 	ls: 
+ DEBUG [87de0c8a] 	cannot access '/home/louis0526/workspace/deployment/releases/20190107104308/public/assets/.sprockets-manifest*'
+ DEBUG [87de0c8a] 	: No such file or directory
+ DEBUG [87de0c8a] 	
+ DEBUG [87de0c8a] Finished in 0.048 seconds with exit status 2 (failed).
+ DEBUG [a114a9ba] Running /usr/bin/env ls /home/louis0526/workspace/deployment/releases/20190107104308/public/assets/manifest*.* as louis0526@39.106.60.115
+ DEBUG [a114a9ba] Command: cd /home/louis0526/workspace/deployment/releases/20190107104308 && /usr/bin/env ls /home/louis0526/workspace/deployment/releases/20190107104308/public/assets/manifest*.*
+ DEBUG [7c4e2ae7] 	/home/louis0526/workspace/deployment/releases/20190107104308/public/assets/manifest.yml
+ DEBUG [7c4e2ae7] Finished in 0.047 seconds with exit status 0 (successful).
+ DEBUG [3b235d8a] Running /usr/bin/env ls /home/louis0526/workspace/deployment/releases/20190107104308/public/assets/manifest*.* as louis0526@39.106.60.115
+ DEBUG [3b235d8a] Command: cd /home/louis0526/workspace/deployment/releases/20190107104308 && /usr/bin/env ls /home/louis0526/workspace/deployment/releases/20190107104308/public/assets/manifest*.*
+ DEBUG [5936df70] 	/home/louis0526/workspace/deployment/releases/20190107104308/public/assets/manifest.yml
+ DEBUG [5936df70] Finished in 0.048 seconds with exit status 0 (successful).
+  INFO [529a8b4e] Running /usr/bin/env cp /home/louis0526/workspace/deployment/releases/20190107104308/public/assets/manifest.yml /home/louis0526/workspace/deployment/releases/20190107104308/assets_manifest_backup as louis0526@39.106.60.115
+ DEBUG [529a8b4e] Command: cd /home/louis0526/workspace/deployment/releases/20190107104308 && /usr/bin/env cp /home/louis0526/workspace/deployment/releases/20190107104308/public/assets/manifest.yml /home/louis0526/workspace/deployment/releases/20190107104308/assets_manifest_backup
+  INFO [835cf9cd] Finished in 0.048 seconds with exit status 0 (successful).
+  INFO [deploy:migrate] Run `rake db:migrate`
+ DEBUG [14acbf0b] Running if test ! -d /home/louis0526/workspace/deployment/releases/20190107104308; then echo "Directory does not exist '/home/louis0526/workspace/deployment/releases/20190107104308'" 1>&2; false; fi as louis0526@39.106.60.115
+ DEBUG [14acbf0b] Command: if test ! -d /home/louis0526/workspace/deployment/releases/20190107104308; then echo "Directory does not exist '/home/louis0526/workspace/deployment/releases/20190107104308'" 1>&2; false; fi
+ DEBUG [59989a8f] Finished in 0.045 seconds with exit status 0 (successful).
+  INFO [0961c615] Running ~/.rvm/bin/rvm default do bundle exec rake db:migrate as louis0526@39.106.60.115
+ DEBUG [0961c615] Command: cd /home/louis0526/workspace/deployment/releases/20190107104308 && ( export RAILS_ENV="production" ; ~/.rvm/bin/rvm default do bundle exec rake db:migrate )
+  INFO [ba40f0ec] Finished in 8.090 seconds with exit status 0 (successful).
+  INFO [b5e6987b] Running /usr/bin/env ln -s /home/louis0526/workspace/deployment/releases/20190107104308 /home/louis0526/workspace/deployment/releases/current as louis0526@39.106.60.115
+ DEBUG [b5e6987b] Command: /usr/bin/env ln -s /home/louis0526/workspace/deployment/releases/20190107104308 /home/louis0526/workspace/deployment/releases/current
+  INFO [fc7588cb] Finished in 0.045 seconds with exit status 0 (successful).
+  INFO [cb91de0d] Running /usr/bin/env mv /home/louis0526/workspace/deployment/releases/current /home/louis0526/workspace/deployment as louis0526@39.106.60.115
+ DEBUG [cb91de0d] Command: /usr/bin/env mv /home/louis0526/workspace/deployment/releases/current /home/louis0526/workspace/deployment
+  INFO [bd544799] Finished in 0.048 seconds with exit status 0 (successful).
+ DEBUG [2e44c82d] Running if test ! -d /home/louis0526/workspace/deployment/releases/20190107104308; then echo "Directory does not exist '/home/louis0526/workspace/deployment/releases/20190107104308'" 1>&2; false; fi as louis0526@39.106.60.115
+ DEBUG [2e44c82d] Command: if test ! -d /home/louis0526/workspace/deployment/releases/20190107104308; then echo "Directory does not exist '/home/louis0526/workspace/deployment/releases/20190107104308'" 1>&2; false; fi
+ DEBUG [089d5812] Finished in 0.045 seconds with exit status 0 (successful).
+ DEBUG [10a29553] Running /usr/bin/env passenger -v as louis0526@39.106.60.115
+ DEBUG [10a29553] Command: cd /home/louis0526/workspace/deployment/releases/20190107104308 && /usr/bin/env passenger -v
+ DEBUG [4b5b6733] 	Phusion Passenger 6.0.0
+ DEBUG [4b5b6733] 	
+ DEBUG [4b5b6733] Finished in 0.128 seconds with exit status 0 (successful).
+  INFO [7b649733] Running /usr/bin/env passenger-config restart-app /home/louis0526/workspace/deployment --ignore-app-not-running as louis0526@39.106.60.115
+ DEBUG [7b649733] Command: cd /home/louis0526/workspace/deployment/releases/20190107104308 && /usr/bin/env passenger-config restart-app /home/louis0526/workspace/deployment --ignore-app-not-running
+ DEBUG [bd557674] 	*** Cleaning stale instance directory /tmp/passenger.OV363qX
+    Warning: Operation not permitted @ rb_file_chown - /tmp/passenger.OV363qX/.
+*** Cleaning stale instance directory /tmp/passenger.rbRYUYU
+    Warning: Operation not permitted @ rb_file_chown - /tmp/passenger.rbRYUYU/.
+*** Cleaning stale instance directory /tmp/passenger.OQCsNeW
+    Warning: Operation not permitted @ rb_file_chown - /tmp/passenger.OQCsNeW/.
+*** Cleaning stale instance directory /tmp/passenger.ISLAbUR
+    Warning: Operation not permitted @ rb_file_chown - /tmp/passenger.ISLAbUR/.
+*** Cleaning stale instance directory /tmp/passenger.MtYeE13
+    Warning: Operation not permitted @ rb_file_chown - /tmp/passenger.MtYeE13/.
+*** Cleaning stale instance directory /tmp/passenger.btiI5WZ
+    Warning: Operation not permitted @ rb_file_chown - /tmp/passenger.btiI5WZ/.
+*** Cleaning stale instance directory /tmp/passenger.LGpCHU9
+    Warning: Operation not permitted @ rb_file_chown - /tmp/passenger.LGpCHU9/.
+*** Cleaning stale instance directory /tmp/passenger.rqg4fhy
+    Warning: Operation not permitted @ rb_file_chown - /tmp/passenger.rqg4fhy/.
+*** Cleaning stale instance directory /tmp/passenger.aycD6xF
+    Warning: Operation not permitted @ rb_file_chown - /tmp/passenger.aycD6xF/.
+Restarting /home/louis0526/workspace/deployment/current (production)
+  INFO [bd557674] Finished in 0.236 seconds with exit status 0 (successful).
+ DEBUG [047b3320] Running /usr/bin/env ls -x /home/louis0526/workspace/deployment/releases as louis0526@39.106.60.115
+ DEBUG [047b3320] Command: /usr/bin/env ls -x /home/louis0526/workspace/deployment/releases
+ DEBUG [cb49a9b9] 	20190107083514	20190107085133	20190107091517	20190107092036	20190107092906
+20190107104308
+ DEBUG [cb49a9b9] Finished in 0.046 seconds with exit status 0 (successful).
+  INFO Keeping 5 of 6 deployed releases on 39.106.60.115
+ DEBUG [a3c2c09b] Running [ -d /home/louis0526/workspace/deployment/current ] as louis0526@39.106.60.115
+ DEBUG [a3c2c09b] Command: [ -d /home/louis0526/workspace/deployment/current ]
+ DEBUG [df700c25] Finished in 0.047 seconds with exit status 0 (successful).
+ DEBUG [05219f98] Running /usr/bin/env readlink /home/louis0526/workspace/deployment/current as louis0526@39.106.60.115
+ DEBUG [05219f98] Command: /usr/bin/env readlink /home/louis0526/workspace/deployment/current
+ DEBUG [64261909] 	/home/louis0526/workspace/deployment/releases/20190107104308
+ DEBUG [64261909] Finished in 0.049 seconds with exit status 0 (successful).
+  INFO [fbeeb043] Running /usr/bin/env rm -rf /home/louis0526/workspace/deployment/releases/20190107083514 as louis0526@39.106.60.115
+ DEBUG [fbeeb043] Command: /usr/bin/env rm -rf /home/louis0526/workspace/deployment/releases/20190107083514
+  INFO [072246f7] Finished in 2.506 seconds with exit status 0 (successful).
+ DEBUG [a1d59394] Running if test ! -d /home/louis0526/workspace/deployment/releases; then echo "Directory does not exist '/home/louis0526/workspace/deployment/releases'" 1>&2; false; fi as louis0526@39.106.60.115
+ DEBUG [a1d59394] Command: if test ! -d /home/louis0526/workspace/deployment/releases; then echo "Directory does not exist '/home/louis0526/workspace/deployment/releases'" 1>&2; false; fi
+ DEBUG [35dab144] Finished in 0.043 seconds with exit status 0 (successful).
+  INFO [89c23a77] Running /usr/bin/env echo "Branch master (at d53c9d806c3e8fb1d4b837307f7fa14f836561bc) deployed as release 20190107104308 by louis0526" >> /home/louis0526/workspace/deployment/revisions.log as louis0526@39.106.60.115
+ DEBUG [89c23a77] Command: cd /home/louis0526/workspace/deployment/releases && /usr/bin/env echo "Branch master (at d53c9d806c3e8fb1d4b837307f7fa14f836561bc) deployed as release 20190107104308 by louis0526" >> /home/louis0526/workspace/deployment/revisions.log
+  INFO [cf2fbd97] Finished in 0.049 seconds with exit status 0 (successful).
