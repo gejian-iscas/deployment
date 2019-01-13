@@ -2487,3 +2487,984 @@ Restarting /home/louis0526/workspace/deployment/current (production)
   INFO [89c23a77] Running /usr/bin/env echo "Branch master (at d53c9d806c3e8fb1d4b837307f7fa14f836561bc) deployed as release 20190107104308 by louis0526" >> /home/louis0526/workspace/deployment/revisions.log as louis0526@39.106.60.115
  DEBUG [89c23a77] Command: cd /home/louis0526/workspace/deployment/releases && /usr/bin/env echo "Branch master (at d53c9d806c3e8fb1d4b837307f7fa14f836561bc) deployed as release 20190107104308 by louis0526" >> /home/louis0526/workspace/deployment/revisions.log
   INFO [cf2fbd97] Finished in 0.049 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-01-13 13:21:05 +0000 cap production deploy:check
+  INFO ---------------------------------------------------------------------------
+ DEBUG [2a74064a] Running /usr/bin/env which passenger as louis0526@45.76.56.242
+ DEBUG [2a74064a] Command: /usr/bin/env which passenger
+ DEBUG [614fef05] 	/usr/bin/passenger
+ DEBUG [614fef05] Finished in 7.666 seconds with exit status 0 (successful).
+ DEBUG [dcd254cd] Running [ -d ~/.rvm ] as louis0526@45.76.56.242
+ DEBUG [dcd254cd] Command: [ -d ~/.rvm ]
+ DEBUG [fecd2da9] Finished in 0.044 seconds with exit status 0 (successful).
+ DEBUG [2bc1ce03] Running ~/.rvm/bin/rvm version as louis0526@45.76.56.242
+ DEBUG [2bc1ce03] Command: ~/.rvm/bin/rvm version
+ DEBUG [76d747e7] 	rvm 1.29.7 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+ DEBUG [76d747e7] Finished in 0.328 seconds with exit status 0 (successful).
+ DEBUG [a6bca194] Running ~/.rvm/bin/rvm current as louis0526@45.76.56.242
+ DEBUG [a6bca194] Command: ~/.rvm/bin/rvm current
+ DEBUG [55fb04c7] 	ruby-2.2.2
+ DEBUG [55fb04c7] Finished in 0.283 seconds with exit status 0 (successful).
+ DEBUG [4436917b] Running ~/.rvm/bin/rvm default do ruby --version as louis0526@45.76.56.242
+ DEBUG [4436917b] Command: ~/.rvm/bin/rvm default do ruby --version
+ DEBUG [aa77cd14] 	ruby 2.2.2p95 (2015-04-13 revision 50295) [x86_64-linux]
+ DEBUG [aa77cd14] Finished in 0.399 seconds with exit status 0 (successful).
+  INFO [1c580145] Running /usr/bin/env mkdir -p /tmp as louis0526@45.76.56.242
+ DEBUG [1c580145] Command: /usr/bin/env mkdir -p /tmp
+  INFO [88f5248d] Finished in 0.042 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-codeknows-production-louis0526.sh 0.0%
+  INFO Uploading /tmp/git-ssh-codeknows-production-louis0526.sh 100.0%
+  INFO [7b00518a] Running /usr/bin/env chmod 700 /tmp/git-ssh-codeknows-production-louis0526.sh as louis0526@45.76.56.242
+ DEBUG [7b00518a] Command: /usr/bin/env chmod 700 /tmp/git-ssh-codeknows-production-louis0526.sh
+  INFO [1d1ff81b] Finished in 0.044 seconds with exit status 0 (successful).
+  INFO [3f3c7e62] Running /usr/bin/env git ls-remote https://github.com/louis0526/deployment.git HEAD as louis0526@45.76.56.242
+ DEBUG [3f3c7e62] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-codeknows-production-louis0526.sh" ; /usr/bin/env git ls-remote https://github.com/louis0526/deployment.git HEAD )
+ DEBUG [3301f1c8] 	4897b49c9cca39ad64dd769cdb74e81ad32e4b34	HEAD
+  INFO [3301f1c8] Finished in 0.523 seconds with exit status 0 (successful).
+  INFO [b3e16d60] Running /usr/bin/env mkdir -p /home/louis0526/workspace/publish/codeknows/shared /home/louis0526/workspace/publish/codeknows/releases as louis0526@45.76.56.242
+ DEBUG [b3e16d60] Command: /usr/bin/env mkdir -p /home/louis0526/workspace/publish/codeknows/shared /home/louis0526/workspace/publish/codeknows/releases
+  INFO [c589aaa5] Finished in 0.041 seconds with exit status 0 (successful).
+  INFO [3812cd3f] Running /usr/bin/env mkdir -p /home/louis0526/workspace/publish/codeknows/shared/log /home/louis0526/workspace/publish/codeknows/shared/tmp/pids /home/louis0526/workspace/publish/codeknows/shared/tmp/cache /home/louis0526/workspace/publish/codeknows/shared/tmp/sockets /home/louis0526/workspace/publish/codeknows/shared/public/system /home/louis0526/workspace/publish/codeknows/shared/public/assets as louis0526@45.76.56.242
+ DEBUG [3812cd3f] Command: /usr/bin/env mkdir -p /home/louis0526/workspace/publish/codeknows/shared/log /home/louis0526/workspace/publish/codeknows/shared/tmp/pids /home/louis0526/workspace/publish/codeknows/shared/tmp/cache /home/louis0526/workspace/publish/codeknows/shared/tmp/sockets /home/louis0526/workspace/publish/codeknows/shared/public/system /home/louis0526/workspace/publish/codeknows/shared/public/assets
+  INFO [a696d693] Finished in 0.041 seconds with exit status 0 (successful).
+  INFO [e2d41368] Running /usr/bin/env mkdir -p /home/louis0526/workspace/publish/codeknows/shared/config as louis0526@45.76.56.242
+ DEBUG [e2d41368] Command: /usr/bin/env mkdir -p /home/louis0526/workspace/publish/codeknows/shared/config
+  INFO [b8941de8] Finished in 0.043 seconds with exit status 0 (successful).
+ DEBUG [f5a63e37] Running [ -f /home/louis0526/workspace/publish/codeknows/shared/config/database.yml ] as louis0526@45.76.56.242
+ DEBUG [f5a63e37] Command: [ -f /home/louis0526/workspace/publish/codeknows/shared/config/database.yml ]
+ DEBUG [afada572] Finished in 0.041 seconds with exit status 1 (failed).
+ ERROR linked file /home/louis0526/workspace/publish/codeknows/shared/config/database.yml does not exist on 45.76.56.242
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-01-13 13:23:30 +0000 cap production deploy:check
+  INFO ---------------------------------------------------------------------------
+ DEBUG [c307dcb8] Running /usr/bin/env which passenger as louis0526@45.76.56.242
+ DEBUG [c307dcb8] Command: /usr/bin/env which passenger
+ DEBUG [8b966167] 	/usr/bin/passenger
+ DEBUG [8b966167] Finished in 5.847 seconds with exit status 0 (successful).
+ DEBUG [c8d9af14] Running [ -d ~/.rvm ] as louis0526@45.76.56.242
+ DEBUG [c8d9af14] Command: [ -d ~/.rvm ]
+ DEBUG [05af9509] Finished in 0.039 seconds with exit status 0 (successful).
+ DEBUG [0a39a802] Running ~/.rvm/bin/rvm version as louis0526@45.76.56.242
+ DEBUG [0a39a802] Command: ~/.rvm/bin/rvm version
+ DEBUG [9773463c] 	rvm 1.29.7 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+ DEBUG [9773463c] Finished in 0.294 seconds with exit status 0 (successful).
+ DEBUG [e1582323] Running ~/.rvm/bin/rvm current as louis0526@45.76.56.242
+ DEBUG [e1582323] Command: ~/.rvm/bin/rvm current
+ DEBUG [b78070a4] 	ruby-2.2.2
+ DEBUG [b78070a4] Finished in 0.285 seconds with exit status 0 (successful).
+ DEBUG [9c96e8d2] Running ~/.rvm/bin/rvm default do ruby --version as louis0526@45.76.56.242
+ DEBUG [9c96e8d2] Command: ~/.rvm/bin/rvm default do ruby --version
+ DEBUG [a6dd4c1a] 	ruby 2.2.2p95 (2015-04-13 revision 50295) [x86_64-linux]
+ DEBUG [a6dd4c1a] Finished in 0.435 seconds with exit status 0 (successful).
+  INFO [1cbc8daa] Running /usr/bin/env mkdir -p /tmp as louis0526@45.76.56.242
+ DEBUG [1cbc8daa] Command: /usr/bin/env mkdir -p /tmp
+  INFO [68b34985] Finished in 0.043 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-codeknows-production-louis0526.sh 0.0%
+  INFO Uploading /tmp/git-ssh-codeknows-production-louis0526.sh 100.0%
+  INFO [26d9477d] Running /usr/bin/env chmod 700 /tmp/git-ssh-codeknows-production-louis0526.sh as louis0526@45.76.56.242
+ DEBUG [26d9477d] Command: /usr/bin/env chmod 700 /tmp/git-ssh-codeknows-production-louis0526.sh
+  INFO [42006925] Finished in 0.043 seconds with exit status 0 (successful).
+  INFO [4e014921] Running /usr/bin/env git ls-remote https://github.com/louis0526/deployment.git HEAD as louis0526@45.76.56.242
+ DEBUG [4e014921] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-codeknows-production-louis0526.sh" ; /usr/bin/env git ls-remote https://github.com/louis0526/deployment.git HEAD )
+ DEBUG [2fe5a96e] 	4897b49c9cca39ad64dd769cdb74e81ad32e4b34	HEAD
+  INFO [2fe5a96e] Finished in 0.421 seconds with exit status 0 (successful).
+  INFO [de8bf7da] Running /usr/bin/env mkdir -p /home/louis0526/workspace/publish/codeknows/shared /home/louis0526/workspace/publish/codeknows/releases as louis0526@45.76.56.242
+ DEBUG [de8bf7da] Command: /usr/bin/env mkdir -p /home/louis0526/workspace/publish/codeknows/shared /home/louis0526/workspace/publish/codeknows/releases
+  INFO [afab0cfb] Finished in 0.045 seconds with exit status 0 (successful).
+  INFO [ed7901a6] Running /usr/bin/env mkdir -p /home/louis0526/workspace/publish/codeknows/shared/log /home/louis0526/workspace/publish/codeknows/shared/tmp/pids /home/louis0526/workspace/publish/codeknows/shared/tmp/cache /home/louis0526/workspace/publish/codeknows/shared/tmp/sockets /home/louis0526/workspace/publish/codeknows/shared/public/system /home/louis0526/workspace/publish/codeknows/shared/public/assets as louis0526@45.76.56.242
+ DEBUG [ed7901a6] Command: /usr/bin/env mkdir -p /home/louis0526/workspace/publish/codeknows/shared/log /home/louis0526/workspace/publish/codeknows/shared/tmp/pids /home/louis0526/workspace/publish/codeknows/shared/tmp/cache /home/louis0526/workspace/publish/codeknows/shared/tmp/sockets /home/louis0526/workspace/publish/codeknows/shared/public/system /home/louis0526/workspace/publish/codeknows/shared/public/assets
+  INFO [13615eee] Finished in 0.039 seconds with exit status 0 (successful).
+  INFO [652c7fdb] Running /usr/bin/env mkdir -p /home/louis0526/workspace/publish/codeknows/shared/config as louis0526@45.76.56.242
+ DEBUG [652c7fdb] Command: /usr/bin/env mkdir -p /home/louis0526/workspace/publish/codeknows/shared/config
+  INFO [fa8d6344] Finished in 0.041 seconds with exit status 0 (successful).
+ DEBUG [79094c05] Running [ -f /home/louis0526/workspace/publish/codeknows/shared/config/database.yml ] as louis0526@45.76.56.242
+ DEBUG [79094c05] Command: [ -f /home/louis0526/workspace/publish/codeknows/shared/config/database.yml ]
+ DEBUG [b3b5e5f8] Finished in 0.042 seconds with exit status 0 (successful).
+ DEBUG [1c926b03] Running [ -f /home/louis0526/workspace/publish/codeknows/shared/config/secrets.yml ] as louis0526@45.76.56.242
+ DEBUG [1c926b03] Command: [ -f /home/louis0526/workspace/publish/codeknows/shared/config/secrets.yml ]
+ DEBUG [3ef4c8dc] Finished in 0.044 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-01-13 13:23:58 +0000 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [64f91fb0] Running /usr/bin/env which passenger as louis0526@45.76.56.242
+ DEBUG [64f91fb0] Command: /usr/bin/env which passenger
+ DEBUG [9442a940] 	/usr/bin/passenger
+ DEBUG [9442a940] Finished in 3.238 seconds with exit status 0 (successful).
+ DEBUG [3b1fd5da] Running [ -d ~/.rvm ] as louis0526@45.76.56.242
+ DEBUG [3b1fd5da] Command: [ -d ~/.rvm ]
+ DEBUG [4661b1a0] Finished in 0.043 seconds with exit status 0 (successful).
+ DEBUG [d6717016] Running ~/.rvm/bin/rvm version as louis0526@45.76.56.242
+ DEBUG [d6717016] Command: ~/.rvm/bin/rvm version
+ DEBUG [5075cd44] 	rvm 1.29.7 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+ DEBUG [5075cd44] Finished in 0.323 seconds with exit status 0 (successful).
+ DEBUG [873b6403] Running ~/.rvm/bin/rvm current as louis0526@45.76.56.242
+ DEBUG [873b6403] Command: ~/.rvm/bin/rvm current
+ DEBUG [0c649fe3] 	ruby-2.2.2
+ DEBUG [0c649fe3] Finished in 0.305 seconds with exit status 0 (successful).
+ DEBUG [10980a51] Running ~/.rvm/bin/rvm default do ruby --version as louis0526@45.76.56.242
+ DEBUG [10980a51] Command: ~/.rvm/bin/rvm default do ruby --version
+ DEBUG [c926ef98] 	ruby 2.2.2p95 (2015-04-13 revision 50295) [x86_64-linux]
+ DEBUG [c926ef98] Finished in 0.550 seconds with exit status 0 (successful).
+  INFO [c9b9b1e0] Running /usr/bin/env mkdir -p /tmp as louis0526@45.76.56.242
+ DEBUG [c9b9b1e0] Command: /usr/bin/env mkdir -p /tmp
+  INFO [ddc179a4] Finished in 0.042 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-codeknows-production-louis0526.sh 0.0%
+  INFO Uploading /tmp/git-ssh-codeknows-production-louis0526.sh 100.0%
+  INFO [69d0caf3] Running /usr/bin/env chmod 700 /tmp/git-ssh-codeknows-production-louis0526.sh as louis0526@45.76.56.242
+ DEBUG [69d0caf3] Command: /usr/bin/env chmod 700 /tmp/git-ssh-codeknows-production-louis0526.sh
+  INFO [1d6d5b94] Finished in 0.044 seconds with exit status 0 (successful).
+  INFO [45a7706a] Running /usr/bin/env git ls-remote https://github.com/louis0526/deployment.git HEAD as louis0526@45.76.56.242
+ DEBUG [45a7706a] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-codeknows-production-louis0526.sh" ; /usr/bin/env git ls-remote https://github.com/louis0526/deployment.git HEAD )
+ DEBUG [e8c3670c] 	4897b49c9cca39ad64dd769cdb74e81ad32e4b34	HEAD
+  INFO [e8c3670c] Finished in 0.752 seconds with exit status 0 (successful).
+  INFO [af20b9e2] Running /usr/bin/env mkdir -p /home/louis0526/workspace/publish/codeknows/shared /home/louis0526/workspace/publish/codeknows/releases as louis0526@45.76.56.242
+ DEBUG [af20b9e2] Command: /usr/bin/env mkdir -p /home/louis0526/workspace/publish/codeknows/shared /home/louis0526/workspace/publish/codeknows/releases
+  INFO [abab22cb] Finished in 0.044 seconds with exit status 0 (successful).
+  INFO [38a3721f] Running /usr/bin/env mkdir -p /home/louis0526/workspace/publish/codeknows/shared/log /home/louis0526/workspace/publish/codeknows/shared/tmp/pids /home/louis0526/workspace/publish/codeknows/shared/tmp/cache /home/louis0526/workspace/publish/codeknows/shared/tmp/sockets /home/louis0526/workspace/publish/codeknows/shared/public/system /home/louis0526/workspace/publish/codeknows/shared/public/assets as louis0526@45.76.56.242
+ DEBUG [38a3721f] Command: /usr/bin/env mkdir -p /home/louis0526/workspace/publish/codeknows/shared/log /home/louis0526/workspace/publish/codeknows/shared/tmp/pids /home/louis0526/workspace/publish/codeknows/shared/tmp/cache /home/louis0526/workspace/publish/codeknows/shared/tmp/sockets /home/louis0526/workspace/publish/codeknows/shared/public/system /home/louis0526/workspace/publish/codeknows/shared/public/assets
+  INFO [eb930a9e] Finished in 0.041 seconds with exit status 0 (successful).
+  INFO [e562c263] Running /usr/bin/env mkdir -p /home/louis0526/workspace/publish/codeknows/shared/config as louis0526@45.76.56.242
+ DEBUG [e562c263] Command: /usr/bin/env mkdir -p /home/louis0526/workspace/publish/codeknows/shared/config
+  INFO [99fce5d9] Finished in 0.042 seconds with exit status 0 (successful).
+ DEBUG [751c7e89] Running [ -f /home/louis0526/workspace/publish/codeknows/shared/config/database.yml ] as louis0526@45.76.56.242
+ DEBUG [751c7e89] Command: [ -f /home/louis0526/workspace/publish/codeknows/shared/config/database.yml ]
+ DEBUG [16ea26ec] Finished in 0.043 seconds with exit status 0 (successful).
+ DEBUG [b812347d] Running [ -f /home/louis0526/workspace/publish/codeknows/shared/config/secrets.yml ] as louis0526@45.76.56.242
+ DEBUG [b812347d] Command: [ -f /home/louis0526/workspace/publish/codeknows/shared/config/secrets.yml ]
+ DEBUG [2a874143] Finished in 0.043 seconds with exit status 0 (successful).
+ DEBUG [8a8cebae] Running [ -f /home/louis0526/workspace/publish/codeknows/current/REVISION ] as louis0526@45.76.56.242
+ DEBUG [8a8cebae] Command: [ -f /home/louis0526/workspace/publish/codeknows/current/REVISION ]
+ DEBUG [a8f514f5] Finished in 0.043 seconds with exit status 1 (failed).
+ DEBUG [90b0cb83] Running [ -f /home/louis0526/workspace/publish/codeknows/repo/HEAD ] as louis0526@45.76.56.242
+ DEBUG [90b0cb83] Command: [ -f /home/louis0526/workspace/publish/codeknows/repo/HEAD ]
+ DEBUG [14a169be] Finished in 0.043 seconds with exit status 1 (failed).
+ DEBUG [c0fbe603] Running if test ! -d /home/louis0526/workspace/publish/codeknows; then echo "Directory does not exist '/home/louis0526/workspace/publish/codeknows'" 1>&2; false; fi as louis0526@45.76.56.242
+ DEBUG [c0fbe603] Command: if test ! -d /home/louis0526/workspace/publish/codeknows; then echo "Directory does not exist '/home/louis0526/workspace/publish/codeknows'" 1>&2; false; fi
+ DEBUG [4d2ba6c7] Finished in 0.044 seconds with exit status 0 (successful).
+  INFO [4a90d9d0] Running /usr/bin/env git clone --mirror https://github.com/louis0526/deployment.git /home/louis0526/workspace/publish/codeknows/repo as louis0526@45.76.56.242
+ DEBUG [4a90d9d0] Command: cd /home/louis0526/workspace/publish/codeknows && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-codeknows-production-louis0526.sh" ; /usr/bin/env git clone --mirror https://github.com/louis0526/deployment.git /home/louis0526/workspace/publish/codeknows/repo )
+ DEBUG [a47be450] 	Cloning into bare repository '/home/louis0526/workspace/publish/codeknows/repo'...
+  INFO [a47be450] Finished in 5.553 seconds with exit status 0 (successful).
+ DEBUG [0ac7d8b8] Running if test ! -d /home/louis0526/workspace/publish/codeknows/repo; then echo "Directory does not exist '/home/louis0526/workspace/publish/codeknows/repo'" 1>&2; false; fi as louis0526@45.76.56.242
+ DEBUG [0ac7d8b8] Command: if test ! -d /home/louis0526/workspace/publish/codeknows/repo; then echo "Directory does not exist '/home/louis0526/workspace/publish/codeknows/repo'" 1>&2; false; fi
+ DEBUG [7072ad1b] Finished in 0.041 seconds with exit status 0 (successful).
+  INFO [606b60d3] Running /usr/bin/env git remote set-url origin https://github.com/louis0526/deployment.git as louis0526@45.76.56.242
+ DEBUG [606b60d3] Command: cd /home/louis0526/workspace/publish/codeknows/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-codeknows-production-louis0526.sh" ; /usr/bin/env git remote set-url origin https://github.com/louis0526/deployment.git )
+  INFO [e6e906e3] Finished in 0.047 seconds with exit status 0 (successful).
+  INFO [952d42b3] Running /usr/bin/env git remote update --prune as louis0526@45.76.56.242
+ DEBUG [952d42b3] Command: cd /home/louis0526/workspace/publish/codeknows/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-codeknows-production-louis0526.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [f5be3628] 	Fetching origin
+  INFO [f5be3628] Finished in 0.444 seconds with exit status 0 (successful).
+ DEBUG [da3062a3] Running if test ! -d /home/louis0526/workspace/publish/codeknows/repo; then echo "Directory does not exist '/home/louis0526/workspace/publish/codeknows/repo'" 1>&2; false; fi as louis0526@45.76.56.242
+ DEBUG [da3062a3] Command: if test ! -d /home/louis0526/workspace/publish/codeknows/repo; then echo "Directory does not exist '/home/louis0526/workspace/publish/codeknows/repo'" 1>&2; false; fi
+ DEBUG [5972ab46] Finished in 0.042 seconds with exit status 0 (successful).
+  INFO [663c1a04] Running /usr/bin/env mkdir -p /home/louis0526/workspace/publish/codeknows/releases/20190113132404 as louis0526@45.76.56.242
+ DEBUG [663c1a04] Command: cd /home/louis0526/workspace/publish/codeknows/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-codeknows-production-louis0526.sh" ; /usr/bin/env mkdir -p /home/louis0526/workspace/publish/codeknows/releases/20190113132404 )
+  INFO [40793f10] Finished in 0.046 seconds with exit status 0 (successful).
+  INFO [4341ba63] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/louis0526/workspace/publish/codeknows/releases/20190113132404 as louis0526@45.76.56.242
+ DEBUG [4341ba63] Command: cd /home/louis0526/workspace/publish/codeknows/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-codeknows-production-louis0526.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/louis0526/workspace/publish/codeknows/releases/20190113132404 )
+  INFO [952183fe] Finished in 3.886 seconds with exit status 0 (successful).
+ DEBUG [5a37a3ee] Running if test ! -d /home/louis0526/workspace/publish/codeknows/repo; then echo "Directory does not exist '/home/louis0526/workspace/publish/codeknows/repo'" 1>&2; false; fi as louis0526@45.76.56.242
+ DEBUG [5a37a3ee] Command: if test ! -d /home/louis0526/workspace/publish/codeknows/repo; then echo "Directory does not exist '/home/louis0526/workspace/publish/codeknows/repo'" 1>&2; false; fi
+ DEBUG [df862f40] Finished in 0.044 seconds with exit status 0 (successful).
+ DEBUG [5bc7e64d] Running /usr/bin/env git rev-list --max-count=1 master as louis0526@45.76.56.242
+ DEBUG [5bc7e64d] Command: cd /home/louis0526/workspace/publish/codeknows/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-codeknows-production-louis0526.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [1ebdbb4a] 	4897b49c9cca39ad64dd769cdb74e81ad32e4b34
+ DEBUG [1ebdbb4a] Finished in 0.054 seconds with exit status 0 (successful).
+ DEBUG [379ec4ef] Running if test ! -d /home/louis0526/workspace/publish/codeknows/releases/20190113132404; then echo "Directory does not exist '/home/louis0526/workspace/publish/codeknows/releases/20190113132404'" 1>&2; false; fi as louis0526@45.76.56.242
+ DEBUG [379ec4ef] Command: if test ! -d /home/louis0526/workspace/publish/codeknows/releases/20190113132404; then echo "Directory does not exist '/home/louis0526/workspace/publish/codeknows/releases/20190113132404'" 1>&2; false; fi
+ DEBUG [77331684] Finished in 0.041 seconds with exit status 0 (successful).
+  INFO [f076f787] Running /usr/bin/env echo "4897b49c9cca39ad64dd769cdb74e81ad32e4b34" > REVISION as louis0526@45.76.56.242
+ DEBUG [f076f787] Command: cd /home/louis0526/workspace/publish/codeknows/releases/20190113132404 && /usr/bin/env echo "4897b49c9cca39ad64dd769cdb74e81ad32e4b34" > REVISION
+  INFO [71f6bce9] Finished in 0.045 seconds with exit status 0 (successful).
+  INFO [48b69df7] Running /usr/bin/env mkdir -p /home/louis0526/workspace/publish/codeknows/releases/20190113132404/config as louis0526@45.76.56.242
+ DEBUG [48b69df7] Command: /usr/bin/env mkdir -p /home/louis0526/workspace/publish/codeknows/releases/20190113132404/config
+  INFO [1701d60e] Finished in 0.041 seconds with exit status 0 (successful).
+ DEBUG [3679bff0] Running [ -L /home/louis0526/workspace/publish/codeknows/releases/20190113132404/config/database.yml ] as louis0526@45.76.56.242
+ DEBUG [3679bff0] Command: [ -L /home/louis0526/workspace/publish/codeknows/releases/20190113132404/config/database.yml ]
+ DEBUG [ef52652f] Finished in 0.043 seconds with exit status 1 (failed).
+ DEBUG [33bade8e] Running [ -f /home/louis0526/workspace/publish/codeknows/releases/20190113132404/config/database.yml ] as louis0526@45.76.56.242
+ DEBUG [33bade8e] Command: [ -f /home/louis0526/workspace/publish/codeknows/releases/20190113132404/config/database.yml ]
+ DEBUG [46539daf] Finished in 0.044 seconds with exit status 0 (successful).
+  INFO [78fba3d3] Running /usr/bin/env rm /home/louis0526/workspace/publish/codeknows/releases/20190113132404/config/database.yml as louis0526@45.76.56.242
+ DEBUG [78fba3d3] Command: /usr/bin/env rm /home/louis0526/workspace/publish/codeknows/releases/20190113132404/config/database.yml
+  INFO [8ff78ca4] Finished in 0.045 seconds with exit status 0 (successful).
+  INFO [bc0246e6] Running /usr/bin/env ln -s /home/louis0526/workspace/publish/codeknows/shared/config/database.yml /home/louis0526/workspace/publish/codeknows/releases/20190113132404/config/database.yml as louis0526@45.76.56.242
+ DEBUG [bc0246e6] Command: /usr/bin/env ln -s /home/louis0526/workspace/publish/codeknows/shared/config/database.yml /home/louis0526/workspace/publish/codeknows/releases/20190113132404/config/database.yml
+  INFO [b0d8809d] Finished in 0.043 seconds with exit status 0 (successful).
+ DEBUG [5f8efe87] Running [ -L /home/louis0526/workspace/publish/codeknows/releases/20190113132404/config/secrets.yml ] as louis0526@45.76.56.242
+ DEBUG [5f8efe87] Command: [ -L /home/louis0526/workspace/publish/codeknows/releases/20190113132404/config/secrets.yml ]
+ DEBUG [97c282b6] Finished in 0.041 seconds with exit status 1 (failed).
+ DEBUG [86e70312] Running [ -f /home/louis0526/workspace/publish/codeknows/releases/20190113132404/config/secrets.yml ] as louis0526@45.76.56.242
+ DEBUG [86e70312] Command: [ -f /home/louis0526/workspace/publish/codeknows/releases/20190113132404/config/secrets.yml ]
+ DEBUG [34465350] Finished in 0.044 seconds with exit status 0 (successful).
+  INFO [6c59625b] Running /usr/bin/env rm /home/louis0526/workspace/publish/codeknows/releases/20190113132404/config/secrets.yml as louis0526@45.76.56.242
+ DEBUG [6c59625b] Command: /usr/bin/env rm /home/louis0526/workspace/publish/codeknows/releases/20190113132404/config/secrets.yml
+  INFO [9bbb048d] Finished in 0.044 seconds with exit status 0 (successful).
+  INFO [147914d0] Running /usr/bin/env ln -s /home/louis0526/workspace/publish/codeknows/shared/config/secrets.yml /home/louis0526/workspace/publish/codeknows/releases/20190113132404/config/secrets.yml as louis0526@45.76.56.242
+ DEBUG [147914d0] Command: /usr/bin/env ln -s /home/louis0526/workspace/publish/codeknows/shared/config/secrets.yml /home/louis0526/workspace/publish/codeknows/releases/20190113132404/config/secrets.yml
+  INFO [96c94554] Finished in 0.043 seconds with exit status 0 (successful).
+  INFO [09d79ba7] Running /usr/bin/env mkdir -p /home/louis0526/workspace/publish/codeknows/releases/20190113132404 /home/louis0526/workspace/publish/codeknows/releases/20190113132404/tmp /home/louis0526/workspace/publish/codeknows/releases/20190113132404/public as louis0526@45.76.56.242
+ DEBUG [09d79ba7] Command: /usr/bin/env mkdir -p /home/louis0526/workspace/publish/codeknows/releases/20190113132404 /home/louis0526/workspace/publish/codeknows/releases/20190113132404/tmp /home/louis0526/workspace/publish/codeknows/releases/20190113132404/public
+  INFO [f70fc673] Finished in 0.040 seconds with exit status 0 (successful).
+ DEBUG [c1a14646] Running [ -L /home/louis0526/workspace/publish/codeknows/releases/20190113132404/log ] as louis0526@45.76.56.242
+ DEBUG [c1a14646] Command: [ -L /home/louis0526/workspace/publish/codeknows/releases/20190113132404/log ]
+ DEBUG [a3731fbb] Finished in 0.042 seconds with exit status 1 (failed).
+ DEBUG [335ed351] Running [ -d /home/louis0526/workspace/publish/codeknows/releases/20190113132404/log ] as louis0526@45.76.56.242
+ DEBUG [335ed351] Command: [ -d /home/louis0526/workspace/publish/codeknows/releases/20190113132404/log ]
+ DEBUG [d45f3a4f] Finished in 0.042 seconds with exit status 0 (successful).
+  INFO [b8db009f] Running /usr/bin/env rm -rf /home/louis0526/workspace/publish/codeknows/releases/20190113132404/log as louis0526@45.76.56.242
+ DEBUG [b8db009f] Command: /usr/bin/env rm -rf /home/louis0526/workspace/publish/codeknows/releases/20190113132404/log
+  INFO [706adf6d] Finished in 0.042 seconds with exit status 0 (successful).
+  INFO [a7d49327] Running /usr/bin/env ln -s /home/louis0526/workspace/publish/codeknows/shared/log /home/louis0526/workspace/publish/codeknows/releases/20190113132404/log as louis0526@45.76.56.242
+ DEBUG [a7d49327] Command: /usr/bin/env ln -s /home/louis0526/workspace/publish/codeknows/shared/log /home/louis0526/workspace/publish/codeknows/releases/20190113132404/log
+  INFO [52196998] Finished in 0.045 seconds with exit status 0 (successful).
+ DEBUG [8c46abfb] Running [ -L /home/louis0526/workspace/publish/codeknows/releases/20190113132404/tmp/pids ] as louis0526@45.76.56.242
+ DEBUG [8c46abfb] Command: [ -L /home/louis0526/workspace/publish/codeknows/releases/20190113132404/tmp/pids ]
+ DEBUG [683ddcd4] Finished in 0.040 seconds with exit status 1 (failed).
+ DEBUG [40ed4e02] Running [ -d /home/louis0526/workspace/publish/codeknows/releases/20190113132404/tmp/pids ] as louis0526@45.76.56.242
+ DEBUG [40ed4e02] Command: [ -d /home/louis0526/workspace/publish/codeknows/releases/20190113132404/tmp/pids ]
+ DEBUG [d92995b6] Finished in 0.043 seconds with exit status 1 (failed).
+  INFO [5a09b9a9] Running /usr/bin/env ln -s /home/louis0526/workspace/publish/codeknows/shared/tmp/pids /home/louis0526/workspace/publish/codeknows/releases/20190113132404/tmp/pids as louis0526@45.76.56.242
+ DEBUG [5a09b9a9] Command: /usr/bin/env ln -s /home/louis0526/workspace/publish/codeknows/shared/tmp/pids /home/louis0526/workspace/publish/codeknows/releases/20190113132404/tmp/pids
+  INFO [de64a544] Finished in 0.044 seconds with exit status 0 (successful).
+ DEBUG [ebffb7d3] Running [ -L /home/louis0526/workspace/publish/codeknows/releases/20190113132404/tmp/cache ] as louis0526@45.76.56.242
+ DEBUG [ebffb7d3] Command: [ -L /home/louis0526/workspace/publish/codeknows/releases/20190113132404/tmp/cache ]
+ DEBUG [2cbd0931] Finished in 0.042 seconds with exit status 1 (failed).
+ DEBUG [46736ca6] Running [ -d /home/louis0526/workspace/publish/codeknows/releases/20190113132404/tmp/cache ] as louis0526@45.76.56.242
+ DEBUG [46736ca6] Command: [ -d /home/louis0526/workspace/publish/codeknows/releases/20190113132404/tmp/cache ]
+ DEBUG [7e97a6c1] Finished in 0.044 seconds with exit status 0 (successful).
+  INFO [eb67309b] Running /usr/bin/env rm -rf /home/louis0526/workspace/publish/codeknows/releases/20190113132404/tmp/cache as louis0526@45.76.56.242
+ DEBUG [eb67309b] Command: /usr/bin/env rm -rf /home/louis0526/workspace/publish/codeknows/releases/20190113132404/tmp/cache
+  INFO [837de1b6] Finished in 0.048 seconds with exit status 0 (successful).
+  INFO [433e0b23] Running /usr/bin/env ln -s /home/louis0526/workspace/publish/codeknows/shared/tmp/cache /home/louis0526/workspace/publish/codeknows/releases/20190113132404/tmp/cache as louis0526@45.76.56.242
+ DEBUG [433e0b23] Command: /usr/bin/env ln -s /home/louis0526/workspace/publish/codeknows/shared/tmp/cache /home/louis0526/workspace/publish/codeknows/releases/20190113132404/tmp/cache
+  INFO [5ce55f94] Finished in 0.043 seconds with exit status 0 (successful).
+ DEBUG [c6fe515b] Running [ -L /home/louis0526/workspace/publish/codeknows/releases/20190113132404/tmp/sockets ] as louis0526@45.76.56.242
+ DEBUG [c6fe515b] Command: [ -L /home/louis0526/workspace/publish/codeknows/releases/20190113132404/tmp/sockets ]
+ DEBUG [50497eb9] Finished in 0.042 seconds with exit status 1 (failed).
+ DEBUG [d9c455fb] Running [ -d /home/louis0526/workspace/publish/codeknows/releases/20190113132404/tmp/sockets ] as louis0526@45.76.56.242
+ DEBUG [d9c455fb] Command: [ -d /home/louis0526/workspace/publish/codeknows/releases/20190113132404/tmp/sockets ]
+ DEBUG [181f64c4] Finished in 0.045 seconds with exit status 1 (failed).
+  INFO [442d190f] Running /usr/bin/env ln -s /home/louis0526/workspace/publish/codeknows/shared/tmp/sockets /home/louis0526/workspace/publish/codeknows/releases/20190113132404/tmp/sockets as louis0526@45.76.56.242
+ DEBUG [442d190f] Command: /usr/bin/env ln -s /home/louis0526/workspace/publish/codeknows/shared/tmp/sockets /home/louis0526/workspace/publish/codeknows/releases/20190113132404/tmp/sockets
+  INFO [2bb5894c] Finished in 0.043 seconds with exit status 0 (successful).
+ DEBUG [98a87b7d] Running [ -L /home/louis0526/workspace/publish/codeknows/releases/20190113132404/public/system ] as louis0526@45.76.56.242
+ DEBUG [98a87b7d] Command: [ -L /home/louis0526/workspace/publish/codeknows/releases/20190113132404/public/system ]
+ DEBUG [a4dc5473] Finished in 0.044 seconds with exit status 1 (failed).
+ DEBUG [1d032721] Running [ -d /home/louis0526/workspace/publish/codeknows/releases/20190113132404/public/system ] as louis0526@45.76.56.242
+ DEBUG [1d032721] Command: [ -d /home/louis0526/workspace/publish/codeknows/releases/20190113132404/public/system ]
+ DEBUG [69966a6a] Finished in 0.043 seconds with exit status 1 (failed).
+  INFO [ba1ea8d1] Running /usr/bin/env ln -s /home/louis0526/workspace/publish/codeknows/shared/public/system /home/louis0526/workspace/publish/codeknows/releases/20190113132404/public/system as louis0526@45.76.56.242
+ DEBUG [ba1ea8d1] Command: /usr/bin/env ln -s /home/louis0526/workspace/publish/codeknows/shared/public/system /home/louis0526/workspace/publish/codeknows/releases/20190113132404/public/system
+  INFO [062bce36] Finished in 0.044 seconds with exit status 0 (successful).
+ DEBUG [114a46c9] Running [ -L /home/louis0526/workspace/publish/codeknows/releases/20190113132404/public/assets ] as louis0526@45.76.56.242
+ DEBUG [114a46c9] Command: [ -L /home/louis0526/workspace/publish/codeknows/releases/20190113132404/public/assets ]
+ DEBUG [e3353cea] Finished in 0.042 seconds with exit status 1 (failed).
+ DEBUG [99639fbf] Running [ -d /home/louis0526/workspace/publish/codeknows/releases/20190113132404/public/assets ] as louis0526@45.76.56.242
+ DEBUG [99639fbf] Command: [ -d /home/louis0526/workspace/publish/codeknows/releases/20190113132404/public/assets ]
+ DEBUG [34c05288] Finished in 0.044 seconds with exit status 0 (successful).
+  INFO [d45474d8] Running /usr/bin/env rm -rf /home/louis0526/workspace/publish/codeknows/releases/20190113132404/public/assets as louis0526@45.76.56.242
+ DEBUG [d45474d8] Command: /usr/bin/env rm -rf /home/louis0526/workspace/publish/codeknows/releases/20190113132404/public/assets
+  INFO [79e30db1] Finished in 0.067 seconds with exit status 0 (successful).
+  INFO [884c73dd] Running /usr/bin/env ln -s /home/louis0526/workspace/publish/codeknows/shared/public/assets /home/louis0526/workspace/publish/codeknows/releases/20190113132404/public/assets as louis0526@45.76.56.242
+ DEBUG [884c73dd] Command: /usr/bin/env ln -s /home/louis0526/workspace/publish/codeknows/shared/public/assets /home/louis0526/workspace/publish/codeknows/releases/20190113132404/public/assets
+  INFO [6aae8a9f] Finished in 0.041 seconds with exit status 0 (successful).
+ DEBUG [2e90e3e0] Running if test ! -d /home/louis0526/workspace/publish/codeknows/releases/20190113132404; then echo "Directory does not exist '/home/louis0526/workspace/publish/codeknows/releases/20190113132404'" 1>&2; false; fi as louis0526@45.76.56.242
+ DEBUG [2e90e3e0] Command: if test ! -d /home/louis0526/workspace/publish/codeknows/releases/20190113132404; then echo "Directory does not exist '/home/louis0526/workspace/publish/codeknows/releases/20190113132404'" 1>&2; false; fi
+ DEBUG [3850adc7] Finished in 0.042 seconds with exit status 0 (successful).
+ DEBUG [4d405f72] Running ~/.rvm/bin/rvm default do bundle check --path /home/louis0526/workspace/publish/codeknows/shared/bundle as louis0526@45.76.56.242
+ DEBUG [4d405f72] Command: cd /home/louis0526/workspace/publish/codeknows/releases/20190113132404 && ~/.rvm/bin/rvm default do bundle check --path /home/louis0526/workspace/publish/codeknows/shared/bundle
+ DEBUG [77baaa15] 	The following gems are missing
+ DEBUG [77baaa15] 	 * rake (10.5.0)
+ DEBUG [77baaa15] 	 * CFPropertyList (2.3.1)
+ DEBUG [77baaa15] 	 * concurrent-ruby (1.1.4)
+ DEBUG [77baaa15] 	 * i18n (0.9.5)
+ DEBUG [77baaa15] 	 * multi_json (1.13.1)
+ DEBUG [77baaa15] 	 * activesupport (3.2.22)
+ DEBUG [77baaa15] 	 * builder (3.0.4)
+ DEBUG [77baaa15] 	 * activemodel (3.2.22)
+ DEBUG [77baaa15] 	 * erubis (2.7.0)
+ DEBUG [77baaa15] 	 * journey (1.0.4)
+ DEBUG [77baaa15] 	 * rack (1.4.7)
+ DEBUG [77baaa15] 	 * rack-cache (1.8.0)
+ DEBUG [77baaa15] 	 * rack-test (0.6.3)
+ DEBUG [77baaa15] 	 * hike (1.2.3)
+ DEBUG [77baaa15] 	 * tilt (1.4.1)
+ DEBUG [77baaa15] 	 * sprockets (2.2.3)
+ DEBUG [77baaa15] 	 * actionpack (3.2.22)
+ DEBUG [77baaa15] 	 * mime-types (1.25.1)
+ DEBUG [77baaa15] 	 * polyglot (0.3.5)
+ DEBUG [77baaa15] 	 * treetop (1.4.15)
+ DEBUG [77baaa15] 	 * mail (2.5.5)
+ DEBUG [77baaa15] 	 * actionmailer (3.2.22)
+ DEBUG [77baaa15] 	 * arel (3.0.3)
+ DEBUG [77baaa15] 	 * tzinfo (0.3.55)
+ DEBUG [77baaa15] 	 * activerecord (3.2.22)
+ DEBUG [77baaa15] 	 * activerecord-postgres-json (0.2.1)
+ DEBUG [77baaa15] 	 * activeresource (3.2.22)
+ DEBUG [77baaa15] 	 * acts-as-taggable-on (3.5.0)
+ DEBUG [77baaa15] 	 * acts_as_follower (0.1.1)
+ DEBUG [77baaa15] 	 * addressable (2.3.8)
+ DEBUG [77baaa15] 	 * net-ssh (4.2.0)
+ DEBUG [77baaa15] 	 * net-scp (1.2.1)
+ DEBUG [77baaa15] 	 * sshkit (1.18.0)
+ DEBUG [77baaa15] 	 * airbrussh (1.3.1)
+ DEBUG [77baaa15] 	 * ansi (1.5.0)
+ DEBUG [77baaa15] 	 * execjs (2.5.2)
+ DEBUG [77baaa15] 	 * json (1.8.6)
+ DEBUG [77baaa15] 	 * autoprefixer-rails (5.2.1)
+ DEBUG [77baaa15] 	 * awesome_print (1.6.1)
+ DEBUG [77baaa15] 	 * buftok (0.2.0)
+ DEBUG [77baaa15] 	 * bugsnag (2.8.10)
+ DEBUG [77baaa15] 	 * capistrano (3.11.0)
+ DEBUG [77baaa15] 	 * capistrano-bundler (1.5.0)
+ DEBUG [77baaa15] 	 * capistrano-passenger (0.2.0)
+ DEBUG [77baaa15] 	 * capistrano-rails (1.4.0)
+ DEBUG [77baaa15] 	 * capistrano-rbenv (2.1.4)
+ DEBUG [77baaa15] 	 * capistrano-rvm (0.1.2)
+ DEBUG [77baaa15] 	 * carrierwave (0.10.0)
+ DEBUG [77baaa15] 	 * carrierwave_backgrounder (0.4.1)
+ DEBUG [77baaa15] 	 * hitimes (1.2.2)
+ DEBUG [77baaa15] 	 * timers (4.0.1)
+ DEBUG [77baaa15] 	 * celluloid (0.16.0)
+ DEBUG [77baaa15] 	 * chronic (0.10.2)
+ DEBUG [77baaa15] 	 * chunky_png (1.3.4)
+ DEBUG [77baaa15] 	 * clockwork (1.2.0)
+ DEBUG [77baaa15] 	 * thread_safe (0.3.5)
+ DEBUG [77baaa15] 	 * with_advisory_lock (3.0.0)
+ DEBUG [77baaa15] 	 * closure_tree (5.2.0)
+ DEBUG [77baaa15] 	 * coffee-script-source (1.9.1.1)
+ DEBUG [77baaa15] 	 * coffee-script (2.4.1)
+ DEBUG [77baaa15] 	 * rack-ssl (1.3.4)
+ DEBUG [77baaa15] 	 * rdoc (3.12.2)
+ DEBUG [77baaa15] 	 * thor (0.19.4)
+ DEBUG [77baaa15] 	 * railties (3.2.22)
+ DEBUG [77baaa15] 	 * coffee-rails (3.2.2)
+ DEBUG [77baaa15] 	 * sass (3.4.16)
+ DEBUG [77baaa15] 	 * compass-core (1.0.3)
+ DEBUG [77baaa15] 	 * compass-import-once (1.0.5)
+ DEBUG [77baaa15] 	 * rb-fsevent (0.9.5)
+ DEBUG [77baaa15] 	 * ffi (1.9.10)
+ DEBUG [77baaa15] 	 * rb-inotify (0.9.5)
+ DEBUG [77baaa15] 	 * compass (1.0.3)
+ DEBUG [77baaa15] 	 * sass-rails (3.2.6)
+ DEBUG [77baaa15] 	 * compass-rails (2.0.4)
+ DEBUG [77baaa15] 	 * connection_pool (2.2.0)
+ DEBUG [77baaa15] 	 * crass (1.0.2)
+ DEBUG [77baaa15] 	 * curb (0.8.8)
+ DEBUG [77baaa15] 	 * descendants_tracker (0.0.4)
+ DEBUG [77baaa15] 	 * diff-lcs (1.3)
+ DEBUG [77baaa15] 	 * unf_ext (0.0.7.1)
+ DEBUG [77baaa15] 	 * unf (0.1.4)
+ DEBUG [77baaa15] 	 * domain_name (0.5.24)
+ DEBUG [77baaa15] 	 * elasticsearch-api (1.0.12)
+ DEBUG [77baaa15] 	 * multipart-post (1.2.0)
+ DEBUG [77baaa15] 	 * faraday (0.8.9)
+ DEBUG [77baaa15] 	 * elasticsearch-transport (1.0.12)
+ DEBUG [77baaa15] 	 * elasticsearch (1.0.12)
+ DEBUG [77baaa15] 	 * hashie (2.1.2)
+ DEBUG [77baaa15] 	 * elasticsearch-model (0.1.7)
+ DEBUG [77baaa15] 	 * elasticsearch-rails (0.1.7)
+ DEBUG [77baaa15] 	 * equalizer (0.0.11)
+ DEBUG [77baaa15] 	 * escape (0.0.4)
+ DEBUG [77baaa15] 	 * excon (0.45.4)
+ DEBUG [77baaa15] 	 * mini_portile (0.6.2)
+ DEBUG [77baaa15] 	 * nokogiri (1.6.6.2)
+ DEBUG [77baaa15] 	 * loofah (2.0.2)
+ DEBUG [77baaa15] 	 * sax-machine (1.3.2)
+ DEBUG [77baaa15] 	 * feedjira (1.6.0)
+ DEBUG [77baaa15] 	 * fission (0.5.0)
+ DEBUG [77baaa15] 	 * formatador (0.2.5)
+ DEBUG [77baaa15] 	 * fog-core (1.32.0)
+ DEBUG [77baaa15] 	 * fog-xml (0.1.2)
+ DEBUG [77baaa15] 	 * fog-atmos (0.1.0)
+ DEBUG [77baaa15] 	 * fog-json (1.0.2)
+ DEBUG [77baaa15] 	 * ipaddress (0.8.0)
+ DEBUG [77baaa15] 	 * fog-aws (0.7.3)
+ DEBUG [77baaa15] 	 * inflecto (0.0.2)
+ DEBUG [77baaa15] 	 * fog-brightbox (0.7.2)
+ DEBUG [77baaa15] 	 * fog-ecloud (0.1.1)
+ DEBUG [77baaa15] 	 * fog-google (0.0.7)
+ DEBUG [77baaa15] 	 * fog-local (0.2.1)
+ DEBUG [77baaa15] 	 * fog-powerdns (0.1.1)
+ DEBUG [77baaa15] 	 * fog-profitbricks (0.0.3)
+ DEBUG [77baaa15] 	 * fog-radosgw (0.0.4)
+ DEBUG [77baaa15] 	 * fog-riakcs (0.1.0)
+ DEBUG [77baaa15] 	 * fog-sakuracloud (1.0.1)
+ DEBUG [77baaa15] 	 * fog-serverlove (0.1.2)
+ DEBUG [77baaa15] 	 * fog-softlayer (0.4.7)
+ DEBUG [77baaa15] 	 * fog-storm_on_demand (0.1.1)
+ DEBUG [77baaa15] 	 * fog-terremark (0.1.0)
+ DEBUG [77baaa15] 	 * fog-vmfusion (0.1.0)
+ DEBUG [77baaa15] 	 * fog-voxel (0.1.0)
+ DEBUG [77baaa15] 	 * fog (1.32.0)
+ DEBUG [77baaa15] 	 * foreigner (1.7.4)
+ DEBUG [77baaa15] 	 * foreman (0.78.0)
+ DEBUG [77baaa15] 	 * friendly_id (4.0.10.1)
+ DEBUG [77baaa15] 	 * geocoder (1.2.9)
+ DEBUG [77baaa15] 	 * github-markdown (0.6.8)
+ DEBUG [77baaa15] 	 * oauth (0.4.7)
+ DEBUG [77baaa15] 	 * grackle (0.3.0)
+ DEBUG [77baaa15] 	 * haml (4.0.6)
+ DEBUG [77baaa15] 	 * hashr (0.0.22)
+ DEBUG [77baaa15] 	 * heroku-deflater (0.5.3)
+ DEBUG [77baaa15] 	 * http_parser.rb (0.6.0)
+ DEBUG [77baaa15] 	 * http (0.5.1)
+ DEBUG [77baaa15] 	 * http-cookie (1.0.2)
+ DEBUG [77baaa15] 	 * httpauth (0.2.1)
+ DEBUG [77baaa15] 	 * jbuilder (2.3.1)
+ DEBUG [77baaa15] 	 * jquery-rails (2.0.3)
+ DEBUG [77baaa15] 	 * jwt (0.1.13)
+ DEBUG [77baaa15] 	 * kaminari (0.16.3)
+ DEBUG [77baaa15] 	 * kramdown (1.8.0)
+ DEBUG [77baaa15] 	 * linkedin (0.4.7)
+ DEBUG [77baaa15] 	 * local_time (1.0.2)
+ DEBUG [77baaa15] 	 * mail_view (2.0.4)
+ DEBUG [77baaa15] 	 * materialize-sass (0.97.0)
+ DEBUG [77baaa15] 	 * memoizable (0.4.2)
+ DEBUG [77baaa15] 	 * rails (3.2.22)
+ DEBUG [77baaa15] 	 * metamagic (3.1.7)
+ DEBUG [77baaa15] 	 * mini_magick (4.2.7)
+ DEBUG [77baaa15] 	 * mixpanel (4.1.1)
+ DEBUG [77baaa15] 	 * netrc (0.10.3)
+ DEBUG [77baaa15] 	 * never_wastes (1.0.0)
+ DEBUG [77baaa15] 	 * newrelic_rpm (3.12.1.298)
+ DEBUG [77baaa15] 	 * nokogumbo (1.4.1)
+ DEBUG [77baaa15] 	 * oauth2 (0.8.1)
+ DEBUG [77baaa15] 	 * sawyer (0.6.0)
+ DEBUG [77baaa15] 	 * octokit (4.0.1)
+ DEBUG [77baaa15] 	 * oj (2.16.1)
+ DEBUG [77baaa15] 	 * omniauth (1.1.4)
+ DEBUG [77baaa15] 	 * omniauth-oauth2 (1.1.1)
+ DEBUG [77baaa15] 	 * omniauth-facebook (1.6.0)
+ DEBUG [77baaa15] 	 * omniauth-github (1.1.2)
+ DEBUG [77baaa15] 	 * omniauth-oauth (1.1.0)
+ DEBUG [77baaa15] 	 * omniauth-linkedin (0.0.8)
+ DEBUG [77baaa15] 	 * omniauth-twitter (0.0.18)
+ DEBUG [77baaa15] 	 * pg (0.18.2)
+ DEBUG [77baaa15] 	 * pg_array_parser (0.0.9)
+ DEBUG [77baaa15] 	 * postgres_ext (1.0.0)
+ DEBUG [77baaa15] 	 * power_assert (0.2.3)
+ DEBUG [77baaa15] 	 * puma (3.12.0)
+ DEBUG [77baaa15] 	 * rack-protection (1.5.3)
+ DEBUG [77baaa15] 	 * rails-assets-font-awesome (4.3.0)
+ DEBUG [77baaa15] 	 * rails-assets-jquery (2.1.4)
+ DEBUG [77baaa15] 	 * rails-assets-jquery-cookie (1.4.0)
+ DEBUG [77baaa15] 	 * rails-assets-jquery-dropdown (2.0.0)
+ DEBUG [77baaa15] 	 * rails_serve_static_assets (0.0.4)
+ DEBUG [77baaa15] 	 * rails_stdout_logging (0.0.3)
+ DEBUG [77baaa15] 	 * rails_12factor (0.0.3)
+ DEBUG [77baaa15] 	 * rails_latest (0.0.2)
+ DEBUG [77baaa15] 	 * rakismet (1.5.1)
+ DEBUG [77baaa15] 	 * redcarpet (3.3.4)
+ DEBUG [77baaa15] 	 * redis (3.2.1)
+ DEBUG [77baaa15] 	 * redis-store (1.1.5)
+ DEBUG [77baaa15] 	 * redis-rack (1.4.4)
+ DEBUG [77baaa15] 	 * redis-actionpack (3.2.4)
+ DEBUG [77baaa15] 	 * redis-activesupport (3.2.5)
+ DEBUG [77baaa15] 	 * redis-namespace (1.5.2)
+ DEBUG [77baaa15] 	 * redis-rails (3.2.4)
+ DEBUG [77baaa15] 	 * rest-client (1.8.0)
+ DEBUG [77baaa15] 	 * rspec-support (3.3.0)
+ DEBUG [77baaa15] 	 * rspec-core (3.3.2)
+ DEBUG [77baaa15] 	 * rspec-expectations (3.3.1)
+ DEBUG [77baaa15] 	 * rspec-mocks (3.3.2)
+ DEBUG [77baaa15] 	 * rspec (3.3.0)
+ DEBUG [77baaa15] 	 * sanitize (4.0.0)
+ DEBUG [77baaa15] 	 * selectize-rails (0.12.1)
+ DEBUG [77baaa15] 	 * sidekiq (3.4.2)
+ DEBUG [77baaa15] 	 * simple_form (2.1.3)
+ DEBUG [77baaa15] 	 * simple_oauth (0.2.0)
+ DEBUG [77baaa15] 	 * sinatra (1.4.6)
+ DEBUG [77baaa15] 	 * sitemap_generator (5.1.0)
+ DEBUG [77baaa15] 	 * temple (0.7.6)
+ DEBUG [77baaa15] 	 * slim (3.0.6)
+ DEBUG [77baaa15] 	 * slim-rails (3.0.1)
+ DEBUG [77baaa15] 	 * state_machine (1.2.0)
+ DEBUG [77baaa15] 	 * stripe (1.20.1)
+ DEBUG [77baaa15] 	 * strong_parameters (0.2.3)
+ DEBUG [77baaa15] 	 * test-unit (3.1.2)
+ DEBUG [77baaa15] 	 * tire (0.6.2)
+ DEBUG [77baaa15] 	 * tweet-button (0.1.0)
+ DEBUG [77baaa15] 	 * twitter (5.5.1)
+ DEBUG [77baaa15] 	 * uglifier (2.7.1)
+ DEBUG [77baaa15] 	Install missing gems with `bundle install`
+ DEBUG [77baaa15] Finished in 1.431 seconds with exit status 1 (failed).
+  INFO [ec128083] Running ~/.rvm/bin/rvm default do bundle install --path /home/louis0526/workspace/publish/codeknows/shared/bundle --jobs 4 --without development test --deployment --quiet as louis0526@45.76.56.242
+ DEBUG [ec128083] Command: cd /home/louis0526/workspace/publish/codeknows/releases/20190113132404 && ~/.rvm/bin/rvm default do bundle install --path /home/louis0526/workspace/publish/codeknows/shared/bundle --jobs 4 --without development test --deployment --quiet
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-01-13 14:18:11 +0000 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [40592a41] Running /usr/bin/env which passenger as louis0526@45.76.56.242
+ DEBUG [40592a41] Command: /usr/bin/env which passenger
+ DEBUG [314310ef] 	/usr/bin/passenger
+ DEBUG [314310ef] Finished in 3.514 seconds with exit status 0 (successful).
+ DEBUG [173baf78] Running [ -d ~/.rvm ] as louis0526@45.76.56.242
+ DEBUG [173baf78] Command: [ -d ~/.rvm ]
+ DEBUG [899d61e5] Finished in 0.041 seconds with exit status 0 (successful).
+ DEBUG [b66d6d92] Running ~/.rvm/bin/rvm version as louis0526@45.76.56.242
+ DEBUG [b66d6d92] Command: ~/.rvm/bin/rvm version
+ DEBUG [692b5829] 	rvm 1.29.7 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
+ DEBUG [692b5829] Finished in 0.253 seconds with exit status 0 (successful).
+ DEBUG [6f9cabe0] Running ~/.rvm/bin/rvm current as louis0526@45.76.56.242
+ DEBUG [6f9cabe0] Command: ~/.rvm/bin/rvm current
+ DEBUG [1a527394] 	ruby-2.2.2
+ DEBUG [1a527394] Finished in 0.236 seconds with exit status 0 (successful).
+ DEBUG [74bfe22f] Running ~/.rvm/bin/rvm default do ruby --version as louis0526@45.76.56.242
+ DEBUG [74bfe22f] Command: ~/.rvm/bin/rvm default do ruby --version
+ DEBUG [6a72d86e] 	ruby 2.2.2p95 (2015-04-13 revision 50295) [x86_64-linux]
+ DEBUG [6a72d86e] Finished in 0.415 seconds with exit status 0 (successful).
+  INFO [c998e35e] Running /usr/bin/env mkdir -p /tmp as louis0526@45.76.56.242
+ DEBUG [c998e35e] Command: /usr/bin/env mkdir -p /tmp
+  INFO [6104a3db] Finished in 0.042 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-codeknows-production-louis0526.sh 0.0%
+  INFO Uploading /tmp/git-ssh-codeknows-production-louis0526.sh 100.0%
+  INFO [9d96bd48] Running /usr/bin/env chmod 700 /tmp/git-ssh-codeknows-production-louis0526.sh as louis0526@45.76.56.242
+ DEBUG [9d96bd48] Command: /usr/bin/env chmod 700 /tmp/git-ssh-codeknows-production-louis0526.sh
+  INFO [0c3c4790] Finished in 0.043 seconds with exit status 0 (successful).
+  INFO [3b1b2e6b] Running /usr/bin/env git ls-remote https://github.com/louis0526/deployment.git HEAD as louis0526@45.76.56.242
+ DEBUG [3b1b2e6b] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-codeknows-production-louis0526.sh" ; /usr/bin/env git ls-remote https://github.com/louis0526/deployment.git HEAD )
+ DEBUG [e048cd2a] 	4897b49c9cca39ad64dd769cdb74e81ad32e4b34	HEAD
+  INFO [e048cd2a] Finished in 0.520 seconds with exit status 0 (successful).
+  INFO [9183bc1d] Running /usr/bin/env mkdir -p /home/louis0526/workspace/publish/codeknows/shared /home/louis0526/workspace/publish/codeknows/releases as louis0526@45.76.56.242
+ DEBUG [9183bc1d] Command: /usr/bin/env mkdir -p /home/louis0526/workspace/publish/codeknows/shared /home/louis0526/workspace/publish/codeknows/releases
+  INFO [5c044a64] Finished in 0.042 seconds with exit status 0 (successful).
+  INFO [82e51fa7] Running /usr/bin/env mkdir -p /home/louis0526/workspace/publish/codeknows/shared/log /home/louis0526/workspace/publish/codeknows/shared/tmp/pids /home/louis0526/workspace/publish/codeknows/shared/tmp/cache /home/louis0526/workspace/publish/codeknows/shared/tmp/sockets /home/louis0526/workspace/publish/codeknows/shared/public/system /home/louis0526/workspace/publish/codeknows/shared/public/assets as louis0526@45.76.56.242
+ DEBUG [82e51fa7] Command: /usr/bin/env mkdir -p /home/louis0526/workspace/publish/codeknows/shared/log /home/louis0526/workspace/publish/codeknows/shared/tmp/pids /home/louis0526/workspace/publish/codeknows/shared/tmp/cache /home/louis0526/workspace/publish/codeknows/shared/tmp/sockets /home/louis0526/workspace/publish/codeknows/shared/public/system /home/louis0526/workspace/publish/codeknows/shared/public/assets
+  INFO [a396b7a6] Finished in 0.041 seconds with exit status 0 (successful).
+  INFO [d5b49388] Running /usr/bin/env mkdir -p /home/louis0526/workspace/publish/codeknows/shared/config as louis0526@45.76.56.242
+ DEBUG [d5b49388] Command: /usr/bin/env mkdir -p /home/louis0526/workspace/publish/codeknows/shared/config
+  INFO [ffa6ffe5] Finished in 0.042 seconds with exit status 0 (successful).
+ DEBUG [64437d72] Running [ -f /home/louis0526/workspace/publish/codeknows/shared/config/database.yml ] as louis0526@45.76.56.242
+ DEBUG [64437d72] Command: [ -f /home/louis0526/workspace/publish/codeknows/shared/config/database.yml ]
+ DEBUG [6c4a8646] Finished in 0.042 seconds with exit status 0 (successful).
+ DEBUG [8922d3e3] Running [ -f /home/louis0526/workspace/publish/codeknows/shared/config/secrets.yml ] as louis0526@45.76.56.242
+ DEBUG [8922d3e3] Command: [ -f /home/louis0526/workspace/publish/codeknows/shared/config/secrets.yml ]
+ DEBUG [1e940466] Finished in 0.044 seconds with exit status 0 (successful).
+ DEBUG [229bd8ab] Running [ -f /home/louis0526/workspace/publish/codeknows/current/REVISION ] as louis0526@45.76.56.242
+ DEBUG [229bd8ab] Command: [ -f /home/louis0526/workspace/publish/codeknows/current/REVISION ]
+ DEBUG [fa7e6b80] Finished in 0.043 seconds with exit status 1 (failed).
+ DEBUG [da236730] Running [ -f /home/louis0526/workspace/publish/codeknows/repo/HEAD ] as louis0526@45.76.56.242
+ DEBUG [da236730] Command: [ -f /home/louis0526/workspace/publish/codeknows/repo/HEAD ]
+ DEBUG [d328ffd0] Finished in 0.042 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/louis0526/workspace/publish/codeknows/repo
+ DEBUG [2d164326] Running if test ! -d /home/louis0526/workspace/publish/codeknows/repo; then echo "Directory does not exist '/home/louis0526/workspace/publish/codeknows/repo'" 1>&2; false; fi as louis0526@45.76.56.242
+ DEBUG [2d164326] Command: if test ! -d /home/louis0526/workspace/publish/codeknows/repo; then echo "Directory does not exist '/home/louis0526/workspace/publish/codeknows/repo'" 1>&2; false; fi
+ DEBUG [686c8529] Finished in 0.042 seconds with exit status 0 (successful).
+  INFO [eb69f9b1] Running /usr/bin/env git remote set-url origin https://github.com/louis0526/deployment.git as louis0526@45.76.56.242
+ DEBUG [eb69f9b1] Command: cd /home/louis0526/workspace/publish/codeknows/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-codeknows-production-louis0526.sh" ; /usr/bin/env git remote set-url origin https://github.com/louis0526/deployment.git )
+  INFO [9e1eb0ac] Finished in 0.048 seconds with exit status 0 (successful).
+  INFO [7e1f7463] Running /usr/bin/env git remote update --prune as louis0526@45.76.56.242
+ DEBUG [7e1f7463] Command: cd /home/louis0526/workspace/publish/codeknows/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-codeknows-production-louis0526.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [6d8f25ef] 	Fetching origin
+  INFO [6d8f25ef] Finished in 0.419 seconds with exit status 0 (successful).
+ DEBUG [11cac199] Running if test ! -d /home/louis0526/workspace/publish/codeknows/repo; then echo "Directory does not exist '/home/louis0526/workspace/publish/codeknows/repo'" 1>&2; false; fi as louis0526@45.76.56.242
+ DEBUG [11cac199] Command: if test ! -d /home/louis0526/workspace/publish/codeknows/repo; then echo "Directory does not exist '/home/louis0526/workspace/publish/codeknows/repo'" 1>&2; false; fi
+ DEBUG [952df1ff] Finished in 0.042 seconds with exit status 0 (successful).
+  INFO [a51dbf99] Running /usr/bin/env mkdir -p /home/louis0526/workspace/publish/codeknows/releases/20190113141817 as louis0526@45.76.56.242
+ DEBUG [a51dbf99] Command: cd /home/louis0526/workspace/publish/codeknows/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-codeknows-production-louis0526.sh" ; /usr/bin/env mkdir -p /home/louis0526/workspace/publish/codeknows/releases/20190113141817 )
+  INFO [b966567f] Finished in 0.046 seconds with exit status 0 (successful).
+  INFO [7160ff2f] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/louis0526/workspace/publish/codeknows/releases/20190113141817 as louis0526@45.76.56.242
+ DEBUG [7160ff2f] Command: cd /home/louis0526/workspace/publish/codeknows/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-codeknows-production-louis0526.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/louis0526/workspace/publish/codeknows/releases/20190113141817 )
+  INFO [57a43d33] Finished in 4.932 seconds with exit status 0 (successful).
+ DEBUG [9e5e0941] Running if test ! -d /home/louis0526/workspace/publish/codeknows/repo; then echo "Directory does not exist '/home/louis0526/workspace/publish/codeknows/repo'" 1>&2; false; fi as louis0526@45.76.56.242
+ DEBUG [9e5e0941] Command: if test ! -d /home/louis0526/workspace/publish/codeknows/repo; then echo "Directory does not exist '/home/louis0526/workspace/publish/codeknows/repo'" 1>&2; false; fi
+ DEBUG [7526d019] Finished in 0.040 seconds with exit status 0 (successful).
+ DEBUG [cd6a845b] Running /usr/bin/env git rev-list --max-count=1 master as louis0526@45.76.56.242
+ DEBUG [cd6a845b] Command: cd /home/louis0526/workspace/publish/codeknows/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-codeknows-production-louis0526.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [771334c5] 	4897b49c9cca39ad64dd769cdb74e81ad32e4b34
+ DEBUG [771334c5] Finished in 0.046 seconds with exit status 0 (successful).
+ DEBUG [cd2a1615] Running if test ! -d /home/louis0526/workspace/publish/codeknows/releases/20190113141817; then echo "Directory does not exist '/home/louis0526/workspace/publish/codeknows/releases/20190113141817'" 1>&2; false; fi as louis0526@45.76.56.242
+ DEBUG [cd2a1615] Command: if test ! -d /home/louis0526/workspace/publish/codeknows/releases/20190113141817; then echo "Directory does not exist '/home/louis0526/workspace/publish/codeknows/releases/20190113141817'" 1>&2; false; fi
+ DEBUG [edceae43] Finished in 0.040 seconds with exit status 0 (successful).
+  INFO [5e476099] Running /usr/bin/env echo "4897b49c9cca39ad64dd769cdb74e81ad32e4b34" > REVISION as louis0526@45.76.56.242
+ DEBUG [5e476099] Command: cd /home/louis0526/workspace/publish/codeknows/releases/20190113141817 && /usr/bin/env echo "4897b49c9cca39ad64dd769cdb74e81ad32e4b34" > REVISION
+  INFO [976633fc] Finished in 0.045 seconds with exit status 0 (successful).
+  INFO [8d3c8684] Running /usr/bin/env mkdir -p /home/louis0526/workspace/publish/codeknows/releases/20190113141817/config as louis0526@45.76.56.242
+ DEBUG [8d3c8684] Command: /usr/bin/env mkdir -p /home/louis0526/workspace/publish/codeknows/releases/20190113141817/config
+  INFO [100743dc] Finished in 0.041 seconds with exit status 0 (successful).
+ DEBUG [8cfb0a25] Running [ -L /home/louis0526/workspace/publish/codeknows/releases/20190113141817/config/database.yml ] as louis0526@45.76.56.242
+ DEBUG [8cfb0a25] Command: [ -L /home/louis0526/workspace/publish/codeknows/releases/20190113141817/config/database.yml ]
+ DEBUG [b1114bd6] Finished in 0.042 seconds with exit status 1 (failed).
+ DEBUG [e473484a] Running [ -f /home/louis0526/workspace/publish/codeknows/releases/20190113141817/config/database.yml ] as louis0526@45.76.56.242
+ DEBUG [e473484a] Command: [ -f /home/louis0526/workspace/publish/codeknows/releases/20190113141817/config/database.yml ]
+ DEBUG [ecc81562] Finished in 0.044 seconds with exit status 0 (successful).
+  INFO [1739ed1d] Running /usr/bin/env rm /home/louis0526/workspace/publish/codeknows/releases/20190113141817/config/database.yml as louis0526@45.76.56.242
+ DEBUG [1739ed1d] Command: /usr/bin/env rm /home/louis0526/workspace/publish/codeknows/releases/20190113141817/config/database.yml
+  INFO [2e413c1e] Finished in 0.044 seconds with exit status 0 (successful).
+  INFO [f2642ebb] Running /usr/bin/env ln -s /home/louis0526/workspace/publish/codeknows/shared/config/database.yml /home/louis0526/workspace/publish/codeknows/releases/20190113141817/config/database.yml as louis0526@45.76.56.242
+ DEBUG [f2642ebb] Command: /usr/bin/env ln -s /home/louis0526/workspace/publish/codeknows/shared/config/database.yml /home/louis0526/workspace/publish/codeknows/releases/20190113141817/config/database.yml
+  INFO [d7b70f35] Finished in 0.043 seconds with exit status 0 (successful).
+ DEBUG [8b30b1c8] Running [ -L /home/louis0526/workspace/publish/codeknows/releases/20190113141817/config/secrets.yml ] as louis0526@45.76.56.242
+ DEBUG [8b30b1c8] Command: [ -L /home/louis0526/workspace/publish/codeknows/releases/20190113141817/config/secrets.yml ]
+ DEBUG [7e024277] Finished in 0.043 seconds with exit status 1 (failed).
+ DEBUG [c8e2abd1] Running [ -f /home/louis0526/workspace/publish/codeknows/releases/20190113141817/config/secrets.yml ] as louis0526@45.76.56.242
+ DEBUG [c8e2abd1] Command: [ -f /home/louis0526/workspace/publish/codeknows/releases/20190113141817/config/secrets.yml ]
+ DEBUG [c20f4c34] Finished in 0.044 seconds with exit status 0 (successful).
+  INFO [4506f284] Running /usr/bin/env rm /home/louis0526/workspace/publish/codeknows/releases/20190113141817/config/secrets.yml as louis0526@45.76.56.242
+ DEBUG [4506f284] Command: /usr/bin/env rm /home/louis0526/workspace/publish/codeknows/releases/20190113141817/config/secrets.yml
+  INFO [5ceb97a4] Finished in 0.045 seconds with exit status 0 (successful).
+  INFO [5b336b61] Running /usr/bin/env ln -s /home/louis0526/workspace/publish/codeknows/shared/config/secrets.yml /home/louis0526/workspace/publish/codeknows/releases/20190113141817/config/secrets.yml as louis0526@45.76.56.242
+ DEBUG [5b336b61] Command: /usr/bin/env ln -s /home/louis0526/workspace/publish/codeknows/shared/config/secrets.yml /home/louis0526/workspace/publish/codeknows/releases/20190113141817/config/secrets.yml
+  INFO [debe7dd8] Finished in 0.043 seconds with exit status 0 (successful).
+  INFO [8c36ea19] Running /usr/bin/env mkdir -p /home/louis0526/workspace/publish/codeknows/releases/20190113141817 /home/louis0526/workspace/publish/codeknows/releases/20190113141817/tmp /home/louis0526/workspace/publish/codeknows/releases/20190113141817/public as louis0526@45.76.56.242
+ DEBUG [8c36ea19] Command: /usr/bin/env mkdir -p /home/louis0526/workspace/publish/codeknows/releases/20190113141817 /home/louis0526/workspace/publish/codeknows/releases/20190113141817/tmp /home/louis0526/workspace/publish/codeknows/releases/20190113141817/public
+  INFO [0bf64fa4] Finished in 0.042 seconds with exit status 0 (successful).
+ DEBUG [b0be9a96] Running [ -L /home/louis0526/workspace/publish/codeknows/releases/20190113141817/log ] as louis0526@45.76.56.242
+ DEBUG [b0be9a96] Command: [ -L /home/louis0526/workspace/publish/codeknows/releases/20190113141817/log ]
+ DEBUG [cb2600ed] Finished in 0.045 seconds with exit status 1 (failed).
+ DEBUG [bc72457f] Running [ -d /home/louis0526/workspace/publish/codeknows/releases/20190113141817/log ] as louis0526@45.76.56.242
+ DEBUG [bc72457f] Command: [ -d /home/louis0526/workspace/publish/codeknows/releases/20190113141817/log ]
+ DEBUG [7152cd6b] Finished in 0.041 seconds with exit status 0 (successful).
+  INFO [e0d7cc6e] Running /usr/bin/env rm -rf /home/louis0526/workspace/publish/codeknows/releases/20190113141817/log as louis0526@45.76.56.242
+ DEBUG [e0d7cc6e] Command: /usr/bin/env rm -rf /home/louis0526/workspace/publish/codeknows/releases/20190113141817/log
+  INFO [3413dcbe] Finished in 0.042 seconds with exit status 0 (successful).
+  INFO [bcbd07fe] Running /usr/bin/env ln -s /home/louis0526/workspace/publish/codeknows/shared/log /home/louis0526/workspace/publish/codeknows/releases/20190113141817/log as louis0526@45.76.56.242
+ DEBUG [bcbd07fe] Command: /usr/bin/env ln -s /home/louis0526/workspace/publish/codeknows/shared/log /home/louis0526/workspace/publish/codeknows/releases/20190113141817/log
+  INFO [7252bb14] Finished in 0.041 seconds with exit status 0 (successful).
+ DEBUG [a3bc1df4] Running [ -L /home/louis0526/workspace/publish/codeknows/releases/20190113141817/tmp/pids ] as louis0526@45.76.56.242
+ DEBUG [a3bc1df4] Command: [ -L /home/louis0526/workspace/publish/codeknows/releases/20190113141817/tmp/pids ]
+ DEBUG [d85820a5] Finished in 0.043 seconds with exit status 1 (failed).
+ DEBUG [fea919ff] Running [ -d /home/louis0526/workspace/publish/codeknows/releases/20190113141817/tmp/pids ] as louis0526@45.76.56.242
+ DEBUG [fea919ff] Command: [ -d /home/louis0526/workspace/publish/codeknows/releases/20190113141817/tmp/pids ]
+ DEBUG [88a42f97] Finished in 0.044 seconds with exit status 1 (failed).
+  INFO [d739c62d] Running /usr/bin/env ln -s /home/louis0526/workspace/publish/codeknows/shared/tmp/pids /home/louis0526/workspace/publish/codeknows/releases/20190113141817/tmp/pids as louis0526@45.76.56.242
+ DEBUG [d739c62d] Command: /usr/bin/env ln -s /home/louis0526/workspace/publish/codeknows/shared/tmp/pids /home/louis0526/workspace/publish/codeknows/releases/20190113141817/tmp/pids
+  INFO [e843a7be] Finished in 0.045 seconds with exit status 0 (successful).
+ DEBUG [262cbeba] Running [ -L /home/louis0526/workspace/publish/codeknows/releases/20190113141817/tmp/cache ] as louis0526@45.76.56.242
+ DEBUG [262cbeba] Command: [ -L /home/louis0526/workspace/publish/codeknows/releases/20190113141817/tmp/cache ]
+ DEBUG [b3e4cd55] Finished in 0.042 seconds with exit status 1 (failed).
+ DEBUG [075771f7] Running [ -d /home/louis0526/workspace/publish/codeknows/releases/20190113141817/tmp/cache ] as louis0526@45.76.56.242
+ DEBUG [075771f7] Command: [ -d /home/louis0526/workspace/publish/codeknows/releases/20190113141817/tmp/cache ]
+ DEBUG [23c0fdf3] Finished in 0.040 seconds with exit status 0 (successful).
+  INFO [ea66db7c] Running /usr/bin/env rm -rf /home/louis0526/workspace/publish/codeknows/releases/20190113141817/tmp/cache as louis0526@45.76.56.242
+ DEBUG [ea66db7c] Command: /usr/bin/env rm -rf /home/louis0526/workspace/publish/codeknows/releases/20190113141817/tmp/cache
+  INFO [808f355a] Finished in 0.048 seconds with exit status 0 (successful).
+  INFO [3acd9af6] Running /usr/bin/env ln -s /home/louis0526/workspace/publish/codeknows/shared/tmp/cache /home/louis0526/workspace/publish/codeknows/releases/20190113141817/tmp/cache as louis0526@45.76.56.242
+ DEBUG [3acd9af6] Command: /usr/bin/env ln -s /home/louis0526/workspace/publish/codeknows/shared/tmp/cache /home/louis0526/workspace/publish/codeknows/releases/20190113141817/tmp/cache
+  INFO [57259f93] Finished in 0.043 seconds with exit status 0 (successful).
+ DEBUG [493a5365] Running [ -L /home/louis0526/workspace/publish/codeknows/releases/20190113141817/tmp/sockets ] as louis0526@45.76.56.242
+ DEBUG [493a5365] Command: [ -L /home/louis0526/workspace/publish/codeknows/releases/20190113141817/tmp/sockets ]
+ DEBUG [86c71921] Finished in 0.043 seconds with exit status 1 (failed).
+ DEBUG [c741e70b] Running [ -d /home/louis0526/workspace/publish/codeknows/releases/20190113141817/tmp/sockets ] as louis0526@45.76.56.242
+ DEBUG [c741e70b] Command: [ -d /home/louis0526/workspace/publish/codeknows/releases/20190113141817/tmp/sockets ]
+ DEBUG [2bac402c] Finished in 0.044 seconds with exit status 1 (failed).
+  INFO [d8074481] Running /usr/bin/env ln -s /home/louis0526/workspace/publish/codeknows/shared/tmp/sockets /home/louis0526/workspace/publish/codeknows/releases/20190113141817/tmp/sockets as louis0526@45.76.56.242
+ DEBUG [d8074481] Command: /usr/bin/env ln -s /home/louis0526/workspace/publish/codeknows/shared/tmp/sockets /home/louis0526/workspace/publish/codeknows/releases/20190113141817/tmp/sockets
+  INFO [94ce6820] Finished in 0.043 seconds with exit status 0 (successful).
+ DEBUG [81d58c61] Running [ -L /home/louis0526/workspace/publish/codeknows/releases/20190113141817/public/system ] as louis0526@45.76.56.242
+ DEBUG [81d58c61] Command: [ -L /home/louis0526/workspace/publish/codeknows/releases/20190113141817/public/system ]
+ DEBUG [6b64144b] Finished in 0.042 seconds with exit status 1 (failed).
+ DEBUG [eb05250b] Running [ -d /home/louis0526/workspace/publish/codeknows/releases/20190113141817/public/system ] as louis0526@45.76.56.242
+ DEBUG [eb05250b] Command: [ -d /home/louis0526/workspace/publish/codeknows/releases/20190113141817/public/system ]
+ DEBUG [fb08e8a6] Finished in 0.040 seconds with exit status 1 (failed).
+  INFO [21c6d93b] Running /usr/bin/env ln -s /home/louis0526/workspace/publish/codeknows/shared/public/system /home/louis0526/workspace/publish/codeknows/releases/20190113141817/public/system as louis0526@45.76.56.242
+ DEBUG [21c6d93b] Command: /usr/bin/env ln -s /home/louis0526/workspace/publish/codeknows/shared/public/system /home/louis0526/workspace/publish/codeknows/releases/20190113141817/public/system
+  INFO [cb8fe387] Finished in 0.041 seconds with exit status 0 (successful).
+ DEBUG [d95de80a] Running [ -L /home/louis0526/workspace/publish/codeknows/releases/20190113141817/public/assets ] as louis0526@45.76.56.242
+ DEBUG [d95de80a] Command: [ -L /home/louis0526/workspace/publish/codeknows/releases/20190113141817/public/assets ]
+ DEBUG [e0153e50] Finished in 0.041 seconds with exit status 1 (failed).
+ DEBUG [cc77c20b] Running [ -d /home/louis0526/workspace/publish/codeknows/releases/20190113141817/public/assets ] as louis0526@45.76.56.242
+ DEBUG [cc77c20b] Command: [ -d /home/louis0526/workspace/publish/codeknows/releases/20190113141817/public/assets ]
+ DEBUG [7a5015ec] Finished in 0.040 seconds with exit status 0 (successful).
+  INFO [fd9c26e9] Running /usr/bin/env rm -rf /home/louis0526/workspace/publish/codeknows/releases/20190113141817/public/assets as louis0526@45.76.56.242
+ DEBUG [fd9c26e9] Command: /usr/bin/env rm -rf /home/louis0526/workspace/publish/codeknows/releases/20190113141817/public/assets
+  INFO [15bd96e5] Finished in 0.069 seconds with exit status 0 (successful).
+  INFO [ad9a79bf] Running /usr/bin/env ln -s /home/louis0526/workspace/publish/codeknows/shared/public/assets /home/louis0526/workspace/publish/codeknows/releases/20190113141817/public/assets as louis0526@45.76.56.242
+ DEBUG [ad9a79bf] Command: /usr/bin/env ln -s /home/louis0526/workspace/publish/codeknows/shared/public/assets /home/louis0526/workspace/publish/codeknows/releases/20190113141817/public/assets
+  INFO [c5e92bfa] Finished in 0.043 seconds with exit status 0 (successful).
+ DEBUG [f0670404] Running if test ! -d /home/louis0526/workspace/publish/codeknows/releases/20190113141817; then echo "Directory does not exist '/home/louis0526/workspace/publish/codeknows/releases/20190113141817'" 1>&2; false; fi as louis0526@45.76.56.242
+ DEBUG [f0670404] Command: if test ! -d /home/louis0526/workspace/publish/codeknows/releases/20190113141817; then echo "Directory does not exist '/home/louis0526/workspace/publish/codeknows/releases/20190113141817'" 1>&2; false; fi
+ DEBUG [8f17fe42] Finished in 0.042 seconds with exit status 0 (successful).
+ DEBUG [58a7a601] Running ~/.rvm/bin/rvm default do bundle check --path /home/louis0526/workspace/publish/codeknows/shared/bundle as louis0526@45.76.56.242
+ DEBUG [58a7a601] Command: cd /home/louis0526/workspace/publish/codeknows/releases/20190113141817 && ~/.rvm/bin/rvm default do bundle check --path /home/louis0526/workspace/publish/codeknows/shared/bundle
+ DEBUG [96f14a76] 	The following gems are missing
+ DEBUG [96f14a76] 	 * i18n (0.9.5)
+ DEBUG [96f14a76] 	 * activesupport (3.2.22)
+ DEBUG [96f14a76] 	 * activemodel (3.2.22)
+ DEBUG [96f14a76] 	 * rack-cache (1.8.0)
+ DEBUG [96f14a76] 	 * rack-test (0.6.3)
+ DEBUG [96f14a76] 	 * sprockets (2.2.3)
+ DEBUG [96f14a76] 	 * actionpack (3.2.22)
+ DEBUG [96f14a76] 	 * treetop (1.4.15)
+ DEBUG [96f14a76] 	 * mail (2.5.5)
+ DEBUG [96f14a76] 	 * actionmailer (3.2.22)
+ DEBUG [96f14a76] 	 * activerecord (3.2.22)
+ DEBUG [96f14a76] 	 * activerecord-postgres-json (0.2.1)
+ DEBUG [96f14a76] 	 * activeresource (3.2.22)
+ DEBUG [96f14a76] 	 * acts-as-taggable-on (3.5.0)
+ DEBUG [96f14a76] 	 * net-scp (1.2.1)
+ DEBUG [96f14a76] 	 * sshkit (1.18.0)
+ DEBUG [96f14a76] 	 * airbrussh (1.3.1)
+ DEBUG [96f14a76] 	 * json (1.8.6)
+ DEBUG [96f14a76] 	 * autoprefixer-rails (5.2.1)
+ DEBUG [96f14a76] 	 * bugsnag (2.8.10)
+ DEBUG [96f14a76] 	 * capistrano (3.11.0)
+ DEBUG [96f14a76] 	 * capistrano-bundler (1.5.0)
+ DEBUG [96f14a76] 	 * capistrano-passenger (0.2.0)
+ DEBUG [96f14a76] 	 * capistrano-rails (1.4.0)
+ DEBUG [96f14a76] 	 * capistrano-rbenv (2.1.4)
+ DEBUG [96f14a76] 	 * capistrano-rvm (0.1.2)
+ DEBUG [96f14a76] 	 * carrierwave (0.10.0)
+ DEBUG [96f14a76] 	 * carrierwave_backgrounder (0.4.1)
+ DEBUG [96f14a76] 	 * timers (4.0.1)
+ DEBUG [96f14a76] 	 * celluloid (0.16.0)
+ DEBUG [96f14a76] 	 * clockwork (1.2.0)
+ DEBUG [96f14a76] 	 * with_advisory_lock (3.0.0)
+ DEBUG [96f14a76] 	 * closure_tree (5.2.0)
+ DEBUG [96f14a76] 	 * coffee-script (2.4.1)
+ DEBUG [96f14a76] 	 * rack-ssl (1.3.4)
+ DEBUG [96f14a76] 	 * rdoc (3.12.2)
+ DEBUG [96f14a76] 	 * railties (3.2.22)
+ DEBUG [96f14a76] 	 * coffee-rails (3.2.2)
+ DEBUG [96f14a76] 	 * compass-core (1.0.3)
+ DEBUG [96f14a76] 	 * compass-import-once (1.0.5)
+ DEBUG [96f14a76] 	 * ffi (1.9.10)
+ DEBUG [96f14a76] 	 * rb-inotify (0.9.5)
+ DEBUG [96f14a76] 	 * compass (1.0.3)
+ DEBUG [96f14a76] 	 * sass-rails (3.2.6)
+ DEBUG [96f14a76] 	 * compass-rails (2.0.4)
+ DEBUG [96f14a76] 	 * curb (0.8.8)
+ DEBUG [96f14a76] 	 * descendants_tracker (0.0.4)
+ DEBUG [96f14a76] 	 * unf_ext (0.0.7.1)
+ DEBUG [96f14a76] 	 * unf (0.1.4)
+ DEBUG [96f14a76] 	 * domain_name (0.5.24)
+ DEBUG [96f14a76] 	 * elasticsearch-api (1.0.12)
+ DEBUG [96f14a76] 	 * multipart-post (1.2.0)
+ DEBUG [96f14a76] 	 * faraday (0.8.9)
+ DEBUG [96f14a76] 	 * elasticsearch-transport (1.0.12)
+ DEBUG [96f14a76] 	 * elasticsearch (1.0.12)
+ DEBUG [96f14a76] 	 * hashie (2.1.2)
+ DEBUG [96f14a76] 	 * elasticsearch-model (0.1.7)
+ DEBUG [96f14a76] 	 * elasticsearch-rails (0.1.7)
+ DEBUG [96f14a76] 	 * equalizer (0.0.11)
+ DEBUG [96f14a76] 	 * escape (0.0.4)
+ DEBUG [96f14a76] 	 * excon (0.45.4)
+ DEBUG [96f14a76] 	 * mini_portile (0.6.2)
+ DEBUG [96f14a76] 	 * nokogiri (1.6.6.2)
+ DEBUG [96f14a76] 	 * loofah (2.0.2)
+ DEBUG [96f14a76] 	 * sax-machine (1.3.2)
+ DEBUG [96f14a76] 	 * feedjira (1.6.0)
+ DEBUG [96f14a76] 	 * fission (0.5.0)
+ DEBUG [96f14a76] 	 * formatador (0.2.5)
+ DEBUG [96f14a76] 	 * fog-core (1.32.0)
+ DEBUG [96f14a76] 	 * fog-xml (0.1.2)
+ DEBUG [96f14a76] 	 * fog-atmos (0.1.0)
+ DEBUG [96f14a76] 	 * fog-json (1.0.2)
+ DEBUG [96f14a76] 	 * ipaddress (0.8.0)
+ DEBUG [96f14a76] 	 * fog-aws (0.7.3)
+ DEBUG [96f14a76] 	 * inflecto (0.0.2)
+ DEBUG [96f14a76] 	 * fog-brightbox (0.7.2)
+ DEBUG [96f14a76] 	 * fog-ecloud (0.1.1)
+ DEBUG [96f14a76] 	 * fog-google (0.0.7)
+ DEBUG [96f14a76] 	 * fog-local (0.2.1)
+ DEBUG [96f14a76] 	 * fog-powerdns (0.1.1)
+ DEBUG [96f14a76] 	 * fog-profitbricks (0.0.3)
+ DEBUG [96f14a76] 	 * fog-radosgw (0.0.4)
+ DEBUG [96f14a76] 	 * fog-riakcs (0.1.0)
+ DEBUG [96f14a76] 	 * fog-sakuracloud (1.0.1)
+ DEBUG [96f14a76] 	 * fog-serverlove (0.1.2)
+ DEBUG [96f14a76] 	 * fog-softlayer (0.4.7)
+ DEBUG [96f14a76] 	 * fog-storm_on_demand (0.1.1)
+ DEBUG [96f14a76] 	 * fog-terremark (0.1.0)
+ DEBUG [96f14a76] 	 * fog-vmfusion (0.1.0)
+ DEBUG [96f14a76] 	 * fog-voxel (0.1.0)
+ DEBUG [96f14a76] 	 * fog (1.32.0)
+ DEBUG [96f14a76] 	 * foreigner (1.7.4)
+ DEBUG [96f14a76] 	 * foreman (0.78.0)
+ DEBUG [96f14a76] 	 * friendly_id (4.0.10.1)
+ DEBUG [96f14a76] 	 * geocoder (1.2.9)
+ DEBUG [96f14a76] 	 * github-markdown (0.6.8)
+ DEBUG [96f14a76] 	 * oauth (0.4.7)
+ DEBUG [96f14a76] 	 * grackle (0.3.0)
+ DEBUG [96f14a76] 	 * haml (4.0.6)
+ DEBUG [96f14a76] 	 * hashr (0.0.22)
+ DEBUG [96f14a76] 	 * heroku-deflater (0.5.3)
+ DEBUG [96f14a76] 	 * http_parser.rb (0.6.0)
+ DEBUG [96f14a76] 	 * http (0.5.1)
+ DEBUG [96f14a76] 	 * http-cookie (1.0.2)
+ DEBUG [96f14a76] 	 * httpauth (0.2.1)
+ DEBUG [96f14a76] 	 * jbuilder (2.3.1)
+ DEBUG [96f14a76] 	 * jquery-rails (2.0.3)
+ DEBUG [96f14a76] 	 * jwt (0.1.13)
+ DEBUG [96f14a76] 	 * kaminari (0.16.3)
+ DEBUG [96f14a76] 	 * kramdown (1.8.0)
+ DEBUG [96f14a76] 	 * linkedin (0.4.7)
+ DEBUG [96f14a76] 	 * local_time (1.0.2)
+ DEBUG [96f14a76] 	 * mail_view (2.0.4)
+ DEBUG [96f14a76] 	 * materialize-sass (0.97.0)
+ DEBUG [96f14a76] 	 * memoizable (0.4.2)
+ DEBUG [96f14a76] 	 * rails (3.2.22)
+ DEBUG [96f14a76] 	 * metamagic (3.1.7)
+ DEBUG [96f14a76] 	 * mini_magick (4.2.7)
+ DEBUG [96f14a76] 	 * mixpanel (4.1.1)
+ DEBUG [96f14a76] 	 * netrc (0.10.3)
+ DEBUG [96f14a76] 	 * never_wastes (1.0.0)
+ DEBUG [96f14a76] 	 * newrelic_rpm (3.12.1.298)
+ DEBUG [96f14a76] 	 * nokogumbo (1.4.1)
+ DEBUG [96f14a76] 	 * oauth2 (0.8.1)
+ DEBUG [96f14a76] 	 * sawyer (0.6.0)
+ DEBUG [96f14a76] 	 * octokit (4.0.1)
+ DEBUG [96f14a76] 	 * oj (2.16.1)
+ DEBUG [96f14a76] 	 * omniauth (1.1.4)
+ DEBUG [96f14a76] 	 * omniauth-oauth2 (1.1.1)
+ DEBUG [96f14a76] 	 * omniauth-facebook (1.6.0)
+ DEBUG [96f14a76] 	 * omniauth-github (1.1.2)
+ DEBUG [96f14a76] 	 * omniauth-oauth (1.1.0)
+ DEBUG [96f14a76] 	 * omniauth-linkedin (0.0.8)
+ DEBUG [96f14a76] 	 * omniauth-twitter (0.0.18)
+ DEBUG [96f14a76] 	 * pg (0.18.2)
+ DEBUG [96f14a76] 	 * pg_array_parser (0.0.9)
+ DEBUG [96f14a76] 	 * postgres_ext (1.0.0)
+ DEBUG [96f14a76] 	 * power_assert (0.2.3)
+ DEBUG [96f14a76] 	 * puma (3.12.0)
+ DEBUG [96f14a76] 	 * rack-protection (1.5.3)
+ DEBUG [96f14a76] 	 * rails-assets-font-awesome (4.3.0)
+ DEBUG [96f14a76] 	 * rails-assets-jquery (2.1.4)
+ DEBUG [96f14a76] 	 * rails-assets-jquery-cookie (1.4.0)
+ DEBUG [96f14a76] 	 * rails-assets-jquery-dropdown (2.0.0)
+ DEBUG [96f14a76] 	 * rails_serve_static_assets (0.0.4)
+ DEBUG [96f14a76] 	 * rails_stdout_logging (0.0.3)
+ DEBUG [96f14a76] 	 * rails_12factor (0.0.3)
+ DEBUG [96f14a76] 	 * rails_latest (0.0.2)
+ DEBUG [96f14a76] 	 * rakismet (1.5.1)
+ DEBUG [96f14a76] 	 * redcarpet (3.3.4)
+ DEBUG [96f14a76] 	 * redis (3.2.1)
+ DEBUG [96f14a76] 	 * redis-store (1.1.5)
+ DEBUG [96f14a76] 	 * redis-rack (1.4.4)
+ DEBUG [96f14a76] 	 * redis-actionpack (3.2.4)
+ DEBUG [96f14a76] 	 * redis-activesupport (3.2.5)
+ DEBUG [96f14a76] 	 * redis-namespace (1.5.2)
+ DEBUG [96f14a76] 	 * redis-rails (3.2.4)
+ DEBUG [96f14a76] 	 * rest-client (1.8.0)
+ DEBUG [96f14a76] 	 * rspec-support (3.3.0)
+ DEBUG [96f14a76] 	 * rspec-core (3.3.2)
+ DEBUG [96f14a76] 	 * rspec-expectations (3.3.1)
+ DEBUG [96f14a76] 	 * rspec-mocks (3.3.2)
+ DEBUG [96f14a76] 	 * rspec (3.3.0)
+ DEBUG [96f14a76] 	 * sanitize (4.0.0)
+ DEBUG [96f14a76] 	 * selectize-rails (0.12.1)
+ DEBUG [96f14a76] 	 * sidekiq (3.4.2)
+ DEBUG [96f14a76] 	 * simple_form (2.1.3)
+ DEBUG [96f14a76] 	 * simple_oauth (0.2.0)
+ DEBUG [96f14a76] 	 * sinatra (1.4.6)
+ DEBUG [96f14a76] 	 * sitemap_generator (5.1.0)
+ DEBUG [96f14a76] 	 * temple (0.7.6)
+ DEBUG [96f14a76] 	 * slim (3.0.6)
+ DEBUG [96f14a76] 	 * slim-rails (3.0.1)
+ DEBUG [96f14a76] 	 * state_machine (1.2.0)
+ DEBUG [96f14a76] 	 * stripe (1.20.1)
+ DEBUG [96f14a76] 	 * strong_parameters (0.2.3)
+ DEBUG [96f14a76] 	 * test-unit (3.1.2)
+ DEBUG [96f14a76] 	 * tire (0.6.2)
+ DEBUG [96f14a76] 	 * tweet-button (0.1.0)
+ DEBUG [96f14a76] 	 * twitter (5.5.1)
+ DEBUG [96f14a76] 	 * uglifier (2.7.1)
+ DEBUG [96f14a76] 	Install missing gems with `bundle install`
+ DEBUG [96f14a76] Finished in 1.125 seconds with exit status 1 (failed).
+  INFO [460bed86] Running ~/.rvm/bin/rvm default do bundle install --path /home/louis0526/workspace/publish/codeknows/shared/bundle --jobs 4 --without development test --deployment --quiet as louis0526@45.76.56.242
+ DEBUG [460bed86] Command: cd /home/louis0526/workspace/publish/codeknows/releases/20190113141817 && ~/.rvm/bin/rvm default do bundle install --path /home/louis0526/workspace/publish/codeknows/shared/bundle --jobs 4 --without development test --deployment --quiet
+  INFO [1376882f] Finished in 169.653 seconds with exit status 0 (successful).
+ DEBUG [d25d2846] Running if test ! -d /home/louis0526/workspace/publish/codeknows/releases/20190113141817; then echo "Directory does not exist '/home/louis0526/workspace/publish/codeknows/releases/20190113141817'" 1>&2; false; fi as louis0526@45.76.56.242
+ DEBUG [d25d2846] Command: if test ! -d /home/louis0526/workspace/publish/codeknows/releases/20190113141817; then echo "Directory does not exist '/home/louis0526/workspace/publish/codeknows/releases/20190113141817'" 1>&2; false; fi
+ DEBUG [fe5703db] Finished in 0.045 seconds with exit status 0 (successful).
+  INFO [2c6ac6fc] Running ~/.rvm/bin/rvm default do bundle exec rake assets:precompile as louis0526@45.76.56.242
+ DEBUG [2c6ac6fc] Command: cd /home/louis0526/workspace/publish/codeknows/releases/20190113141817 && ( export RAILS_ENV="production" RAILS_GROUPS="" ; ~/.rvm/bin/rvm default do bundle exec rake assets:precompile )
+ DEBUG [bcb61260] 	/home/louis0526/.rvm/rubies/ruby-2.2.2/bin/ruby /home/louis0526/workspace/publish/codeknows/shared/bundle/ruby/2.2.0/bin/rake assets:precompile:all RAILS_ENV=production RAILS_GROUPS=
+ DEBUG [bcb61260] 	
+  INFO [bcb61260] Finished in 22.144 seconds with exit status 0 (successful).
+ DEBUG [36d40a0e] Running if test ! -d /home/louis0526/workspace/publish/codeknows/releases/20190113141817; then echo "Directory does not exist '/home/louis0526/workspace/publish/codeknows/releases/20190113141817'" 1>&2; false; fi as louis0526@45.76.56.242
+ DEBUG [36d40a0e] Command: if test ! -d /home/louis0526/workspace/publish/codeknows/releases/20190113141817; then echo "Directory does not exist '/home/louis0526/workspace/publish/codeknows/releases/20190113141817'" 1>&2; false; fi
+ DEBUG [bc362f21] Finished in 0.042 seconds with exit status 0 (successful).
+  INFO [d19db777] Running /usr/bin/env mkdir -p /home/louis0526/workspace/publish/codeknows/releases/20190113141817/assets_manifest_backup as louis0526@45.76.56.242
+ DEBUG [d19db777] Command: cd /home/louis0526/workspace/publish/codeknows/releases/20190113141817 && /usr/bin/env mkdir -p /home/louis0526/workspace/publish/codeknows/releases/20190113141817/assets_manifest_backup
+  INFO [700705e6] Finished in 0.045 seconds with exit status 0 (successful).
+ DEBUG [ed5284ae] Running /usr/bin/env ls /home/louis0526/workspace/publish/codeknows/releases/20190113141817/public/assets/.sprockets-manifest* as louis0526@45.76.56.242
+ DEBUG [ed5284ae] Command: cd /home/louis0526/workspace/publish/codeknows/releases/20190113141817 && /usr/bin/env ls /home/louis0526/workspace/publish/codeknows/releases/20190113141817/public/assets/.sprockets-manifest*
+ DEBUG [1b6223ba] 	ls: 
+ DEBUG [1b6223ba] 	cannot access '/home/louis0526/workspace/publish/codeknows/releases/20190113141817/public/assets/.sprockets-manifest*'
+ DEBUG [1b6223ba] 	: No such file or directory
+ DEBUG [1b6223ba] 	
+ DEBUG [1b6223ba] Finished in 0.045 seconds with exit status 2 (failed).
+ DEBUG [cb4c2ccc] Running /usr/bin/env ls /home/louis0526/workspace/publish/codeknows/releases/20190113141817/public/assets/manifest*.* as louis0526@45.76.56.242
+ DEBUG [cb4c2ccc] Command: cd /home/louis0526/workspace/publish/codeknows/releases/20190113141817 && /usr/bin/env ls /home/louis0526/workspace/publish/codeknows/releases/20190113141817/public/assets/manifest*.*
+ DEBUG [1ea4be15] 	/home/louis0526/workspace/publish/codeknows/releases/20190113141817/public/assets/manifest.yml
+ DEBUG [1ea4be15] Finished in 0.042 seconds with exit status 0 (successful).
+ DEBUG [2052a2ce] Running /usr/bin/env ls /home/louis0526/workspace/publish/codeknows/releases/20190113141817/public/assets/manifest*.* as louis0526@45.76.56.242
+ DEBUG [2052a2ce] Command: cd /home/louis0526/workspace/publish/codeknows/releases/20190113141817 && /usr/bin/env ls /home/louis0526/workspace/publish/codeknows/releases/20190113141817/public/assets/manifest*.*
+ DEBUG [f0e850c6] 	/home/louis0526/workspace/publish/codeknows/releases/20190113141817/public/assets/manifest.yml
+ DEBUG [f0e850c6] Finished in 0.046 seconds with exit status 0 (successful).
+  INFO [13195b8a] Running /usr/bin/env cp /home/louis0526/workspace/publish/codeknows/releases/20190113141817/public/assets/manifest.yml /home/louis0526/workspace/publish/codeknows/releases/20190113141817/assets_manifest_backup as louis0526@45.76.56.242
+ DEBUG [13195b8a] Command: cd /home/louis0526/workspace/publish/codeknows/releases/20190113141817 && /usr/bin/env cp /home/louis0526/workspace/publish/codeknows/releases/20190113141817/public/assets/manifest.yml /home/louis0526/workspace/publish/codeknows/releases/20190113141817/assets_manifest_backup
+  INFO [42457534] Finished in 0.043 seconds with exit status 0 (successful).
+  INFO [deploy:migrate] Run `rake db:migrate`
+ DEBUG [aabf460d] Running if test ! -d /home/louis0526/workspace/publish/codeknows/releases/20190113141817; then echo "Directory does not exist '/home/louis0526/workspace/publish/codeknows/releases/20190113141817'" 1>&2; false; fi as louis0526@45.76.56.242
+ DEBUG [aabf460d] Command: if test ! -d /home/louis0526/workspace/publish/codeknows/releases/20190113141817; then echo "Directory does not exist '/home/louis0526/workspace/publish/codeknows/releases/20190113141817'" 1>&2; false; fi
+ DEBUG [8b1fa0e9] Finished in 0.039 seconds with exit status 0 (successful).
+  INFO [c1e3d29e] Running ~/.rvm/bin/rvm default do bundle exec rake db:migrate as louis0526@45.76.56.242
+ DEBUG [c1e3d29e] Command: cd /home/louis0526/workspace/publish/codeknows/releases/20190113141817 && ( export RAILS_ENV="production" ; ~/.rvm/bin/rvm default do bundle exec rake db:migrate )
+ DEBUG [24c8abde] 	Connecting to database specified by database.yml
+ DEBUG [24c8abde] 	** [Bugsnag] No API key configured, couldn't notify
+ DEBUG [24c8abde] 	rake aborted!
+ DEBUG [24c8abde] 	PG::ConnectionBad: FATAL:  database "coderwall_production" does not exist
+ DEBUG [24c8abde] 	/home/louis0526/workspace/publish/codeknows/shared/bundle/ruby/2.2.0/gems/activerecord-3.2.22/lib/active_record/connection_adapters/postgresql_adapter.rb:1222:in `initialize'
+/home/louis0526/workspace/publish/codeknows/shared/bundle/ruby/2.2.0/gems/activerecord-3.2.22/lib/active_record/connection_adapters/postgresql_adapter.rb:1222:in `new'
+/home/louis0526/workspace/publish/codeknows/shared/bundle/ruby/2.2.0/gems/activerecord-3.2.22/lib/active_record/connection_adapters/postgresql_adapter.rb:1222:in `connect'
+/home/louis0526/workspace/publish/codeknows/shared/bundle/ruby/2.2.0/gems/activerecord-3.2.22/lib/active_record/connection_adapters/postgresql_adapter.rb:324:in `initialize'
+/home/louis0526/workspace/publish/codeknows/shared/bundle/ruby/2.2.0/gems/activerecord-3.2.22/lib/active_record/connection_adapters/postgresql_adapter.rb:28:in `new'
+/home/louis0526/workspace/publish/codeknows/shared/bundle/ruby/2.2.0/gems/activerecord-3.2.22/lib/active_record/connection_adapters/postgresql_adapter.rb:28:in `postgresql_connection'
+/home/louis0526/workspace/publish/codeknows/shared/bundle/ruby/2.2.0/gems/activerecord-3.2.22/lib/active_record/connection_adapters/abstract/connection_pool.rb:315:in `new_connection'
+/home/louis0526/workspace/publish/codeknows/shared/bundle/ruby/2.2.0/gems/activerecord-3.2.22/lib/active_record/connection_adapters/abstract/connection_pool.rb:325:in `checkout_new_connection'
+/home/louis0526/workspace/publish/codeknows/shared/bundle/ruby/2.2.0/gems/activerecord-3.2.22/lib/active_record/connection_adapters/abstract/connection_pool.rb:247:in `block (2 levels) in checkout'
+/home/louis0526/workspace/publish/codeknows/shared/bundle/ruby/2.2.0/gems/activerecord-3.2.22/lib/active_record/connection_adapters/abstract/connection_pool.rb:242:in `loop'
+/home/louis0526/workspace/publish/codeknows/shared/bundle/ruby/2.2.0/gems/activerecord-3.2.22/lib/active_record/connection_adapters/abstract/connection_pool.rb:242:in `block in checkout'
+/home/louis0526/workspace/publish/codeknows/shared/bundle/ruby/2.2.0/gems/activerecord-3.2.22/lib/active_record/connection_adapters/abstract/connection_pool.rb:239:in `checkout'
+/home/louis0526/workspace/publish/codeknows/shared/bundle/ruby/2.2.0/gems/activerecord-3.2.22/lib/active_record/connection_adapters/abstract/connection_pool.rb:102:in `block in connection'
+/home/louis0526/workspace/publish/codeknows/shared/bundle/ruby/2.2.0/gems/activerecord-3.2.22/lib/active_record/connection_adapters/abstract/connection_pool.rb:101:in `connection'
+/home/louis0526/workspace/publish/codeknows/shared/bundle/ruby/2.2.0/gems/activerecord-3.2.22/lib/active_record/connection_adapters/abstract/connection_pool.rb:410:in `retrieve_connection'
+/home/louis0526/workspace/publish/codeknows/shared/bundle/ruby/2.2.0/gems/activerecord-3.2.22/lib/active_record/connection_adapters/abstract/connection_specification.rb:171:in `retrieve_connection'
+/home/louis0526/workspace/publish/codeknows/shared/bundle/ruby/2.2.0/gems/activerecord-3.2.22/lib/active_record/connection_adapters/abstract/connection_specification.rb:145:in `connection'
+/home/louis0526/workspace/publish/codeknows/shared/bundle/ruby/2.2.0/gems/activerecord-3.2.22/lib/active_record/model_schema.rb:310:in `clear_cache!'
+/home/louis0526/workspace/publish/codeknows/shared/bundle/ruby/2.2.0/gems/activerecord-3.2.22/lib/active_record/railtie.rb:103:in `block (2 levels) in <class:Railtie>'
+/home/louis0526/workspace/publish/codeknows/shared/bundle/ruby/2.2.0/gems/activesupport-3.2.22/lib/active_support/callbacks.rb:418:in `_run__4011708888892395980__prepare__1610965706641326804__callbacks'
+/home/louis0526/workspace/publish/codeknows/shared/bundle/ruby/2.2.0/gems/activesupport-3.2.22/lib/active_support/callbacks.rb:405:in `__run_callback'
+/home/louis0526/workspace/publish/codeknows/shared/bundle/ruby/2.2.0/gems/activesupport-3.2.22/lib/active_support/callbacks.rb:385:in `_run_prepare_callbacks'
+/home/louis0526/workspace/publish/codeknows/shared/bundle/ruby/2.2.0/gems/activesupport-3.2.22/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/home/louis0526/workspace/publish/codeknows/shared/bundle/ruby/2.2.0/gems/actionpack-3.2.22/lib/action_dispatch/middleware/reloader.rb:74:in `prepare!'
+/home/louis0526/workspace/publish/codeknows/shared/bundle/ruby/2.2.0/gems/actionpack-3.2.22/lib/action_dispatch/middleware/reloader.rb:48:in `prepare!'
+/home/louis0526/workspace/publish/codeknows/shared/bundle/ruby/2.2.0/gems/railties-3.2.22/lib/rails/application/finisher.rb:47:in `block in <module:Finisher>'
+/home/louis0526/workspace/publish/codeknows/shared/bundle/ruby/2.2.0/gems/railties-3.2.22/lib/rails/initializable.rb:30:in `instance_exec'
+/home/louis0526/workspace/publish/codeknows/shared/bundle/ruby/2.2.0/gems/railties-3.2.22/lib/rails/initializable.rb:30:in `run'
+/home/louis0526/workspace/publish/codeknows/shared/bundle/ruby/2.2.0/gems/railties-3.2.22/lib/rails/initializable.rb:55:in `block in run_initializers'
+/home/louis0526/workspace/publish/codeknows/shared/bundle/ruby/2.2.0/gems/railties-3.2.22/lib/rails/initializable.rb:54:in `each'
+/home/louis0526/workspace/publish/codeknows/shared/bundle/ruby/2.2.0/gems/railties-3.2.22/lib/rails/initializable.rb:54:in `run_initializers'
+/home/louis0526/workspace/publish/codeknows/shared/bundle/ruby/2.2.0/gems/railties-3.2.22/lib/rails/application.rb:136:in `initialize!'
+/home/louis0526/workspace/publish/codeknows/shared/bundle/ruby/2.2.0/gems/railties-3.2.22/lib/rails/railtie/configurable.rb:30:in `method_missing'
+/home/louis0526/workspace/publish/codeknows/releases/20190113141817/config/environment.rb:2:in `<top (required)>'
+/home/louis0526/workspace/publish/codeknows/shared/bundle/ruby/2.2.0/gems/activesupport-3.2.22/lib/active_support/dependencies.rb:251:in `require'
+/home/louis0526/workspace/publish/codeknows/shared/bundle/ruby/2.2.0/gems/activesupport-3.2.22/lib/active_support/dependencies.rb:251:in `block in require'
+/home/louis0526/workspace/publish/codeknows/shared/bundle/ruby/2.2.0/gems/activesupport-3.2.22/lib/active_support/dependencies.rb:236:in `load_dependency'
+/home/louis0526/workspace/publish/codeknows/shared/bundle/ruby/2.2.0/gems/activesupport-3.2.22/lib/active_support/dependencies.rb:251:in `require'
+/home/louis0526/workspace/publish/codeknows/shared/bundle/ruby/2.2.0/gems/railties-3.2.22/lib/rails/application.rb:103:in `require_environment!'
+/home/louis0526/workspace/publish/codeknows/shared/bundle/ruby/2.2.0/gems/railties-3.2.22/lib/rails/application.rb:305:in `block (2 levels) in initialize_tasks'
+/home/louis0526/workspace/publish/codeknows/shared/bundle/ruby/2.2.0/gems/bugsnag-2.8.10/lib/bugsnag/rake.rb:12:in `execute_with_bugsnag'
+/home/louis0526/.rvm/gems/ruby-2.2.2/gems/bundler-1.17.1/lib/bundler/cli/exec.rb:74:in `load'
+/home/louis0526/.rvm/gems/ruby-2.2.2/gems/bundler-1.17.1/lib/bundler/cli/exec.rb:74:in `kernel_load'
+/home/louis0526/.rvm/gems/ruby-2.2.2/gems/bundler-1.17.1/lib/bundler/cli/exec.rb:28:in `run'
+/home/louis0526/.rvm/gems/ruby-2.2.2/gems/bundler-1.17.1/lib/bundler/cli.rb:463:in `exec'
+/home/louis0526/.rvm/gems/ruby-2.2.2/gems/bundler-1.17.1/lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+/home/louis0526/.rvm/gems/ruby-2.2.2/gems/bundler-1.17.1/lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+/home/louis0526/.rvm/gems/ruby-2.2.2/gems/bundler-1.17.1/lib/bundler/vendor/thor/lib/thor.rb:387:in `dispatch'
+/home/louis0526/.rvm/gems/ruby-2.2.2/gems/bundler-1.17.1/lib/bundler/cli.rb:27:in `dispatch'
+/home/louis0526/.rvm/gems/ruby-2.2.2/gems/bundler-1.17.1/lib/bundler/vendor/thor/lib/thor/base.rb:466:in `start'
+/home/louis0526/.rvm/gems/ruby-2.2.2/gems/bundler-1.17.1/lib/bundler/cli.rb:18:in `start'
+/home/louis0526/.rvm/gems/ruby-2.2.2/gems/bundler-1.17.1/exe/bundle:30:in `block in <top (required)>'
+/home/louis0526/.rvm/gems/ruby-2.2.2/gems/bundler-1.17.1/lib/bundler/friendly_errors.rb:124:in `with_friendly_errors'
+/home/louis0526/.rvm/gems/ruby-2.2.2/gems/bundler-1.17.1/exe/bundle:22:in `<top (required)>'
+/home/louis0526/.rvm/gems/ruby-2.2.2/bin/bundle:23:in `load'
+/home/louis0526/.rvm/gems/ruby-2.2.2/bin/bundle:23:in `<main>'
+/home/louis0526/.rvm/gems/ruby-2.2.2/bin/ruby_executable_hooks:24:in `eval'
+/home/louis0526/.rvm/gems/ruby-2.2.2/bin/ruby_executable_hooks:24:in `<main>'
+ DEBUG [24c8abde] 	Tasks: TOP => db:migrate => environment
+ DEBUG [24c8abde] 	(See full trace by running task with --trace)
